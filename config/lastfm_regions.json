@@ -1,0 +1,42 @@
+[
+  {
+    "country": "United States",
+    "weight": 0.18
+  },
+  {
+    "country": "United Kingdom",
+    "weight": 0.14
+  },
+  {
+    "country": "Japan",
+    "weight": 0.12
+  },
+  {
+    "country": "Germany",
+    "weight": 0.08
+  },
+  {
+    "country": "France",
+    "weight": 0.07
+  },
+  {
+    "country": "Brazil",
+    "weight": 0.09
+  },
+  {
+    "country": "Mexico",
+    "weight": 0.08
+  },
+  {
+    "country": "Canada",
+    "weight": 0.08
+  },
+  {
+    "country": "Australia",
+    "weight": 0.08
+  },
+  {
+    "country": "Spain",
+    "weight": 0.08
+  }
+]

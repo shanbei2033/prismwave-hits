@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PrismWave HITS Daily Schedule",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "station_id",
+    "edition_date",
+    "timezone",
+    "generated_at",
+    "generator_version",
+    "generation_mode",
+    "service_windows",
+    "off_air_windows",
+    "source_snapshot",
+    "tracks",
+    "reserve_tracks"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "integer"
+    },
+    "station_id": {
+      "type": "string"
+    },
+    "edition_date": {
+      "type": "string"
+    },
+    "timezone": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "generator_version": {
+      "type": "string"
+    },
+    "generation_mode": {
+      "type": "string"
+    },
+    "service_windows": {
+      "type": "array"
+    },
+    "off_air_windows": {
+      "type": "array"
+    },
+    "source_snapshot": {
+      "type": "array"
+    },
+    "tracks": {
+      "type": "array"
+    },
+    "reserve_tracks": {
+      "type": "array"
+    }
+  }
+}

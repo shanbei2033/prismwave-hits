@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PrismWave HITS Latest Manifest",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "station_id",
+    "timezone",
+    "generated_at",
+    "active_edition_date",
+    "schedule_path",
+    "schedule_url",
+    "service_windows",
+    "off_air_windows",
+    "source_snapshot"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "integer"
+    },
+    "station_id": {
+      "type": "string"
+    },
+    "timezone": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "active_edition_date": {
+      "type": "string"
+    },
+    "schedule_path": {
+      "type": "string"
+    },
+    "schedule_url": {
+      "type": "string"
+    },
+    "service_windows": {
+      "type": "array"
+    },
+    "off_air_windows": {
+      "type": "array"
+    },
+    "source_snapshot": {
+      "type": "array"
+    }
+  }
+}

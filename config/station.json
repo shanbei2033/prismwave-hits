@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "station_id": "hits-global",
+  "timezone": "UTC",
+  "repository": {
+    "owner": "shanbei2033",
+    "name": "prismwave-hits",
+    "branch": "main"
+  },
+  "generation_time_utc": "23:30",
+  "default_target_offset_days": 1,
+  "off_air_windows": [
+    {
+      "start": "02:00",
+      "end": "05:00",
+      "label": "overnight_maintenance"
+    }
+  ],
+  "lastfm": {
+    "global_limit": 200,
+    "region_limit": 120
+  },
+  "schedule": {
+    "default_track_duration_ms": 210000,
+    "repeat_track_gap_slots": 42,
+    "repeat_artist_gap_slots": 16,
+    "min_tail_fill_ms": 120000,
+    "reserve_track_count": 12
+  },
+  "source_weights": {
+    "lastfm_global": 0.58,
+    "bootstrap_seed": 0.08
+  },
+  "lyrics": {
+    "preferred_order": [
+      "qqmusic",
+      "lrclib"
+    ]
+  }
+}
