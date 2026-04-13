@@ -11,8 +11,8 @@
   "default_target_offset_days": 1,
   "off_air_windows": [
     {
-      "start": "02:00",
-      "end": "05:00",
+      "start": "20:00",
+      "end": "00:00",
       "label": "overnight_maintenance"
     }
   ],

@@ -5,6 +5,7 @@
 The repository is designed to work without a custom server:
 
 - GitHub Actions builds the next UTC edition every day at `23:30 UTC`
+- That build time equals `07:30` in Beijing (`Asia/Shanghai`), which is 30 minutes before the daily `08:00` HITS resume time
 - The generated manifests are committed back to this repository
 - PrismWave reads the public JSON files directly from GitHub Raw
 
@@ -63,7 +64,7 @@ Optional environment variables:
 The current default station model is:
 
 - edition timezone: `UTC`
-- manifest build time: `23:30 UTC`
-- overnight off-air window: `02:00-05:00 UTC`
+- manifest build time: `23:30 UTC` (`07:30` Beijing time)
+- overnight off-air window: `20:00-00:00 UTC` (`04:00-08:00` Beijing time)
 
 That means the generated daily schedule intentionally contains a gap during the overnight maintenance window.
