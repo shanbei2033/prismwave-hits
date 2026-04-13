@@ -2,7 +2,7 @@
   "schema_version": 1,
   "station_id": "hits-global",
   "timezone": "UTC",
-  "generated_at": "2026-04-13T04:25:12Z",
+  "generated_at": "2026-04-13T05:07:05Z",
   "generator_version": "prismwave-hits/0.1.0",
   "active_edition_date": "2026-04-14",
   "schedule_path": "schedules/2026-04-14.json",
@@ -33,6 +33,6 @@
       "candidate_count": 40
     }
   ],
-  "track_count": 289,
+  "track_count": 340,
   "reserve_track_count": 12
 }
