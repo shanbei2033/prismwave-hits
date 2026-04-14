@@ -2,8 +2,8 @@
   "schema_version": 1,
   "station_id": "hits-global",
   "timezone": "UTC",
-  "generated_at": "2026-04-14T00:09:17Z",
-  "generator_version": "prismwave-hits/0.1.0",
+  "generated_at": "2026-04-14T05:09:40Z",
+  "generator_version": "prismwave-hits/0.2.0",
   "active_edition_date": "2026-04-15",
   "schedule_path": "schedules/2026-04-15.json",
   "schedule_url": "https://raw.githubusercontent.com/shanbei2033/prismwave-hits/main/schedules/2026-04-15.json",
@@ -88,11 +88,26 @@
       "candidate_count": 120
     },
     {
-      "source": "bootstrap_seed",
+      "source": "audius_trending",
+      "status": "error:HTTPError",
+      "candidate_count": 0,
+      "playable_count": 0
+    },
+    {
+      "source": "audius_match",
       "status": "ok",
-      "candidate_count": 40
+      "scanned_count": 96,
+      "resolved_count": 1,
+      "playable_count": 1
+    },
+    {
+      "source": "schedule_pool",
+      "status": "mixed_priority",
+      "candidate_count": 609,
+      "playable_count": 1
     }
   ],
-  "track_count": 348,
+  "track_count": 349,
+  "playable_track_count": 9,
   "reserve_track_count": 12
 }
