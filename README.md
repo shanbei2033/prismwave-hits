@@ -15,21 +15,25 @@ The repository is designed to work without a custom server:
   - small entry manifest that points PrismWave to the active edition
 - `schedules/YYYY-MM-DD.json`
   - the full daily schedule for one UTC edition
+  - each track can optionally include `audio_url` and `cover_url`
 
 ## Current generator scope
 
-This first bootstrap version focuses on:
+The current generator now focuses on:
 
 - daily manifest generation
 - UTC schedule windows
 - overnight off-air gaps
-- a fallback bootstrap track pool so the pipeline always produces valid JSON
 - optional Last.fm ingestion when `LASTFM_API_KEY` is configured
+- a real playable fallback pool from Audius trending tracks
+- best-effort Audius search matching for unresolved chart candidates
+- stable `audio_url` playback endpoints for tracks that can be streamed directly
 
 Planned next steps:
 
-- add more real-world chart providers
+- add more legal playback providers
 - improve track scoring and diversity rules
+- improve lyric-availability prioritisation
 - enrich tracks with more metadata and better artwork hints
 - publish richer station status fields for the PrismWave client
 
@@ -46,7 +50,8 @@ Optional:
 
 - `LASTFM_API_KEY`
 
-If no API key is configured, the generator falls back to `data/demo_tracks.json`.
+If no API key is configured, the generator still tries to build a playable schedule from Audius.
+`data/demo_tracks.json` remains only as the final local fallback when remote catalog fetches fail.
 
 ## Local build
 
@@ -68,3 +73,14 @@ The current default station model is:
 - overnight off-air window: `20:00-00:00 UTC` (`04:00-08:00` Beijing time)
 
 That means the generated daily schedule intentionally contains a gap during the overnight maintenance window.
+
+## Playback notes
+
+- When a track is streamable, the schedule carries:
+  - `audio_url`
+  - `audio_provider`
+  - `provider_track_id`
+- For Audius, `audio_url` is stored as a stable API endpoint like `/v1/tracks/<id>/stream`
+  instead of a short-lived signed CDN URL.
+- This lets the PrismWave client fetch a fresh redirect at playback time, which is more reliable
+  for all-day HITS scheduling.

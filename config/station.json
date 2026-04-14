@@ -20,15 +20,24 @@
     "global_limit": 200,
     "region_limit": 120
   },
+  "audius": {
+    "trending_limit": 180,
+    "search_limit": 8,
+    "candidate_resolution_limit": 96,
+    "resolution_min_score": 82
+  },
   "schedule": {
     "default_track_duration_ms": 210000,
     "repeat_track_gap_slots": 42,
     "repeat_artist_gap_slots": 16,
     "min_tail_fill_ms": 120000,
-    "reserve_track_count": 12
+    "reserve_track_count": 12,
+    "prefer_playable_candidates": true,
+    "min_playable_pool_size": 96
   },
   "source_weights": {
     "lastfm_global": 0.58,
+    "audius_trending": 0.32,
     "bootstrap_seed": 0.08
   },
   "lyrics": {

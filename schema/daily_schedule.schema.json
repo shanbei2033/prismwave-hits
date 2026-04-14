@@ -48,7 +48,36 @@
       "type": "array"
     },
     "tracks": {
-      "type": "array"
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "audio_url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "audio_provider": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "provider_track_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "cover_url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
     },
     "reserve_tracks": {
       "type": "array"
