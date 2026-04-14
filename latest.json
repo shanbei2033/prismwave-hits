@@ -2,30 +2,90 @@
   "schema_version": 1,
   "station_id": "hits-global",
   "timezone": "UTC",
-  "generated_at": "2026-04-13T05:07:05Z",
+  "generated_at": "2026-04-14T00:09:17Z",
   "generator_version": "prismwave-hits/0.1.0",
-  "active_edition_date": "2026-04-14",
-  "schedule_path": "schedules/2026-04-14.json",
-  "schedule_url": "https://raw.githubusercontent.com/shanbei2033/prismwave-hits/main/schedules/2026-04-14.json",
+  "active_edition_date": "2026-04-15",
+  "schedule_path": "schedules/2026-04-15.json",
+  "schedule_url": "https://raw.githubusercontent.com/shanbei2033/prismwave-hits/main/schedules/2026-04-15.json",
   "service_windows": [
     {
       "label": "on_air",
-      "start_at": "2026-04-14T00:00:00Z",
-      "end_at": "2026-04-14T20:00:00Z"
+      "start_at": "2026-04-15T00:00:00Z",
+      "end_at": "2026-04-15T20:00:00Z"
     }
   ],
   "off_air_windows": [
     {
       "label": "overnight_maintenance",
-      "start_at": "2026-04-14T20:00:00Z",
-      "end_at": "2026-04-15T00:00:00Z"
+      "start_at": "2026-04-15T20:00:00Z",
+      "end_at": "2026-04-16T00:00:00Z"
     }
   ],
   "source_snapshot": [
     {
       "source": "lastfm_global",
-      "status": "missing_api_key",
-      "candidate_count": 0
+      "status": "ok",
+      "candidate_count": 200
+    },
+    {
+      "source": "lastfm_geo",
+      "scope": "United States",
+      "status": "ok",
+      "candidate_count": 120
+    },
+    {
+      "source": "lastfm_geo",
+      "scope": "United Kingdom",
+      "status": "ok",
+      "candidate_count": 120
+    },
+    {
+      "source": "lastfm_geo",
+      "scope": "Japan",
+      "status": "ok",
+      "candidate_count": 120
+    },
+    {
+      "source": "lastfm_geo",
+      "scope": "Germany",
+      "status": "ok",
+      "candidate_count": 120
+    },
+    {
+      "source": "lastfm_geo",
+      "scope": "France",
+      "status": "ok",
+      "candidate_count": 120
+    },
+    {
+      "source": "lastfm_geo",
+      "scope": "Brazil",
+      "status": "ok",
+      "candidate_count": 120
+    },
+    {
+      "source": "lastfm_geo",
+      "scope": "Mexico",
+      "status": "ok",
+      "candidate_count": 120
+    },
+    {
+      "source": "lastfm_geo",
+      "scope": "Canada",
+      "status": "ok",
+      "candidate_count": 120
+    },
+    {
+      "source": "lastfm_geo",
+      "scope": "Australia",
+      "status": "ok",
+      "candidate_count": 120
+    },
+    {
+      "source": "lastfm_geo",
+      "scope": "Spain",
+      "status": "ok",
+      "candidate_count": 120
     },
     {
       "source": "bootstrap_seed",
@@ -33,6 +93,6 @@
       "candidate_count": 40
     }
   ],
-  "track_count": 340,
+  "track_count": 348,
   "reserve_track_count": 12
 }
