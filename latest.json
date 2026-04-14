@@ -2,23 +2,23 @@
   "schema_version": 1,
   "station_id": "hits-global",
   "timezone": "UTC",
-  "generated_at": "2026-04-14T05:09:40Z",
+  "generated_at": "2026-04-14T05:15:52Z",
   "generator_version": "prismwave-hits/0.2.0",
-  "active_edition_date": "2026-04-15",
-  "schedule_path": "schedules/2026-04-15.json",
-  "schedule_url": "https://raw.githubusercontent.com/shanbei2033/prismwave-hits/main/schedules/2026-04-15.json",
+  "active_edition_date": "2026-04-14",
+  "schedule_path": "schedules/2026-04-14.json",
+  "schedule_url": "https://raw.githubusercontent.com/shanbei2033/prismwave-hits/main/schedules/2026-04-14.json",
   "service_windows": [
     {
       "label": "on_air",
-      "start_at": "2026-04-15T00:00:00Z",
-      "end_at": "2026-04-15T20:00:00Z"
+      "start_at": "2026-04-14T00:00:00Z",
+      "end_at": "2026-04-14T20:00:00Z"
     }
   ],
   "off_air_windows": [
     {
       "label": "overnight_maintenance",
-      "start_at": "2026-04-15T20:00:00Z",
-      "end_at": "2026-04-16T00:00:00Z"
+      "start_at": "2026-04-14T20:00:00Z",
+      "end_at": "2026-04-15T00:00:00Z"
     }
   ],
   "source_snapshot": [
