@@ -2,23 +2,23 @@
   "schema_version": 1,
   "station_id": "hits-global",
   "timezone": "UTC",
-  "generated_at": "2026-05-18T01:29:46Z",
+  "generated_at": "2026-05-19T01:31:37Z",
   "generator_version": "prismwave-hits/0.2.0",
-  "active_edition_date": "2026-05-19",
-  "schedule_path": "schedules/2026-05-19.json",
-  "schedule_url": "https://raw.githubusercontent.com/shanbei2033/prismwave-hits/main/schedules/2026-05-19.json",
+  "active_edition_date": "2026-05-20",
+  "schedule_path": "schedules/2026-05-20.json",
+  "schedule_url": "https://raw.githubusercontent.com/shanbei2033/prismwave-hits/main/schedules/2026-05-20.json",
   "service_windows": [
     {
       "label": "on_air",
-      "start_at": "2026-05-19T00:00:00Z",
-      "end_at": "2026-05-19T20:00:00Z"
+      "start_at": "2026-05-20T00:00:00Z",
+      "end_at": "2026-05-20T20:00:00Z"
     }
   ],
   "off_air_windows": [
     {
       "label": "overnight_maintenance",
-      "start_at": "2026-05-19T20:00:00Z",
-      "end_at": "2026-05-20T00:00:00Z"
+      "start_at": "2026-05-20T20:00:00Z",
+      "end_at": "2026-05-21T00:00:00Z"
     }
   ],
   "source_snapshot": [
@@ -103,11 +103,11 @@
     {
       "source": "schedule_pool",
       "status": "no_playable_candidates",
-      "candidate_count": 582,
+      "candidate_count": 573,
       "playable_count": 0
     }
   ],
-  "track_count": 327,
+  "track_count": 324,
   "playable_track_count": 0,
   "reserve_track_count": 12
 }
