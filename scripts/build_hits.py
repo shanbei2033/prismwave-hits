@@ -15,6 +15,8 @@ UTC = timezone.utc
 GENERATOR_VERSION = "prismwave-hits/0.2.0"
 LASTFM_ENDPOINT = "https://ws.audioscrobbler.com/2.0/"
 AUDIUS_API_BASE = "https://api.audius.co/v1"
+DEEZER_API_BASE = "https://api.deezer.com"
+ITUNES_RSS_URL = "https://itunes.apple.com/us/rss/topsongs/limit={limit}/json"
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG_PATH = ROOT / "config" / "station.json"
 REGIONS_PATH = ROOT / "config" / "lastfm_regions.json"
@@ -305,6 +307,95 @@ def load_candidate_pool(
                 }
             )
 
+    # Deezer charts (global + genre-specific)
+    deezer_cfg = station.get("deezer", {})
+    deezer_weight = float(station["source_weights"].get("deezer_chart", 0.0))
+    if deezer_weight > 0:
+        deezer_limit = int(deezer_cfg.get("chart_limit", 100))
+        try:
+            deezer_global = fetch_deezer_chart(
+                limit=deezer_limit,
+                weight=deezer_weight,
+                genre_id=0,
+            )
+            merge_candidates(merged, deezer_global)
+            source_snapshot.append(
+                {
+                    "source": "deezer_chart",
+                    "status": "ok",
+                    "candidate_count": len(deezer_global),
+                    "playable_count": count_candidate_audio(deezer_global),
+                }
+            )
+        except (HTTPError, URLError, TimeoutError, ValueError) as error:
+            source_snapshot.append(
+                {
+                    "source": "deezer_chart",
+                    "status": f"error:{type(error).__name__}",
+                    "candidate_count": 0,
+                    "playable_count": 0,
+                }
+            )
+
+        deezer_genre_ids = deezer_cfg.get("genre_ids", {})
+        per_genre_weight = deezer_weight / max(len(deezer_genre_ids) + 1, 1)
+        for genre_name, genre_id in deezer_genre_ids.items():
+            try:
+                genre_tracks = fetch_deezer_chart(
+                    limit=deezer_limit,
+                    weight=per_genre_weight,
+                    genre_id=int(genre_id),
+                )
+                merge_candidates(merged, genre_tracks)
+                source_snapshot.append(
+                    {
+                        "source": "deezer_chart",
+                        "scope": genre_name,
+                        "status": "ok",
+                        "candidate_count": len(genre_tracks),
+                        "playable_count": count_candidate_audio(genre_tracks),
+                    }
+                )
+            except (HTTPError, URLError, TimeoutError, ValueError) as error:
+                source_snapshot.append(
+                    {
+                        "source": "deezer_chart",
+                        "scope": genre_name,
+                        "status": f"error:{type(error).__name__}",
+                        "candidate_count": 0,
+                        "playable_count": 0,
+                    }
+                )
+
+    # iTunes RSS top songs
+    itunes_cfg = station.get("itunes", {})
+    itunes_weight = float(station["source_weights"].get("itunes_rss", 0.0))
+    if itunes_weight > 0:
+        itunes_limit = int(itunes_cfg.get("rss_limit", 200))
+        try:
+            itunes_tracks = fetch_itunes_rss(
+                limit=itunes_limit,
+                weight=itunes_weight,
+            )
+            merge_candidates(merged, itunes_tracks)
+            source_snapshot.append(
+                {
+                    "source": "itunes_rss",
+                    "status": "ok",
+                    "candidate_count": len(itunes_tracks),
+                    "playable_count": count_candidate_audio(itunes_tracks),
+                }
+            )
+        except (HTTPError, URLError, TimeoutError, ValueError) as error:
+            source_snapshot.append(
+                {
+                    "source": "itunes_rss",
+                    "status": f"error:{type(error).__name__}",
+                    "candidate_count": 0,
+                    "playable_count": 0,
+                }
+            )
+
     if not merged:
         bootstrap_tracks = load_bootstrap_tracks(
             weight=float(station["source_weights"]["bootstrap_seed"])
@@ -478,6 +569,153 @@ def fetch_lastfm_tag(
         weight=weight,
         limit=limit,
     )
+
+
+def fetch_deezer_chart(
+    limit: int,
+    weight: float,
+    genre_id: int = 0,
+) -> list[CandidateTrack]:
+    if genre_id > 0:
+        url = f"{DEEZER_API_BASE}/chart/{genre_id}/tracks"
+    else:
+        url = f"{DEEZER_API_BASE}/chart/0/tracks"
+    payload = fetch_json(url, {"limit": str(limit)})
+    rows = payload.get("data", [])
+    if not isinstance(rows, list):
+        raise ValueError(f"Unexpected Deezer chart payload for genre {genre_id}.")
+    source_label = f"deezer_chart:{genre_id}" if genre_id > 0 else "deezer_chart"
+    return parse_deezer_tracks(
+        rows=rows,
+        source_label=source_label,
+        weight=weight,
+        limit=limit,
+    )
+
+
+def parse_deezer_tracks(
+    rows: list[dict[str, Any]],
+    source_label: str,
+    weight: float,
+    limit: int,
+) -> list[CandidateTrack]:
+    parsed: list[CandidateTrack] = []
+    total = max(limit, len(rows), 1)
+    for index, row in enumerate(rows, start=1):
+        title = str(row.get("title", "")).strip()
+        artist_data = row.get("artist", {})
+        artist = str(artist_data.get("name", "")).strip() if isinstance(artist_data, dict) else ""
+        if not title or not artist:
+            continue
+
+        duration_seconds = safe_int(row.get("duration"))
+        preview_url = str(row.get("preview", "")).strip() or None
+        album_data = row.get("album", {})
+        cover_url = None
+        if isinstance(album_data, dict):
+            cover_url = str(album_data.get("cover", "")).strip() or None
+        track_id = str(row.get("id", "")).strip()
+
+        parsed.append(
+            CandidateTrack(
+                title=title,
+                artist=artist,
+                duration_ms=clamp_duration_ms(
+                    duration_seconds * 1000 if duration_seconds else 210000
+                ),
+                score=rank_score(index, total) * weight,
+                audio_url=preview_url,
+                audio_provider="deezer" if preview_url else None,
+                provider_track_id=track_id if track_id else None,
+                cover_url=cover_url,
+                rank_signals={source_label: index},
+                source_tags={source_label, "deezer"},
+                title_variants={title},
+                artist_variants={artist},
+            )
+        )
+    return parsed
+
+
+def fetch_itunes_rss(limit: int, weight: float) -> list[CandidateTrack]:
+    url = ITUNES_RSS_URL.format(limit=min(limit, 200))
+    payload = fetch_json(url, {})
+    feed = payload.get("feed", {})
+    rows = feed.get("entry", [])
+    if not isinstance(rows, list):
+        raise ValueError("Unexpected iTunes RSS payload.")
+    return parse_itunes_rss_tracks(
+        rows=rows,
+        source_label="itunes_rss",
+        weight=weight,
+        limit=limit,
+    )
+
+
+def parse_itunes_rss_tracks(
+    rows: list[dict[str, Any]],
+    source_label: str,
+    weight: float,
+    limit: int,
+) -> list[CandidateTrack]:
+    parsed: list[CandidateTrack] = []
+    total = max(limit, len(rows), 1)
+    for index, row in enumerate(rows, start=1):
+        title = extract_itunes_label(row.get("im:name"))
+        artist = extract_itunes_label(row.get("im:artist"))
+        if not title or not artist:
+            continue
+
+        album_data = row.get("im:collection", {})
+        album = ""
+        if isinstance(album_data, dict):
+            album = extract_itunes_label(album_data.get("im:name"))
+
+        cover_url = None
+        images = row.get("im:image", [])
+        if isinstance(images, list) and images:
+            cover_url = extract_itunes_label(images[-1])
+
+        preview_url = None
+        links = row.get("link", [])
+        if isinstance(links, list):
+            for link in links:
+                if isinstance(link, dict):
+                    attrs = link.get("attributes", {})
+                    if attrs.get("rel") == "enclosure":
+                        preview_url = str(attrs.get("href", "")).strip() or None
+                        break
+
+        itunes_id = ""
+        id_data = row.get("id", {})
+        if isinstance(id_data, dict):
+            attrs = id_data.get("attributes", {})
+            itunes_id = str(attrs.get("im:id", "")).strip()
+
+        parsed.append(
+            CandidateTrack(
+                title=title,
+                artist=artist,
+                album=album,
+                duration_ms=210000,
+                score=rank_score(index, total) * weight,
+                audio_url=preview_url,
+                audio_provider="itunes" if preview_url else None,
+                provider_track_id=itunes_id if itunes_id else None,
+                cover_url=cover_url,
+                rank_signals={source_label: index},
+                source_tags={source_label, "itunes"},
+                title_variants={title},
+                artist_variants={artist},
+            )
+        )
+    return parsed
+
+
+def extract_itunes_label(value: Any) -> str:
+    if isinstance(value, dict):
+        return str(value.get("label", "")).strip()
+    return str(value).strip() if value else ""
 
 
 def parse_lastfm_tracks(
@@ -916,13 +1154,17 @@ def resolve_generation_mode(ranked_candidates: list[CandidateTrack]) -> str:
         for track in ranked_candidates
         for tag in track.source_tags
     )
-    has_audius = any("audius" in track.source_tags for track in ranked_candidates)
+    has_streaming = any(
+        tag in track.source_tags
+        for track in ranked_candidates
+        for tag in ("audius", "deezer", "itunes")
+    )
     playable_count = count_candidate_audio(ranked_candidates)
 
-    if has_lastfm and has_audius and playable_count > 0:
-        return "lastfm_plus_audius_playable"
-    if has_audius and playable_count > 0:
-        return "audius_playable_only"
+    if has_lastfm and has_streaming and playable_count > 0:
+        return "lastfm_plus_streaming_playable"
+    if has_streaming and playable_count > 0:
+        return "streaming_playable_only"
     if has_lastfm:
         return "lastfm_metadata_only"
     return "bootstrap_seed_only"

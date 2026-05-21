@@ -39,6 +39,21 @@
     "candidate_resolution_limit": 96,
     "resolution_min_score": 82
   },
+  "deezer": {
+    "chart_limit": 100,
+    "genre_ids": {
+      "Pop": 132,
+      "Rock": 152,
+      "Hip-Hop": 116,
+      "Electronic": 113,
+      "R&B": 165,
+      "Alternative": 85,
+      "Jazz": 129
+    }
+  },
+  "itunes": {
+    "rss_limit": 200
+  },
   "schedule": {
     "default_track_duration_ms": 210000,
     "repeat_track_gap_slots": 42,
@@ -49,11 +64,13 @@
     "min_playable_pool_size": 96
   },
   "source_weights": {
-    "lastfm_global": 0.40,
-    "lastfm_tag": 0.12,
-    "audius_trending": 0.20,
-    "audius_trending_monthly": 0.10,
-    "audius_genre": 0.10,
+    "lastfm_global": 0.28,
+    "lastfm_tag": 0.10,
+    "audius_trending": 0.15,
+    "audius_trending_monthly": 0.08,
+    "audius_genre": 0.08,
+    "deezer_chart": 0.15,
+    "itunes_rss": 0.08,
     "bootstrap_seed": 0.08
   },
   "lyrics": {
