@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import os
+import random
 import re
 from dataclasses import dataclass, field
 from datetime import date, datetime, time, timedelta, timezone
@@ -66,6 +67,8 @@ def main() -> None:
 
     merged_candidates, source_snapshot = load_candidate_pool(station)
     source_snapshot.extend(resolve_playable_sources(station, merged_candidates))
+
+    random.seed(edition_date.isoformat())
     ranked_candidates = rank_candidates(merged_candidates.values())
     if not ranked_candidates:
         raise SystemExit("No candidates available for schedule generation.")
@@ -1211,6 +1214,7 @@ def scan_candidate_pool(
     repeat_track_gap_slots: int,
     repeat_artist_gap_slots: int,
 ) -> CandidateTrack | None:
+    eligible: list[CandidateTrack] = []
     fallback: CandidateTrack | None = None
 
     for candidate in ranked_candidates:
@@ -1228,9 +1232,18 @@ def scan_candidate_pool(
             continue
         if artist_gap < repeat_artist_gap_slots:
             continue
-        return candidate
+        eligible.append(candidate)
+        if len(eligible) >= 80:
+            break
 
-    return fallback
+    if not eligible:
+        return fallback
+
+    if len(eligible) == 1:
+        return eligible[0]
+
+    weights = [max(c.score, 0.001) for c in eligible]
+    return random.choices(eligible, weights=weights, k=1)[0]
 
 
 def build_daily_windows(
