@@ -2,7 +2,7 @@
   "schema_version": 1,
   "station_id": "hits-global",
   "timezone": "UTC",
-  "generated_at": "2026-05-21T01:31:50Z",
+  "generated_at": "2026-05-21T04:12:27Z",
   "generator_version": "prismwave-hits/0.2.0",
   "active_edition_date": "2026-05-22",
   "schedule_path": "schedules/2026-05-22.json",
@@ -88,26 +88,136 @@
       "candidate_count": 120
     },
     {
+      "source": "lastfm_tag",
+      "scope": "electronic",
+      "status": "ok",
+      "candidate_count": 80
+    },
+    {
+      "source": "lastfm_tag",
+      "scope": "hip-hop",
+      "status": "ok",
+      "candidate_count": 80
+    },
+    {
+      "source": "lastfm_tag",
+      "scope": "pop",
+      "status": "ok",
+      "candidate_count": 80
+    },
+    {
+      "source": "lastfm_tag",
+      "scope": "rock",
+      "status": "ok",
+      "candidate_count": 80
+    },
+    {
+      "source": "lastfm_tag",
+      "scope": "indie",
+      "status": "ok",
+      "candidate_count": 80
+    },
+    {
+      "source": "lastfm_tag",
+      "scope": "ambient",
+      "status": "ok",
+      "candidate_count": 80
+    },
+    {
+      "source": "lastfm_tag",
+      "scope": "rnb",
+      "status": "ok",
+      "candidate_count": 80
+    },
+    {
+      "source": "lastfm_tag",
+      "scope": "jazz",
+      "status": "ok",
+      "candidate_count": 80
+    },
+    {
       "source": "audius_trending",
       "status": "error:HTTPError",
       "candidate_count": 0,
       "playable_count": 0
     },
     {
+      "source": "audius_trending_monthly",
+      "status": "ok",
+      "candidate_count": 100,
+      "playable_count": 100
+    },
+    {
+      "source": "audius_genre",
+      "scope": "Electronic",
+      "status": "ok",
+      "candidate_count": 80,
+      "playable_count": 80
+    },
+    {
+      "source": "audius_genre",
+      "scope": "Hip-Hop/Rap",
+      "status": "ok",
+      "candidate_count": 60,
+      "playable_count": 60
+    },
+    {
+      "source": "audius_genre",
+      "scope": "Pop",
+      "status": "ok",
+      "candidate_count": 60,
+      "playable_count": 59
+    },
+    {
+      "source": "audius_genre",
+      "scope": "R&B/Soul",
+      "status": "ok",
+      "candidate_count": 40,
+      "playable_count": 40
+    },
+    {
+      "source": "audius_genre",
+      "scope": "Alternative",
+      "status": "ok",
+      "candidate_count": 40,
+      "playable_count": 40
+    },
+    {
+      "source": "audius_genre",
+      "scope": "Rock",
+      "status": "ok",
+      "candidate_count": 40,
+      "playable_count": 40
+    },
+    {
+      "source": "audius_genre",
+      "scope": "Ambient",
+      "status": "ok",
+      "candidate_count": 30,
+      "playable_count": 30
+    },
+    {
+      "source": "audius_genre",
+      "scope": "Jazz",
+      "status": "ok",
+      "candidate_count": 30,
+      "playable_count": 30
+    },
+    {
       "source": "audius_match",
       "status": "ok",
       "scanned_count": 96,
       "resolved_count": 0,
-      "playable_count": 0
+      "playable_count": 464
     },
     {
       "source": "schedule_pool",
-      "status": "no_playable_candidates",
-      "candidate_count": 565,
-      "playable_count": 0
+      "status": "playable_only",
+      "candidate_count": 464,
+      "playable_count": 464
     }
   ],
-  "track_count": 317,
-  "playable_track_count": 0,
+  "track_count": 347,
+  "playable_track_count": 347,
   "reserve_track_count": 12
 }
