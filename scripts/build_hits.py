@@ -180,6 +180,38 @@ def load_candidate_pool(
                         "candidate_count": 0,
                     }
                 )
+
+        # Last.fm tag-based charts (genre diversity)
+        tag_weight = float(station["source_weights"].get("lastfm_tag", 0.12))
+        tag_limit = int(lastfm_cfg.get("tag_limit", 80))
+        tags = lastfm_cfg.get("tags", [])
+        per_tag_weight = tag_weight / max(len(tags), 1)
+        for tag in tags:
+            try:
+                tag_tracks = fetch_lastfm_tag(
+                    api_key=lastfm_api_key,
+                    tag=tag,
+                    limit=tag_limit,
+                    weight=per_tag_weight,
+                )
+                merge_candidates(merged, tag_tracks)
+                source_snapshot.append(
+                    {
+                        "source": "lastfm_tag",
+                        "scope": tag,
+                        "status": "ok",
+                        "candidate_count": len(tag_tracks),
+                    }
+                )
+            except (HTTPError, URLError, TimeoutError, ValueError) as error:
+                source_snapshot.append(
+                    {
+                        "source": "lastfm_tag",
+                        "scope": tag,
+                        "status": f"error:{type(error).__name__}",
+                        "candidate_count": 0,
+                    }
+                )
     else:
         source_snapshot.append(
             {
@@ -190,10 +222,12 @@ def load_candidate_pool(
         )
 
     audius_cfg = station.get("audius", {})
+
+    # Audius weekly trending (existing)
     try:
         audius_tracks = fetch_audius_trending(
             limit=int(audius_cfg.get("trending_limit", 180)),
-            weight=float(station["source_weights"].get("audius_trending", 0.32)),
+            weight=float(station["source_weights"].get("audius_trending", 0.20)),
         )
         merge_candidates(merged, audius_tracks)
         source_snapshot.append(
@@ -213,6 +247,63 @@ def load_candidate_pool(
                 "playable_count": 0,
             }
         )
+
+    # Audius monthly trending (new — different time window for diversity)
+    try:
+        monthly_tracks = fetch_audius_trending_monthly(
+            limit=int(audius_cfg.get("trending_monthly_limit", 100)),
+            weight=float(station["source_weights"].get("audius_trending_monthly", 0.10)),
+        )
+        merge_candidates(merged, monthly_tracks)
+        source_snapshot.append(
+            {
+                "source": "audius_trending_monthly",
+                "status": "ok",
+                "candidate_count": len(monthly_tracks),
+                "playable_count": count_candidate_audio(monthly_tracks),
+            }
+        )
+    except (HTTPError, URLError, TimeoutError, ValueError) as error:
+        source_snapshot.append(
+            {
+                "source": "audius_trending_monthly",
+                "status": f"error:{type(error).__name__}",
+                "candidate_count": 0,
+                "playable_count": 0,
+            }
+        )
+
+    # Audius genre-specific trending (new — deepens pool per genre)
+    genre_limits = audius_cfg.get("genre_limits", {})
+    genre_weight = float(station["source_weights"].get("audius_genre", 0.10))
+    per_genre_weight = genre_weight / max(len(genre_limits), 1)
+    for genre, genre_limit in genre_limits.items():
+        try:
+            genre_tracks = fetch_audius_genre_trending(
+                genre=genre,
+                limit=int(genre_limit),
+                weight=per_genre_weight,
+            )
+            merge_candidates(merged, genre_tracks)
+            source_snapshot.append(
+                {
+                    "source": "audius_genre",
+                    "scope": genre,
+                    "status": "ok",
+                    "candidate_count": len(genre_tracks),
+                    "playable_count": count_candidate_audio(genre_tracks),
+                }
+            )
+        except (HTTPError, URLError, TimeoutError, ValueError) as error:
+            source_snapshot.append(
+                {
+                    "source": "audius_genre",
+                    "scope": genre,
+                    "status": f"error:{type(error).__name__}",
+                    "candidate_count": 0,
+                    "playable_count": 0,
+                }
+            )
 
     if not merged:
         bootstrap_tracks = load_bootstrap_tracks(
@@ -313,6 +404,77 @@ def fetch_audius_trending(limit: int, weight: float) -> list[CandidateTrack]:
     return parse_audius_tracks(
         rows=rows,
         source_label="audius_trending",
+        weight=weight,
+        limit=limit,
+    )
+
+
+def fetch_audius_trending_monthly(limit: int, weight: float) -> list[CandidateTrack]:
+    payload = fetch_json(
+        f"{AUDIUS_API_BASE}/tracks/trending",
+        {
+            "time": "month",
+            "limit": str(limit),
+        },
+    )
+    rows = payload.get("data", [])
+    if not isinstance(rows, list):
+        raise ValueError("Unexpected Audius monthly trending payload.")
+    return parse_audius_tracks(
+        rows=rows,
+        source_label="audius_trending_monthly",
+        weight=weight,
+        limit=limit,
+    )
+
+
+def fetch_audius_genre_trending(
+    genre: str,
+    limit: int,
+    weight: float,
+) -> list[CandidateTrack]:
+    payload = fetch_json(
+        f"{AUDIUS_API_BASE}/tracks/trending",
+        {
+            "genre": genre,
+            "time": "week",
+            "limit": str(limit),
+        },
+    )
+    rows = payload.get("data", [])
+    if not isinstance(rows, list):
+        raise ValueError(f"Unexpected Audius genre trending payload for {genre}.")
+    source_label = f"audius_genre:{genre}"
+    return parse_audius_tracks(
+        rows=rows,
+        source_label=source_label,
+        weight=weight,
+        limit=limit,
+    )
+
+
+def fetch_lastfm_tag(
+    api_key: str,
+    tag: str,
+    limit: int,
+    weight: float,
+) -> list[CandidateTrack]:
+    payload = fetch_json(
+        LASTFM_ENDPOINT,
+        {
+            "method": "tag.gettoptracks",
+            "tag": tag,
+            "api_key": api_key,
+            "format": "json",
+            "limit": str(limit),
+        },
+    )
+    tracks_data = payload.get("tracks", {})
+    rows = tracks_data.get("track", [])
+    source_label = f"lastfm_tag:{tag}"
+    return parse_lastfm_tracks(
+        rows=rows,
+        source_label=source_label,
         weight=weight,
         limit=limit,
     )

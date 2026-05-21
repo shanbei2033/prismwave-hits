@@ -18,10 +18,23 @@
   ],
   "lastfm": {
     "global_limit": 200,
-    "region_limit": 120
+    "region_limit": 120,
+    "tag_limit": 80,
+    "tags": ["electronic", "hip-hop", "pop", "rock", "indie", "ambient", "rnb", "jazz"]
   },
   "audius": {
     "trending_limit": 180,
+    "trending_monthly_limit": 100,
+    "genre_limits": {
+      "Electronic": 80,
+      "Hip-Hop/Rap": 60,
+      "Pop": 60,
+      "R&B/Soul": 40,
+      "Alternative": 40,
+      "Rock": 40,
+      "Ambient": 30,
+      "Jazz": 30
+    },
     "search_limit": 8,
     "candidate_resolution_limit": 96,
     "resolution_min_score": 82
@@ -36,8 +49,11 @@
     "min_playable_pool_size": 96
   },
   "source_weights": {
-    "lastfm_global": 0.58,
-    "audius_trending": 0.32,
+    "lastfm_global": 0.40,
+    "lastfm_tag": 0.12,
+    "audius_trending": 0.20,
+    "audius_trending_monthly": 0.10,
+    "audius_genre": 0.10,
     "bootstrap_seed": 0.08
   },
   "lyrics": {
