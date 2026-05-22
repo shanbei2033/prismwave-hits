@@ -2,7 +2,7 @@
   "schema_version": 1,
   "station_id": "hits-global",
   "timezone": "UTC",
-  "generated_at": "2026-05-22T01:31:33Z",
+  "generated_at": "2026-05-22T17:13:51Z",
   "generator_version": "prismwave-hits/0.2.0",
   "active_edition_date": "2026-05-23",
   "schedule_path": "schedules/2026-05-23.json",
@@ -166,7 +166,7 @@
       "scope": "Pop",
       "status": "ok",
       "candidate_count": 60,
-      "playable_count": 59
+      "playable_count": 60
     },
     {
       "source": "audius_genre",
@@ -207,78 +207,78 @@
       "source": "deezer_chart",
       "status": "ok",
       "candidate_count": 100,
-      "playable_count": 99
+      "playable_count": 0
     },
     {
       "source": "deezer_chart",
       "scope": "Pop",
       "status": "ok",
       "candidate_count": 100,
-      "playable_count": 100
+      "playable_count": 0
     },
     {
       "source": "deezer_chart",
       "scope": "Rock",
       "status": "ok",
       "candidate_count": 100,
-      "playable_count": 100
+      "playable_count": 0
     },
     {
       "source": "deezer_chart",
       "scope": "Hip-Hop",
       "status": "ok",
       "candidate_count": 100,
-      "playable_count": 100
+      "playable_count": 0
     },
     {
       "source": "deezer_chart",
       "scope": "Electronic",
       "status": "ok",
       "candidate_count": 100,
-      "playable_count": 100
+      "playable_count": 0
     },
     {
       "source": "deezer_chart",
       "scope": "R&B",
       "status": "ok",
       "candidate_count": 100,
-      "playable_count": 100
+      "playable_count": 0
     },
     {
       "source": "deezer_chart",
       "scope": "Alternative",
       "status": "ok",
       "candidate_count": 100,
-      "playable_count": 99
+      "playable_count": 0
     },
     {
       "source": "deezer_chart",
       "scope": "Jazz",
       "status": "ok",
       "candidate_count": 100,
-      "playable_count": 100
+      "playable_count": 0
     },
     {
       "source": "itunes_rss",
       "status": "ok",
-      "candidate_count": 89,
-      "playable_count": 89
+      "candidate_count": 91,
+      "playable_count": 0
     },
     {
       "source": "audius_match",
       "status": "ok",
-      "scanned_count": 96,
-      "resolved_count": 1,
-      "playable_count": 1226
+      "scanned_count": 400,
+      "resolved_count": 2,
+      "playable_count": 460
     },
     {
       "source": "schedule_pool",
       "status": "playable_only",
-      "candidate_count": 1226,
-      "playable_count": 1226
+      "candidate_count": 460,
+      "playable_count": 460
     }
   ],
-  "track_count": 347,
-  "playable_track_count": 347,
+  "track_count": 350,
+  "playable_track_count": 350,
   "reserve_track_count": 12
 }
