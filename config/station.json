@@ -36,7 +36,7 @@
       "Jazz": 30
     },
     "search_limit": 8,
-    "candidate_resolution_limit": 96,
+    "candidate_resolution_limit": 400,
     "resolution_min_score": 82
   },
   "deezer": {
