@@ -2,23 +2,23 @@
   "schema_version": 1,
   "station_id": "hits-global",
   "timezone": "UTC",
-  "generated_at": "2026-05-28T01:22:56Z",
+  "generated_at": "2026-05-29T01:33:09Z",
   "generator_version": "prismwave-hits/0.2.0",
-  "active_edition_date": "2026-05-29",
-  "schedule_path": "schedules/2026-05-29.json",
-  "schedule_url": "https://raw.githubusercontent.com/shanbei2033/prismwave-hits/main/schedules/2026-05-29.json",
+  "active_edition_date": "2026-05-30",
+  "schedule_path": "schedules/2026-05-30.json",
+  "schedule_url": "https://raw.githubusercontent.com/shanbei2033/prismwave-hits/main/schedules/2026-05-30.json",
   "service_windows": [
     {
       "label": "on_air",
-      "start_at": "2026-05-29T00:00:00Z",
-      "end_at": "2026-05-29T20:00:00Z"
+      "start_at": "2026-05-30T00:00:00Z",
+      "end_at": "2026-05-30T20:00:00Z"
     }
   ],
   "off_air_windows": [
     {
       "label": "overnight_maintenance",
-      "start_at": "2026-05-29T20:00:00Z",
-      "end_at": "2026-05-30T00:00:00Z"
+      "start_at": "2026-05-30T20:00:00Z",
+      "end_at": "2026-05-31T00:00:00Z"
     }
   ],
   "source_snapshot": [
@@ -187,7 +187,7 @@
       "scope": "Rock",
       "status": "ok",
       "candidate_count": 40,
-      "playable_count": 40
+      "playable_count": 39
     },
     {
       "source": "audius_genre",
@@ -261,24 +261,24 @@
     {
       "source": "itunes_rss",
       "status": "ok",
-      "candidate_count": 86,
+      "candidate_count": 87,
       "playable_count": 0
     },
     {
       "source": "audius_match",
-      "status": "ok",
+      "status": "partial:2_errors",
       "scanned_count": 400,
-      "resolved_count": 3,
-      "playable_count": 465
+      "resolved_count": 4,
+      "playable_count": 461
     },
     {
       "source": "schedule_pool",
       "status": "playable_only",
-      "candidate_count": 465,
-      "playable_count": 465
+      "candidate_count": 461,
+      "playable_count": 461
     }
   ],
-  "track_count": 353,
-  "playable_track_count": 353,
+  "track_count": 351,
+  "playable_track_count": 351,
   "reserve_track_count": 12
 }
