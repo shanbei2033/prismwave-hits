@@ -1,0 +1,2980 @@
+{
+  "schemaVersion": 1,
+  "generatorVersion": "prismwave-home/0.1.0",
+  "generatedAt": "2026-05-31T03:59:36Z",
+  "editionDate": "2026-05-31",
+  "tags": [
+    {
+      "name": "rock",
+      "count": 4072010,
+      "weight": 1.0
+    },
+    {
+      "name": "electronic",
+      "count": 2503079,
+      "weight": 0.6147
+    },
+    {
+      "name": "seen live",
+      "count": 2196018,
+      "weight": 0.5393
+    },
+    {
+      "name": "alternative",
+      "count": 2131989,
+      "weight": 0.5236
+    },
+    {
+      "name": "pop",
+      "count": 2085938,
+      "weight": 0.5123
+    },
+    {
+      "name": "indie",
+      "count": 2066293,
+      "weight": 0.5074
+    },
+    {
+      "name": "female vocalists",
+      "count": 1635045,
+      "weight": 0.4015
+    },
+    {
+      "name": "metal",
+      "count": 1306855,
+      "weight": 0.3209
+    },
+    {
+      "name": "alternative rock",
+      "count": 1233472,
+      "weight": 0.3029
+    },
+    {
+      "name": "jazz",
+      "count": 1197977,
+      "weight": 0.2942
+    },
+    {
+      "name": "classic rock",
+      "count": 1149563,
+      "weight": 0.2823
+    },
+    {
+      "name": "ambient",
+      "count": 1127953,
+      "weight": 0.277
+    },
+    {
+      "name": "experimental",
+      "count": 1114139,
+      "weight": 0.2736
+    },
+    {
+      "name": "folk",
+      "count": 960315,
+      "weight": 0.2358
+    },
+    {
+      "name": "indie rock",
+      "count": 931800,
+      "weight": 0.2288
+    },
+    {
+      "name": "punk",
+      "count": 921152,
+      "weight": 0.2262
+    },
+    {
+      "name": "Hip-Hop",
+      "count": 921146,
+      "weight": 0.2262
+    },
+    {
+      "name": "hard rock",
+      "count": 916494,
+      "weight": 0.2251
+    },
+    {
+      "name": "black metal",
+      "count": 907855,
+      "weight": 0.223
+    },
+    {
+      "name": "instrumental",
+      "count": 890713,
+      "weight": 0.2187
+    },
+    {
+      "name": "singer-songwriter",
+      "count": 858922,
+      "weight": 0.2109
+    },
+    {
+      "name": "dance",
+      "count": 821346,
+      "weight": 0.2017
+    },
+    {
+      "name": "80s",
+      "count": 798480,
+      "weight": 0.1961
+    },
+    {
+      "name": "death metal",
+      "count": 762962,
+      "weight": 0.1874
+    },
+    {
+      "name": "Progressive rock",
+      "count": 756445,
+      "weight": 0.1858
+    },
+    {
+      "name": "heavy metal",
+      "count": 753787,
+      "weight": 0.1851
+    },
+    {
+      "name": "hardcore",
+      "count": 722773,
+      "weight": 0.1775
+    },
+    {
+      "name": "british",
+      "count": 700823,
+      "weight": 0.1721
+    },
+    {
+      "name": "soul",
+      "count": 696916,
+      "weight": 0.1711
+    },
+    {
+      "name": "chillout",
+      "count": 652786,
+      "weight": 0.1603
+    },
+    {
+      "name": "electronica",
+      "count": 639343,
+      "weight": 0.157
+    },
+    {
+      "name": "rap",
+      "count": 628082,
+      "weight": 0.1542
+    },
+    {
+      "name": "industrial",
+      "count": 586479,
+      "weight": 0.144
+    },
+    {
+      "name": "punk rock",
+      "count": 582782,
+      "weight": 0.1431
+    },
+    {
+      "name": "Classical",
+      "count": 580937,
+      "weight": 0.1427
+    },
+    {
+      "name": "Soundtrack",
+      "count": 578089,
+      "weight": 0.142
+    },
+    {
+      "name": "blues",
+      "count": 556443,
+      "weight": 0.1367
+    },
+    {
+      "name": "thrash metal",
+      "count": 526976,
+      "weight": 0.1294
+    },
+    {
+      "name": "90s",
+      "count": 501515,
+      "weight": 0.1232
+    },
+    {
+      "name": "metalcore",
+      "count": 501337,
+      "weight": 0.1231
+    }
+  ],
+  "sections": [
+    {
+      "id": "global-hot",
+      "title": {
+        "zh-Hans": "今日热门",
+        "zh-Hant": "今日熱門",
+        "en-US": "Global Hits"
+      },
+      "subtitle": "Powered by Last.fm",
+      "tracks": [
+        {
+          "title": "Iris",
+          "artist": "The Goo Goo Dolls",
+          "album": "",
+          "durationMs": 289000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_global"
+          ]
+        },
+        {
+          "title": "Dreams - 2004 Remaster",
+          "artist": "Fleetwood Mac",
+          "album": "",
+          "durationMs": 257000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_global"
+          ]
+        },
+        {
+          "title": "Beat It",
+          "artist": "Michael Jackson",
+          "album": "",
+          "durationMs": 258000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_global"
+          ]
+        },
+        {
+          "title": "Like Animals",
+          "artist": "BTS",
+          "album": "",
+          "durationMs": 189000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_global"
+          ]
+        },
+        {
+          "title": "Billie Jean",
+          "artist": "Michael Jackson",
+          "album": "",
+          "durationMs": 294000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_global"
+          ]
+        },
+        {
+          "title": "Pink + White",
+          "artist": "Frank Ocean",
+          "album": "",
+          "durationMs": 290000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_global"
+          ]
+        },
+        {
+          "title": "FYA",
+          "artist": "BTS",
+          "album": "",
+          "durationMs": 180000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_global"
+          ]
+        },
+        {
+          "title": "Janice STFU",
+          "artist": "Drake",
+          "album": "",
+          "durationMs": 237000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_global"
+          ]
+        },
+        {
+          "title": "SWIM",
+          "artist": "BTS",
+          "album": "",
+          "durationMs": 159000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_global"
+          ]
+        },
+        {
+          "title": "SS26",
+          "artist": "Charli xcx",
+          "album": "",
+          "durationMs": 167000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_global"
+          ]
+        },
+        {
+          "title": "Girl Like Me",
+          "artist": "PinkPantheress",
+          "album": "",
+          "durationMs": 145000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_global"
+          ]
+        },
+        {
+          "title": "hate that i made you love me",
+          "artist": "Ariana Grande",
+          "album": "",
+          "durationMs": 210000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_global"
+          ]
+        },
+        {
+          "title": "No One Noticed",
+          "artist": "The Marías",
+          "album": "",
+          "durationMs": 236000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_global"
+          ]
+        },
+        {
+          "title": "Babydoll",
+          "artist": "Dominic Fike",
+          "album": "",
+          "durationMs": 120000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_global"
+          ]
+        },
+        {
+          "title": "Beauty and a Beat",
+          "artist": "Justin Bieber",
+          "album": "",
+          "durationMs": 144000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_global"
+          ]
+        },
+        {
+          "title": "they don’t know ’bout us",
+          "artist": "BTS",
+          "album": "",
+          "durationMs": 164000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_global"
+          ]
+        },
+        {
+          "title": "The Adults Are Talking",
+          "artist": "The Strokes",
+          "album": "",
+          "durationMs": 349000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_global"
+          ]
+        },
+        {
+          "title": "See You Again (feat. Kali Uchis)",
+          "artist": "Tyler, The Creator",
+          "album": "",
+          "durationMs": 180000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_global"
+          ]
+        },
+        {
+          "title": "Duvet",
+          "artist": "bôa",
+          "album": "",
+          "durationMs": 203000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_global"
+          ]
+        },
+        {
+          "title": "Manchild",
+          "artist": "Sabrina Carpenter",
+          "album": "",
+          "durationMs": 213000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_global"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "audius-trending",
+      "title": {
+        "zh-Hans": "Audius 流行",
+        "zh-Hant": "Audius 流行",
+        "en-US": "Trending on Audius"
+      },
+      "subtitle": "Streamable now",
+      "tracks": [
+        {
+          "title": "SYMMETRY 2026 DJ COMP",
+          "artist": "Kill Your Utopia",
+          "album": "",
+          "durationMs": 420000,
+          "coverUrl": "https://creatornode2.audius.co/content/baeaaaiqsedfq5pgiy5cp5wfb7aiw6z4mysqffhoz6groltchwbjrhorr6jkrw/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/ZPoPxo7/stream",
+          "audioProvider": "audius",
+          "providerTrackId": "ZPoPxo7",
+          "sourceTags": [
+            "audius",
+            "audius_trending"
+          ]
+        },
+        {
+          "title": "DNB Dancefloor WARMUP MIX1 MAY 2026 - JUMPUP HIGH-ENERGY MUSIC",
+          "artist": "DUBAYCE (do-bass)",
+          "album": "",
+          "durationMs": 420000,
+          "coverUrl": "https://creatornode2.audius.co/content/baeaaaiqsecgq42xmpc3izulxvqaxpjsphlvh3saq4kh46h632b4km3bwfhxto/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/KbM9oOO/stream",
+          "audioProvider": "audius",
+          "providerTrackId": "KbM9oOO",
+          "sourceTags": [
+            "audius",
+            "audius_trending"
+          ]
+        },
+        {
+          "title": "SMOKE (LACRABLACK FLIP)",
+          "artist": "SKRILLEX, ISOXO, TEEZANDOS, CRISTALE",
+          "album": "",
+          "durationMs": 128000,
+          "coverUrl": "https://audius-creator-17.theblueprint.xyz/content/baeaaaiqsed3jntvmozuvj4pboh45omjuk6rcvi4f2btxn2a5oefnn2kyvu3jo/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/qJXGRRM/stream",
+          "audioProvider": "audius",
+          "providerTrackId": "qJXGRRM",
+          "sourceTags": [
+            "audius",
+            "audius_trending"
+          ]
+        },
+        {
+          "title": "Desperate",
+          "artist": "Hexagy",
+          "album": "",
+          "durationMs": 230000,
+          "coverUrl": "https://val004.open-audio-validator.com/content/baeaaaiqsedfeck7rh33hije4s34uq646c6bdfx5g4z57gx66wk35lqd3o36zu/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/KdkBXx9/stream",
+          "audioProvider": "audius",
+          "providerTrackId": "KdkBXx9",
+          "sourceTags": [
+            "audius",
+            "audius_trending"
+          ]
+        },
+        {
+          "title": "TAKE OVER CONTROL (citySTRAY REMIX)",
+          "artist": "citySTRAY",
+          "album": "",
+          "durationMs": 156000,
+          "coverUrl": "https://audius-content-14.figment.io/content/baeaaaiqsedusqkst3yddqarkemp45nk4mimqsrzcpy3c3ya7gy3rcm5udrete/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/3AVbkvZ/stream",
+          "audioProvider": "audius",
+          "providerTrackId": "3AVbkvZ",
+          "sourceTags": [
+            "audius",
+            "audius_trending"
+          ]
+        },
+        {
+          "title": "BONNIE X CLYDE - When The Silence Breaks (Duwsko Remix)",
+          "artist": "Duwsko",
+          "album": "",
+          "durationMs": 149000,
+          "coverUrl": "https://val009.open-audio-validator.com/content/baeaaaiqseaqnxau2lxqozv3mma52cxoayabeavmnutbvkgkteeqbw6hdcixzo/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/VKlypE9/stream",
+          "audioProvider": "audius",
+          "providerTrackId": "VKlypE9",
+          "sourceTags": [
+            "audius",
+            "audius_trending"
+          ]
+        },
+        {
+          "title": "Fede Gamboa - OUR EYES (original mix)",
+          "artist": "BINAP",
+          "album": "",
+          "durationMs": 174000,
+          "coverUrl": "https://audius-creator-9.theblueprint.xyz/content/baeaaaiqsecngqfa3f7un6emp3c4xt27zzvdmhhihph25rtlpypddbeig3wa2w/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/6EP3YzG/stream",
+          "audioProvider": "audius",
+          "providerTrackId": "6EP3YzG",
+          "sourceTags": [
+            "audius",
+            "audius_trending"
+          ]
+        },
+        {
+          "title": "The Montauk",
+          "artist": "Gramatik Stehreo",
+          "album": "",
+          "durationMs": 338000,
+          "coverUrl": "https://audius-content-13.figment.io/content/baeaaaiqsea3s5jrw5krna77o74r5m3iye6vovfukqh4yg4jnvn3r2l3azip44/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/lW4jPZZ/stream",
+          "audioProvider": "audius",
+          "providerTrackId": "lW4jPZZ",
+          "sourceTags": [
+            "audius",
+            "audius_trending"
+          ]
+        },
+        {
+          "title": "LOSING MY MIND",
+          "artist": "RAIN ESSEX",
+          "album": "",
+          "durationMs": 209000,
+          "coverUrl": "https://creatornode2.audius.co/content/baeaaaiqsearmjrxnlqndb5tjbkd7uqwgrfmk2x4rltcbicu2v5mq6p3dnng5u/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/BZaMx8J/stream",
+          "audioProvider": "audius",
+          "providerTrackId": "BZaMx8J",
+          "sourceTags": [
+            "audius",
+            "audius_trending"
+          ]
+        },
+        {
+          "title": "Las pirañas",
+          "artist": "Solar",
+          "album": "",
+          "durationMs": 292000,
+          "coverUrl": "https://audius-creator-8.theblueprint.xyz/content/baeaaaiqsearu2agrnyplvy7y5hrv2frjtp33j3poxs2dtelgy575hbkrtaun6/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/0AWyb82/stream",
+          "audioProvider": "audius",
+          "providerTrackId": "0AWyb82",
+          "sourceTags": [
+            "audius",
+            "audius_trending"
+          ]
+        },
+        {
+          "title": "Lifetime (Behind Stories Remix)",
+          "artist": "Repiet & Julia Kleijn",
+          "album": "",
+          "durationMs": 193000,
+          "coverUrl": "https://val010.open-audio-validator.com/content/baeaaaiqseco5ijzw7tw33kezxogf52wr5tlkhl2zpunzc7bly2j3oplvv7kkm/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/3RXX4a8/stream",
+          "audioProvider": "audius",
+          "providerTrackId": "3RXX4a8",
+          "sourceTags": [
+            "audius",
+            "audius_trending"
+          ]
+        },
+        {
+          "title": "Siren's Wake",
+          "artist": "Underson",
+          "album": "",
+          "durationMs": 182000,
+          "coverUrl": "https://creatornode2.audius.co/content/baeaaaiqseb3o54wjc77srvskyw5rc5msqwcxmnsxihgydl7nedufcgvbesywe/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/amY95lg/stream",
+          "audioProvider": "audius",
+          "providerTrackId": "amY95lg",
+          "sourceTags": [
+            "audius",
+            "audius_trending"
+          ]
+        },
+        {
+          "title": "Mao Silgrand - Step Back (Short Mix)",
+          "artist": "Crypto Ravers",
+          "album": "",
+          "durationMs": 186000,
+          "coverUrl": "https://audius-content-14.figment.io/content/baeaaaiqsedpxo4owgulougkymulrjhxagfl5brpgdojfzv4px4cgb35o3lufo/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/Wbw29Pl/stream",
+          "audioProvider": "audius",
+          "providerTrackId": "Wbw29Pl",
+          "sourceTags": [
+            "audius",
+            "audius_trending"
+          ]
+        },
+        {
+          "title": "Desires (I Know You Love Me Too)",
+          "artist": "LOUK",
+          "album": "",
+          "durationMs": 322000,
+          "coverUrl": "https://audius-content-11.figment.io/content/baeaaaiqseajwd5o5ab3gmfo3sy47gpr3wdcv3ae7q6kqf4fo25qugq7tqdi5q/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/gWMV7bZ/stream",
+          "audioProvider": "audius",
+          "providerTrackId": "gWMV7bZ",
+          "sourceTags": [
+            "audius",
+            "audius_trending"
+          ]
+        },
+        {
+          "title": "Dont Be Shy - Rixx, Mr Strings",
+          "artist": "Rixx",
+          "album": "",
+          "durationMs": 288000,
+          "coverUrl": "https://val017.open-audio-validator.com/content/baeaaaiqsedxyehqxldgqcf7x2xbboycl6ggspfj6dyctkvtqytpfunb4gej2g/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/dpb3Elm/stream",
+          "audioProvider": "audius",
+          "providerTrackId": "dpb3Elm",
+          "sourceTags": [
+            "audius",
+            "audius_trending"
+          ]
+        },
+        {
+          "title": "MPH - Until The Morning (escuderia edit)",
+          "artist": "escuderia",
+          "album": "",
+          "durationMs": 260000,
+          "coverUrl": "https://creatornode.audius.co/content/baeaaaiqseb6z7ezayvivz3tvqyyo276cdqyll3tqnxexhl22aujsf4yblzr4g/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/Yaboo9r/stream",
+          "audioProvider": "audius",
+          "providerTrackId": "Yaboo9r",
+          "sourceTags": [
+            "audius",
+            "audius_trending"
+          ]
+        },
+        {
+          "title": "Like This (KEEL EDIT)",
+          "artist": "Levity, NITTI",
+          "album": "",
+          "durationMs": 134000,
+          "coverUrl": "https://creatornode2.audius.co/content/baeaaaiqseaoyjy7tvqnaqvmgmclrm3qjzszvh3nyhb5ilctctyho7nadt6rzy/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/Qbbgqx9/stream",
+          "audioProvider": "audius",
+          "providerTrackId": "Qbbgqx9",
+          "sourceTags": [
+            "audius",
+            "audius_trending"
+          ]
+        },
+        {
+          "title": "ERO DANCE",
+          "artist": "kstko",
+          "album": "",
+          "durationMs": 146000,
+          "coverUrl": "https://audius-figment-1-validator-19.figment.io/content/baeaaaiqseba7m34e236sczvoaielse4hypadwpu3bzuetl3mjpro77wdtjkbk/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/6xJXNab/stream",
+          "audioProvider": "audius",
+          "providerTrackId": "6xJXNab",
+          "sourceTags": [
+            "audius",
+            "audius_trending"
+          ]
+        },
+        {
+          "title": "Justin Bieber - One Less Lonely Girl (BONNIE X CLYDE REMIX)",
+          "artist": "BONNIE X CLYDE",
+          "album": "",
+          "durationMs": 155000,
+          "coverUrl": "https://creatornode2.audius.co/content/baeaaaiqsebwcsz44ogjz5tnx2w4gmblgozmazzrcvhsq5v4a25rekck3p2d2m/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/E6bM2N/stream",
+          "audioProvider": "audius",
+          "providerTrackId": "E6bM2N",
+          "sourceTags": [
+            "audius",
+            "audius_trending"
+          ]
+        },
+        {
+          "title": "ELIMINATE - MULA (FOXEN BOOTY BOUNCE MIX)",
+          "artist": "Foxen 🦊",
+          "album": "",
+          "durationMs": 140000,
+          "coverUrl": "https://audius-content-6.figment.io/content/baeaaaiqsecoordcs3wi5qavtmrjxqgks6f6xekb44z2zjk2mhsxmlcnbut2la/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/pjvy63X/stream",
+          "audioProvider": "audius",
+          "providerTrackId": "pjvy63X",
+          "sourceTags": [
+            "audius",
+            "audius_trending"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tag-pop",
+      "title": {
+        "zh-Hans": "流行乐",
+        "zh-Hant": "流行樂",
+        "en-US": "Pop"
+      },
+      "subtitle": "Top tracks · pop",
+      "tracks": [
+        {
+          "title": "no tears left to cry",
+          "artist": "Ariana Grande",
+          "album": "",
+          "durationMs": 223000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:pop"
+          ]
+        },
+        {
+          "title": "Party in the U.S.A.",
+          "artist": "Miley Cyrus",
+          "album": "",
+          "durationMs": 202000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:pop"
+          ]
+        },
+        {
+          "title": "Lovefool",
+          "artist": "The Cardigans",
+          "album": "",
+          "durationMs": 196000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:pop"
+          ]
+        },
+        {
+          "title": "Baby",
+          "artist": "Justin Bieber",
+          "album": "",
+          "durationMs": 216000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:pop"
+          ]
+        },
+        {
+          "title": "Judas",
+          "artist": "Lady Gaga",
+          "album": "",
+          "durationMs": 249000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:pop"
+          ]
+        },
+        {
+          "title": "Espresso",
+          "artist": "Sabrina Carpenter",
+          "album": "",
+          "durationMs": 175000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:pop"
+          ]
+        },
+        {
+          "title": "Promiscuous",
+          "artist": "Nelly Furtado",
+          "album": "",
+          "durationMs": 243000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:pop"
+          ]
+        },
+        {
+          "title": "Unwritten",
+          "artist": "Natasha Bedingfield",
+          "album": "",
+          "durationMs": 255000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:pop"
+          ]
+        },
+        {
+          "title": "Womanizer",
+          "artist": "Britney Spears",
+          "album": "",
+          "durationMs": 224000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:pop"
+          ]
+        },
+        {
+          "title": "Teenage Dream",
+          "artist": "Katy Perry",
+          "album": "",
+          "durationMs": 227000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:pop"
+          ]
+        },
+        {
+          "title": "Dark Horse",
+          "artist": "Katy Perry",
+          "album": "",
+          "durationMs": 212000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:pop"
+          ]
+        },
+        {
+          "title": "One More Night",
+          "artist": "Maroon 5",
+          "album": "",
+          "durationMs": 221000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:pop"
+          ]
+        },
+        {
+          "title": "Since U Been Gone",
+          "artist": "Kelly Clarkson",
+          "album": "",
+          "durationMs": 189000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:pop"
+          ]
+        },
+        {
+          "title": "All the Things She Said",
+          "artist": "t.A.T.u.",
+          "album": "",
+          "durationMs": 214000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:pop"
+          ]
+        },
+        {
+          "title": "The Sweet Escape",
+          "artist": "Gwen Stefani",
+          "album": "",
+          "durationMs": 246000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:pop"
+          ]
+        },
+        {
+          "title": "Don't Stop 'Til You Get Enough",
+          "artist": "Michael Jackson",
+          "album": "",
+          "durationMs": 364000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:pop"
+          ]
+        },
+        {
+          "title": "Call Me Maybe",
+          "artist": "Carly Rae Jepsen",
+          "album": "",
+          "durationMs": 193000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:pop"
+          ]
+        },
+        {
+          "title": "Only Girl (In the World)",
+          "artist": "Rihanna",
+          "album": "",
+          "durationMs": 235000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:pop"
+          ]
+        },
+        {
+          "title": "P.Y.T. (Pretty Young Thing)",
+          "artist": "Michael Jackson",
+          "album": "",
+          "durationMs": 238000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:pop"
+          ]
+        },
+        {
+          "title": "Remember the Time",
+          "artist": "Michael Jackson",
+          "album": "",
+          "durationMs": 242000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:pop"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tag-rock",
+      "title": {
+        "zh-Hans": "摇滚",
+        "zh-Hant": "搖滾",
+        "en-US": "Rock"
+      },
+      "subtitle": "Top tracks · rock",
+      "tracks": [
+        {
+          "title": "In the End",
+          "artist": "Linkin Park",
+          "album": "",
+          "durationMs": 216000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:rock"
+          ]
+        },
+        {
+          "title": "It Ain't Over 'til It's Over",
+          "artist": "Lenny Kravitz",
+          "album": "",
+          "durationMs": 242000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:rock"
+          ]
+        },
+        {
+          "title": "All I Wanted",
+          "artist": "Paramore",
+          "album": "",
+          "durationMs": 225000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:rock"
+          ]
+        },
+        {
+          "title": "Misery Business",
+          "artist": "Paramore",
+          "album": "",
+          "durationMs": 211000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:rock"
+          ]
+        },
+        {
+          "title": "Yellow",
+          "artist": "Coldplay",
+          "album": "",
+          "durationMs": 266000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:rock"
+          ]
+        },
+        {
+          "title": "Still Into You",
+          "artist": "Paramore",
+          "album": "",
+          "durationMs": 216000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:rock"
+          ]
+        },
+        {
+          "title": "Ain't It Fun",
+          "artist": "Paramore",
+          "album": "",
+          "durationMs": 296000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:rock"
+          ]
+        },
+        {
+          "title": "Scar Tissue",
+          "artist": "Red Hot Chili Peppers",
+          "album": "",
+          "durationMs": 215000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:rock"
+          ]
+        },
+        {
+          "title": "Bring Me to Life",
+          "artist": "Evanescence",
+          "album": "",
+          "durationMs": 235000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:rock"
+          ]
+        },
+        {
+          "title": "Livin' on a Prayer",
+          "artist": "Bon Jovi",
+          "album": "",
+          "durationMs": 250000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:rock"
+          ]
+        },
+        {
+          "title": "Decode",
+          "artist": "Paramore",
+          "album": "",
+          "durationMs": 261000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:rock"
+          ]
+        },
+        {
+          "title": "Helena",
+          "artist": "My Chemical Romance",
+          "album": "",
+          "durationMs": 204000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:rock"
+          ]
+        },
+        {
+          "title": "One Last Breath",
+          "artist": "Creed",
+          "album": "",
+          "durationMs": 239000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:rock"
+          ]
+        },
+        {
+          "title": "Animal I Have Become",
+          "artist": "Three Days Grace",
+          "album": "",
+          "durationMs": 231000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:rock"
+          ]
+        },
+        {
+          "title": "Faint",
+          "artist": "Linkin Park",
+          "album": "",
+          "durationMs": 162000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:rock"
+          ]
+        },
+        {
+          "title": "Sparks",
+          "artist": "Coldplay",
+          "album": "",
+          "durationMs": 227000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:rock"
+          ]
+        },
+        {
+          "title": "Smells Like Teen Spirit",
+          "artist": "Nirvana",
+          "album": "",
+          "durationMs": 301000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:rock"
+          ]
+        },
+        {
+          "title": "Dance, Dance",
+          "artist": "Fall Out Boy",
+          "album": "",
+          "durationMs": 181000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:rock"
+          ]
+        },
+        {
+          "title": "The Reason",
+          "artist": "Hoobastank",
+          "album": "",
+          "durationMs": 232000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:rock"
+          ]
+        },
+        {
+          "title": "Somebody Told Me",
+          "artist": "The Killers",
+          "album": "",
+          "durationMs": 200000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:rock"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tag-electronic",
+      "title": {
+        "zh-Hans": "电子",
+        "zh-Hant": "電子",
+        "en-US": "Electronic"
+      },
+      "subtitle": "Top tracks · electronic",
+      "tracks": [
+        {
+          "title": "Crimewave",
+          "artist": "Crystal Castles",
+          "album": "",
+          "durationMs": 258000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:electronic"
+          ]
+        },
+        {
+          "title": "One More Time",
+          "artist": "Daft Punk",
+          "album": "",
+          "durationMs": 235000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:electronic"
+          ]
+        },
+        {
+          "title": "Digital Love",
+          "artist": "Daft Punk",
+          "album": "",
+          "durationMs": 300000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:electronic"
+          ]
+        },
+        {
+          "title": "Outside (feat. Ellie Goulding)",
+          "artist": "Calvin Harris",
+          "album": "",
+          "durationMs": 226000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:electronic"
+          ]
+        },
+        {
+          "title": "Sexy Boy",
+          "artist": "Air",
+          "album": "",
+          "durationMs": 300000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:electronic"
+          ]
+        },
+        {
+          "title": "Nightcall",
+          "artist": "Kavinsky",
+          "album": "",
+          "durationMs": 255000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:electronic"
+          ]
+        },
+        {
+          "title": "How Deep Is Your Love",
+          "artist": "Calvin Harris",
+          "album": "",
+          "durationMs": 212000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:electronic"
+          ]
+        },
+        {
+          "title": "Kids",
+          "artist": "MGMT",
+          "album": "",
+          "durationMs": 304000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:electronic"
+          ]
+        },
+        {
+          "title": "Aerodynamic",
+          "artist": "Daft Punk",
+          "album": "",
+          "durationMs": 207000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:electronic"
+          ]
+        },
+        {
+          "title": "House of Balloons / Glass Table Girls",
+          "artist": "The Weeknd",
+          "album": "",
+          "durationMs": 405000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:electronic"
+          ]
+        },
+        {
+          "title": "Venus as a Boy",
+          "artist": "Björk",
+          "album": "",
+          "durationMs": 282000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:electronic"
+          ]
+        },
+        {
+          "title": "Dance Yrself Clean",
+          "artist": "LCD Soundsystem",
+          "album": "",
+          "durationMs": 420000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:electronic"
+          ]
+        },
+        {
+          "title": "Fireflies",
+          "artist": "Owl City",
+          "album": "",
+          "durationMs": 228000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:electronic"
+          ]
+        },
+        {
+          "title": "Don't Trust Me",
+          "artist": "3OH!3",
+          "album": "",
+          "durationMs": 192000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:electronic"
+          ]
+        },
+        {
+          "title": "Disparate Youth",
+          "artist": "Santigold",
+          "album": "",
+          "durationMs": 284000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:electronic"
+          ]
+        },
+        {
+          "title": "Vanished",
+          "artist": "Crystal Castles",
+          "album": "",
+          "durationMs": 242000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:electronic"
+          ]
+        },
+        {
+          "title": "I'm God",
+          "artist": "Clams Casino",
+          "album": "",
+          "durationMs": 277000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:electronic"
+          ]
+        },
+        {
+          "title": "Rather Be (feat. Jess Glynne)",
+          "artist": "Clean Bandit",
+          "album": "",
+          "durationMs": 227000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:electronic"
+          ]
+        },
+        {
+          "title": "Breathe",
+          "artist": "The Prodigy",
+          "album": "",
+          "durationMs": 239000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:electronic"
+          ]
+        },
+        {
+          "title": "Rhinestone Eyes",
+          "artist": "Gorillaz",
+          "album": "",
+          "durationMs": 200000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:electronic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tag-indie",
+      "title": {
+        "zh-Hans": "独立",
+        "zh-Hant": "獨立",
+        "en-US": "Indie"
+      },
+      "subtitle": "Top tracks · indie",
+      "tracks": [
+        {
+          "title": "Young Folks",
+          "artist": "Peter Bjorn and John",
+          "album": "",
+          "durationMs": 276000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:indie"
+          ]
+        },
+        {
+          "title": "Royals",
+          "artist": "Lorde",
+          "album": "",
+          "durationMs": 189000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:indie"
+          ]
+        },
+        {
+          "title": "Radio",
+          "artist": "Lana Del Rey",
+          "album": "",
+          "durationMs": 215000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:indie"
+          ]
+        },
+        {
+          "title": "I'll Believe in Anything",
+          "artist": "Wolf Parade",
+          "album": "",
+          "durationMs": 276000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:indie"
+          ]
+        },
+        {
+          "title": "New Perspective",
+          "artist": "Panic! at the Disco",
+          "album": "",
+          "durationMs": 227000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:indie"
+          ]
+        },
+        {
+          "title": "Stressed Out",
+          "artist": "Twenty One Pilots",
+          "album": "",
+          "durationMs": 202000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:indie"
+          ]
+        },
+        {
+          "title": "The Night We Met",
+          "artist": "Lord Huron",
+          "album": "",
+          "durationMs": 208000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:indie"
+          ]
+        },
+        {
+          "title": "Young and Beautiful",
+          "artist": "Lana Del Rey",
+          "album": "",
+          "durationMs": 237000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:indie"
+          ]
+        },
+        {
+          "title": "Undercover Martyn",
+          "artist": "Two Door Cinema Club",
+          "album": "",
+          "durationMs": 162000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:indie"
+          ]
+        },
+        {
+          "title": "What You Know",
+          "artist": "Two Door Cinema Club",
+          "album": "",
+          "durationMs": 190000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:indie"
+          ]
+        },
+        {
+          "title": "505",
+          "artist": "Arctic Monkeys",
+          "album": "",
+          "durationMs": 305000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:indie"
+          ]
+        },
+        {
+          "title": "Sweet Disposition",
+          "artist": "The Temper Trap",
+          "album": "",
+          "durationMs": 233000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:indie"
+          ]
+        },
+        {
+          "title": "Afraid",
+          "artist": "The Neighbourhood",
+          "album": "",
+          "durationMs": 251000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:indie"
+          ]
+        },
+        {
+          "title": "In the Aeroplane Over the Sea",
+          "artist": "Neutral Milk Hotel",
+          "album": "",
+          "durationMs": 226000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:indie"
+          ]
+        },
+        {
+          "title": "Somebody That I Used to Know",
+          "artist": "Gotye",
+          "album": "",
+          "durationMs": 244000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:indie"
+          ]
+        },
+        {
+          "title": "My Kind of Woman",
+          "artist": "Mac DeMarco",
+          "album": "",
+          "durationMs": 194000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:indie"
+          ]
+        },
+        {
+          "title": "Born to Die",
+          "artist": "Lana Del Rey",
+          "album": "",
+          "durationMs": 286000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:indie"
+          ]
+        },
+        {
+          "title": "Lisztomania",
+          "artist": "Phoenix",
+          "album": "",
+          "durationMs": 243000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:indie"
+          ]
+        },
+        {
+          "title": "We Are Young (feat. Janelle Monáe)",
+          "artist": "fun.",
+          "album": "",
+          "durationMs": 250000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:indie"
+          ]
+        },
+        {
+          "title": "Take Me Out",
+          "artist": "Franz Ferdinand",
+          "album": "",
+          "durationMs": 237000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:indie"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tag-hiphop",
+      "title": {
+        "zh-Hans": "嘻哈",
+        "zh-Hant": "嘻哈",
+        "en-US": "Hip-Hop"
+      },
+      "subtitle": "Top tracks · hip-hop",
+      "tracks": [
+        {
+          "title": "POWER",
+          "artist": "Kanye West",
+          "album": "",
+          "durationMs": 292000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:hip-hop"
+          ]
+        },
+        {
+          "title": "Poetic Justice",
+          "artist": "Kendrick Lamar",
+          "album": "",
+          "durationMs": 300000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:hip-hop"
+          ]
+        },
+        {
+          "title": "Feel Good Inc.",
+          "artist": "Gorillaz",
+          "album": "",
+          "durationMs": 236000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:hip-hop"
+          ]
+        },
+        {
+          "title": "Where Is the Love",
+          "artist": "Black Eyed Peas",
+          "album": "",
+          "durationMs": 231000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:hip-hop"
+          ]
+        },
+        {
+          "title": "Marvins Room",
+          "artist": "Drake",
+          "album": "",
+          "durationMs": 347000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:hip-hop"
+          ]
+        },
+        {
+          "title": "Gold Digger",
+          "artist": "Kanye West",
+          "album": "",
+          "durationMs": 207000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:hip-hop"
+          ]
+        },
+        {
+          "title": "Flashing Lights",
+          "artist": "Kanye West",
+          "album": "",
+          "durationMs": 237000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:hip-hop"
+          ]
+        },
+        {
+          "title": "Headlines",
+          "artist": "Drake",
+          "album": "",
+          "durationMs": 235000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:hip-hop"
+          ]
+        },
+        {
+          "title": "Alright",
+          "artist": "Kendrick Lamar",
+          "album": "",
+          "durationMs": 219000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:hip-hop"
+          ]
+        },
+        {
+          "title": "Swimming Pools (Drank)",
+          "artist": "Kendrick Lamar",
+          "album": "",
+          "durationMs": 248000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:hip-hop"
+          ]
+        },
+        {
+          "title": "Dark Fantasy",
+          "artist": "Kanye West",
+          "album": "",
+          "durationMs": 120000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:hip-hop"
+          ]
+        },
+        {
+          "title": "Can't Tell Me Nothing",
+          "artist": "Kanye West",
+          "album": "",
+          "durationMs": 271000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:hip-hop"
+          ]
+        },
+        {
+          "title": "Trap Queen",
+          "artist": "Fetty Wap",
+          "album": "",
+          "durationMs": 222000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:hip-hop"
+          ]
+        },
+        {
+          "title": "One Beer",
+          "artist": "MF DOOM",
+          "album": "",
+          "durationMs": 258000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:hip-hop"
+          ]
+        },
+        {
+          "title": "Bitch, Don’t Kill My Vibe",
+          "artist": "Kendrick Lamar",
+          "album": "",
+          "durationMs": 310000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:hip-hop"
+          ]
+        },
+        {
+          "title": "Hey Ya!",
+          "artist": "OutKast",
+          "album": "",
+          "durationMs": 250000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:hip-hop"
+          ]
+        },
+        {
+          "title": "So Fresh, So Clean",
+          "artist": "OutKast",
+          "album": "",
+          "durationMs": 240000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:hip-hop"
+          ]
+        },
+        {
+          "title": "Hate It Or Love It",
+          "artist": "The Game",
+          "album": "",
+          "durationMs": 240000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:hip-hop"
+          ]
+        },
+        {
+          "title": "The Spins",
+          "artist": "Mac Miller",
+          "album": "",
+          "durationMs": 195000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:hip-hop"
+          ]
+        },
+        {
+          "title": "The Real Slim Shady",
+          "artist": "Eminem",
+          "album": "",
+          "durationMs": 280000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:hip-hop"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tag-rnb",
+      "title": {
+        "zh-Hans": "R&B / 灵魂乐",
+        "zh-Hant": "R&B / 靈魂樂",
+        "en-US": "R&B / Soul"
+      },
+      "subtitle": "Top tracks · rnb",
+      "tracks": [
+        {
+          "title": "Passionfruit",
+          "artist": "Drake",
+          "album": "",
+          "durationMs": 298000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:rnb"
+          ]
+        },
+        {
+          "title": "Hey Daddy (Daddy's Home)",
+          "artist": "Usher",
+          "album": "",
+          "durationMs": 183000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:rnb"
+          ]
+        },
+        {
+          "title": "Diva",
+          "artist": "Beyoncé",
+          "album": "",
+          "durationMs": 200000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:rnb"
+          ]
+        },
+        {
+          "title": "Swim Good",
+          "artist": "Frank Ocean",
+          "album": "",
+          "durationMs": 255000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:rnb"
+          ]
+        },
+        {
+          "title": "Nights Like This (feat. Ty Dolla $ign)",
+          "artist": "Kehlani",
+          "album": "",
+          "durationMs": 201000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:rnb"
+          ]
+        },
+        {
+          "title": "Beautiful Liar",
+          "artist": "Beyoncé",
+          "album": "",
+          "durationMs": 201000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:rnb"
+          ]
+        },
+        {
+          "title": "Obsessed",
+          "artist": "Mariah Carey",
+          "album": "",
+          "durationMs": 242000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:rnb"
+          ]
+        },
+        {
+          "title": "Die for You",
+          "artist": "The Weeknd",
+          "album": "",
+          "durationMs": 260000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:rnb"
+          ]
+        },
+        {
+          "title": "Novacane",
+          "artist": "Frank Ocean",
+          "album": "",
+          "durationMs": 420000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:rnb"
+          ]
+        },
+        {
+          "title": "Wait a Minute!",
+          "artist": "Willow",
+          "album": "",
+          "durationMs": 196000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:rnb"
+          ]
+        },
+        {
+          "title": "The Hills",
+          "artist": "The Weeknd",
+          "album": "",
+          "durationMs": 243000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:rnb"
+          ]
+        },
+        {
+          "title": "See You Again (feat. Kali Uchis)",
+          "artist": "Tyler, The Creator",
+          "album": "",
+          "durationMs": 180000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:rnb"
+          ]
+        },
+        {
+          "title": "American Boy",
+          "artist": "Estelle",
+          "album": "",
+          "durationMs": 244000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:rnb"
+          ]
+        },
+        {
+          "title": "Let Me Love You",
+          "artist": "Mario",
+          "album": "",
+          "durationMs": 251000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:rnb"
+          ]
+        },
+        {
+          "title": "My Love (feat. T.I.)",
+          "artist": "Justin Timberlake",
+          "album": "",
+          "durationMs": 276000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:rnb"
+          ]
+        },
+        {
+          "title": "Locked Out of Heaven",
+          "artist": "Bruno Mars",
+          "album": "",
+          "durationMs": 233000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:rnb"
+          ]
+        },
+        {
+          "title": "telepatía",
+          "artist": "Kali Uchis",
+          "album": "",
+          "durationMs": 160000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:rnb"
+          ]
+        },
+        {
+          "title": "No Scrubs",
+          "artist": "TLC",
+          "album": "",
+          "durationMs": 214000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:rnb"
+          ]
+        },
+        {
+          "title": "Bad Religion",
+          "artist": "Frank Ocean",
+          "album": "",
+          "durationMs": 177000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:rnb"
+          ]
+        },
+        {
+          "title": "Lost",
+          "artist": "Frank Ocean",
+          "album": "",
+          "durationMs": 283000,
+          "coverUrl": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "lastfm_tag:rnb"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "audius-monthly",
+      "title": {
+        "zh-Hans": "本月新声",
+        "zh-Hant": "本月新聲",
+        "en-US": "This Month on Audius"
+      },
+      "subtitle": "Audius monthly trending",
+      "tracks": [
+        {
+          "title": "Spiritless (w/Goosi)",
+          "artist": "Sycobox",
+          "album": "",
+          "durationMs": 270000,
+          "coverUrl": "https://audius-discovery-3.altego.net/content/baeaaaiqsecyhxe56odd5qo6mfitohxihhibnngqh3lepwg3nm7ofexvzq5kmw/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/8MBEp9v/stream",
+          "audioProvider": "audius",
+          "providerTrackId": "8MBEp9v",
+          "sourceTags": [
+            "audius",
+            "audius_trending_monthly"
+          ]
+        },
+        {
+          "title": "Outkast - ATLiens [LOUDWERX & JAMØ Remix]",
+          "artist": "LOUDWERX",
+          "album": "",
+          "durationMs": 174000,
+          "coverUrl": "https://creatornode2.audius.co/content/baeaaaiqsec3qvzgcdgp6ddk3vj54y5ztruhgcafyl6sjv7vjldjt5w3ckodya/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/WklgYXZ/stream",
+          "audioProvider": "audius",
+          "providerTrackId": "WklgYXZ",
+          "sourceTags": [
+            "audius",
+            "audius_trending_monthly"
+          ]
+        },
+        {
+          "title": "Viva La Dance The City T2  EP. 2  Los Grandes [EDM, ELECTRO, Dance]",
+          "artist": "Viva La Dance The City",
+          "album": "",
+          "durationMs": 420000,
+          "coverUrl": "https://audius-creator-7.theblueprint.xyz/content/baeaaaiqsedkds5vt2wxbxgv4qytud4bj7qku5or3yu3ipv3ghwk6kv7n5fwe4/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/70J9Q5r/stream",
+          "audioProvider": "audius",
+          "providerTrackId": "70J9Q5r",
+          "sourceTags": [
+            "audius",
+            "audius_trending_monthly"
+          ]
+        },
+        {
+          "title": "VORA x Steve Rodrigo - Into the light ft. Zot Belle",
+          "artist": "Zot Belle❄️",
+          "album": "",
+          "durationMs": 240000,
+          "coverUrl": "https://creatornode2.audius.co/content/baeaaaiqsebl5szsdnfx5z66kp4h5vbbctazjwlxfhvyoz3gn7wbbuhaxaqxoi/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/70O5Zx7/stream",
+          "audioProvider": "audius",
+          "providerTrackId": "70O5Zx7",
+          "sourceTags": [
+            "audius",
+            "audius_trending_monthly"
+          ]
+        },
+        {
+          "title": "Lychee",
+          "artist": "Jorei",
+          "album": "",
+          "durationMs": 251000,
+          "coverUrl": "https://creatornode2.audius.co/content/baeaaaiqsebmicdq6yq3ry64vwjnqmgolu7ji7hbkrcmy6axx3d6mwklwphll4/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/RK0PEK1/stream",
+          "audioProvider": "audius",
+          "providerTrackId": "RK0PEK1",
+          "sourceTags": [
+            "audius",
+            "audius_trending_monthly"
+          ]
+        },
+        {
+          "title": "Yata",
+          "artist": "Krxnic",
+          "album": "",
+          "durationMs": 120000,
+          "coverUrl": "https://audius-04.staked.cloud/content/baeaaaiqseb2trbvom5m5afvagdznevrsi6m47ruyncopbgp6uzgcev4jgxqjo/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/JZBzQ2p/stream",
+          "audioProvider": "audius",
+          "providerTrackId": "JZBzQ2p",
+          "sourceTags": [
+            "audius",
+            "audius_trending_monthly"
+          ]
+        },
+        {
+          "title": "3LAU - Don't Wait (Sheco Rework)",
+          "artist": "Sheco",
+          "album": "",
+          "durationMs": 227000,
+          "coverUrl": "https://creatornode2.audius.co/content/baeaaaiqseap7sfld6fhbrhdvi5ap56qubmget7xfrnyguyv6wvplnyhhmf6ho/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/MGvp5EB/stream",
+          "audioProvider": "audius",
+          "providerTrackId": "MGvp5EB",
+          "sourceTags": [
+            "audius",
+            "audius_trending_monthly"
+          ]
+        },
+        {
+          "title": "Fred Again... - OK OK (bauti & Dabow flip)",
+          "artist": "bauti",
+          "album": "",
+          "durationMs": 129000,
+          "coverUrl": "https://audius-01.staked.cloud/content/baeaaaiqsebb7yuyaw3afozdaaxni5j6pk7p2c7o3vhp2aa526sldgmsxdfkis/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/93vpz2j/stream",
+          "audioProvider": "audius",
+          "providerTrackId": "93vpz2j",
+          "sourceTags": [
+            "audius",
+            "audius_trending_monthly"
+          ]
+        },
+        {
+          "title": "AFTERLIGHT",
+          "artist": "Ryse Above All",
+          "album": "",
+          "durationMs": 286000,
+          "coverUrl": "https://val013.open-audio-validator.com/content/baeaaaiqsedwwje6hnlgejfwqmptuesvky5nbbhooyuktrbkrdqul6skmhmzfo/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/aZAAJMr/stream",
+          "audioProvider": "audius",
+          "providerTrackId": "aZAAJMr",
+          "sourceTags": [
+            "audius",
+            "audius_trending_monthly"
+          ]
+        },
+        {
+          "title": "SHE IS A DANCER - D’HOR FT BASTIÁN",
+          "artist": "D’hor",
+          "album": "",
+          "durationMs": 410000,
+          "coverUrl": "https://creatornode2.audius.co/content/baeaaaiqseag7kneczb2msngyibkfcw5cykfz5tciybtopn7rvyvz36msygj6e/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/95Agdl0/stream",
+          "audioProvider": "audius",
+          "providerTrackId": "95Agdl0",
+          "sourceTags": [
+            "audius",
+            "audius_trending_monthly"
+          ]
+        },
+        {
+          "title": "THIRTEEN",
+          "artist": "DARK VELVET",
+          "album": "",
+          "durationMs": 189000,
+          "coverUrl": "https://val020.open-audio-validator.com/content/baeaaaiqseam3dkhehsfkmhj2o2i4rjg563tp53a6o3zwiqcrocboyni43jrr6/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/bpARp7X/stream",
+          "audioProvider": "audius",
+          "providerTrackId": "bpARp7X",
+          "sourceTags": [
+            "audius",
+            "audius_trending_monthly"
+          ]
+        },
+        {
+          "title": "Maksee - Sirens (Martian Flip)",
+          "artist": "Martian",
+          "album": "",
+          "durationMs": 171000,
+          "coverUrl": "https://creatornode2.audius.co/content/baeaaaiqsedrb4z74ehtk57m7e4kyeexrhcl25npdquxforlswzxqdaum5z6oi/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/Q7qm96B/stream",
+          "audioProvider": "audius",
+          "providerTrackId": "Q7qm96B",
+          "sourceTags": [
+            "audius",
+            "audius_trending_monthly"
+          ]
+        },
+        {
+          "title": "SYMMETRY 2026 DJ COMP",
+          "artist": "Kill Your Utopia",
+          "album": "",
+          "durationMs": 420000,
+          "coverUrl": "https://creatornode2.audius.co/content/baeaaaiqsedfq5pgiy5cp5wfb7aiw6z4mysqffhoz6groltchwbjrhorr6jkrw/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/ZPoPxo7/stream",
+          "audioProvider": "audius",
+          "providerTrackId": "ZPoPxo7",
+          "sourceTags": [
+            "audius",
+            "audius_trending_monthly"
+          ]
+        },
+        {
+          "title": "Torch Bearers",
+          "artist": "Zaiaku",
+          "album": "",
+          "durationMs": 293000,
+          "coverUrl": "https://audius-creator-12.theblueprint.xyz/content/baeaaaiqsedd2bzffrcplhsnxvgdlodkzlefusx54tbnuwi4fv246df6hybzkq/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/l4843wZ/stream",
+          "audioProvider": "audius",
+          "providerTrackId": "l4843wZ",
+          "sourceTags": [
+            "audius",
+            "audius_trending_monthly"
+          ]
+        },
+        {
+          "title": "LYNY - Noxious (Raucous remix)",
+          "artist": "Raucous",
+          "album": "",
+          "durationMs": 159000,
+          "coverUrl": "https://val002.open-audio-validator.com/content/baeaaaiqsedwsqw262elrkq3j4nz4bvgxx6k7dfhqosrw367n5qpwbtcwpebb6/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/zz5YzPp/stream",
+          "audioProvider": "audius",
+          "providerTrackId": "zz5YzPp",
+          "sourceTags": [
+            "audius",
+            "audius_trending_monthly"
+          ]
+        },
+        {
+          "title": "RIDE",
+          "artist": "CURE97 X YZENIA",
+          "album": "",
+          "durationMs": 145000,
+          "coverUrl": "https://audius-discovery-3.altego.net/content/baeaaaiqsecskwe2dodmls26i7y7xnliig63olr7rd4j4blc652bx2wmusfibe/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/50NaZGY/stream",
+          "audioProvider": "audius",
+          "providerTrackId": "50NaZGY",
+          "sourceTags": [
+            "audius",
+            "audius_trending_monthly"
+          ]
+        },
+        {
+          "title": "Nunca nos vamos a ir (Acapella)",
+          "artist": "BSNO",
+          "album": "",
+          "durationMs": 166000,
+          "coverUrl": "https://val016.open-audio-validator.com/content/baeaaaiqsedi4ifcrqwczzrk62p3yvafemsoo2pv23erqq4o22nyqtvyuiwb2g/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/AKPm4mv/stream",
+          "audioProvider": "audius",
+          "providerTrackId": "AKPm4mv",
+          "sourceTags": [
+            "audius",
+            "audius_trending_monthly"
+          ]
+        },
+        {
+          "title": "Chief Keef - Hate Being Sober (Neotek Droptopgundam Flip)",
+          "artist": "NEOTEK",
+          "album": "",
+          "durationMs": 198000,
+          "coverUrl": "https://audius.rickyrombo.com/content/baeaaaiqsea5w2riw3k3cynmgbt75xzxgots7jsgegbgw7jkrv4yj77sfdnlsq/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/v27mjE6/stream",
+          "audioProvider": "audius",
+          "providerTrackId": "v27mjE6",
+          "sourceTags": [
+            "audius",
+            "audius_trending_monthly"
+          ]
+        },
+        {
+          "title": "Tisoki - Fakeout (FIRST EDITION. Remix)",
+          "artist": "FIRST EDITION.",
+          "album": "",
+          "durationMs": 136000,
+          "coverUrl": "https://audius-content-7.figment.io/content/baeaaaiqsedhzeyovob5gwpc277fhrju3hs6wmxlfg6x4p6ppeavg6fahs4ury/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/9R6bYBa/stream",
+          "audioProvider": "audius",
+          "providerTrackId": "9R6bYBa",
+          "sourceTags": [
+            "audius",
+            "audius_trending_monthly"
+          ]
+        },
+        {
+          "title": "Gerard Hollow - YNS2 (feat. Zavalaa) (G4BBA Remix)",
+          "artist": "G4BBA",
+          "album": "",
+          "durationMs": 201000,
+          "coverUrl": "https://audius-content-8.figment.io/content/baeaaaiqsedaofbon364vgxq37kgihrzqtso2dlsuihm5mmu43uhmoigrhl2c6/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/9mdWXGO/stream",
+          "audioProvider": "audius",
+          "providerTrackId": "9mdWXGO",
+          "sourceTags": [
+            "audius",
+            "audius_trending_monthly"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "deezer-chart",
+      "title": {
+        "zh-Hans": "环球榜单",
+        "zh-Hant": "環球榜單",
+        "en-US": "Worldwide Charts"
+      },
+      "subtitle": "Powered by Deezer",
+      "tracks": [
+        {
+          "title": "Ends of the Earth",
+          "artist": "Ty Myers",
+          "album": "",
+          "durationMs": 269000,
+          "coverUrl": "https://api.deezer.com/album/657774381/image",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "deezer",
+            "deezer_chart"
+          ]
+        },
+        {
+          "title": "Moonlit Floor (Kiss Me)",
+          "artist": "LISA",
+          "album": "",
+          "durationMs": 156000,
+          "coverUrl": "https://api.deezer.com/album/650201021/image",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "deezer",
+            "deezer_chart"
+          ]
+        },
+        {
+          "title": "I Know I Know",
+          "artist": "STELLA LEFTY",
+          "album": "",
+          "durationMs": 159000,
+          "coverUrl": "https://api.deezer.com/album/964053301/image",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "deezer",
+            "deezer_chart"
+          ]
+        },
+        {
+          "title": "Should I Stay or Should I Go (Remastered)",
+          "artist": "The Clash",
+          "album": "",
+          "durationMs": 186000,
+          "coverUrl": "https://api.deezer.com/album/6812630/image",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "deezer",
+            "deezer_chart"
+          ]
+        },
+        {
+          "title": "All My Exes",
+          "artist": "Lauren Alaina",
+          "album": "",
+          "durationMs": 173000,
+          "coverUrl": "https://api.deezer.com/album/750675371/image",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "deezer",
+            "deezer_chart"
+          ]
+        },
+        {
+          "title": "Dancing In the Dark",
+          "artist": "Bruce Springsteen",
+          "album": "",
+          "durationMs": 241000,
+          "coverUrl": "https://api.deezer.com/album/1440805/image",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "deezer",
+            "deezer_chart"
+          ]
+        },
+        {
+          "title": "Bring Your Love",
+          "artist": "Madonna",
+          "album": "",
+          "durationMs": 216000,
+          "coverUrl": "https://api.deezer.com/album/970688641/image",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "deezer",
+            "deezer_chart"
+          ]
+        },
+        {
+          "title": "Sunburn",
+          "artist": "Tucker Wetmore",
+          "album": "",
+          "durationMs": 187000,
+          "coverUrl": "https://api.deezer.com/album/933730191/image",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "deezer",
+            "deezer_chart"
+          ]
+        },
+        {
+          "title": "DtMF",
+          "artist": "Bad Bunny",
+          "album": "",
+          "durationMs": 237000,
+          "coverUrl": "https://api.deezer.com/album/693008911/image",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "deezer",
+            "deezer_chart"
+          ]
+        },
+        {
+          "title": "Bloodline",
+          "artist": "Alex Warren",
+          "album": "",
+          "durationMs": 182000,
+          "coverUrl": "https://api.deezer.com/album/758057661/image",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "deezer",
+            "deezer_chart"
+          ]
+        },
+        {
+          "title": "Turn This Truck Around",
+          "artist": "Jordan Davis",
+          "album": "",
+          "durationMs": 204000,
+          "coverUrl": "https://api.deezer.com/album/801391081/image",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "deezer",
+            "deezer_chart"
+          ]
+        },
+        {
+          "title": "I Can't Love You Anymore",
+          "artist": "Ella Langley",
+          "album": "",
+          "durationMs": 228000,
+          "coverUrl": "https://api.deezer.com/album/967348681/image",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "deezer",
+            "deezer_chart"
+          ]
+        },
+        {
+          "title": "Be By You",
+          "artist": "Luke Combs",
+          "album": "",
+          "durationMs": 197000,
+          "coverUrl": "https://api.deezer.com/album/917051721/image",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "deezer",
+            "deezer_chart"
+          ]
+        },
+        {
+          "title": "YUKON",
+          "artist": "Justin Bieber",
+          "album": "",
+          "durationMs": 164000,
+          "coverUrl": "https://api.deezer.com/album/786280691/image",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "deezer",
+            "deezer_chart"
+          ]
+        },
+        {
+          "title": "Just In Case",
+          "artist": "Morgan Wallen",
+          "album": "",
+          "durationMs": 166000,
+          "coverUrl": "https://api.deezer.com/album/727297031/image",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "deezer",
+            "deezer_chart"
+          ]
+        },
+        {
+          "title": "Wish You Well",
+          "artist": "Vincent Mason",
+          "album": "",
+          "durationMs": 156000,
+          "coverUrl": "https://api.deezer.com/album/712489261/image",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "deezer",
+            "deezer_chart"
+          ]
+        },
+        {
+          "title": "Man I Need",
+          "artist": "Olivia Dean",
+          "album": "",
+          "durationMs": 184000,
+          "coverUrl": "https://api.deezer.com/album/803181741/image",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "deezer",
+            "deezer_chart"
+          ]
+        },
+        {
+          "title": "The Fate of Ophelia",
+          "artist": "Taylor Swift",
+          "album": "",
+          "durationMs": 226000,
+          "coverUrl": "https://api.deezer.com/album/829966331/image",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "deezer",
+            "deezer_chart"
+          ]
+        },
+        {
+          "title": "Sleepless in a Hotel Room",
+          "artist": "Luke Combs",
+          "album": "",
+          "durationMs": 177000,
+          "coverUrl": "https://api.deezer.com/album/880601952/image",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "deezer",
+            "deezer_chart"
+          ]
+        },
+        {
+          "title": "Somewhere Over Laredo",
+          "artist": "Lainey Wilson",
+          "album": "",
+          "durationMs": 226000,
+          "coverUrl": "https://api.deezer.com/album/905506172/image",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "deezer",
+            "deezer_chart"
+          ]
+        }
+      ]
+    }
+  ]
+}
