@@ -43,6 +43,14 @@ LATEST_HOME_PATH = HOME_DIR / "latest_home.json"
 
 SECTION_TRACK_LIMIT = 20
 TAG_LIMIT = 40
+TOP_PLAYLIST_LIMIT = 10
+
+# Last.fm uses this exact image as the placeholder when a track has no
+# real artwork. The URL passes our magic-byte check (it's a real PNG)
+# but renders as a generic star/note glyph that looks broken. Drop it.
+LASTFM_PLACEHOLDER_HASHES = (
+    "2a96cbd8b46e442fc41c2b86b821562f",
+)
 
 SECTION_DEFINITIONS: list[dict[str, Any]] = [
     {
@@ -166,6 +174,12 @@ def main() -> None:
     if not sections:
         raise SystemExit("Home build produced zero sections.")
 
+    top_playlist = build_top_playlist(api_key=api_key)
+    if top_playlist is not None:
+        print(f"[home] top playlist -> {len(top_playlist['tracks'])} tracks")
+    else:
+        print("[home] top playlist unavailable -- skipping")
+
     payload = {
         "schemaVersion": 1,
         "generatorVersion": GENERATOR_VERSION,
@@ -174,6 +188,8 @@ def main() -> None:
         "tags": tags,
         "sections": sections,
     }
+    if top_playlist is not None:
+        payload["topPlaylist"] = top_playlist
 
     archive_path = HOME_DIR / f"home_recommendations-{edition_date.isoformat()}.json"
     write_json(archive_path, payload)
@@ -288,16 +304,50 @@ def serialize_candidate(candidate: CandidateTrack) -> dict[str, Any]:
     if audio_provider == "audius" and provider_track_id and not audio_url:
         audio_url = audius_stream_endpoint(provider_track_id)
 
+    cover_url = candidate.cover_url
+    if cover_url and any(h in cover_url for h in LASTFM_PLACEHOLDER_HASHES):
+        cover_url = None
+
     return {
         "title": candidate.title,
         "artist": candidate.artist,
         "album": candidate.album or "",
         "durationMs": candidate.duration_ms,
-        "coverUrl": candidate.cover_url,
+        "coverUrl": cover_url,
         "audioUrl": audio_url,
         "audioProvider": audio_provider,
         "providerTrackId": provider_track_id,
         "sourceTags": sorted(candidate.source_tags),
+    }
+
+
+def build_top_playlist(api_key: str) -> dict[str, Any] | None:
+    """Today's Top 10 — Last.fm global chart's first 10 tracks, in rank order.
+
+    Independent of `sections` (which is randomized). Stable rank ordering is
+    important so the banner's "Top 10" label is honest.
+    """
+    try:
+        candidates = fetch_lastfm_global(
+            api_key=api_key, limit=TOP_PLAYLIST_LIMIT, weight=1.0
+        )
+    except Exception as exc:  # noqa: BLE001
+        print(f"[home] top playlist fetch failed: {exc!r}", flush=True)
+        return None
+
+    pool = [c for c in candidates if c.title and c.artist][:TOP_PLAYLIST_LIMIT]
+    if not pool:
+        return None
+
+    return {
+        "id": "daily-top-10",
+        "title": {
+            "zh-Hans": "今日 Top 10",
+            "zh-Hant": "今日 Top 10",
+            "en-US": "Today's Top 10",
+        },
+        "subtitle": "Most played worldwide today",
+        "tracks": [serialize_candidate(c) for c in pool],
     }
 
 
