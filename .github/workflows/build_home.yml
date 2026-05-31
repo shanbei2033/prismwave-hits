@@ -1,0 +1,57 @@
+name: Build Home Recommendations
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/build_home.yml'
+      - 'scripts/build_home.py'
+      - 'scripts/build_hits.py'
+      - 'config/**'
+  schedule:
+    # 02:00 UTC = 10:00 Asia/Shanghai (Beijing). Independent of build_hits.
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-home-recommendations
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Build home recommendations
+        env:
+          LASTFM_API_KEY: ${{ secrets.LASTFM_API_KEY }}
+        run: python scripts/build_home.py
+
+      - name: Commit generated home recommendations
+        shell: bash
+        run: |
+          git add home
+
+          if git diff --cached --quiet --exit-code; then
+            echo "No home recommendation changes detected."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: build home recommendations"
+          git push
