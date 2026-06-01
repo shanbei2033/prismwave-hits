@@ -2,23 +2,23 @@
   "schema_version": 1,
   "station_id": "hits-global",
   "timezone": "UTC",
-  "generated_at": "2026-05-31T01:35:10Z",
+  "generated_at": "2026-06-01T01:40:57Z",
   "generator_version": "prismwave-hits/0.2.0",
-  "active_edition_date": "2026-06-01",
-  "schedule_path": "schedules/2026-06-01.json",
-  "schedule_url": "https://raw.githubusercontent.com/shanbei2033/prismwave-hits/main/schedules/2026-06-01.json",
+  "active_edition_date": "2026-06-02",
+  "schedule_path": "schedules/2026-06-02.json",
+  "schedule_url": "https://raw.githubusercontent.com/shanbei2033/prismwave-hits/main/schedules/2026-06-02.json",
   "service_windows": [
     {
       "label": "on_air",
-      "start_at": "2026-06-01T00:00:00Z",
-      "end_at": "2026-06-01T20:00:00Z"
+      "start_at": "2026-06-02T00:00:00Z",
+      "end_at": "2026-06-02T20:00:00Z"
     }
   ],
   "off_air_windows": [
     {
       "label": "overnight_maintenance",
-      "start_at": "2026-06-01T20:00:00Z",
-      "end_at": "2026-06-02T00:00:00Z"
+      "start_at": "2026-06-02T20:00:00Z",
+      "end_at": "2026-06-03T00:00:00Z"
     }
   ],
   "source_snapshot": [
@@ -187,7 +187,7 @@
       "scope": "Rock",
       "status": "ok",
       "candidate_count": 40,
-      "playable_count": 40
+      "playable_count": 39
     },
     {
       "source": "audius_genre",
@@ -268,17 +268,17 @@
       "source": "audius_match",
       "status": "ok",
       "scanned_count": 400,
-      "resolved_count": 2,
-      "playable_count": 459
+      "resolved_count": 4,
+      "playable_count": 464
     },
     {
       "source": "schedule_pool",
       "status": "playable_only",
-      "candidate_count": 459,
-      "playable_count": 459
+      "candidate_count": 464,
+      "playable_count": 464
     }
   ],
-  "track_count": 348,
-  "playable_track_count": 348,
+  "track_count": 339,
+  "playable_track_count": 339,
   "reserve_track_count": 12
 }
