@@ -2,23 +2,23 @@
   "schema_version": 1,
   "station_id": "hits-global",
   "timezone": "UTC",
-  "generated_at": "2026-06-04T02:08:01Z",
+  "generated_at": "2026-06-05T01:38:30Z",
   "generator_version": "prismwave-hits/0.2.0",
-  "active_edition_date": "2026-06-05",
-  "schedule_path": "schedules/2026-06-05.json",
-  "schedule_url": "https://raw.githubusercontent.com/shanbei2033/prismwave-hits/main/schedules/2026-06-05.json",
+  "active_edition_date": "2026-06-06",
+  "schedule_path": "schedules/2026-06-06.json",
+  "schedule_url": "https://raw.githubusercontent.com/shanbei2033/prismwave-hits/main/schedules/2026-06-06.json",
   "service_windows": [
     {
       "label": "on_air",
-      "start_at": "2026-06-05T00:00:00Z",
-      "end_at": "2026-06-05T20:00:00Z"
+      "start_at": "2026-06-06T00:00:00Z",
+      "end_at": "2026-06-06T20:00:00Z"
     }
   ],
   "off_air_windows": [
     {
       "label": "overnight_maintenance",
-      "start_at": "2026-06-05T20:00:00Z",
-      "end_at": "2026-06-06T00:00:00Z"
+      "start_at": "2026-06-06T20:00:00Z",
+      "end_at": "2026-06-07T00:00:00Z"
     }
   ],
   "source_snapshot": [
@@ -261,24 +261,24 @@
     {
       "source": "itunes_rss",
       "status": "ok",
-      "candidate_count": 85,
+      "candidate_count": 86,
       "playable_count": 0
     },
     {
       "source": "audius_match",
-      "status": "partial:3_errors",
+      "status": "ok",
       "scanned_count": 400,
-      "resolved_count": 3,
-      "playable_count": 468
+      "resolved_count": 4,
+      "playable_count": 469
     },
     {
       "source": "schedule_pool",
       "status": "playable_only",
-      "candidate_count": 468,
-      "playable_count": 468
+      "candidate_count": 469,
+      "playable_count": 469
     }
   ],
-  "track_count": 358,
-  "playable_track_count": 358,
+  "track_count": 355,
+  "playable_track_count": 355,
   "reserve_track_count": 12
 }
