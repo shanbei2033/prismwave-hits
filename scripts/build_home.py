@@ -1,299 +1,382 @@
-"""Generate the daily home recommendations JSON for PrismWave's online mode.
+"""Generate PrismWave's daily online home recommendations.
 
-Independent of the HITS schedule. Reuses fetchers from build_hits.py.
+The home payload is intentionally separate from the HITS radio schedule. It
+builds a single Top 100 chart from several public trend sources, keeps cover
+metadata in the JSON, and lets the app cache one file per Beijing date.
 
 Output:
-- home/home_recommendations-YYYY-MM-DD.json (per-day archive)
-- home/latest_home.json                     (always points at today's edition)
+- home/home_recommendations-YYYY-MM-DD.json
+- home/latest_home.json
 """
 
 from __future__ import annotations
 
-import json
 import os
-import random
-from datetime import datetime, timezone
+from datetime import timedelta, timezone
+from http.client import RemoteDisconnected
 from pathlib import Path
 from typing import Any
+from urllib.error import HTTPError, URLError
 
 from build_hits import (  # type: ignore
     CandidateTrack,
     audius_stream_endpoint,
-    fetch_audius_genre_trending,
-    fetch_audius_trending,
-    fetch_audius_trending_monthly,
-    fetch_deezer_chart,
-    fetch_itunes_rss,
     fetch_json,
-    fetch_lastfm_global,
-    fetch_lastfm_tag,
-    iso_z,
+    load_candidate_pool,
     load_json,
+    normalize_text,
     now_utc,
+    rank_candidates,
+    resolve_playable_sources,
+    safe_int,
     write_json,
+    iso_z,
 )
 
-UTC = timezone.utc
-GENERATOR_VERSION = "prismwave-home/0.1.0"
-LASTFM_ENDPOINT = "https://ws.audioscrobbler.com/2.0/"
+GENERATOR_VERSION = "prismwave-home/0.2.0"
+SCHEMA_VERSION = 7
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG_PATH = ROOT / "config" / "station.json"
 HOME_DIR = ROOT / "home"
 LATEST_HOME_PATH = HOME_DIR / "latest_home.json"
+BEIJING = timezone(timedelta(hours=8), name="Asia/Shanghai")
 
+TOP_PLAYLIST_LIMIT = 100
 SECTION_TRACK_LIMIT = 20
-TAG_LIMIT = 40
-TOP_PLAYLIST_LIMIT = 10
+METADATA_ENRICH_LIMIT = 140
 
-# Last.fm uses this exact image as the placeholder when a track has no
-# real artwork. The URL passes our magic-byte check (it's a real PNG)
-# but renders as a generic star/note glyph that looks broken. Drop it.
+ITUNES_SEARCH_URL = "https://itunes.apple.com/search"
+DEEZER_SEARCH_URL = "https://api.deezer.com/search"
+
+# Last.fm's placeholder artwork is a real image, but it renders as a generic
+# glyph. Treat it as missing so downstream cover fallbacks can replace it.
 LASTFM_PLACEHOLDER_HASHES = (
     "2a96cbd8b46e442fc41c2b86b821562f",
 )
 
-SECTION_DEFINITIONS: list[dict[str, Any]] = [
-    {
-        "id": "global-hot",
-        "title": {
-            "zh-Hans": "今日热门",
-            "zh-Hant": "今日熱門",
-            "en-US": "Global Hits",
-        },
-        "subtitle": "Powered by Last.fm",
-        "fetcher": "lastfm_global",
-        "fetcher_args": {"limit": 60},
-    },
-    {
-        "id": "audius-trending",
-        "title": {
-            "zh-Hans": "Audius 流行",
-            "zh-Hant": "Audius 流行",
-            "en-US": "Trending on Audius",
-        },
-        "subtitle": "Streamable now",
-        "fetcher": "audius_trending",
-        "fetcher_args": {"limit": 60},
-    },
-    {
-        "id": "tag-pop",
-        "title": {"zh-Hans": "流行乐", "zh-Hant": "流行樂", "en-US": "Pop"},
-        "subtitle": "Top tracks · pop",
-        "fetcher": "lastfm_tag",
-        "fetcher_args": {"tag": "pop", "limit": 60},
-    },
-    {
-        "id": "tag-rock",
-        "title": {"zh-Hans": "摇滚", "zh-Hant": "搖滾", "en-US": "Rock"},
-        "subtitle": "Top tracks · rock",
-        "fetcher": "lastfm_tag",
-        "fetcher_args": {"tag": "rock", "limit": 60},
-    },
-    {
-        "id": "tag-electronic",
-        "title": {"zh-Hans": "电子", "zh-Hant": "電子", "en-US": "Electronic"},
-        "subtitle": "Top tracks · electronic",
-        "fetcher": "lastfm_tag",
-        "fetcher_args": {"tag": "electronic", "limit": 60},
-    },
-    {
-        "id": "tag-indie",
-        "title": {"zh-Hans": "独立", "zh-Hant": "獨立", "en-US": "Indie"},
-        "subtitle": "Top tracks · indie",
-        "fetcher": "lastfm_tag",
-        "fetcher_args": {"tag": "indie", "limit": 60},
-    },
-    {
-        "id": "tag-hiphop",
-        "title": {"zh-Hans": "嘻哈", "zh-Hant": "嘻哈", "en-US": "Hip-Hop"},
-        "subtitle": "Top tracks · hip-hop",
-        "fetcher": "lastfm_tag",
-        "fetcher_args": {"tag": "hip-hop", "limit": 60},
-    },
-    {
-        "id": "tag-rnb",
-        "title": {"zh-Hans": "R&B / 灵魂乐", "zh-Hant": "R&B / 靈魂樂", "en-US": "R&B / Soul"},
-        "subtitle": "Top tracks · rnb",
-        "fetcher": "lastfm_tag",
-        "fetcher_args": {"tag": "rnb", "limit": 60},
-    },
-    {
-        "id": "audius-monthly",
-        "title": {"zh-Hans": "本月新声", "zh-Hant": "本月新聲", "en-US": "This Month on Audius"},
-        "subtitle": "Audius monthly trending",
-        "fetcher": "audius_trending_monthly",
-        "fetcher_args": {"limit": 60},
-    },
-    {
-        "id": "deezer-chart",
-        "title": {"zh-Hans": "环球榜单", "zh-Hant": "環球榜單", "en-US": "Worldwide Charts"},
-        "subtitle": "Powered by Deezer",
-        "fetcher": "deezer_chart",
-        "fetcher_args": {"limit": 60},
-    },
-]
-
 
 def main() -> None:
-    api_key = os.environ.get("LASTFM_API_KEY", "").strip()
-    if not api_key:
-        raise SystemExit("LASTFM_API_KEY environment variable is required.")
-
     station = load_json(CONFIG_PATH)
-    edition_date = datetime.now(UTC).date()
     generated_at = now_utc()
+    edition_date = generated_at.astimezone(BEIJING).date()
 
-    random.seed(f"home-{edition_date.isoformat()}")
     HOME_DIR.mkdir(parents=True, exist_ok=True)
+    print(f"[home] building Beijing edition {edition_date.isoformat()}")
 
-    print(f"[home] building edition {edition_date.isoformat()}")
-
-    tags = build_tag_cloud(api_key=api_key, limit=TAG_LIMIT)
-    print(f"[home] resolved {len(tags)} tags")
-
-    sections: list[dict[str, Any]] = []
-    for definition in SECTION_DEFINITIONS:
+    merged_candidates, source_snapshot = load_candidate_pool(station)
+    if should_resolve_audio():
         try:
-            section = build_section(
-                definition=definition,
-                api_key=api_key,
-                station=station,
+            source_snapshot.extend(resolve_playable_sources(station, merged_candidates))
+        except (HTTPError, URLError, TimeoutError, ValueError, RemoteDisconnected) as error:
+            source_snapshot.append(
+                {
+                    "source": "audius_match",
+                    "status": f"error:{type(error).__name__}",
+                    "scanned_count": 0,
+                    "resolved_count": 0,
+                    "playable_count": count_existing_audio(merged_candidates.values()),
+                }
             )
-        except Exception as exc:  # noqa: BLE001 - log per-section failure, continue
-            print(
-                f"[home] section {definition['id']} failed: {exc!r} -- skipping",
-                flush=True,
-            )
-            continue
-        if section is None:
-            print(f"[home] section {definition['id']} produced no tracks -- skipping")
-            continue
-        sections.append(section)
-        print(f"[home] section {definition['id']} -> {len(section['tracks'])} tracks")
-
-    if not sections:
-        raise SystemExit("Home build produced zero sections.")
-
-    top_playlist = build_top_playlist(api_key=api_key)
-    if top_playlist is not None:
-        print(f"[home] top playlist -> {len(top_playlist['tracks'])} tracks")
     else:
-        print("[home] top playlist unavailable -- skipping")
+        source_snapshot.append(
+            {
+                "source": "audius_match",
+                "status": "skipped:home_fast_path",
+                "scanned_count": 0,
+                "resolved_count": 0,
+                "playable_count": count_existing_audio(merged_candidates.values()),
+            }
+        )
+    ranked_candidates = rank_candidates(merged_candidates.values())
+    if not ranked_candidates:
+        raise SystemExit("Home build produced zero candidates.")
 
+    enrich_missing_metadata(ranked_candidates[:METADATA_ENRICH_LIMIT])
+    ranked_candidates = rank_candidates(ranked_candidates)
+    top_candidates = ranked_candidates[:TOP_PLAYLIST_LIMIT]
+    if len(top_candidates) < 20:
+        raise SystemExit("Home build produced too few Top 100 candidates.")
+
+    top_playlist = build_top_playlist(top_candidates)
+    sections = build_sections(ranked_candidates)
     payload = {
-        "schemaVersion": 1,
+        "schemaVersion": SCHEMA_VERSION,
         "generatorVersion": GENERATOR_VERSION,
         "generatedAt": iso_z(generated_at),
+        "generatedAtBeijing": generated_at.astimezone(BEIJING)
+        .replace(microsecond=0)
+        .isoformat(),
         "editionDate": edition_date.isoformat(),
-        "tags": tags,
+        "timezone": "Asia/Shanghai",
+        "sourceSnapshot": source_snapshot,
+        "tags": build_source_tags(ranked_candidates),
+        "topPlaylist": top_playlist,
         "sections": sections,
+        "albumRecommendations": [],
     }
-    if top_playlist is not None:
-        payload["topPlaylist"] = top_playlist
 
     archive_path = HOME_DIR / f"home_recommendations-{edition_date.isoformat()}.json"
     write_json(archive_path, payload)
     write_json(LATEST_HOME_PATH, payload)
-    print(f"[home] wrote {archive_path.relative_to(ROOT)} and {LATEST_HOME_PATH.relative_to(ROOT)}")
+    print(
+        "[home] wrote "
+        f"{archive_path.relative_to(ROOT)} and {LATEST_HOME_PATH.relative_to(ROOT)}"
+    )
+    print(
+        "[home] top100 "
+        f"tracks={len(top_playlist['tracks'])} "
+        f"with_cover={count_cover_urls(top_playlist['tracks'])} "
+        f"with_audio={count_audio_urls(top_playlist['tracks'])}"
+    )
 
 
-def build_tag_cloud(api_key: str, limit: int) -> list[dict[str, Any]]:
+def enrich_missing_metadata(candidates: list[CandidateTrack]) -> None:
+    for candidate in candidates:
+        if needs_cover_cleanup(candidate.cover_url):
+            candidate.cover_url = None
+        if candidate.cover_url and candidate.album and candidate.duration_ms != 210000:
+            continue
+
+        for lookup in (lookup_itunes_metadata, lookup_deezer_metadata):
+            try:
+                metadata = lookup(candidate)
+            except (HTTPError, URLError, TimeoutError, ValueError, RemoteDisconnected):
+                continue
+            if metadata is None:
+                continue
+            apply_metadata(candidate, metadata)
+            if candidate.cover_url and candidate.album and candidate.duration_ms != 210000:
+                break
+
+
+def lookup_itunes_metadata(candidate: CandidateTrack) -> dict[str, Any] | None:
     payload = fetch_json(
-        LASTFM_ENDPOINT,
+        ITUNES_SEARCH_URL,
         {
-            "method": "chart.gettoptags",
-            "api_key": api_key,
-            "format": "json",
-            "limit": str(limit),
+            "term": build_metadata_query(candidate),
+            "media": "music",
+            "entity": "song",
+            "limit": "5",
         },
     )
-    rows = payload.get("tags", {}).get("tag", []) or []
+    rows = payload.get("results", [])
     if not isinstance(rows, list):
-        return []
+        return None
 
-    tags: list[dict[str, Any]] = []
-    max_count = 0
+    best: dict[str, Any] | None = None
+    best_score = 0
     for row in rows:
         if not isinstance(row, dict):
             continue
-        name = str(row.get("name", "")).strip()
-        if not name:
-            continue
-        try:
-            count = int(row.get("taggings") or row.get("count") or 0)
-        except (TypeError, ValueError):
-            count = 0
-        max_count = max(max_count, count)
-        tags.append({"name": name, "count": count})
-
-    if max_count <= 0:
-        for tag in tags:
-            tag["weight"] = 1.0
-    else:
-        for tag in tags:
-            tag["weight"] = round(tag["count"] / max_count, 4)
-    return tags[:limit]
-
-
-def build_section(
-    definition: dict[str, Any],
-    api_key: str,
-    station: dict[str, Any],
-) -> dict[str, Any] | None:
-    fetcher_kind = definition["fetcher"]
-    args = dict(definition.get("fetcher_args", {}))
-    raw_candidates: list[CandidateTrack]
-
-    if fetcher_kind == "lastfm_global":
-        raw_candidates = fetch_lastfm_global(
-            api_key=api_key, limit=int(args["limit"]), weight=1.0
+        title = str(row.get("trackName", "")).strip()
+        artist = str(row.get("artistName", "")).strip()
+        score = metadata_match_score(
+            candidate=candidate,
+            title=title,
+            artist=artist,
+            duration_ms=safe_int(row.get("trackTimeMillis")),
         )
-    elif fetcher_kind == "lastfm_tag":
-        raw_candidates = fetch_lastfm_tag(
-            api_key=api_key,
-            tag=str(args["tag"]),
-            limit=int(args["limit"]),
-            weight=1.0,
-        )
-    elif fetcher_kind == "audius_trending":
-        raw_candidates = fetch_audius_trending(limit=int(args["limit"]), weight=1.0)
-    elif fetcher_kind == "audius_trending_monthly":
-        raw_candidates = fetch_audius_trending_monthly(
-            limit=int(args["limit"]), weight=1.0
-        )
-    elif fetcher_kind == "audius_genre":
-        raw_candidates = fetch_audius_genre_trending(
-            genre=str(args["genre"]),
-            limit=int(args["limit"]),
-            weight=1.0,
-        )
-    elif fetcher_kind == "deezer_chart":
-        raw_candidates = fetch_deezer_chart(
-            limit=int(args["limit"]),
-            weight=1.0,
-            genre_id=int(args.get("genre_id", 0)),
-        )
-    elif fetcher_kind == "itunes_rss":
-        raw_candidates = fetch_itunes_rss(limit=int(args["limit"]), weight=1.0)
-    else:
-        raise ValueError(f"Unknown fetcher kind: {fetcher_kind}")
-
-    pool = [c for c in raw_candidates if c.title and c.artist]
-    if not pool:
+        if score > best_score:
+            best_score = score
+            best = row
+    if best is None or best_score < 58:
         return None
 
-    if len(pool) <= SECTION_TRACK_LIMIT:
-        picks = pool
-    else:
-        picks = random.sample(pool, SECTION_TRACK_LIMIT)
-
-    tracks_payload = [serialize_candidate(c) for c in picks]
+    cover = str(best.get("artworkUrl100", "")).strip() or None
+    if cover:
+        cover = upgrade_itunes_cover_url(cover)
     return {
-        "id": definition["id"],
-        "title": definition["title"],
-        "subtitle": definition.get("subtitle"),
-        "tracks": tracks_payload,
+        "album": str(best.get("collectionName", "")).strip(),
+        "duration_ms": safe_int(best.get("trackTimeMillis")),
+        "cover_url": cover,
+        "source_tag": "itunes_search",
+        "rank_signal": safe_int(best.get("trackId")),
     }
+
+
+def lookup_deezer_metadata(candidate: CandidateTrack) -> dict[str, Any] | None:
+    payload = fetch_json(
+        DEEZER_SEARCH_URL,
+        {
+            "q": build_metadata_query(candidate),
+            "limit": "5",
+        },
+    )
+    rows = payload.get("data", [])
+    if not isinstance(rows, list):
+        return None
+
+    best: dict[str, Any] | None = None
+    best_score = 0
+    for row in rows:
+        if not isinstance(row, dict):
+            continue
+        title = str(row.get("title", "")).strip()
+        artist_data = row.get("artist", {})
+        artist = (
+            str(artist_data.get("name", "")).strip()
+            if isinstance(artist_data, dict)
+            else ""
+        )
+        score = metadata_match_score(
+            candidate=candidate,
+            title=title,
+            artist=artist,
+            duration_ms=safe_int(row.get("duration")) * 1000,
+        )
+        if score > best_score:
+            best_score = score
+            best = row
+    if best is None or best_score < 54:
+        return None
+
+    album = best.get("album", {})
+    album_name = ""
+    cover = None
+    if isinstance(album, dict):
+        album_name = str(album.get("title", "")).strip()
+        cover = (
+            str(album.get("cover_xl", "")).strip()
+            or str(album.get("cover_big", "")).strip()
+            or str(album.get("cover_medium", "")).strip()
+            or None
+        )
+    return {
+        "album": album_name,
+        "duration_ms": safe_int(best.get("duration")) * 1000,
+        "cover_url": cover,
+        "source_tag": "deezer_search",
+        "rank_signal": safe_int(best.get("id")),
+    }
+
+
+def metadata_match_score(
+    *,
+    candidate: CandidateTrack,
+    title: str,
+    artist: str,
+    duration_ms: int,
+) -> int:
+    candidate_title = normalize_text(candidate.title)
+    candidate_artist = normalize_text(candidate.artist)
+    matched_title = normalize_text(title)
+    matched_artist = normalize_text(artist)
+    if not matched_title or not matched_artist:
+        return 0
+
+    score = 0
+    if matched_title == candidate_title:
+        score += 58
+    elif matched_title in candidate_title or candidate_title in matched_title:
+        score += 30
+    else:
+        score += token_overlap_score(matched_title, candidate_title, maximum=24)
+
+    if matched_artist == candidate_artist:
+        score += 34
+    elif matched_artist in candidate_artist or candidate_artist in matched_artist:
+        score += 16
+    else:
+        score += token_overlap_score(matched_artist, candidate_artist, maximum=12)
+
+    if duration_ms > 0 and candidate.duration_ms > 0:
+        delta = abs(duration_ms - candidate.duration_ms)
+        if delta <= 2500:
+            score += 10
+        elif delta <= 10000:
+            score += 5
+    return score
+
+
+def token_overlap_score(left: str, right: str, *, maximum: int) -> int:
+    left_tokens = set(left.split())
+    right_tokens = set(right.split())
+    if not left_tokens or not right_tokens:
+        return 0
+    overlap = len(left_tokens & right_tokens) / max(len(left_tokens), len(right_tokens))
+    return round(maximum * overlap)
+
+
+def apply_metadata(candidate: CandidateTrack, metadata: dict[str, Any]) -> None:
+    album = str(metadata.get("album", "")).strip()
+    cover_url = str(metadata.get("cover_url", "")).strip()
+    duration_ms = safe_int(metadata.get("duration_ms"))
+    source_tag = str(metadata.get("source_tag", "")).strip()
+
+    if not candidate.album and album:
+        candidate.album = album
+    if not candidate.cover_url and cover_url:
+        candidate.cover_url = cover_url
+    if candidate.duration_ms == 210000 and duration_ms > 0:
+        candidate.duration_ms = duration_ms
+    if source_tag:
+        candidate.source_tags.add(source_tag)
+        signal = safe_int(metadata.get("rank_signal"))
+        if signal > 0:
+            candidate.rank_signals[source_tag] = signal
+
+
+def build_top_playlist(candidates: list[CandidateTrack]) -> dict[str, Any]:
+    return {
+        "id": "daily-top-100",
+        "title": {
+            "zh-Hans": "今日趋势",
+            "zh-Hant": "今日趨勢",
+            "en-US": "Today's Trending",
+        },
+        "subtitle": "Global multi-platform Top 100",
+        "tracks": [serialize_candidate(c) for c in candidates[:TOP_PLAYLIST_LIMIT]],
+    }
+
+
+def build_sections(ranked_candidates: list[CandidateTrack]) -> list[dict[str, Any]]:
+    definitions = [
+        (
+            "global-hot",
+            {"zh-Hans": "全球热门", "zh-Hant": "全球熱門", "en-US": "Global Hot"},
+            "Top signals from Last.fm, Deezer, iTunes and Audius",
+            lambda c: True,
+        ),
+        (
+            "streamable-now",
+            {"zh-Hans": "可直接播放", "zh-Hant": "可直接播放", "en-US": "Streamable Now"},
+            "Resolved Audius streams",
+            lambda c: bool(c.audio_url),
+        ),
+        (
+            "world-charts",
+            {"zh-Hans": "环球榜单", "zh-Hant": "環球榜單", "en-US": "World Charts"},
+            "Deezer and iTunes chart signals",
+            lambda c: has_any_source(c, ("deezer", "itunes")),
+        ),
+        (
+            "listener-trends",
+            {"zh-Hans": "听众趋势", "zh-Hant": "聽眾趨勢", "en-US": "Listener Trends"},
+            "Last.fm global and regional charts",
+            lambda c: has_any_source(c, ("lastfm_global", "lastfm_geo")),
+        ),
+        (
+            "audius-trending",
+            {"zh-Hans": "Audius 流行", "zh-Hant": "Audius 流行", "en-US": "Audius Trending"},
+            "Independent streaming trends",
+            lambda c: has_any_source(c, ("audius",)),
+        ),
+    ]
+
+    sections: list[dict[str, Any]] = []
+    for section_id, title, subtitle, predicate in definitions:
+        tracks = [c for c in ranked_candidates if predicate(c)][:SECTION_TRACK_LIMIT]
+        if len(tracks) < 4:
+            continue
+        sections.append(
+            {
+                "id": section_id,
+                "title": title,
+                "subtitle": subtitle,
+                "tracks": [serialize_candidate(c) for c in tracks],
+            }
+        )
+    return sections
 
 
 def serialize_candidate(candidate: CandidateTrack) -> dict[str, Any]:
@@ -305,7 +388,7 @@ def serialize_candidate(candidate: CandidateTrack) -> dict[str, Any]:
         audio_url = audius_stream_endpoint(provider_track_id)
 
     cover_url = candidate.cover_url
-    if cover_url and any(h in cover_url for h in LASTFM_PLACEHOLDER_HASHES):
+    if needs_cover_cleanup(cover_url):
         cover_url = None
 
     return {
@@ -318,37 +401,71 @@ def serialize_candidate(candidate: CandidateTrack) -> dict[str, Any]:
         "audioProvider": audio_provider,
         "providerTrackId": provider_track_id,
         "sourceTags": sorted(candidate.source_tags),
+        "rankSignals": dict(sorted(candidate.rank_signals.items())),
+        "score": round(candidate.score, 6),
     }
 
 
-def build_top_playlist(api_key: str) -> dict[str, Any] | None:
-    """Today's Top 10 — Last.fm global chart's first 10 tracks, in rank order.
+def build_source_tags(candidates: list[CandidateTrack]) -> list[dict[str, Any]]:
+    counts: dict[str, int] = {}
+    for candidate in candidates:
+        for tag in candidate.source_tags:
+            root = tag.split(":", maxsplit=1)[0]
+            counts[root] = counts.get(root, 0) + 1
 
-    Independent of `sections` (which is randomized). Stable rank ordering is
-    important so the banner's "Top 10" label is honest.
-    """
-    try:
-        candidates = fetch_lastfm_global(
-            api_key=api_key, limit=TOP_PLAYLIST_LIMIT, weight=1.0
-        )
-    except Exception as exc:  # noqa: BLE001
-        print(f"[home] top playlist fetch failed: {exc!r}", flush=True)
-        return None
+    max_count = max(counts.values(), default=1)
+    return [
+        {
+            "name": name,
+            "count": count,
+            "weight": round(count / max_count, 4),
+        }
+        for name, count in sorted(counts.items(), key=lambda item: (-item[1], item[0]))
+    ][:40]
 
-    pool = [c for c in candidates if c.title and c.artist][:TOP_PLAYLIST_LIMIT]
-    if not pool:
-        return None
 
-    return {
-        "id": "daily-top-10",
-        "title": {
-            "zh-Hans": "今日 Top 10",
-            "zh-Hant": "今日 Top 10",
-            "en-US": "Today's Top 10",
-        },
-        "subtitle": "Most played worldwide today",
-        "tracks": [serialize_candidate(c) for c in pool],
-    }
+def build_metadata_query(candidate: CandidateTrack) -> str:
+    return " ".join(
+        item for item in [candidate.title.strip(), candidate.artist.strip()] if item
+    )
+
+
+def upgrade_itunes_cover_url(url: str) -> str:
+    return (
+        url.replace("100x100bb", "600x600bb")
+        .replace("100x100-75", "600x600-75")
+        .replace("60x60bb", "600x600bb")
+    )
+
+
+def has_any_source(candidate: CandidateTrack, needles: tuple[str, ...]) -> bool:
+    return any(
+        any(tag.startswith(needle) or needle in tag for tag in candidate.source_tags)
+        for needle in needles
+    )
+
+
+def needs_cover_cleanup(cover_url: str | None) -> bool:
+    if not cover_url:
+        return False
+    return any(marker in cover_url for marker in LASTFM_PLACEHOLDER_HASHES)
+
+
+def count_cover_urls(tracks: list[dict[str, Any]]) -> int:
+    return sum(1 for track in tracks if str(track.get("coverUrl") or "").strip())
+
+
+def count_audio_urls(tracks: list[dict[str, Any]]) -> int:
+    return sum(1 for track in tracks if str(track.get("audioUrl") or "").strip())
+
+
+def count_existing_audio(candidates: Any) -> int:
+    return sum(1 for candidate in candidates if getattr(candidate, "audio_url", None))
+
+
+def should_resolve_audio() -> bool:
+    value = os.environ.get("PRISMWAVE_HOME_RESOLVE_AUDIO", "").strip().lower()
+    return value in {"1", "true", "yes", "on"}
 
 
 if __name__ == "__main__":

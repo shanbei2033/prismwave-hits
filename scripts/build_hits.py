@@ -4,6 +4,7 @@ import json
 import os
 import random
 import re
+from http.client import RemoteDisconnected
 from dataclasses import dataclass, field
 from datetime import date, datetime, time, timedelta, timezone
 from pathlib import Path
@@ -149,7 +150,7 @@ def load_candidate_pool(
                     "candidate_count": len(global_tracks),
                 }
             )
-        except (HTTPError, URLError, TimeoutError, ValueError) as error:
+        except (HTTPError, URLError, TimeoutError, ValueError, RemoteDisconnected) as error:
             source_snapshot.append(
                 {
                     "source": "lastfm_global",
@@ -176,7 +177,7 @@ def load_candidate_pool(
                         "candidate_count": len(region_tracks),
                     }
                 )
-            except (HTTPError, URLError, TimeoutError, ValueError) as error:
+            except (HTTPError, URLError, TimeoutError, ValueError, RemoteDisconnected) as error:
                 source_snapshot.append(
                     {
                         "source": "lastfm_geo",
@@ -208,7 +209,7 @@ def load_candidate_pool(
                         "candidate_count": len(tag_tracks),
                     }
                 )
-            except (HTTPError, URLError, TimeoutError, ValueError) as error:
+            except (HTTPError, URLError, TimeoutError, ValueError, RemoteDisconnected) as error:
                 source_snapshot.append(
                     {
                         "source": "lastfm_tag",
@@ -243,7 +244,7 @@ def load_candidate_pool(
                 "playable_count": count_candidate_audio(audius_tracks),
             }
         )
-    except (HTTPError, URLError, TimeoutError, ValueError) as error:
+    except (HTTPError, URLError, TimeoutError, ValueError, RemoteDisconnected) as error:
         source_snapshot.append(
             {
                 "source": "audius_trending",
@@ -268,7 +269,7 @@ def load_candidate_pool(
                 "playable_count": count_candidate_audio(monthly_tracks),
             }
         )
-    except (HTTPError, URLError, TimeoutError, ValueError) as error:
+    except (HTTPError, URLError, TimeoutError, ValueError, RemoteDisconnected) as error:
         source_snapshot.append(
             {
                 "source": "audius_trending_monthly",
@@ -299,7 +300,7 @@ def load_candidate_pool(
                     "playable_count": count_candidate_audio(genre_tracks),
                 }
             )
-        except (HTTPError, URLError, TimeoutError, ValueError) as error:
+        except (HTTPError, URLError, TimeoutError, ValueError, RemoteDisconnected) as error:
             source_snapshot.append(
                 {
                     "source": "audius_genre",
@@ -330,7 +331,7 @@ def load_candidate_pool(
                     "playable_count": count_candidate_audio(deezer_global),
                 }
             )
-        except (HTTPError, URLError, TimeoutError, ValueError) as error:
+        except (HTTPError, URLError, TimeoutError, ValueError, RemoteDisconnected) as error:
             source_snapshot.append(
                 {
                     "source": "deezer_chart",
@@ -359,7 +360,7 @@ def load_candidate_pool(
                         "playable_count": count_candidate_audio(genre_tracks),
                     }
                 )
-            except (HTTPError, URLError, TimeoutError, ValueError) as error:
+            except (HTTPError, URLError, TimeoutError, ValueError, RemoteDisconnected) as error:
                 source_snapshot.append(
                     {
                         "source": "deezer_chart",
@@ -389,7 +390,7 @@ def load_candidate_pool(
                     "playable_count": count_candidate_audio(itunes_tracks),
                 }
             )
-        except (HTTPError, URLError, TimeoutError, ValueError) as error:
+        except (HTTPError, URLError, TimeoutError, ValueError, RemoteDisconnected) as error:
             source_snapshot.append(
                 {
                     "source": "itunes_rss",
@@ -857,7 +858,7 @@ def resolve_playable_sources(
                 search_limit=search_limit,
                 min_score=min_score,
             )
-        except (HTTPError, URLError, TimeoutError, ValueError):
+        except (HTTPError, URLError, TimeoutError, ValueError, RemoteDisconnected):
             errors += 1
             continue
 
@@ -1514,3 +1515,4 @@ def count_playable_tracks(tracks: list[dict[str, Any]]) -> int:
 
 if __name__ == "__main__":
     main()
+
