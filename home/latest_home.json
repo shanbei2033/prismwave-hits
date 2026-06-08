@@ -1,8 +1,8 @@
 {
   "schemaVersion": 7,
   "generatorVersion": "prismwave-home/0.2.0",
-  "generatedAt": "2026-06-08T03:46:39Z",
-  "generatedAtBeijing": "2026-06-08T11:46:39+08:00",
+  "generatedAt": "2026-06-08T06:45:47Z",
+  "generatedAtBeijing": "2026-06-08T14:45:47+08:00",
   "editionDate": "2026-06-08",
   "timezone": "Asia/Shanghai",
   "sourceSnapshot": [
@@ -264,13 +264,13 @@
     },
     {
       "name": "deezer_chart",
-      "count": 797,
-      "weight": 0.6653
+      "count": 798,
+      "weight": 0.6661
     },
     {
       "name": "deezer",
-      "count": 722,
-      "weight": 0.6027
+      "count": 725,
+      "weight": 0.6052
     },
     {
       "name": "lastfm_tag",
@@ -298,24 +298,24 @@
       "weight": 0.0835
     },
     {
+      "name": "deezer_search",
+      "count": 84,
+      "weight": 0.0701
+    },
+    {
       "name": "itunes",
-      "count": 82,
-      "weight": 0.0684
+      "count": 81,
+      "weight": 0.0676
     },
     {
       "name": "itunes_rss",
-      "count": 82,
-      "weight": 0.0684
-    },
-    {
-      "name": "deezer_search",
-      "count": 75,
-      "weight": 0.0626
+      "count": 81,
+      "weight": 0.0676
     },
     {
       "name": "itunes_search",
-      "count": 58,
-      "weight": 0.0484
+      "count": 49,
+      "weight": 0.0409
     }
   ],
   "topPlaylist": {
@@ -327,6 +327,51 @@
     },
     "subtitle": "Global multi-platform Top 100",
     "tracks": [
+      {
+        "title": "hate that i made you love me",
+        "artist": "Ariana Grande",
+        "album": "petal",
+        "durationMs": 197000,
+        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/56/f4/96/56f49612-02dd-83f4-44fe-d2118cc70707/26UMGIM51129.rgb.jpg/600x600bb.jpg",
+        "audioUrl": null,
+        "audioProvider": null,
+        "providerTrackId": null,
+        "sourceTags": [
+          "deezer",
+          "deezer_chart:132",
+          "itunes",
+          "itunes_rss",
+          "itunes_search",
+          "lastfm_geo:Australia",
+          "lastfm_geo:Brazil",
+          "lastfm_geo:Canada",
+          "lastfm_geo:France",
+          "lastfm_geo:Germany",
+          "lastfm_geo:Japan",
+          "lastfm_geo:Mexico",
+          "lastfm_geo:Spain",
+          "lastfm_geo:United Kingdom",
+          "lastfm_geo:United States",
+          "lastfm_global"
+        ],
+        "rankSignals": {
+          "deezer_chart:132": 63,
+          "itunes_rss": 5,
+          "itunes_search": 6763656725,
+          "lastfm_geo:Australia": 4,
+          "lastfm_geo:Brazil": 1,
+          "lastfm_geo:Canada": 5,
+          "lastfm_geo:France": 2,
+          "lastfm_geo:Germany": 6,
+          "lastfm_geo:Japan": 6,
+          "lastfm_geo:Mexico": 16,
+          "lastfm_geo:Spain": 2,
+          "lastfm_geo:United Kingdom": 4,
+          "lastfm_geo:United States": 4,
+          "lastfm_global": 1
+        },
+        "score": 1.319858
+      },
       {
         "title": "drop dead",
         "artist": "Olivia Rodrigo",
@@ -356,9 +401,9 @@
           "lastfm_global"
         ],
         "rankSignals": {
-          "deezer_chart": 10,
-          "deezer_chart:132": 5,
-          "itunes_rss": 44,
+          "deezer_chart": 12,
+          "deezer_chart:132": 7,
+          "itunes_rss": 33,
           "itunes_search": 1889992113,
           "lastfm_geo:Australia": 5,
           "lastfm_geo:Brazil": 4,
@@ -372,88 +417,7 @@
           "lastfm_geo:United States": 5,
           "lastfm_global": 5
         },
-        "score": 1.316068
-      },
-      {
-        "title": "hate that i made you love me",
-        "artist": "Ariana Grande",
-        "album": "petal",
-        "durationMs": 197000,
-        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/56/f4/96/56f49612-02dd-83f4-44fe-d2118cc70707/26UMGIM51129.rgb.jpg/600x600bb.jpg",
-        "audioUrl": null,
-        "audioProvider": null,
-        "providerTrackId": null,
-        "sourceTags": [
-          "itunes",
-          "itunes_rss",
-          "itunes_search",
-          "lastfm_geo:Australia",
-          "lastfm_geo:Brazil",
-          "lastfm_geo:Canada",
-          "lastfm_geo:France",
-          "lastfm_geo:Germany",
-          "lastfm_geo:Japan",
-          "lastfm_geo:Mexico",
-          "lastfm_geo:Spain",
-          "lastfm_geo:United Kingdom",
-          "lastfm_geo:United States",
-          "lastfm_global"
-        ],
-        "rankSignals": {
-          "itunes_rss": 5,
-          "itunes_search": 6763656725,
-          "lastfm_geo:Australia": 4,
-          "lastfm_geo:Brazil": 1,
-          "lastfm_geo:Canada": 5,
-          "lastfm_geo:France": 2,
-          "lastfm_geo:Germany": 6,
-          "lastfm_geo:Japan": 6,
-          "lastfm_geo:Mexico": 16,
-          "lastfm_geo:Spain": 2,
-          "lastfm_geo:United Kingdom": 4,
-          "lastfm_geo:United States": 4,
-          "lastfm_global": 1
-        },
-        "score": 1.31478
-      },
-      {
-        "title": "the cure",
-        "artist": "Olivia Rodrigo",
-        "album": "the cure - Single",
-        "durationMs": 297000,
-        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ea/cc/ad/eaccad77-3cb8-ddc2-a2e1-224c409aa26b/26UMGIM64019.rgb.jpg/600x600bb.jpg",
-        "audioUrl": null,
-        "audioProvider": null,
-        "providerTrackId": null,
-        "sourceTags": [
-          "itunes_search",
-          "lastfm_geo:Australia",
-          "lastfm_geo:Brazil",
-          "lastfm_geo:Canada",
-          "lastfm_geo:France",
-          "lastfm_geo:Germany",
-          "lastfm_geo:Japan",
-          "lastfm_geo:Mexico",
-          "lastfm_geo:Spain",
-          "lastfm_geo:United Kingdom",
-          "lastfm_geo:United States",
-          "lastfm_global"
-        ],
-        "rankSignals": {
-          "itunes_search": 6771598356,
-          "lastfm_geo:Australia": 2,
-          "lastfm_geo:Brazil": 2,
-          "lastfm_geo:Canada": 2,
-          "lastfm_geo:France": 5,
-          "lastfm_geo:Germany": 2,
-          "lastfm_geo:Japan": 7,
-          "lastfm_geo:Mexico": 26,
-          "lastfm_geo:Spain": 1,
-          "lastfm_geo:United Kingdom": 1,
-          "lastfm_geo:United States": 2,
-          "lastfm_global": 2
-        },
-        "score": 1.239584
+        "score": 1.317191
       },
       {
         "title": "Stateside + Zara Larsson",
@@ -482,7 +446,7 @@
           "lastfm_global"
         ],
         "rankSignals": {
-          "deezer_chart": 77,
+          "deezer_chart": 66,
           "deezer_chart:132": 17,
           "itunes_search": 1843595808,
           "lastfm_geo:Australia": 3,
@@ -497,7 +461,49 @@
           "lastfm_geo:United States": 3,
           "lastfm_global": 3
         },
-        "score": 1.232264
+        "score": 1.246775
+      },
+      {
+        "title": "the cure",
+        "artist": "Olivia Rodrigo",
+        "album": "the cure - Single",
+        "durationMs": 297000,
+        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ea/cc/ad/eaccad77-3cb8-ddc2-a2e1-224c409aa26b/26UMGIM64019.rgb.jpg/600x600bb.jpg",
+        "audioUrl": null,
+        "audioProvider": null,
+        "providerTrackId": null,
+        "sourceTags": [
+          "deezer",
+          "deezer_chart:132",
+          "itunes_search",
+          "lastfm_geo:Australia",
+          "lastfm_geo:Brazil",
+          "lastfm_geo:Canada",
+          "lastfm_geo:France",
+          "lastfm_geo:Germany",
+          "lastfm_geo:Japan",
+          "lastfm_geo:Mexico",
+          "lastfm_geo:Spain",
+          "lastfm_geo:United Kingdom",
+          "lastfm_geo:United States",
+          "lastfm_global"
+        ],
+        "rankSignals": {
+          "deezer_chart:132": 55,
+          "itunes_search": 6771598356,
+          "lastfm_geo:Australia": 2,
+          "lastfm_geo:Brazil": 2,
+          "lastfm_geo:Canada": 2,
+          "lastfm_geo:France": 5,
+          "lastfm_geo:Germany": 2,
+          "lastfm_geo:Japan": 7,
+          "lastfm_geo:Mexico": 26,
+          "lastfm_geo:Spain": 1,
+          "lastfm_geo:United Kingdom": 1,
+          "lastfm_geo:United States": 2,
+          "lastfm_global": 2
+        },
+        "score": 1.246156
       },
       {
         "title": "I Knew It, I Knew You",
@@ -568,7 +574,7 @@
           "lastfm_tag:pop"
         ],
         "rankSignals": {
-          "deezer_chart:132": 95,
+          "deezer_chart:132": 96,
           "itunes_rss": 14,
           "itunes_search": 269573364,
           "lastfm_geo:Australia": 6,
@@ -584,7 +590,7 @@
           "lastfm_global": 6,
           "lastfm_tag:pop": 2
         },
-        "score": 1.164604
+        "score": 1.164512
       },
       {
         "title": "Earrings",
@@ -611,7 +617,7 @@
           "lastfm_global"
         ],
         "rankSignals": {
-          "deezer_chart:85": 22,
+          "deezer_chart:85": 12,
           "itunes_search": 1738257931,
           "lastfm_geo:Australia": 1,
           "lastfm_geo:Brazil": 10,
@@ -624,7 +630,7 @@
           "lastfm_geo:United States": 1,
           "lastfm_global": 4
         },
-        "score": 1.084368
+        "score": 1.086749
       },
       {
         "title": "Babydoll",
@@ -637,7 +643,6 @@
         "providerTrackId": null,
         "sourceTags": [
           "deezer",
-          "deezer_chart",
           "deezer_chart:85",
           "itunes_search",
           "lastfm_geo:Australia",
@@ -652,8 +657,7 @@
           "lastfm_global"
         ],
         "rankSignals": {
-          "deezer_chart": 100,
-          "deezer_chart:85": 4,
+          "deezer_chart:85": 6,
           "itunes_search": 1704039031,
           "lastfm_geo:Australia": 7,
           "lastfm_geo:Brazil": 14,
@@ -666,7 +670,7 @@
           "lastfm_geo:United States": 9,
           "lastfm_global": 7
         },
-        "score": 1.035575
+        "score": 1.034776
       },
       {
         "title": "Beat It",
@@ -696,7 +700,7 @@
           "lastfm_tag:pop"
         ],
         "rankSignals": {
-          "deezer_chart:132": 86,
+          "deezer_chart:132": 90,
           "itunes_rss": 28,
           "itunes_search": 269573341,
           "lastfm_geo:Australia": 10,
@@ -711,7 +715,7 @@
           "lastfm_global": 10,
           "lastfm_tag:pop": 3
         },
-        "score": 1.006436
+        "score": 1.005941
       },
       {
         "title": "Beauty and a Beat",
@@ -877,6 +881,7 @@
         "providerTrackId": null,
         "sourceTags": [
           "deezer",
+          "deezer_chart",
           "deezer_chart:132",
           "itunes_search",
           "lastfm_geo:Australia",
@@ -890,7 +895,8 @@
           "lastfm_global"
         ],
         "rankSignals": {
-          "deezer_chart:132": 29,
+          "deezer_chart": 99,
+          "deezer_chart:132": 23,
           "itunes_search": 1809015879,
           "lastfm_geo:Australia": 28,
           "lastfm_geo:Brazil": 15,
@@ -902,7 +908,7 @@
           "lastfm_geo:United States": 38,
           "lastfm_global": 13
         },
-        "score": 0.840313
+        "score": 0.842449
       },
       {
         "title": "End of Beginning",
@@ -915,7 +921,6 @@
         "providerTrackId": null,
         "sourceTags": [
           "deezer",
-          "deezer_chart",
           "deezer_chart:152",
           "deezer_chart:85",
           "itunes",
@@ -933,10 +938,9 @@
           "lastfm_global"
         ],
         "rankSignals": {
-          "deezer_chart": 85,
-          "deezer_chart:152": 12,
-          "deezer_chart:85": 20,
-          "itunes_rss": 61,
+          "deezer_chart:152": 15,
+          "deezer_chart:85": 26,
+          "itunes_rss": 56,
           "itunes_search": 1632448108,
           "lastfm_geo:Australia": 29,
           "lastfm_geo:Brazil": 65,
@@ -949,7 +953,7 @@
           "lastfm_geo:United States": 51,
           "lastfm_global": 28
         },
-        "score": 0.811059
+        "score": 0.798703
       },
       {
         "title": "Mr. Brightside",
@@ -962,6 +966,7 @@
         "providerTrackId": null,
         "sourceTags": [
           "deezer",
+          "deezer_chart:152",
           "deezer_chart:85",
           "itunes_search",
           "lastfm_geo:Australia",
@@ -974,7 +979,8 @@
           "lastfm_tag:rock"
         ],
         "rankSignals": {
-          "deezer_chart:85": 60,
+          "deezer_chart:152": 52,
+          "deezer_chart:85": 70,
           "itunes_search": 1440891171,
           "lastfm_geo:Australia": 14,
           "lastfm_geo:Canada": 10,
@@ -985,7 +991,7 @@
           "lastfm_tag:indie": 33,
           "lastfm_tag:rock": 6
         },
-        "score": 0.784468
+        "score": 0.789857
       },
       {
         "title": "Human Nature",
@@ -1012,7 +1018,7 @@
           "lastfm_tag:pop"
         ],
         "rankSignals": {
-          "itunes_rss": 43,
+          "itunes_rss": 38,
           "itunes_search": 273048790,
           "lastfm_geo:Australia": 15,
           "lastfm_geo:Brazil": 60,
@@ -1025,7 +1031,7 @@
           "lastfm_global": 19,
           "lastfm_tag:pop": 5
         },
-        "score": 0.782082
+        "score": 0.784581
       },
       {
         "title": "Midnight Sun",
@@ -1037,6 +1043,8 @@
         "audioProvider": null,
         "providerTrackId": null,
         "sourceTags": [
+          "deezer",
+          "deezer_chart:132",
           "itunes",
           "itunes_rss",
           "itunes_search",
@@ -1051,7 +1059,8 @@
           "lastfm_global"
         ],
         "rankSignals": {
-          "itunes_rss": 58,
+          "deezer_chart:132": 61,
+          "itunes_rss": 55,
           "itunes_search": 1817499251,
           "lastfm_geo:Australia": 63,
           "lastfm_geo:Brazil": 13,
@@ -1063,7 +1072,7 @@
           "lastfm_geo:United States": 63,
           "lastfm_global": 21
         },
-        "score": 0.759355
+        "score": 0.766243
       },
       {
         "title": "NOBLE",
@@ -1118,8 +1127,8 @@
           "lastfm_global"
         ],
         "rankSignals": {
-          "deezer_chart": 7,
-          "deezer_chart:132": 2,
+          "deezer_chart": 6,
+          "deezer_chart:132": 3,
           "itunes_search": 1868482073,
           "lastfm_geo:Brazil": 33,
           "lastfm_geo:France": 50,
@@ -1128,7 +1137,7 @@
           "lastfm_geo:Spain": 37,
           "lastfm_global": 16
         },
-        "score": 0.742258
+        "score": 0.743992
       },
       {
         "title": "Don't Stop 'Til You Get Enough",
@@ -1155,7 +1164,7 @@
           "lastfm_tag:pop"
         ],
         "rankSignals": {
-          "itunes_rss": 73,
+          "itunes_rss": 63,
           "itunes_search": 273598912,
           "lastfm_geo:Australia": 18,
           "lastfm_geo:Brazil": 54,
@@ -1168,7 +1177,7 @@
           "lastfm_global": 23,
           "lastfm_tag:pop": 6
         },
-        "score": 0.737108
+        "score": 0.741789
       },
       {
         "title": "The Less I Know the Better",
@@ -1264,7 +1273,7 @@
           "lastfm_global"
         ],
         "rankSignals": {
-          "deezer_chart:116": 15,
+          "deezer_chart:116": 14,
           "itunes_search": 6769649576,
           "lastfm_geo:Australia": 19,
           "lastfm_geo:Canada": 4,
@@ -1274,7 +1283,7 @@
           "lastfm_geo:United States": 18,
           "lastfm_global": 35
         },
-        "score": 0.686144
+        "score": 0.686385
       },
       {
         "title": "WHERE IS MY HUSBAND!",
@@ -1301,9 +1310,9 @@
           "lastfm_global"
         ],
         "rankSignals": {
-          "deezer_chart": 8,
-          "deezer_chart:132": 3,
-          "itunes_rss": 40,
+          "deezer_chart": 11,
+          "deezer_chart:132": 6,
+          "itunes_rss": 39,
           "itunes_search": 1838737598,
           "lastfm_geo:Australia": 113,
           "lastfm_geo:Brazil": 27,
@@ -1313,7 +1322,7 @@
           "lastfm_geo:United Kingdom": 41,
           "lastfm_global": 66
         },
-        "score": 0.681629
+        "score": 0.675491
       },
       {
         "title": "Dracula - JENNIE remix",
@@ -1442,9 +1451,9 @@
           "lastfm_global"
         ],
         "rankSignals": {
-          "deezer_chart": 9,
+          "deezer_chart": 7,
           "deezer_chart:132": 4,
-          "itunes_rss": 50,
+          "itunes_rss": 51,
           "itunes_search": 1833328840,
           "lastfm_geo:Brazil": 22,
           "lastfm_geo:France": 49,
@@ -1453,7 +1462,7 @@
           "lastfm_geo:Spain": 43,
           "lastfm_global": 62
         },
-        "score": 0.5976
+        "score": 0.60106
       },
       {
         "title": "See You Again (feat. Kali Uchis)",
@@ -1515,7 +1524,7 @@
           "lastfm_tag:hip-hop"
         ],
         "rankSignals": {
-          "deezer_chart:116": 24,
+          "deezer_chart:116": 25,
           "itunes_search": 693620735,
           "lastfm_geo:Australia": 41,
           "lastfm_geo:Brazil": 95,
@@ -1528,7 +1537,7 @@
           "lastfm_tag:electronic": 4,
           "lastfm_tag:hip-hop": 61
         },
-        "score": 0.586612
+        "score": 0.586381
       },
       {
         "title": "The One That Got Away",
@@ -1570,14 +1579,12 @@
         "artist": "TV Girl",
         "album": "French Exit",
         "durationMs": 213000,
-        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/b7fbbf269348650cee5dd6c5e3df4127/1000x1000-000000-80-0-0.jpg",
+        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/3d/09/0c/3d090c87-f02b-3c3c-cedf-603cc900082f/888174780955_cover.jpg/600x600bb.jpg",
         "audioUrl": null,
         "audioProvider": null,
         "providerTrackId": null,
         "sourceTags": [
-          "deezer",
-          "deezer_chart:132",
-          "deezer_search",
+          "itunes_search",
           "lastfm_geo:Australia",
           "lastfm_geo:Brazil",
           "lastfm_geo:Canada",
@@ -1587,8 +1594,7 @@
           "lastfm_global"
         ],
         "rankSignals": {
-          "deezer_chart:132": 67,
-          "deezer_search": 1751426027,
+          "itunes_search": 1623929730,
           "lastfm_geo:Australia": 37,
           "lastfm_geo:Brazil": 79,
           "lastfm_geo:Canada": 28,
@@ -1597,7 +1603,7 @@
           "lastfm_geo:United States": 30,
           "lastfm_global": 36
         },
-        "score": 0.579073
+        "score": 0.574703
       },
       {
         "title": "back to friends",
@@ -1609,6 +1615,8 @@
         "audioProvider": null,
         "providerTrackId": null,
         "sourceTags": [
+          "deezer",
+          "deezer_chart:85",
           "itunes_search",
           "lastfm_geo:Australia",
           "lastfm_geo:Brazil",
@@ -1623,6 +1631,7 @@
           "lastfm_global"
         ],
         "rankSignals": {
+          "deezer_chart:85": 90,
           "itunes_search": 1858011687,
           "lastfm_geo:Australia": 31,
           "lastfm_geo:Brazil": 38,
@@ -1636,45 +1645,7 @@
           "lastfm_geo:United States": 108,
           "lastfm_global": 33
         },
-        "score": 0.572746
-      },
-      {
-        "title": "Good Luck, Babe!",
-        "artist": "Chappell Roan",
-        "album": "Good Luck, Babe! - Single",
-        "durationMs": 218000,
-        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/29/a7/c4/29a7c478-351d-25eb-a116-3e68118cdab8/24UMGIM31246.rgb.jpg/600x600bb.jpg",
-        "audioUrl": null,
-        "audioProvider": null,
-        "providerTrackId": null,
-        "sourceTags": [
-          "deezer",
-          "deezer_chart",
-          "deezer_chart:132",
-          "itunes_search",
-          "lastfm_geo:Australia",
-          "lastfm_geo:Brazil",
-          "lastfm_geo:Canada",
-          "lastfm_geo:Mexico",
-          "lastfm_geo:Spain",
-          "lastfm_geo:United Kingdom",
-          "lastfm_geo:United States",
-          "lastfm_global"
-        ],
-        "rankSignals": {
-          "deezer_chart": 96,
-          "deezer_chart:132": 23,
-          "itunes_search": 1737497080,
-          "lastfm_geo:Australia": 58,
-          "lastfm_geo:Brazil": 20,
-          "lastfm_geo:Canada": 69,
-          "lastfm_geo:Mexico": 120,
-          "lastfm_geo:Spain": 99,
-          "lastfm_geo:United Kingdom": 26,
-          "lastfm_geo:United States": 50,
-          "lastfm_global": 31
-        },
-        "score": 0.570566
+        "score": 0.573699
       },
       {
         "title": "Sweet Boy",
@@ -1704,6 +1675,42 @@
         "score": 0.570553
       },
       {
+        "title": "Good Luck, Babe!",
+        "artist": "Chappell Roan",
+        "album": "Good Luck, Babe! - Single",
+        "durationMs": 218000,
+        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/29/a7/c4/29a7c478-351d-25eb-a116-3e68118cdab8/24UMGIM31246.rgb.jpg/600x600bb.jpg",
+        "audioUrl": null,
+        "audioProvider": null,
+        "providerTrackId": null,
+        "sourceTags": [
+          "deezer",
+          "deezer_chart:132",
+          "itunes_search",
+          "lastfm_geo:Australia",
+          "lastfm_geo:Brazil",
+          "lastfm_geo:Canada",
+          "lastfm_geo:Mexico",
+          "lastfm_geo:Spain",
+          "lastfm_geo:United Kingdom",
+          "lastfm_geo:United States",
+          "lastfm_global"
+        ],
+        "rankSignals": {
+          "deezer_chart:132": 30,
+          "itunes_search": 1737497080,
+          "lastfm_geo:Australia": 58,
+          "lastfm_geo:Brazil": 20,
+          "lastfm_geo:Canada": 69,
+          "lastfm_geo:Mexico": 120,
+          "lastfm_geo:Spain": 99,
+          "lastfm_geo:United Kingdom": 26,
+          "lastfm_geo:United States": 50,
+          "lastfm_global": 31
+        },
+        "score": 0.566339
+      },
+      {
         "title": "Manchild",
         "artist": "Sabrina Carpenter",
         "album": "Manchild",
@@ -1726,7 +1733,7 @@
           "lastfm_global"
         ],
         "rankSignals": {
-          "deezer_chart:132": 63,
+          "deezer_chart:132": 38,
           "deezer_search": 3400077541,
           "lastfm_geo:Australia": 108,
           "lastfm_geo:Brazil": 11,
@@ -1737,104 +1744,48 @@
           "lastfm_geo:United States": 93,
           "lastfm_global": 22
         },
-        "score": 0.554504
+        "score": 0.559474
       },
       {
-        "title": "Bags",
-        "artist": "Clairo",
-        "album": "Immunity",
-        "durationMs": 260000,
-        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f2/47/06/f24706bc-a90c-f730-bd8a-586ddde8af3e/829299184631.jpg/600x600bb.jpg",
+        "title": "Iris",
+        "artist": "The Goo Goo Dolls",
+        "album": "Greatest Hits, Vol. One: The Singles",
+        "durationMs": 289000,
+        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2c/13/18/2c131801-00af-58b1-3cc2-13abf4ad5416/093624919162.jpg/600x600bb.jpg",
         "audioUrl": null,
         "audioProvider": null,
         "providerTrackId": null,
         "sourceTags": [
+          "itunes",
+          "itunes_rss",
           "itunes_search",
           "lastfm_geo:Australia",
+          "lastfm_geo:Brazil",
           "lastfm_geo:Canada",
+          "lastfm_geo:Germany",
           "lastfm_geo:United Kingdom",
           "lastfm_geo:United States",
           "lastfm_global"
         ],
         "rankSignals": {
-          "itunes_search": 1893175134,
-          "lastfm_geo:Australia": 13,
-          "lastfm_geo:Canada": 23,
-          "lastfm_geo:United Kingdom": 28,
-          "lastfm_geo:United States": 33,
-          "lastfm_global": 52
+          "itunes_rss": 83,
+          "itunes_search": 1109658204,
+          "lastfm_geo:Australia": 23,
+          "lastfm_geo:Brazil": 119,
+          "lastfm_geo:Canada": 36,
+          "lastfm_geo:Germany": 39,
+          "lastfm_geo:United Kingdom": 44,
+          "lastfm_geo:United States": 59,
+          "lastfm_global": 40
         },
-        "score": 0.536095
-      },
-      {
-        "title": "House Tour",
-        "artist": "Sabrina Carpenter",
-        "album": "Man’s Best Friend",
-        "durationMs": 169000,
-        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/cc/bc/ef/ccbcefb5-cf3a-1c55-0173-c37602827c7a/25UMGIM81699.rgb.jpg/600x600bb.jpg",
-        "audioUrl": null,
-        "audioProvider": null,
-        "providerTrackId": null,
-        "sourceTags": [
-          "deezer",
-          "deezer_chart:132",
-          "itunes_search",
-          "lastfm_geo:Australia",
-          "lastfm_geo:Brazil",
-          "lastfm_geo:Canada",
-          "lastfm_geo:Spain",
-          "lastfm_geo:United Kingdom",
-          "lastfm_geo:United States",
-          "lastfm_global"
-        ],
-        "rankSignals": {
-          "deezer_chart:132": 96,
-          "itunes_search": 1819861170,
-          "lastfm_geo:Australia": 52,
-          "lastfm_geo:Brazil": 16,
-          "lastfm_geo:Canada": 81,
-          "lastfm_geo:Spain": 74,
-          "lastfm_geo:United Kingdom": 15,
-          "lastfm_geo:United States": 74,
-          "lastfm_global": 38
-        },
-        "score": 0.535734
-      },
-      {
-        "title": "Body to Body",
-        "artist": "BTS",
-        "album": "ARIRANG",
-        "durationMs": 189000,
-        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e0/a2/b4/e0a2b443-7969-b57a-a591-cb6172c10aa7/198704943959_Cover.jpg/600x600bb.jpg",
-        "audioUrl": null,
-        "audioProvider": null,
-        "providerTrackId": null,
-        "sourceTags": [
-          "itunes_search",
-          "lastfm_geo:Brazil",
-          "lastfm_geo:France",
-          "lastfm_geo:Japan",
-          "lastfm_geo:Mexico",
-          "lastfm_geo:Spain",
-          "lastfm_global"
-        ],
-        "rankSignals": {
-          "itunes_search": 1868481905,
-          "lastfm_geo:Brazil": 39,
-          "lastfm_geo:France": 57,
-          "lastfm_geo:Japan": 21,
-          "lastfm_geo:Mexico": 2,
-          "lastfm_geo:Spain": 45,
-          "lastfm_global": 25
-        },
-        "score": 0.535506
+        "score": 0.558173
       },
       {
         "title": "Self Aware",
         "artist": "Temper City",
-        "album": "Self Aware - Single",
+        "album": "Self Aware",
         "durationMs": 180000,
-        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ba/63/6e/ba636e4b-5c9a-e89c-87d3-1a9ab7773644/1084252.jpg/600x600bb.jpg",
+        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/4e803aeb014d512c960b5cc7ccaa1800/1000x1000-000000-80-0-0.jpg",
         "audioUrl": null,
         "audioProvider": null,
         "providerTrackId": null,
@@ -1842,7 +1793,7 @@
           "deezer",
           "deezer_chart",
           "deezer_chart:85",
-          "itunes_search",
+          "deezer_search",
           "lastfm_geo:Australia",
           "lastfm_geo:Brazil",
           "lastfm_geo:Canada",
@@ -1853,9 +1804,9 @@
           "lastfm_global"
         ],
         "rankSignals": {
-          "deezer_chart": 34,
-          "deezer_chart:85": 21,
-          "itunes_search": 1877803360,
+          "deezer_chart": 28,
+          "deezer_chart:85": 14,
+          "deezer_search": 3848530521,
           "lastfm_geo:Australia": 57,
           "lastfm_geo:Brazil": 53,
           "lastfm_geo:Canada": 79,
@@ -1865,19 +1816,106 @@
           "lastfm_geo:United Kingdom": 88,
           "lastfm_global": 57
         },
-        "score": 0.529618
+        "score": 0.542005
+      },
+      {
+        "title": "Bags",
+        "artist": "Clairo",
+        "album": "Bags",
+        "durationMs": 260000,
+        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/ce9daf5b5d41cf2c8e1076b2a1e07787/1000x1000-000000-80-0-0.jpg",
+        "audioUrl": null,
+        "audioProvider": null,
+        "providerTrackId": null,
+        "sourceTags": [
+          "deezer_search",
+          "lastfm_geo:Australia",
+          "lastfm_geo:Canada",
+          "lastfm_geo:United Kingdom",
+          "lastfm_geo:United States",
+          "lastfm_global"
+        ],
+        "rankSignals": {
+          "deezer_search": 3958766981,
+          "lastfm_geo:Australia": 13,
+          "lastfm_geo:Canada": 23,
+          "lastfm_geo:United Kingdom": 28,
+          "lastfm_geo:United States": 33,
+          "lastfm_global": 52
+        },
+        "score": 0.536095
+      },
+      {
+        "title": "Body to Body",
+        "artist": "BTS",
+        "album": "ARIRANG",
+        "durationMs": 189000,
+        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/a3b8e9462db0c02e082c706c624f9811/1000x1000-000000-80-0-0.jpg",
+        "audioUrl": null,
+        "audioProvider": null,
+        "providerTrackId": null,
+        "sourceTags": [
+          "deezer_search",
+          "lastfm_geo:Brazil",
+          "lastfm_geo:France",
+          "lastfm_geo:Japan",
+          "lastfm_geo:Mexico",
+          "lastfm_geo:Spain",
+          "lastfm_global"
+        ],
+        "rankSignals": {
+          "deezer_search": 3907717191,
+          "lastfm_geo:Brazil": 39,
+          "lastfm_geo:France": 57,
+          "lastfm_geo:Japan": 21,
+          "lastfm_geo:Mexico": 2,
+          "lastfm_geo:Spain": 45,
+          "lastfm_global": 25
+        },
+        "score": 0.535506
+      },
+      {
+        "title": "House Tour",
+        "artist": "Sabrina Carpenter",
+        "album": "Man’s Best Friend",
+        "durationMs": 169000,
+        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/c2fd3775c93a906c415f3581b3b06d7e/1000x1000-000000-80-0-0.jpg",
+        "audioUrl": null,
+        "audioProvider": null,
+        "providerTrackId": null,
+        "sourceTags": [
+          "deezer_search",
+          "lastfm_geo:Australia",
+          "lastfm_geo:Brazil",
+          "lastfm_geo:Canada",
+          "lastfm_geo:Spain",
+          "lastfm_geo:United Kingdom",
+          "lastfm_geo:United States",
+          "lastfm_global"
+        ],
+        "rankSignals": {
+          "deezer_search": 3529873581,
+          "lastfm_geo:Australia": 52,
+          "lastfm_geo:Brazil": 16,
+          "lastfm_geo:Canada": 81,
+          "lastfm_geo:Spain": 74,
+          "lastfm_geo:United Kingdom": 15,
+          "lastfm_geo:United States": 74,
+          "lastfm_global": 38
+        },
+        "score": 0.535405
       },
       {
         "title": "Lover, You Should've Come Over",
         "artist": "Jeff Buckley",
         "album": "Grace",
         "durationMs": 403000,
-        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/26/d6/e3/26d6e339-a7a9-d61e-1b5f-0852a5515a55/886445517880.jpg/600x600bb.jpg",
+        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/57dd4754a69acaaf3a8a82f7fd1b8ad3/1000x1000-000000-80-0-0.jpg",
         "audioUrl": null,
         "audioProvider": null,
         "providerTrackId": null,
         "sourceTags": [
-          "itunes_search",
+          "deezer_search",
           "lastfm_geo:Australia",
           "lastfm_geo:Brazil",
           "lastfm_geo:Canada",
@@ -1887,7 +1925,7 @@
           "lastfm_tag:rock"
         ],
         "rankSignals": {
-          "itunes_search": 1046187589,
+          "deezer_search": 108733466,
           "lastfm_geo:Australia": 22,
           "lastfm_geo:Brazil": 80,
           "lastfm_geo:Canada": 60,
@@ -1930,66 +1968,6 @@
         "score": 0.520053
       },
       {
-        "title": "Iris",
-        "artist": "The Goo Goo Dolls",
-        "album": "Dizzy Up the Girl",
-        "durationMs": 289000,
-        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2c/13/18/2c131801-00af-58b1-3cc2-13abf4ad5416/093624919162.jpg/600x600bb.jpg",
-        "audioUrl": null,
-        "audioProvider": null,
-        "providerTrackId": null,
-        "sourceTags": [
-          "itunes_search",
-          "lastfm_geo:Australia",
-          "lastfm_geo:Brazil",
-          "lastfm_geo:Canada",
-          "lastfm_geo:Germany",
-          "lastfm_geo:United Kingdom",
-          "lastfm_geo:United States",
-          "lastfm_global"
-        ],
-        "rankSignals": {
-          "itunes_search": 1109658204,
-          "lastfm_geo:Australia": 23,
-          "lastfm_geo:Brazil": 119,
-          "lastfm_geo:Canada": 36,
-          "lastfm_geo:Germany": 39,
-          "lastfm_geo:United Kingdom": 44,
-          "lastfm_geo:United States": 59,
-          "lastfm_global": 40
-        },
-        "score": 0.518932
-      },
-      {
-        "title": "Hooligan",
-        "artist": "BTS",
-        "album": "ARIRANG",
-        "durationMs": 182000,
-        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/83/cb/bc/83cbbc49-cfad-aeaf-3292-0dd428290d81/198704942365_Cover.jpg/600x600bb.jpg",
-        "audioUrl": null,
-        "audioProvider": null,
-        "providerTrackId": null,
-        "sourceTags": [
-          "itunes_search",
-          "lastfm_geo:Brazil",
-          "lastfm_geo:France",
-          "lastfm_geo:Japan",
-          "lastfm_geo:Mexico",
-          "lastfm_geo:Spain",
-          "lastfm_global"
-        ],
-        "rankSignals": {
-          "itunes_search": 1868862377,
-          "lastfm_geo:Brazil": 37,
-          "lastfm_geo:France": 72,
-          "lastfm_geo:Japan": 27,
-          "lastfm_geo:Mexico": 3,
-          "lastfm_geo:Spain": 47,
-          "lastfm_global": 27
-        },
-        "score": 0.514668
-      },
-      {
         "title": "Everlong",
         "artist": "Foo Fighters",
         "album": "00111125 - Live In London",
@@ -2010,7 +1988,7 @@
           "lastfm_tag:rock"
         ],
         "rankSignals": {
-          "deezer_chart:152": 34,
+          "deezer_chart:152": 24,
           "deezer_search": 710364362,
           "lastfm_geo:Australia": 32,
           "lastfm_geo:Canada": 37,
@@ -2019,7 +1997,67 @@
           "lastfm_global": 65,
           "lastfm_tag:rock": 2
         },
-        "score": 0.51333
+        "score": 0.515586
+      },
+      {
+        "title": "Man I Need",
+        "artist": "Olivia Dean",
+        "album": "The Art of Loving",
+        "durationMs": 184000,
+        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/73eb46e655061c72096b67f70a8dc609/1000x1000-000000-80-0-0.jpg",
+        "audioUrl": null,
+        "audioProvider": null,
+        "providerTrackId": null,
+        "sourceTags": [
+          "deezer",
+          "deezer_chart",
+          "deezer_chart:132",
+          "deezer_search",
+          "itunes",
+          "itunes_rss",
+          "lastfm_geo:Australia",
+          "lastfm_geo:United Kingdom",
+          "lastfm_global"
+        ],
+        "rankSignals": {
+          "deezer_chart": 8,
+          "deezer_chart:132": 5,
+          "deezer_search": 3503857201,
+          "itunes_rss": 17,
+          "lastfm_geo:Australia": 26,
+          "lastfm_geo:United Kingdom": 18,
+          "lastfm_global": 96
+        },
+        "score": 0.514821
+      },
+      {
+        "title": "Hooligan",
+        "artist": "BTS",
+        "album": "ARIRANG",
+        "durationMs": 182000,
+        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/a3b8e9462db0c02e082c706c624f9811/1000x1000-000000-80-0-0.jpg",
+        "audioUrl": null,
+        "audioProvider": null,
+        "providerTrackId": null,
+        "sourceTags": [
+          "deezer_search",
+          "lastfm_geo:Brazil",
+          "lastfm_geo:France",
+          "lastfm_geo:Japan",
+          "lastfm_geo:Mexico",
+          "lastfm_geo:Spain",
+          "lastfm_global"
+        ],
+        "rankSignals": {
+          "deezer_search": 3907717201,
+          "lastfm_geo:Brazil": 37,
+          "lastfm_geo:France": 72,
+          "lastfm_geo:Japan": 27,
+          "lastfm_geo:Mexico": 3,
+          "lastfm_geo:Spain": 47,
+          "lastfm_global": 27
+        },
+        "score": 0.514668
       },
       {
         "title": "Roommates",
@@ -2049,35 +2087,36 @@
         "score": 0.512532
       },
       {
-        "title": "Man I Need",
-        "artist": "Olivia Dean",
-        "album": "The Art of Loving",
-        "durationMs": 184000,
-        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/08/e2/21/08e22164-7c0b-1522-818f-e0e74f62dc49/25UMGIM69703.rgb.jpg/600x600bb.jpg",
+        "title": "DtMF",
+        "artist": "Bad Bunny",
+        "album": "DeBÍ TiRAR MáS FOToS",
+        "durationMs": 236000,
+        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/d98eaccfbb945bdf68241d6de7fe6a49/1000x1000-000000-80-0-0.jpg",
         "audioUrl": null,
         "audioProvider": null,
         "providerTrackId": null,
         "sourceTags": [
           "deezer",
           "deezer_chart",
-          "deezer_chart:132",
-          "itunes",
-          "itunes_rss",
-          "itunes_search",
-          "lastfm_geo:Australia",
-          "lastfm_geo:United Kingdom",
+          "deezer_search",
+          "lastfm_geo:France",
+          "lastfm_geo:Germany",
+          "lastfm_geo:Mexico",
+          "lastfm_geo:Spain",
+          "lastfm_geo:United States",
           "lastfm_global"
         ],
         "rankSignals": {
-          "deezer_chart": 12,
-          "deezer_chart:132": 7,
-          "itunes_rss": 17,
-          "itunes_search": 1817609509,
-          "lastfm_geo:Australia": 26,
-          "lastfm_geo:United Kingdom": 18,
-          "lastfm_global": 96
+          "deezer_chart": 35,
+          "deezer_search": 3171003131,
+          "lastfm_geo:France": 35,
+          "lastfm_geo:Germany": 48,
+          "lastfm_geo:Mexico": 68,
+          "lastfm_geo:Spain": 9,
+          "lastfm_geo:United States": 58,
+          "lastfm_global": 68
         },
-        "score": 0.506487
+        "score": 0.507415
       },
       {
         "title": "Sweater Weather",
@@ -2150,12 +2189,12 @@
         "artist": "BTS",
         "album": "ARIRANG",
         "durationMs": 169000,
-        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/a3b8e9462db0c02e082c706c624f9811/1000x1000-000000-80-0-0.jpg",
+        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/69/0a/7b/690a7bb3-4483-2418-158c-9276d7d98f81/823375049500_Cover.jpg/600x600bb.jpg",
         "audioUrl": null,
         "audioProvider": null,
         "providerTrackId": null,
         "sourceTags": [
-          "deezer_search",
+          "itunes_search",
           "lastfm_geo:Brazil",
           "lastfm_geo:France",
           "lastfm_geo:Japan",
@@ -2164,7 +2203,7 @@
           "lastfm_global"
         ],
         "rankSignals": {
-          "deezer_search": 3907717241,
+          "itunes_search": 1885720394,
           "lastfm_geo:Brazil": 41,
           "lastfm_geo:France": 78,
           "lastfm_geo:Japan": 23,
@@ -2179,12 +2218,12 @@
         "artist": "The Marías",
         "album": "Submarine",
         "durationMs": 236000,
-        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0b/4d/b6/0b4db6bd-2d40-55a5-1714-67f5c816294d/075679659644.jpg/600x600bb.jpg",
+        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/574bd156ad04b9af443cdf6775cfa8c3/1000x1000-000000-80-0-0.jpg",
         "audioUrl": null,
         "audioProvider": null,
         "providerTrackId": null,
         "sourceTags": [
-          "itunes_search",
+          "deezer_search",
           "lastfm_geo:Australia",
           "lastfm_geo:Brazil",
           "lastfm_geo:Canada",
@@ -2195,7 +2234,7 @@
           "lastfm_global"
         ],
         "rankSignals": {
-          "itunes_search": 1733731157,
+          "deezer_search": 2816073752,
           "lastfm_geo:Australia": 34,
           "lastfm_geo:Brazil": 97,
           "lastfm_geo:Canada": 25,
@@ -2206,38 +2245,6 @@
           "lastfm_global": 39
         },
         "score": 0.496464
-      },
-      {
-        "title": "DtMF",
-        "artist": "Bad Bunny",
-        "album": "DeBÍ TiRAR MáS FOToS",
-        "durationMs": 236000,
-        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/d98eaccfbb945bdf68241d6de7fe6a49/1000x1000-000000-80-0-0.jpg",
-        "audioUrl": null,
-        "audioProvider": null,
-        "providerTrackId": null,
-        "sourceTags": [
-          "deezer",
-          "deezer_chart",
-          "deezer_search",
-          "lastfm_geo:France",
-          "lastfm_geo:Germany",
-          "lastfm_geo:Mexico",
-          "lastfm_geo:Spain",
-          "lastfm_geo:United States",
-          "lastfm_global"
-        ],
-        "rankSignals": {
-          "deezer_chart": 49,
-          "deezer_search": 3171003131,
-          "lastfm_geo:France": 35,
-          "lastfm_geo:Germany": 48,
-          "lastfm_geo:Mexico": 68,
-          "lastfm_geo:Spain": 9,
-          "lastfm_geo:United States": 58,
-          "lastfm_global": 68
-        },
-        "score": 0.483858
       },
       {
         "title": "In My Room",
@@ -2331,16 +2338,16 @@
       {
         "title": "Love Me Not",
         "artist": "Ravyn Lenae",
-        "album": "Love Me Not / Love Is Blind",
+        "album": "Bird's Eye",
         "durationMs": 213000,
-        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/9801ef458ad49afbc613ca2abeb79734/1000x1000-000000-80-0-0.jpg",
+        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/07/8c/6c/078c6c94-d38d-0451-d57b-23e957b569f8/075679660893.jpg/600x600bb.jpg",
         "audioUrl": null,
         "audioProvider": null,
         "providerTrackId": null,
         "sourceTags": [
           "deezer",
           "deezer_chart:165",
-          "deezer_search",
+          "itunes_search",
           "lastfm_geo:Australia",
           "lastfm_geo:Canada",
           "lastfm_geo:France",
@@ -2350,8 +2357,8 @@
           "lastfm_global"
         ],
         "rankSignals": {
-          "deezer_chart:165": 2,
-          "deezer_search": 2755315691,
+          "deezer_chart:165": 3,
+          "itunes_search": 1743852427,
           "lastfm_geo:Australia": 42,
           "lastfm_geo:Canada": 45,
           "lastfm_geo:France": 39,
@@ -2360,19 +2367,19 @@
           "lastfm_geo:United States": 117,
           "lastfm_global": 61
         },
-        "score": 0.45214
+        "score": 0.451888
       },
       {
         "title": "LES",
         "artist": "Childish Gambino",
         "album": "Camp",
-        "durationMs": 317000,
-        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/206697ef5a060454db2e107360543189/1000x1000-000000-80-0-0.jpg",
+        "durationMs": 317293,
+        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8f/23/b8/8f23b822-dd02-573a-60d7-b20226819fd1/0892038002411_Cover.jpg/600x600bb.jpg",
         "audioUrl": null,
         "audioProvider": null,
         "providerTrackId": null,
         "sourceTags": [
-          "deezer_search",
+          "itunes_search",
           "lastfm_geo:Australia",
           "lastfm_geo:Canada",
           "lastfm_geo:Germany",
@@ -2381,7 +2388,7 @@
           "lastfm_global"
         ],
         "rankSignals": {
-          "deezer_search": 3025696061,
+          "itunes_search": 1771705804,
           "lastfm_geo:Australia": 55,
           "lastfm_geo:Canada": 65,
           "lastfm_geo:Germany": 70,
@@ -2411,7 +2418,7 @@
           "lastfm_global"
         ],
         "rankSignals": {
-          "deezer_chart:116": 11,
+          "deezer_chart:116": 16,
           "deezer_search": 3812245442,
           "lastfm_geo:Australia": 33,
           "lastfm_geo:Canada": 15,
@@ -2419,7 +2426,7 @@
           "lastfm_geo:United States": 19,
           "lastfm_global": 70
         },
-        "score": 0.440351
+        "score": 0.439143
       },
       {
         "title": "DANCE...",
@@ -2457,38 +2464,6 @@
         "score": 0.434794
       },
       {
-        "title": "Sienna",
-        "artist": "The Marías",
-        "album": "Submarine",
-        "durationMs": 224000,
-        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/574bd156ad04b9af443cdf6775cfa8c3/1000x1000-000000-80-0-0.jpg",
-        "audioUrl": null,
-        "audioProvider": null,
-        "providerTrackId": null,
-        "sourceTags": [
-          "deezer",
-          "deezer_chart:85",
-          "deezer_search",
-          "lastfm_geo:Australia",
-          "lastfm_geo:Brazil",
-          "lastfm_geo:Canada",
-          "lastfm_geo:France",
-          "lastfm_geo:United States",
-          "lastfm_global"
-        ],
-        "rankSignals": {
-          "deezer_chart:85": 7,
-          "deezer_search": 2816073782,
-          "lastfm_geo:Australia": 39,
-          "lastfm_geo:Brazil": 105,
-          "lastfm_geo:Canada": 31,
-          "lastfm_geo:France": 103,
-          "lastfm_geo:United States": 39,
-          "lastfm_global": 50
-        },
-        "score": 0.429929
-      },
-      {
         "title": "Pink + White",
         "artist": "Frank Ocean",
         "album": "Blonde",
@@ -2520,16 +2495,48 @@
         "score": 0.429158
       },
       {
-        "title": "The Adults Are Talking",
-        "artist": "The Strokes",
-        "album": "The New Abnormal",
-        "durationMs": 349000,
-        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/62/a6/ff/62a6ff2a-95c9-5302-31f4-2dcca9e40323/886448281085.jpg/600x600bb.jpg",
+        "title": "Sienna",
+        "artist": "The Marías",
+        "album": "Submarine",
+        "durationMs": 224000,
+        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/574bd156ad04b9af443cdf6775cfa8c3/1000x1000-000000-80-0-0.jpg",
         "audioUrl": null,
         "audioProvider": null,
         "providerTrackId": null,
         "sourceTags": [
-          "itunes_search",
+          "deezer",
+          "deezer_chart:85",
+          "deezer_search",
+          "lastfm_geo:Australia",
+          "lastfm_geo:Brazil",
+          "lastfm_geo:Canada",
+          "lastfm_geo:France",
+          "lastfm_geo:United States",
+          "lastfm_global"
+        ],
+        "rankSignals": {
+          "deezer_chart:85": 11,
+          "deezer_search": 2816073782,
+          "lastfm_geo:Australia": 39,
+          "lastfm_geo:Brazil": 105,
+          "lastfm_geo:Canada": 31,
+          "lastfm_geo:France": 103,
+          "lastfm_geo:United States": 39,
+          "lastfm_global": 50
+        },
+        "score": 0.428945
+      },
+      {
+        "title": "The Adults Are Talking",
+        "artist": "The Strokes",
+        "album": "The New Abnormal",
+        "durationMs": 349000,
+        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/f8a0a2e1ec12c1026cd03208237cd934/1000x1000-000000-80-0-0.jpg",
+        "audioUrl": null,
+        "audioProvider": null,
+        "providerTrackId": null,
+        "sourceTags": [
+          "deezer_search",
           "lastfm_geo:Australia",
           "lastfm_geo:Canada",
           "lastfm_geo:France",
@@ -2538,7 +2545,7 @@
           "lastfm_global"
         ],
         "rankSignals": {
-          "itunes_search": 1498121711,
+          "deezer_search": 921027292,
           "lastfm_geo:Australia": 67,
           "lastfm_geo:Canada": 50,
           "lastfm_geo:France": 70,
@@ -2547,6 +2554,35 @@
           "lastfm_global": 59
         },
         "score": 0.428068
+      },
+      {
+        "title": "FYA",
+        "artist": "BTS",
+        "album": "ARIRANG",
+        "durationMs": 180000,
+        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e0/a2/b4/e0a2b443-7969-b57a-a591-cb6172c10aa7/198704943959_Cover.jpg/600x600bb.jpg",
+        "audioUrl": null,
+        "audioProvider": null,
+        "providerTrackId": null,
+        "sourceTags": [
+          "itunes_search",
+          "lastfm_geo:Brazil",
+          "lastfm_geo:France",
+          "lastfm_geo:Japan",
+          "lastfm_geo:Mexico",
+          "lastfm_geo:Spain",
+          "lastfm_global"
+        ],
+        "rankSignals": {
+          "itunes_search": 1868481909,
+          "lastfm_geo:Brazil": 72,
+          "lastfm_geo:France": 77,
+          "lastfm_geo:Japan": 49,
+          "lastfm_geo:Mexico": 5,
+          "lastfm_geo:Spain": 56,
+          "lastfm_global": 42
+        },
+        "score": 0.42195
       },
       {
         "title": "Lush Life",
@@ -2572,7 +2608,7 @@
         ],
         "rankSignals": {
           "deezer_search": 144389048,
-          "itunes_rss": 67,
+          "itunes_rss": 77,
           "lastfm_geo:Australia": 98,
           "lastfm_geo:Canada": 99,
           "lastfm_geo:France": 40,
@@ -2582,13 +2618,13 @@
           "lastfm_global": 75,
           "lastfm_tag:pop": 50
         },
-        "score": 0.42629
+        "score": 0.421658
       },
       {
-        "title": "FYA",
+        "title": "they don’t know ’bout us",
         "artist": "BTS",
         "album": "ARIRANG",
-        "durationMs": 180000,
+        "durationMs": 164000,
         "coverUrl": "https://cdn-images.dzcdn.net/images/cover/a3b8e9462db0c02e082c706c624f9811/1000x1000-000000-80-0-0.jpg",
         "audioUrl": null,
         "audioProvider": null,
@@ -2603,36 +2639,7 @@
           "lastfm_global"
         ],
         "rankSignals": {
-          "deezer_search": 3907717231,
-          "lastfm_geo:Brazil": 72,
-          "lastfm_geo:France": 77,
-          "lastfm_geo:Japan": 49,
-          "lastfm_geo:Mexico": 5,
-          "lastfm_geo:Spain": 56,
-          "lastfm_global": 42
-        },
-        "score": 0.42195
-      },
-      {
-        "title": "they don’t know ’bout us",
-        "artist": "BTS",
-        "album": "ARIRANG",
-        "durationMs": 164000,
-        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/83/cb/bc/83cbbc49-cfad-aeaf-3292-0dd428290d81/198704942365_Cover.jpg/600x600bb.jpg",
-        "audioUrl": null,
-        "audioProvider": null,
-        "providerTrackId": null,
-        "sourceTags": [
-          "itunes_search",
-          "lastfm_geo:Brazil",
-          "lastfm_geo:France",
-          "lastfm_geo:Japan",
-          "lastfm_geo:Mexico",
-          "lastfm_geo:Spain",
-          "lastfm_global"
-        ],
-        "rankSignals": {
-          "itunes_search": 1868862389,
+          "deezer_search": 3907717301,
           "lastfm_geo:Brazil": 52,
           "lastfm_geo:France": 93,
           "lastfm_geo:Japan": 56,
@@ -2647,12 +2654,12 @@
         "artist": "Paramore",
         "album": "Paramore",
         "durationMs": 216000,
-        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/32/cb/9d/32cb9d04-ef0f-93bb-fd2f-19b395785025/075679956187.jpg/600x600bb.jpg",
+        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/485d7cab7695e48f1420182647273de4/1000x1000-000000-80-0-0.jpg",
         "audioUrl": null,
         "audioProvider": null,
         "providerTrackId": null,
         "sourceTags": [
-          "itunes_search",
+          "deezer_search",
           "lastfm_geo:Australia",
           "lastfm_geo:Canada",
           "lastfm_geo:United Kingdom",
@@ -2661,7 +2668,7 @@
           "lastfm_tag:rock"
         ],
         "rankSignals": {
-          "itunes_search": 593148441,
+          "deezer_search": 65732147,
           "lastfm_geo:Australia": 53,
           "lastfm_geo:Canada": 62,
           "lastfm_geo:United Kingdom": 52,
@@ -2670,37 +2677,6 @@
           "lastfm_tag:rock": 4
         },
         "score": 0.401831
-      },
-      {
-        "title": "So Easy (To Fall In Love)",
-        "artist": "Olivia Dean",
-        "album": "The Art of Loving",
-        "durationMs": 169000,
-        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/b7aaad0f696b5dbfe7f1ebf2c72346a5/1000x1000-000000-80-0-0.jpg",
-        "audioUrl": null,
-        "audioProvider": null,
-        "providerTrackId": null,
-        "sourceTags": [
-          "deezer",
-          "deezer_chart",
-          "deezer_chart:132",
-          "deezer_search",
-          "itunes",
-          "itunes_rss",
-          "lastfm_geo:Australia",
-          "lastfm_geo:United Kingdom",
-          "lastfm_global"
-        ],
-        "rankSignals": {
-          "deezer_chart": 14,
-          "deezer_chart:132": 8,
-          "deezer_search": 3562948071,
-          "itunes_rss": 22,
-          "lastfm_geo:Australia": 64,
-          "lastfm_geo:United Kingdom": 59,
-          "lastfm_global": 110
-        },
-        "score": 0.393566
       },
       {
         "title": "Be Like a Woman",
@@ -2728,6 +2704,72 @@
           "lastfm_global": 71
         },
         "score": 0.392075
+      },
+      {
+        "title": "So Easy (To Fall In Love)",
+        "artist": "Olivia Dean",
+        "album": "The Art of Loving",
+        "durationMs": 169000,
+        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/b7aaad0f696b5dbfe7f1ebf2c72346a5/1000x1000-000000-80-0-0.jpg",
+        "audioUrl": null,
+        "audioProvider": null,
+        "providerTrackId": null,
+        "sourceTags": [
+          "deezer",
+          "deezer_chart",
+          "deezer_chart:132",
+          "deezer_search",
+          "itunes",
+          "itunes_rss",
+          "lastfm_geo:Australia",
+          "lastfm_geo:United Kingdom",
+          "lastfm_global"
+        ],
+        "rankSignals": {
+          "deezer_chart": 16,
+          "deezer_chart:132": 10,
+          "deezer_search": 3562948071,
+          "itunes_rss": 26,
+          "lastfm_geo:Australia": 64,
+          "lastfm_geo:United Kingdom": 59,
+          "lastfm_global": 110
+        },
+        "score": 0.387163
+      },
+      {
+        "title": "Hit the Wall",
+        "artist": "Gracie Abrams",
+        "album": "Daughter from Hell",
+        "durationMs": 194000,
+        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/6919d1848a80de99b2ba4e58d8e2f9d5/1000x1000-000000-80-0-0.jpg",
+        "audioUrl": null,
+        "audioProvider": null,
+        "providerTrackId": null,
+        "sourceTags": [
+          "deezer",
+          "deezer_chart:132",
+          "deezer_search",
+          "itunes",
+          "itunes_rss",
+          "lastfm_geo:Australia",
+          "lastfm_geo:Canada",
+          "lastfm_geo:France",
+          "lastfm_geo:Spain",
+          "lastfm_geo:United Kingdom",
+          "lastfm_global"
+        ],
+        "rankSignals": {
+          "deezer_chart:132": 45,
+          "deezer_search": 4020722691,
+          "itunes_rss": 44,
+          "lastfm_geo:Australia": 40,
+          "lastfm_geo:Canada": 75,
+          "lastfm_geo:France": 94,
+          "lastfm_geo:Spain": 40,
+          "lastfm_geo:United Kingdom": 35,
+          "lastfm_global": 107
+        },
+        "score": 0.381988
       },
       {
         "title": "The Spins",
@@ -2761,46 +2803,11 @@
         "score": 0.379852
       },
       {
-        "title": "Hit the Wall",
-        "artist": "Gracie Abrams",
-        "album": "Daughter from Hell",
-        "durationMs": 194000,
-        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/6919d1848a80de99b2ba4e58d8e2f9d5/1000x1000-000000-80-0-0.jpg",
-        "audioUrl": null,
-        "audioProvider": null,
-        "providerTrackId": null,
-        "sourceTags": [
-          "deezer",
-          "deezer_chart:132",
-          "deezer_search",
-          "itunes",
-          "itunes_rss",
-          "lastfm_geo:Australia",
-          "lastfm_geo:Canada",
-          "lastfm_geo:France",
-          "lastfm_geo:Spain",
-          "lastfm_geo:United Kingdom",
-          "lastfm_global"
-        ],
-        "rankSignals": {
-          "deezer_chart:132": 73,
-          "deezer_search": 4020722691,
-          "itunes_rss": 52,
-          "lastfm_geo:Australia": 40,
-          "lastfm_geo:Canada": 75,
-          "lastfm_geo:France": 94,
-          "lastfm_geo:Spain": 40,
-          "lastfm_geo:United Kingdom": 35,
-          "lastfm_global": 107
-        },
-        "score": 0.372845
-      },
-      {
         "title": "12 to 12",
         "artist": "sombr",
-        "album": "Today's Hits: March 2026 (DJ Mix)",
+        "album": "12 to 12",
         "durationMs": 164000,
-        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/23/c4/4a/23c44a09-987c-736a-039a-56f38c28ac04/2c5d7b24-8bd2-4267-9f17-dde1a6868abd.png/600x600bb.jpg",
+        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/cd1cc167d16454ce45401681fe6b25af/1000x1000-000000-80-0-0.jpg",
         "audioUrl": null,
         "audioProvider": null,
         "providerTrackId": null,
@@ -2808,7 +2815,7 @@
           "deezer",
           "deezer_chart",
           "deezer_chart:85",
-          "itunes_search",
+          "deezer_search",
           "lastfm_geo:Australia",
           "lastfm_geo:Germany",
           "lastfm_geo:United Kingdom",
@@ -2817,7 +2824,7 @@
         "rankSignals": {
           "deezer_chart": 2,
           "deezer_chart:85": 1,
-          "itunes_search": 1881706996,
+          "deezer_search": 3471224101,
           "lastfm_geo:Australia": 49,
           "lastfm_geo:Germany": 73,
           "lastfm_geo:United Kingdom": 39,
@@ -2888,12 +2895,12 @@
         "artist": "BTS",
         "album": "ARIRANG",
         "durationMs": 181000,
-        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/a3b8e9462db0c02e082c706c624f9811/1000x1000-000000-80-0-0.jpg",
+        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/69/0a/7b/690a7bb3-4483-2418-158c-9276d7d98f81/823375049500_Cover.jpg/600x600bb.jpg",
         "audioUrl": null,
         "audioProvider": null,
         "providerTrackId": null,
         "sourceTags": [
-          "deezer_search",
+          "itunes_search",
           "lastfm_geo:Brazil",
           "lastfm_geo:France",
           "lastfm_geo:Japan",
@@ -2902,7 +2909,7 @@
           "lastfm_global"
         ],
         "rankSignals": {
-          "deezer_search": 3907717281,
+          "itunes_search": 1885720624,
           "lastfm_geo:Brazil": 96,
           "lastfm_geo:France": 91,
           "lastfm_geo:Japan": 60,
@@ -2922,8 +2929,6 @@
         "audioProvider": null,
         "providerTrackId": null,
         "sourceTags": [
-          "deezer",
-          "deezer_chart:132",
           "deezer_search",
           "lastfm_geo:Brazil",
           "lastfm_geo:France",
@@ -2932,7 +2937,6 @@
           "lastfm_global"
         ],
         "rankSignals": {
-          "deezer_chart:132": 84,
           "deezer_search": 4031935581,
           "lastfm_geo:Brazil": 49,
           "lastfm_geo:France": 69,
@@ -2940,19 +2944,19 @@
           "lastfm_geo:United Kingdom": 46,
           "lastfm_global": 82
         },
-        "score": 0.343518
+        "score": 0.341803
       },
       {
         "title": "Into You",
         "artist": "Ariana Grande",
-        "album": "Dangerous Woman",
+        "album": "Dangerous Woman (Video Album)",
         "durationMs": 244000,
-        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/1a8f399e9ddbb8ec2530232c0dfd953f/1000x1000-000000-80-0-0.jpg",
+        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/3f/70/0f/3f700f55-1c91-c890-8cb7-b8886f87b7f6/16UMGIM30042.rgb.jpg/600x600bb.jpg",
         "audioUrl": null,
         "audioProvider": null,
         "providerTrackId": null,
         "sourceTags": [
-          "deezer_search",
+          "itunes_search",
           "lastfm_geo:Australia",
           "lastfm_geo:Brazil",
           "lastfm_geo:France",
@@ -2962,7 +2966,7 @@
           "lastfm_tag:pop"
         ],
         "rankSignals": {
-          "deezer_search": 1375215242,
+          "itunes_search": 1545270163,
           "lastfm_geo:Australia": 82,
           "lastfm_geo:Brazil": 26,
           "lastfm_geo:France": 88,
@@ -3003,14 +3007,14 @@
       {
         "title": "Heartbeat",
         "artist": "Childish Gambino",
-        "album": "Camp",
+        "album": "Heartbeat (Remix Bundle)",
         "durationMs": 272000,
-        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8f/23/b8/8f23b822-dd02-573a-60d7-b20226819fd1/0892038002411_Cover.jpg/600x600bb.jpg",
+        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/1a027ef1e1315814227afeb6e91d014f/1000x1000-000000-80-0-0.jpg",
         "audioUrl": null,
         "audioProvider": null,
         "providerTrackId": null,
         "sourceTags": [
-          "itunes_search",
+          "deezer_search",
           "lastfm_geo:Australia",
           "lastfm_geo:Canada",
           "lastfm_geo:Germany",
@@ -3020,7 +3024,7 @@
           "lastfm_tag:hip-hop"
         ],
         "rankSignals": {
-          "itunes_search": 1771705799,
+          "deezer_search": 3025689971,
           "lastfm_geo:Australia": 66,
           "lastfm_geo:Canada": 88,
           "lastfm_geo:Germany": 83,
@@ -3036,14 +3040,14 @@
         "artist": "Harry Styles",
         "album": "Harry Styles",
         "durationMs": 335000,
-        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/a41167cfcc7e840821fad5f5f5f91da2/1000x1000-000000-80-0-0.jpg",
+        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/3d/5e/aa/3d5eaaa3-9a86-c264-5cd5-7fac83f99a59/886446451978.jpg/600x600bb.jpg",
         "audioUrl": null,
         "audioProvider": null,
         "providerTrackId": null,
         "sourceTags": [
-          "deezer_search",
           "itunes",
           "itunes_rss",
+          "itunes_search",
           "lastfm_geo:Australia",
           "lastfm_geo:Brazil",
           "lastfm_geo:France",
@@ -3052,8 +3056,8 @@
           "lastfm_tag:rock"
         ],
         "rankSignals": {
-          "deezer_search": 360301951,
           "itunes_rss": 46,
+          "itunes_search": 1226034393,
           "lastfm_geo:Australia": 86,
           "lastfm_geo:Brazil": 44,
           "lastfm_geo:France": 116,
@@ -3124,12 +3128,12 @@
         "artist": "Drake",
         "album": "ICEMAN",
         "durationMs": 208000,
-        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7f/39/61/7f396123-be56-bc11-eaab-976441808e58/26UMGIM63622.rgb.jpg/600x600bb.jpg",
+        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/cccf5e9af10b6aae96f5cdd5a27c2aff/1000x1000-000000-80-0-0.jpg",
         "audioUrl": null,
         "audioProvider": null,
         "providerTrackId": null,
         "sourceTags": [
-          "itunes_search",
+          "deezer_search",
           "lastfm_geo:Australia",
           "lastfm_geo:Canada",
           "lastfm_geo:United Kingdom",
@@ -3137,7 +3141,7 @@
           "lastfm_global"
         ],
         "rankSignals": {
-          "itunes_search": 6769649582,
+          "deezer_search": 4022917821,
           "lastfm_geo:Australia": 47,
           "lastfm_geo:Canada": 8,
           "lastfm_geo:United Kingdom": 99,
@@ -3147,44 +3151,16 @@
         "score": 0.297628
       },
       {
-        "title": "Homewrecker",
-        "artist": "sombr",
-        "album": "Homewrecker - Single",
-        "durationMs": 209000,
-        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/84/bf/fb/84bffb0a-023f-419f-d5f7-6636f4e5d970/054391221933.jpg/600x600bb.jpg",
-        "audioUrl": null,
-        "audioProvider": null,
-        "providerTrackId": null,
-        "sourceTags": [
-          "itunes",
-          "itunes_rss",
-          "itunes_search",
-          "lastfm_geo:Australia",
-          "lastfm_geo:Canada",
-          "lastfm_geo:United Kingdom",
-          "lastfm_global"
-        ],
-        "rankSignals": {
-          "itunes_rss": 38,
-          "itunes_search": 1871595253,
-          "lastfm_geo:Australia": 36,
-          "lastfm_geo:Canada": 93,
-          "lastfm_geo:United Kingdom": 29,
-          "lastfm_global": 126
-        },
-        "score": 0.294428
-      },
-      {
         "title": "All I Wanted",
         "artist": "Paramore",
-        "album": "Brand New Eyes",
+        "album": "heartbreak feels good in a place like this",
         "durationMs": 225000,
-        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/1346bb36e5d61b9fea447a9b3ea50f54/1000x1000-000000-80-0-0.jpg",
+        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/09/28/b6/0928b6be-f079-0fb2-e2ce-959c8f18d6a0/5059460177987.jpg/600x600bb.jpg",
         "audioUrl": null,
         "audioProvider": null,
         "providerTrackId": null,
         "sourceTags": [
-          "deezer_search",
+          "itunes_search",
           "lastfm_geo:Australia",
           "lastfm_geo:Brazil",
           "lastfm_geo:Canada",
@@ -3194,7 +3170,7 @@
           "lastfm_tag:rock"
         ],
         "rankSignals": {
-          "deezer_search": 4288431,
+          "itunes_search": 1673533155,
           "lastfm_geo:Australia": 81,
           "lastfm_geo:Brazil": 107,
           "lastfm_geo:Canada": 86,
@@ -3204,6 +3180,34 @@
           "lastfm_tag:rock": 9
         },
         "score": 0.292613
+      },
+      {
+        "title": "Homewrecker",
+        "artist": "sombr",
+        "album": "Homewrecker - Single",
+        "durationMs": 209000,
+        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/49d177885b51542d73344ce2359ca1d5/1000x1000-000000-80-0-0.jpg",
+        "audioUrl": null,
+        "audioProvider": null,
+        "providerTrackId": null,
+        "sourceTags": [
+          "deezer_search",
+          "itunes",
+          "itunes_rss",
+          "lastfm_geo:Australia",
+          "lastfm_geo:Canada",
+          "lastfm_geo:United Kingdom",
+          "lastfm_global"
+        ],
+        "rankSignals": {
+          "deezer_search": 3794985752,
+          "itunes_rss": 45,
+          "lastfm_geo:Australia": 36,
+          "lastfm_geo:Canada": 93,
+          "lastfm_geo:United Kingdom": 29,
+          "lastfm_global": 126
+        },
+        "score": 0.290936
       },
       {
         "title": "Merry Go Round",
@@ -3305,14 +3309,14 @@
         ],
         "rankSignals": {
           "deezer_search": 80274512,
-          "itunes_rss": 49,
+          "itunes_rss": 47,
           "lastfm_geo:Brazil": 71,
           "lastfm_geo:Germany": 52,
           "lastfm_geo:United Kingdom": 117,
           "lastfm_global": 84,
           "lastfm_tag:rock": 8
         },
-        "score": 0.268975
+        "score": 0.269958
       },
       {
         "title": "Illegal",
@@ -3404,12 +3408,12 @@
         "artist": "PinkPantheress",
         "album": "to hell with it (Remixes)",
         "durationMs": 120000,
-        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/e2e3eeccd4ddecd8f704c734c754f8fd/1000x1000-000000-80-0-0.jpg",
+        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/da/7c/11/da7c1137-4a6e-0798-64cd-11de54edb126/190296264849.jpg/600x600bb.jpg",
         "audioUrl": null,
         "audioProvider": null,
         "providerTrackId": null,
         "sourceTags": [
-          "deezer_search",
+          "itunes_search",
           "lastfm_geo:Australia",
           "lastfm_geo:Canada",
           "lastfm_geo:France",
@@ -3418,7 +3422,7 @@
           "lastfm_global"
         ],
         "rankSignals": {
-          "deezer_search": 1625289032,
+          "itunes_search": 1605778793,
           "lastfm_geo:Australia": 73,
           "lastfm_geo:Canada": 95,
           "lastfm_geo:France": 76,
@@ -3433,19 +3437,19 @@
         "artist": "BTS",
         "album": "ARIRANG",
         "durationMs": 227000,
-        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/83/cb/bc/83cbbc49-cfad-aeaf-3292-0dd428290d81/198704942365_Cover.jpg/600x600bb.jpg",
+        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/a3b8e9462db0c02e082c706c624f9811/1000x1000-000000-80-0-0.jpg",
         "audioUrl": null,
         "audioProvider": null,
         "providerTrackId": null,
         "sourceTags": [
-          "itunes_search",
+          "deezer_search",
           "lastfm_geo:Japan",
           "lastfm_geo:Mexico",
           "lastfm_geo:Spain",
           "lastfm_global"
         ],
         "rankSignals": {
-          "itunes_search": 1868862606,
+          "deezer_search": 3907717331,
           "lastfm_geo:Japan": 88,
           "lastfm_geo:Mexico": 13,
           "lastfm_geo:Spain": 93,
@@ -3463,8 +3467,6 @@
         "audioProvider": null,
         "providerTrackId": null,
         "sourceTags": [
-          "deezer",
-          "deezer_chart:165",
           "deezer_search",
           "lastfm_geo:Australia",
           "lastfm_geo:Canada",
@@ -3472,14 +3474,13 @@
           "lastfm_global"
         ],
         "rankSignals": {
-          "deezer_chart:165": 90,
           "deezer_search": 1805106587,
           "lastfm_geo:Australia": 74,
           "lastfm_geo:Canada": 68,
           "lastfm_geo:United States": 49,
           "lastfm_global": 97
         },
-        "score": 0.256199
+        "score": 0.255247
       },
       {
         "title": "REDRED",
@@ -3536,34 +3537,6 @@
         "score": 0.23763
       },
       {
-        "title": "BIRDS OF A FEATHER",
-        "artist": "Billie Eilish",
-        "album": "Today's Hits: March 2025 (DJ Mix)",
-        "durationMs": 183000,
-        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d1/8b/40/d18b403c-82df-0807-949d-dd6e006d29b8/b29595b2-2b4d-48d0-a92f-d3d2c2e6104e.jpg/600x600bb.jpg",
-        "audioUrl": null,
-        "audioProvider": null,
-        "providerTrackId": null,
-        "sourceTags": [
-          "deezer",
-          "deezer_chart",
-          "deezer_chart:85",
-          "itunes_search",
-          "lastfm_geo:Brazil",
-          "lastfm_geo:France",
-          "lastfm_global"
-        ],
-        "rankSignals": {
-          "deezer_chart": 75,
-          "deezer_chart:85": 3,
-          "itunes_search": 1799337174,
-          "lastfm_geo:Brazil": 74,
-          "lastfm_geo:France": 81,
-          "lastfm_global": 73
-        },
-        "score": 0.237146
-      },
-      {
         "title": "BAILE INoLVIDABLE",
         "artist": "Bad Bunny",
         "album": "DeBÍ TiRAR MáS FOToS",
@@ -3589,11 +3562,11 @@
         "score": 0.236382
       },
       {
-        "title": "Boston",
-        "artist": "STELLA LEFTY",
-        "album": "Boston - Single",
-        "durationMs": 170000,
-        "coverUrl": "https://api.deezer.com/album/937796461/image",
+        "title": "I Just Might",
+        "artist": "Bruno Mars",
+        "album": "The Romantic",
+        "durationMs": 212000,
+        "coverUrl": "https://api.deezer.com/album/893791002/image",
         "audioUrl": null,
         "audioProvider": null,
         "providerTrackId": null,
@@ -3606,10 +3579,35 @@
         ],
         "rankSignals": {
           "deezer_chart": 5,
-          "deezer_chart:132": 11,
-          "itunes_rss": 9
+          "deezer_chart:132": 2,
+          "itunes_rss": 13
         },
-        "score": 0.233932
+        "score": 0.234043
+      },
+      {
+        "title": "Champagne Coast",
+        "artist": "Blood Orange",
+        "album": "Coastal Grooves (Bonus Track Version)",
+        "durationMs": 292000,
+        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/da/5d/19/da5d19d4-bbb4-7cee-ad2f-2505b698f445/mzi.cqmfeflv.jpg/600x600bb.jpg",
+        "audioUrl": null,
+        "audioProvider": null,
+        "providerTrackId": null,
+        "sourceTags": [
+          "itunes_search",
+          "lastfm_geo:Australia",
+          "lastfm_geo:United Kingdom",
+          "lastfm_geo:United States",
+          "lastfm_global"
+        ],
+        "rankSignals": {
+          "itunes_search": 445411367,
+          "lastfm_geo:Australia": 72,
+          "lastfm_geo:United Kingdom": 74,
+          "lastfm_geo:United States": 56,
+          "lastfm_global": 114
+        },
+        "score": 0.23306
       }
     ]
   },
@@ -3623,6 +3621,51 @@
       },
       "subtitle": "Top signals from Last.fm, Deezer, iTunes and Audius",
       "tracks": [
+        {
+          "title": "hate that i made you love me",
+          "artist": "Ariana Grande",
+          "album": "petal",
+          "durationMs": 197000,
+          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/56/f4/96/56f49612-02dd-83f4-44fe-d2118cc70707/26UMGIM51129.rgb.jpg/600x600bb.jpg",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "deezer",
+            "deezer_chart:132",
+            "itunes",
+            "itunes_rss",
+            "itunes_search",
+            "lastfm_geo:Australia",
+            "lastfm_geo:Brazil",
+            "lastfm_geo:Canada",
+            "lastfm_geo:France",
+            "lastfm_geo:Germany",
+            "lastfm_geo:Japan",
+            "lastfm_geo:Mexico",
+            "lastfm_geo:Spain",
+            "lastfm_geo:United Kingdom",
+            "lastfm_geo:United States",
+            "lastfm_global"
+          ],
+          "rankSignals": {
+            "deezer_chart:132": 63,
+            "itunes_rss": 5,
+            "itunes_search": 6763656725,
+            "lastfm_geo:Australia": 4,
+            "lastfm_geo:Brazil": 1,
+            "lastfm_geo:Canada": 5,
+            "lastfm_geo:France": 2,
+            "lastfm_geo:Germany": 6,
+            "lastfm_geo:Japan": 6,
+            "lastfm_geo:Mexico": 16,
+            "lastfm_geo:Spain": 2,
+            "lastfm_geo:United Kingdom": 4,
+            "lastfm_geo:United States": 4,
+            "lastfm_global": 1
+          },
+          "score": 1.319858
+        },
         {
           "title": "drop dead",
           "artist": "Olivia Rodrigo",
@@ -3652,9 +3695,9 @@
             "lastfm_global"
           ],
           "rankSignals": {
-            "deezer_chart": 10,
-            "deezer_chart:132": 5,
-            "itunes_rss": 44,
+            "deezer_chart": 12,
+            "deezer_chart:132": 7,
+            "itunes_rss": 33,
             "itunes_search": 1889992113,
             "lastfm_geo:Australia": 5,
             "lastfm_geo:Brazil": 4,
@@ -3668,88 +3711,7 @@
             "lastfm_geo:United States": 5,
             "lastfm_global": 5
           },
-          "score": 1.316068
-        },
-        {
-          "title": "hate that i made you love me",
-          "artist": "Ariana Grande",
-          "album": "petal",
-          "durationMs": 197000,
-          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/56/f4/96/56f49612-02dd-83f4-44fe-d2118cc70707/26UMGIM51129.rgb.jpg/600x600bb.jpg",
-          "audioUrl": null,
-          "audioProvider": null,
-          "providerTrackId": null,
-          "sourceTags": [
-            "itunes",
-            "itunes_rss",
-            "itunes_search",
-            "lastfm_geo:Australia",
-            "lastfm_geo:Brazil",
-            "lastfm_geo:Canada",
-            "lastfm_geo:France",
-            "lastfm_geo:Germany",
-            "lastfm_geo:Japan",
-            "lastfm_geo:Mexico",
-            "lastfm_geo:Spain",
-            "lastfm_geo:United Kingdom",
-            "lastfm_geo:United States",
-            "lastfm_global"
-          ],
-          "rankSignals": {
-            "itunes_rss": 5,
-            "itunes_search": 6763656725,
-            "lastfm_geo:Australia": 4,
-            "lastfm_geo:Brazil": 1,
-            "lastfm_geo:Canada": 5,
-            "lastfm_geo:France": 2,
-            "lastfm_geo:Germany": 6,
-            "lastfm_geo:Japan": 6,
-            "lastfm_geo:Mexico": 16,
-            "lastfm_geo:Spain": 2,
-            "lastfm_geo:United Kingdom": 4,
-            "lastfm_geo:United States": 4,
-            "lastfm_global": 1
-          },
-          "score": 1.31478
-        },
-        {
-          "title": "the cure",
-          "artist": "Olivia Rodrigo",
-          "album": "the cure - Single",
-          "durationMs": 297000,
-          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ea/cc/ad/eaccad77-3cb8-ddc2-a2e1-224c409aa26b/26UMGIM64019.rgb.jpg/600x600bb.jpg",
-          "audioUrl": null,
-          "audioProvider": null,
-          "providerTrackId": null,
-          "sourceTags": [
-            "itunes_search",
-            "lastfm_geo:Australia",
-            "lastfm_geo:Brazil",
-            "lastfm_geo:Canada",
-            "lastfm_geo:France",
-            "lastfm_geo:Germany",
-            "lastfm_geo:Japan",
-            "lastfm_geo:Mexico",
-            "lastfm_geo:Spain",
-            "lastfm_geo:United Kingdom",
-            "lastfm_geo:United States",
-            "lastfm_global"
-          ],
-          "rankSignals": {
-            "itunes_search": 6771598356,
-            "lastfm_geo:Australia": 2,
-            "lastfm_geo:Brazil": 2,
-            "lastfm_geo:Canada": 2,
-            "lastfm_geo:France": 5,
-            "lastfm_geo:Germany": 2,
-            "lastfm_geo:Japan": 7,
-            "lastfm_geo:Mexico": 26,
-            "lastfm_geo:Spain": 1,
-            "lastfm_geo:United Kingdom": 1,
-            "lastfm_geo:United States": 2,
-            "lastfm_global": 2
-          },
-          "score": 1.239584
+          "score": 1.317191
         },
         {
           "title": "Stateside + Zara Larsson",
@@ -3778,7 +3740,7 @@
             "lastfm_global"
           ],
           "rankSignals": {
-            "deezer_chart": 77,
+            "deezer_chart": 66,
             "deezer_chart:132": 17,
             "itunes_search": 1843595808,
             "lastfm_geo:Australia": 3,
@@ -3793,7 +3755,49 @@
             "lastfm_geo:United States": 3,
             "lastfm_global": 3
           },
-          "score": 1.232264
+          "score": 1.246775
+        },
+        {
+          "title": "the cure",
+          "artist": "Olivia Rodrigo",
+          "album": "the cure - Single",
+          "durationMs": 297000,
+          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ea/cc/ad/eaccad77-3cb8-ddc2-a2e1-224c409aa26b/26UMGIM64019.rgb.jpg/600x600bb.jpg",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "deezer",
+            "deezer_chart:132",
+            "itunes_search",
+            "lastfm_geo:Australia",
+            "lastfm_geo:Brazil",
+            "lastfm_geo:Canada",
+            "lastfm_geo:France",
+            "lastfm_geo:Germany",
+            "lastfm_geo:Japan",
+            "lastfm_geo:Mexico",
+            "lastfm_geo:Spain",
+            "lastfm_geo:United Kingdom",
+            "lastfm_geo:United States",
+            "lastfm_global"
+          ],
+          "rankSignals": {
+            "deezer_chart:132": 55,
+            "itunes_search": 6771598356,
+            "lastfm_geo:Australia": 2,
+            "lastfm_geo:Brazil": 2,
+            "lastfm_geo:Canada": 2,
+            "lastfm_geo:France": 5,
+            "lastfm_geo:Germany": 2,
+            "lastfm_geo:Japan": 7,
+            "lastfm_geo:Mexico": 26,
+            "lastfm_geo:Spain": 1,
+            "lastfm_geo:United Kingdom": 1,
+            "lastfm_geo:United States": 2,
+            "lastfm_global": 2
+          },
+          "score": 1.246156
         },
         {
           "title": "I Knew It, I Knew You",
@@ -3864,7 +3868,7 @@
             "lastfm_tag:pop"
           ],
           "rankSignals": {
-            "deezer_chart:132": 95,
+            "deezer_chart:132": 96,
             "itunes_rss": 14,
             "itunes_search": 269573364,
             "lastfm_geo:Australia": 6,
@@ -3880,7 +3884,7 @@
             "lastfm_global": 6,
             "lastfm_tag:pop": 2
           },
-          "score": 1.164604
+          "score": 1.164512
         },
         {
           "title": "Earrings",
@@ -3907,7 +3911,7 @@
             "lastfm_global"
           ],
           "rankSignals": {
-            "deezer_chart:85": 22,
+            "deezer_chart:85": 12,
             "itunes_search": 1738257931,
             "lastfm_geo:Australia": 1,
             "lastfm_geo:Brazil": 10,
@@ -3920,7 +3924,7 @@
             "lastfm_geo:United States": 1,
             "lastfm_global": 4
           },
-          "score": 1.084368
+          "score": 1.086749
         },
         {
           "title": "Babydoll",
@@ -3933,7 +3937,6 @@
           "providerTrackId": null,
           "sourceTags": [
             "deezer",
-            "deezer_chart",
             "deezer_chart:85",
             "itunes_search",
             "lastfm_geo:Australia",
@@ -3948,8 +3951,7 @@
             "lastfm_global"
           ],
           "rankSignals": {
-            "deezer_chart": 100,
-            "deezer_chart:85": 4,
+            "deezer_chart:85": 6,
             "itunes_search": 1704039031,
             "lastfm_geo:Australia": 7,
             "lastfm_geo:Brazil": 14,
@@ -3962,7 +3964,7 @@
             "lastfm_geo:United States": 9,
             "lastfm_global": 7
           },
-          "score": 1.035575
+          "score": 1.034776
         },
         {
           "title": "Beat It",
@@ -3992,7 +3994,7 @@
             "lastfm_tag:pop"
           ],
           "rankSignals": {
-            "deezer_chart:132": 86,
+            "deezer_chart:132": 90,
             "itunes_rss": 28,
             "itunes_search": 269573341,
             "lastfm_geo:Australia": 10,
@@ -4007,7 +4009,7 @@
             "lastfm_global": 10,
             "lastfm_tag:pop": 3
           },
-          "score": 1.006436
+          "score": 1.005941
         },
         {
           "title": "Beauty and a Beat",
@@ -4173,6 +4175,7 @@
           "providerTrackId": null,
           "sourceTags": [
             "deezer",
+            "deezer_chart",
             "deezer_chart:132",
             "itunes_search",
             "lastfm_geo:Australia",
@@ -4186,7 +4189,8 @@
             "lastfm_global"
           ],
           "rankSignals": {
-            "deezer_chart:132": 29,
+            "deezer_chart": 99,
+            "deezer_chart:132": 23,
             "itunes_search": 1809015879,
             "lastfm_geo:Australia": 28,
             "lastfm_geo:Brazil": 15,
@@ -4198,7 +4202,7 @@
             "lastfm_geo:United States": 38,
             "lastfm_global": 13
           },
-          "score": 0.840313
+          "score": 0.842449
         },
         {
           "title": "End of Beginning",
@@ -4211,7 +4215,6 @@
           "providerTrackId": null,
           "sourceTags": [
             "deezer",
-            "deezer_chart",
             "deezer_chart:152",
             "deezer_chart:85",
             "itunes",
@@ -4229,10 +4232,9 @@
             "lastfm_global"
           ],
           "rankSignals": {
-            "deezer_chart": 85,
-            "deezer_chart:152": 12,
-            "deezer_chart:85": 20,
-            "itunes_rss": 61,
+            "deezer_chart:152": 15,
+            "deezer_chart:85": 26,
+            "itunes_rss": 56,
             "itunes_search": 1632448108,
             "lastfm_geo:Australia": 29,
             "lastfm_geo:Brazil": 65,
@@ -4245,7 +4247,7 @@
             "lastfm_geo:United States": 51,
             "lastfm_global": 28
           },
-          "score": 0.811059
+          "score": 0.798703
         },
         {
           "title": "Mr. Brightside",
@@ -4258,6 +4260,7 @@
           "providerTrackId": null,
           "sourceTags": [
             "deezer",
+            "deezer_chart:152",
             "deezer_chart:85",
             "itunes_search",
             "lastfm_geo:Australia",
@@ -4270,7 +4273,8 @@
             "lastfm_tag:rock"
           ],
           "rankSignals": {
-            "deezer_chart:85": 60,
+            "deezer_chart:152": 52,
+            "deezer_chart:85": 70,
             "itunes_search": 1440891171,
             "lastfm_geo:Australia": 14,
             "lastfm_geo:Canada": 10,
@@ -4281,7 +4285,7 @@
             "lastfm_tag:indie": 33,
             "lastfm_tag:rock": 6
           },
-          "score": 0.784468
+          "score": 0.789857
         },
         {
           "title": "Human Nature",
@@ -4308,7 +4312,7 @@
             "lastfm_tag:pop"
           ],
           "rankSignals": {
-            "itunes_rss": 43,
+            "itunes_rss": 38,
             "itunes_search": 273048790,
             "lastfm_geo:Australia": 15,
             "lastfm_geo:Brazil": 60,
@@ -4321,7 +4325,7 @@
             "lastfm_global": 19,
             "lastfm_tag:pop": 5
           },
-          "score": 0.782082
+          "score": 0.784581
         },
         {
           "title": "Midnight Sun",
@@ -4333,6 +4337,8 @@
           "audioProvider": null,
           "providerTrackId": null,
           "sourceTags": [
+            "deezer",
+            "deezer_chart:132",
             "itunes",
             "itunes_rss",
             "itunes_search",
@@ -4347,7 +4353,8 @@
             "lastfm_global"
           ],
           "rankSignals": {
-            "itunes_rss": 58,
+            "deezer_chart:132": 61,
+            "itunes_rss": 55,
             "itunes_search": 1817499251,
             "lastfm_geo:Australia": 63,
             "lastfm_geo:Brazil": 13,
@@ -4359,7 +4366,7 @@
             "lastfm_geo:United States": 63,
             "lastfm_global": 21
           },
-          "score": 0.759355
+          "score": 0.766243
         },
         {
           "title": "NOBLE",
@@ -4414,8 +4421,8 @@
             "lastfm_global"
           ],
           "rankSignals": {
-            "deezer_chart": 7,
-            "deezer_chart:132": 2,
+            "deezer_chart": 6,
+            "deezer_chart:132": 3,
             "itunes_search": 1868482073,
             "lastfm_geo:Brazil": 33,
             "lastfm_geo:France": 50,
@@ -4424,7 +4431,7 @@
             "lastfm_geo:Spain": 37,
             "lastfm_global": 16
           },
-          "score": 0.742258
+          "score": 0.743992
         }
       ]
     },
@@ -4442,7 +4449,7 @@
           "artist": "BONNIE X CLYDE",
           "album": "",
           "durationMs": 155000,
-          "coverUrl": "https://audius-creator-11.theblueprint.xyz/content/baeaaaiqsebwcsz44ogjz5tnx2w4gmblgozmazzrcvhsq5v4a25rekck3p2d2m/1000x1000.jpg",
+          "coverUrl": "https://audius-creator-16.theblueprint.xyz/content/baeaaaiqsebwcsz44ogjz5tnx2w4gmblgozmazzrcvhsq5v4a25rekck3p2d2m/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/E6bM2N/stream",
           "audioProvider": "audius",
           "providerTrackId": "E6bM2N",
@@ -4452,8 +4459,8 @@
             "audius_trending_monthly"
           ],
           "rankSignals": {
-            "audius_genre:Electronic": 1816,
-            "audius_trending_monthly": 1816
+            "audius_genre:Electronic": 1818,
+            "audius_trending_monthly": 1818
           },
           "score": 0.087399
         },
@@ -4462,7 +4469,7 @@
           "artist": "bauti",
           "album": "",
           "durationMs": 129000,
-          "coverUrl": "https://audius-content-4.figment.io/content/baeaaaiqsebb7yuyaw3afozdaaxni5j6pk7p2c7o3vhp2aa526sldgmsxdfkis/1000x1000.jpg",
+          "coverUrl": "https://audius-content-2.figment.io/content/baeaaaiqsebb7yuyaw3afozdaaxni5j6pk7p2c7o3vhp2aa526sldgmsxdfkis/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/93vpz2j/stream",
           "audioProvider": "audius",
           "providerTrackId": "93vpz2j",
@@ -4480,7 +4487,7 @@
           "artist": "Van Snyder",
           "album": "",
           "durationMs": 420000,
-          "coverUrl": "https://audius-figment-1-validator-19.figment.io/content/baeaaaiqseddm7chfbwrbei4bhzewq5vj2nzyestci3haoa2cwsxjrqwi64nc2/1000x1000.jpg",
+          "coverUrl": "https://audius-content-14.figment.io/content/baeaaaiqseddm7chfbwrbei4bhzewq5vj2nzyestci3haoa2cwsxjrqwi64nc2/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/Yaqlvv7/stream",
           "audioProvider": "audius",
           "providerTrackId": "Yaqlvv7",
@@ -4534,7 +4541,7 @@
           "artist": "NEOTEK",
           "album": "",
           "durationMs": 198000,
-          "coverUrl": "https://creatornode2.audius.co/content/baeaaaiqsea5w2riw3k3cynmgbt75xzxgots7jsgegbgw7jkrv4yj77sfdnlsq/1000x1000.jpg",
+          "coverUrl": "https://audius.rickyrombo.com/content/baeaaaiqsea5w2riw3k3cynmgbt75xzxgots7jsgegbgw7jkrv4yj77sfdnlsq/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/v27mjE6/stream",
           "audioProvider": "audius",
           "providerTrackId": "v27mjE6",
@@ -4552,7 +4559,7 @@
           "artist": "zaza",
           "album": "",
           "durationMs": 129000,
-          "coverUrl": "https://creatornode2.audius.co/content/baeaaaiqsea5utxnyiuo5q6dzzrxqxnfbt7dqd3mpx5y7a7buxybf24owqu6cw/1000x1000.jpg",
+          "coverUrl": "https://audius.rickyrombo.com/content/baeaaaiqsea5utxnyiuo5q6dzzrxqxnfbt7dqd3mpx5y7a7buxybf24owqu6cw/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/gYlGO8k/stream",
           "audioProvider": "audius",
           "providerTrackId": "gYlGO8k",
@@ -4570,7 +4577,7 @@
           "artist": "@iLLPeTiLL",
           "album": "",
           "durationMs": 180000,
-          "coverUrl": "https://audius-creator-5.theblueprint.xyz/content/01KR4G767EC8XJTW5E2HY79E4M/1000x1000.jpg",
+          "coverUrl": "https://creatornode2.audius.co/content/01KR4G767EC8XJTW5E2HY79E4M/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/R6zZP0X/stream",
           "audioProvider": "audius",
           "providerTrackId": "R6zZP0X",
@@ -4588,7 +4595,7 @@
           "artist": "Ciara Graves",
           "album": "",
           "durationMs": 178000,
-          "coverUrl": "https://creatornode2.audius.co/content/baeaaaiqsedsizcslowgerwnc7mrwvbzkiog6mckhc77vlk5iplt2tqhddwtoy/1000x1000.jpg",
+          "coverUrl": "https://audius-content-14.figment.io/content/baeaaaiqsedsizcslowgerwnc7mrwvbzkiog6mckhc77vlk5iplt2tqhddwtoy/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/BqpPKMP/stream",
           "audioProvider": "audius",
           "providerTrackId": "BqpPKMP",
@@ -4597,7 +4604,7 @@
             "audius_trending_monthly"
           ],
           "rankSignals": {
-            "audius_trending_monthly": 249
+            "audius_trending_monthly": 269
           },
           "score": 0.071483
         },
@@ -4606,7 +4613,7 @@
           "artist": "med mc",
           "album": "",
           "durationMs": 120000,
-          "coverUrl": "https://val004.open-audio-validator.com/content/baeaaaiqsed5lcwpergliyksi53owvefhimayxz4m43j6ridlqh44fqwl6ex6g/1000x1000.jpg",
+          "coverUrl": "https://creatornode2.audius.co/content/baeaaaiqsed5lcwpergliyksi53owvefhimayxz4m43j6ridlqh44fqwl6ex6g/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/klQ4l3K/stream",
           "audioProvider": "audius",
           "providerTrackId": "klQ4l3K",
@@ -4642,7 +4649,7 @@
           "artist": "Zaiaku",
           "album": "",
           "durationMs": 293000,
-          "coverUrl": "https://creatornode2.audius.co/content/baeaaaiqsedd2bzffrcplhsnxvgdlodkzlefusx54tbnuwi4fv246df6hybzkq/1000x1000.jpg",
+          "coverUrl": "https://audius-creator-12.theblueprint.xyz/content/baeaaaiqsedd2bzffrcplhsnxvgdlodkzlefusx54tbnuwi4fv246df6hybzkq/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/l4843wZ/stream",
           "audioProvider": "audius",
           "providerTrackId": "l4843wZ",
@@ -4660,7 +4667,7 @@
           "artist": "thatskenny",
           "album": "",
           "durationMs": 124000,
-          "coverUrl": "https://creatornode2.audius.co/content/baeaaaiqseclusat6fymkl7snr6ht6dcs47i7t4kpxwrgsbwv3zxhe7kp3is7k/1000x1000.jpg",
+          "coverUrl": "https://val018.open-audio-validator.com/content/baeaaaiqseclusat6fymkl7snr6ht6dcs47i7t4kpxwrgsbwv3zxhe7kp3is7k/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/95qq8W0/stream",
           "audioProvider": "audius",
           "providerTrackId": "95qq8W0",
@@ -4678,7 +4685,7 @@
           "artist": "Rixx",
           "album": "",
           "durationMs": 288000,
-          "coverUrl": "https://val017.open-audio-validator.com/content/baeaaaiqsedxyehqxldgqcf7x2xbboycl6ggspfj6dyctkvtqytpfunb4gej2g/1000x1000.jpg",
+          "coverUrl": "https://audius-04.staked.cloud/content/baeaaaiqsedxyehqxldgqcf7x2xbboycl6ggspfj6dyctkvtqytpfunb4gej2g/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/dpb3Elm/stream",
           "audioProvider": "audius",
           "providerTrackId": "dpb3Elm",
@@ -4698,7 +4705,7 @@
           "artist": "CURE97 X YZENIA",
           "album": "",
           "durationMs": 145000,
-          "coverUrl": "https://creatornode2.audius.co/content/baeaaaiqsecskwe2dodmls26i7y7xnliig63olr7rd4j4blc652bx2wmusfibe/1000x1000.jpg",
+          "coverUrl": "https://cn4.mainnet.audiusindex.org/content/baeaaaiqsecskwe2dodmls26i7y7xnliig63olr7rd4j4blc652bx2wmusfibe/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/50NaZGY/stream",
           "audioProvider": "audius",
           "providerTrackId": "50NaZGY",
@@ -4716,7 +4723,7 @@
           "artist": "Van Snyder LIVE on ViBE 99.7 FM Las Vegas",
           "album": "",
           "durationMs": 420000,
-          "coverUrl": "https://audius-content-5.figment.io/content/baeaaaiqseav4734axaypfar3h7xetjhuf4ilg6u5i7l3ky4kf75s3lhi6m4u4/1000x1000.jpg",
+          "coverUrl": "https://creatornode2.audius.co/content/baeaaaiqseav4734axaypfar3h7xetjhuf4ilg6u5i7l3ky4kf75s3lhi6m4u4/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/9PYK4Mo/stream",
           "audioProvider": "audius",
           "providerTrackId": "9PYK4Mo",
@@ -4745,7 +4752,7 @@
             "audius_trending_monthly"
           ],
           "rankSignals": {
-            "audius_trending_monthly": 1043
+            "audius_trending_monthly": 1059
           },
           "score": 0.065262
         },
@@ -4772,7 +4779,7 @@
           "artist": "KARAKAPLAN",
           "album": "",
           "durationMs": 120000,
-          "coverUrl": "https://val011.open-audio-validator.com/content/baeaaaiqseauh73oukvcc7mvuuah242uibtsp4kk4nwfniwsi5qmvdqxs5g3qq/1000x1000.jpg",
+          "coverUrl": "https://creatornode2.audius.co/content/baeaaaiqseauh73oukvcc7mvuuah242uibtsp4kk4nwfniwsi5qmvdqxs5g3qq/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/YVo9amr/stream",
           "audioProvider": "audius",
           "providerTrackId": "YVo9amr",
@@ -4782,8 +4789,8 @@
             "audius_trending_monthly"
           ],
           "rankSignals": {
-            "audius_genre:Hip-Hop/Rap": 484,
-            "audius_trending_monthly": 484
+            "audius_genre:Hip-Hop/Rap": 488,
+            "audius_trending_monthly": 488
           },
           "score": 0.063279
         },
@@ -4792,7 +4799,7 @@
           "artist": "Kill Your Utopia",
           "album": "",
           "durationMs": 198000,
-          "coverUrl": "https://audius-content-8.figment.io/content/baeaaaiqsechlqna5hc2wc757kd5uaxi2553xz2ojlmvkbqvjjh3ikadeygf44/1000x1000.jpg",
+          "coverUrl": "https://creatornode2.audius.co/content/baeaaaiqsechlqna5hc2wc757kd5uaxi2553xz2ojlmvkbqvjjh3ikadeygf44/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/42xjNQ4/stream",
           "audioProvider": "audius",
           "providerTrackId": "42xjNQ4",
@@ -4817,6 +4824,51 @@
       "subtitle": "Deezer and iTunes chart signals",
       "tracks": [
         {
+          "title": "hate that i made you love me",
+          "artist": "Ariana Grande",
+          "album": "petal",
+          "durationMs": 197000,
+          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/56/f4/96/56f49612-02dd-83f4-44fe-d2118cc70707/26UMGIM51129.rgb.jpg/600x600bb.jpg",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "deezer",
+            "deezer_chart:132",
+            "itunes",
+            "itunes_rss",
+            "itunes_search",
+            "lastfm_geo:Australia",
+            "lastfm_geo:Brazil",
+            "lastfm_geo:Canada",
+            "lastfm_geo:France",
+            "lastfm_geo:Germany",
+            "lastfm_geo:Japan",
+            "lastfm_geo:Mexico",
+            "lastfm_geo:Spain",
+            "lastfm_geo:United Kingdom",
+            "lastfm_geo:United States",
+            "lastfm_global"
+          ],
+          "rankSignals": {
+            "deezer_chart:132": 63,
+            "itunes_rss": 5,
+            "itunes_search": 6763656725,
+            "lastfm_geo:Australia": 4,
+            "lastfm_geo:Brazil": 1,
+            "lastfm_geo:Canada": 5,
+            "lastfm_geo:France": 2,
+            "lastfm_geo:Germany": 6,
+            "lastfm_geo:Japan": 6,
+            "lastfm_geo:Mexico": 16,
+            "lastfm_geo:Spain": 2,
+            "lastfm_geo:United Kingdom": 4,
+            "lastfm_geo:United States": 4,
+            "lastfm_global": 1
+          },
+          "score": 1.319858
+        },
+        {
           "title": "drop dead",
           "artist": "Olivia Rodrigo",
           "album": "you seem pretty sad for a girl so in love",
@@ -4845,9 +4897,9 @@
             "lastfm_global"
           ],
           "rankSignals": {
-            "deezer_chart": 10,
-            "deezer_chart:132": 5,
-            "itunes_rss": 44,
+            "deezer_chart": 12,
+            "deezer_chart:132": 7,
+            "itunes_rss": 33,
             "itunes_search": 1889992113,
             "lastfm_geo:Australia": 5,
             "lastfm_geo:Brazil": 4,
@@ -4861,88 +4913,7 @@
             "lastfm_geo:United States": 5,
             "lastfm_global": 5
           },
-          "score": 1.316068
-        },
-        {
-          "title": "hate that i made you love me",
-          "artist": "Ariana Grande",
-          "album": "petal",
-          "durationMs": 197000,
-          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/56/f4/96/56f49612-02dd-83f4-44fe-d2118cc70707/26UMGIM51129.rgb.jpg/600x600bb.jpg",
-          "audioUrl": null,
-          "audioProvider": null,
-          "providerTrackId": null,
-          "sourceTags": [
-            "itunes",
-            "itunes_rss",
-            "itunes_search",
-            "lastfm_geo:Australia",
-            "lastfm_geo:Brazil",
-            "lastfm_geo:Canada",
-            "lastfm_geo:France",
-            "lastfm_geo:Germany",
-            "lastfm_geo:Japan",
-            "lastfm_geo:Mexico",
-            "lastfm_geo:Spain",
-            "lastfm_geo:United Kingdom",
-            "lastfm_geo:United States",
-            "lastfm_global"
-          ],
-          "rankSignals": {
-            "itunes_rss": 5,
-            "itunes_search": 6763656725,
-            "lastfm_geo:Australia": 4,
-            "lastfm_geo:Brazil": 1,
-            "lastfm_geo:Canada": 5,
-            "lastfm_geo:France": 2,
-            "lastfm_geo:Germany": 6,
-            "lastfm_geo:Japan": 6,
-            "lastfm_geo:Mexico": 16,
-            "lastfm_geo:Spain": 2,
-            "lastfm_geo:United Kingdom": 4,
-            "lastfm_geo:United States": 4,
-            "lastfm_global": 1
-          },
-          "score": 1.31478
-        },
-        {
-          "title": "the cure",
-          "artist": "Olivia Rodrigo",
-          "album": "the cure - Single",
-          "durationMs": 297000,
-          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ea/cc/ad/eaccad77-3cb8-ddc2-a2e1-224c409aa26b/26UMGIM64019.rgb.jpg/600x600bb.jpg",
-          "audioUrl": null,
-          "audioProvider": null,
-          "providerTrackId": null,
-          "sourceTags": [
-            "itunes_search",
-            "lastfm_geo:Australia",
-            "lastfm_geo:Brazil",
-            "lastfm_geo:Canada",
-            "lastfm_geo:France",
-            "lastfm_geo:Germany",
-            "lastfm_geo:Japan",
-            "lastfm_geo:Mexico",
-            "lastfm_geo:Spain",
-            "lastfm_geo:United Kingdom",
-            "lastfm_geo:United States",
-            "lastfm_global"
-          ],
-          "rankSignals": {
-            "itunes_search": 6771598356,
-            "lastfm_geo:Australia": 2,
-            "lastfm_geo:Brazil": 2,
-            "lastfm_geo:Canada": 2,
-            "lastfm_geo:France": 5,
-            "lastfm_geo:Germany": 2,
-            "lastfm_geo:Japan": 7,
-            "lastfm_geo:Mexico": 26,
-            "lastfm_geo:Spain": 1,
-            "lastfm_geo:United Kingdom": 1,
-            "lastfm_geo:United States": 2,
-            "lastfm_global": 2
-          },
-          "score": 1.239584
+          "score": 1.317191
         },
         {
           "title": "Stateside + Zara Larsson",
@@ -4971,7 +4942,7 @@
             "lastfm_global"
           ],
           "rankSignals": {
-            "deezer_chart": 77,
+            "deezer_chart": 66,
             "deezer_chart:132": 17,
             "itunes_search": 1843595808,
             "lastfm_geo:Australia": 3,
@@ -4986,7 +4957,49 @@
             "lastfm_geo:United States": 3,
             "lastfm_global": 3
           },
-          "score": 1.232264
+          "score": 1.246775
+        },
+        {
+          "title": "the cure",
+          "artist": "Olivia Rodrigo",
+          "album": "the cure - Single",
+          "durationMs": 297000,
+          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ea/cc/ad/eaccad77-3cb8-ddc2-a2e1-224c409aa26b/26UMGIM64019.rgb.jpg/600x600bb.jpg",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "deezer",
+            "deezer_chart:132",
+            "itunes_search",
+            "lastfm_geo:Australia",
+            "lastfm_geo:Brazil",
+            "lastfm_geo:Canada",
+            "lastfm_geo:France",
+            "lastfm_geo:Germany",
+            "lastfm_geo:Japan",
+            "lastfm_geo:Mexico",
+            "lastfm_geo:Spain",
+            "lastfm_geo:United Kingdom",
+            "lastfm_geo:United States",
+            "lastfm_global"
+          ],
+          "rankSignals": {
+            "deezer_chart:132": 55,
+            "itunes_search": 6771598356,
+            "lastfm_geo:Australia": 2,
+            "lastfm_geo:Brazil": 2,
+            "lastfm_geo:Canada": 2,
+            "lastfm_geo:France": 5,
+            "lastfm_geo:Germany": 2,
+            "lastfm_geo:Japan": 7,
+            "lastfm_geo:Mexico": 26,
+            "lastfm_geo:Spain": 1,
+            "lastfm_geo:United Kingdom": 1,
+            "lastfm_geo:United States": 2,
+            "lastfm_global": 2
+          },
+          "score": 1.246156
         },
         {
           "title": "I Knew It, I Knew You",
@@ -5057,7 +5070,7 @@
             "lastfm_tag:pop"
           ],
           "rankSignals": {
-            "deezer_chart:132": 95,
+            "deezer_chart:132": 96,
             "itunes_rss": 14,
             "itunes_search": 269573364,
             "lastfm_geo:Australia": 6,
@@ -5073,7 +5086,7 @@
             "lastfm_global": 6,
             "lastfm_tag:pop": 2
           },
-          "score": 1.164604
+          "score": 1.164512
         },
         {
           "title": "Earrings",
@@ -5100,7 +5113,7 @@
             "lastfm_global"
           ],
           "rankSignals": {
-            "deezer_chart:85": 22,
+            "deezer_chart:85": 12,
             "itunes_search": 1738257931,
             "lastfm_geo:Australia": 1,
             "lastfm_geo:Brazil": 10,
@@ -5113,7 +5126,7 @@
             "lastfm_geo:United States": 1,
             "lastfm_global": 4
           },
-          "score": 1.084368
+          "score": 1.086749
         },
         {
           "title": "Babydoll",
@@ -5126,7 +5139,6 @@
           "providerTrackId": null,
           "sourceTags": [
             "deezer",
-            "deezer_chart",
             "deezer_chart:85",
             "itunes_search",
             "lastfm_geo:Australia",
@@ -5141,8 +5153,7 @@
             "lastfm_global"
           ],
           "rankSignals": {
-            "deezer_chart": 100,
-            "deezer_chart:85": 4,
+            "deezer_chart:85": 6,
             "itunes_search": 1704039031,
             "lastfm_geo:Australia": 7,
             "lastfm_geo:Brazil": 14,
@@ -5155,7 +5166,7 @@
             "lastfm_geo:United States": 9,
             "lastfm_global": 7
           },
-          "score": 1.035575
+          "score": 1.034776
         },
         {
           "title": "Beat It",
@@ -5185,7 +5196,7 @@
             "lastfm_tag:pop"
           ],
           "rankSignals": {
-            "deezer_chart:132": 86,
+            "deezer_chart:132": 90,
             "itunes_rss": 28,
             "itunes_search": 269573341,
             "lastfm_geo:Australia": 10,
@@ -5200,7 +5211,7 @@
             "lastfm_global": 10,
             "lastfm_tag:pop": 3
           },
-          "score": 1.006436
+          "score": 1.005941
         },
         {
           "title": "Beauty and a Beat",
@@ -5366,6 +5377,7 @@
           "providerTrackId": null,
           "sourceTags": [
             "deezer",
+            "deezer_chart",
             "deezer_chart:132",
             "itunes_search",
             "lastfm_geo:Australia",
@@ -5379,7 +5391,8 @@
             "lastfm_global"
           ],
           "rankSignals": {
-            "deezer_chart:132": 29,
+            "deezer_chart": 99,
+            "deezer_chart:132": 23,
             "itunes_search": 1809015879,
             "lastfm_geo:Australia": 28,
             "lastfm_geo:Brazil": 15,
@@ -5391,7 +5404,7 @@
             "lastfm_geo:United States": 38,
             "lastfm_global": 13
           },
-          "score": 0.840313
+          "score": 0.842449
         },
         {
           "title": "End of Beginning",
@@ -5404,7 +5417,6 @@
           "providerTrackId": null,
           "sourceTags": [
             "deezer",
-            "deezer_chart",
             "deezer_chart:152",
             "deezer_chart:85",
             "itunes",
@@ -5422,10 +5434,9 @@
             "lastfm_global"
           ],
           "rankSignals": {
-            "deezer_chart": 85,
-            "deezer_chart:152": 12,
-            "deezer_chart:85": 20,
-            "itunes_rss": 61,
+            "deezer_chart:152": 15,
+            "deezer_chart:85": 26,
+            "itunes_rss": 56,
             "itunes_search": 1632448108,
             "lastfm_geo:Australia": 29,
             "lastfm_geo:Brazil": 65,
@@ -5438,7 +5449,7 @@
             "lastfm_geo:United States": 51,
             "lastfm_global": 28
           },
-          "score": 0.811059
+          "score": 0.798703
         },
         {
           "title": "Mr. Brightside",
@@ -5451,6 +5462,7 @@
           "providerTrackId": null,
           "sourceTags": [
             "deezer",
+            "deezer_chart:152",
             "deezer_chart:85",
             "itunes_search",
             "lastfm_geo:Australia",
@@ -5463,7 +5475,8 @@
             "lastfm_tag:rock"
           ],
           "rankSignals": {
-            "deezer_chart:85": 60,
+            "deezer_chart:152": 52,
+            "deezer_chart:85": 70,
             "itunes_search": 1440891171,
             "lastfm_geo:Australia": 14,
             "lastfm_geo:Canada": 10,
@@ -5474,7 +5487,7 @@
             "lastfm_tag:indie": 33,
             "lastfm_tag:rock": 6
           },
-          "score": 0.784468
+          "score": 0.789857
         },
         {
           "title": "Human Nature",
@@ -5501,7 +5514,7 @@
             "lastfm_tag:pop"
           ],
           "rankSignals": {
-            "itunes_rss": 43,
+            "itunes_rss": 38,
             "itunes_search": 273048790,
             "lastfm_geo:Australia": 15,
             "lastfm_geo:Brazil": 60,
@@ -5514,7 +5527,7 @@
             "lastfm_global": 19,
             "lastfm_tag:pop": 5
           },
-          "score": 0.782082
+          "score": 0.784581
         },
         {
           "title": "Midnight Sun",
@@ -5526,6 +5539,8 @@
           "audioProvider": null,
           "providerTrackId": null,
           "sourceTags": [
+            "deezer",
+            "deezer_chart:132",
             "itunes",
             "itunes_rss",
             "itunes_search",
@@ -5540,7 +5555,8 @@
             "lastfm_global"
           ],
           "rankSignals": {
-            "itunes_rss": 58,
+            "deezer_chart:132": 61,
+            "itunes_rss": 55,
             "itunes_search": 1817499251,
             "lastfm_geo:Australia": 63,
             "lastfm_geo:Brazil": 13,
@@ -5552,7 +5568,7 @@
             "lastfm_geo:United States": 63,
             "lastfm_global": 21
           },
-          "score": 0.759355
+          "score": 0.766243
         },
         {
           "title": "NOBLE",
@@ -5607,8 +5623,8 @@
             "lastfm_global"
           ],
           "rankSignals": {
-            "deezer_chart": 7,
-            "deezer_chart:132": 2,
+            "deezer_chart": 6,
+            "deezer_chart:132": 3,
             "itunes_search": 1868482073,
             "lastfm_geo:Brazil": 33,
             "lastfm_geo:France": 50,
@@ -5617,7 +5633,7 @@
             "lastfm_geo:Spain": 37,
             "lastfm_global": 16
           },
-          "score": 0.742258
+          "score": 0.743992
         }
       ]
     },
@@ -5631,6 +5647,51 @@
       "subtitle": "Last.fm global and regional charts",
       "tracks": [
         {
+          "title": "hate that i made you love me",
+          "artist": "Ariana Grande",
+          "album": "petal",
+          "durationMs": 197000,
+          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/56/f4/96/56f49612-02dd-83f4-44fe-d2118cc70707/26UMGIM51129.rgb.jpg/600x600bb.jpg",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "deezer",
+            "deezer_chart:132",
+            "itunes",
+            "itunes_rss",
+            "itunes_search",
+            "lastfm_geo:Australia",
+            "lastfm_geo:Brazil",
+            "lastfm_geo:Canada",
+            "lastfm_geo:France",
+            "lastfm_geo:Germany",
+            "lastfm_geo:Japan",
+            "lastfm_geo:Mexico",
+            "lastfm_geo:Spain",
+            "lastfm_geo:United Kingdom",
+            "lastfm_geo:United States",
+            "lastfm_global"
+          ],
+          "rankSignals": {
+            "deezer_chart:132": 63,
+            "itunes_rss": 5,
+            "itunes_search": 6763656725,
+            "lastfm_geo:Australia": 4,
+            "lastfm_geo:Brazil": 1,
+            "lastfm_geo:Canada": 5,
+            "lastfm_geo:France": 2,
+            "lastfm_geo:Germany": 6,
+            "lastfm_geo:Japan": 6,
+            "lastfm_geo:Mexico": 16,
+            "lastfm_geo:Spain": 2,
+            "lastfm_geo:United Kingdom": 4,
+            "lastfm_geo:United States": 4,
+            "lastfm_global": 1
+          },
+          "score": 1.319858
+        },
+        {
           "title": "drop dead",
           "artist": "Olivia Rodrigo",
           "album": "you seem pretty sad for a girl so in love",
@@ -5659,9 +5720,9 @@
             "lastfm_global"
           ],
           "rankSignals": {
-            "deezer_chart": 10,
-            "deezer_chart:132": 5,
-            "itunes_rss": 44,
+            "deezer_chart": 12,
+            "deezer_chart:132": 7,
+            "itunes_rss": 33,
             "itunes_search": 1889992113,
             "lastfm_geo:Australia": 5,
             "lastfm_geo:Brazil": 4,
@@ -5675,88 +5736,7 @@
             "lastfm_geo:United States": 5,
             "lastfm_global": 5
           },
-          "score": 1.316068
-        },
-        {
-          "title": "hate that i made you love me",
-          "artist": "Ariana Grande",
-          "album": "petal",
-          "durationMs": 197000,
-          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/56/f4/96/56f49612-02dd-83f4-44fe-d2118cc70707/26UMGIM51129.rgb.jpg/600x600bb.jpg",
-          "audioUrl": null,
-          "audioProvider": null,
-          "providerTrackId": null,
-          "sourceTags": [
-            "itunes",
-            "itunes_rss",
-            "itunes_search",
-            "lastfm_geo:Australia",
-            "lastfm_geo:Brazil",
-            "lastfm_geo:Canada",
-            "lastfm_geo:France",
-            "lastfm_geo:Germany",
-            "lastfm_geo:Japan",
-            "lastfm_geo:Mexico",
-            "lastfm_geo:Spain",
-            "lastfm_geo:United Kingdom",
-            "lastfm_geo:United States",
-            "lastfm_global"
-          ],
-          "rankSignals": {
-            "itunes_rss": 5,
-            "itunes_search": 6763656725,
-            "lastfm_geo:Australia": 4,
-            "lastfm_geo:Brazil": 1,
-            "lastfm_geo:Canada": 5,
-            "lastfm_geo:France": 2,
-            "lastfm_geo:Germany": 6,
-            "lastfm_geo:Japan": 6,
-            "lastfm_geo:Mexico": 16,
-            "lastfm_geo:Spain": 2,
-            "lastfm_geo:United Kingdom": 4,
-            "lastfm_geo:United States": 4,
-            "lastfm_global": 1
-          },
-          "score": 1.31478
-        },
-        {
-          "title": "the cure",
-          "artist": "Olivia Rodrigo",
-          "album": "the cure - Single",
-          "durationMs": 297000,
-          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ea/cc/ad/eaccad77-3cb8-ddc2-a2e1-224c409aa26b/26UMGIM64019.rgb.jpg/600x600bb.jpg",
-          "audioUrl": null,
-          "audioProvider": null,
-          "providerTrackId": null,
-          "sourceTags": [
-            "itunes_search",
-            "lastfm_geo:Australia",
-            "lastfm_geo:Brazil",
-            "lastfm_geo:Canada",
-            "lastfm_geo:France",
-            "lastfm_geo:Germany",
-            "lastfm_geo:Japan",
-            "lastfm_geo:Mexico",
-            "lastfm_geo:Spain",
-            "lastfm_geo:United Kingdom",
-            "lastfm_geo:United States",
-            "lastfm_global"
-          ],
-          "rankSignals": {
-            "itunes_search": 6771598356,
-            "lastfm_geo:Australia": 2,
-            "lastfm_geo:Brazil": 2,
-            "lastfm_geo:Canada": 2,
-            "lastfm_geo:France": 5,
-            "lastfm_geo:Germany": 2,
-            "lastfm_geo:Japan": 7,
-            "lastfm_geo:Mexico": 26,
-            "lastfm_geo:Spain": 1,
-            "lastfm_geo:United Kingdom": 1,
-            "lastfm_geo:United States": 2,
-            "lastfm_global": 2
-          },
-          "score": 1.239584
+          "score": 1.317191
         },
         {
           "title": "Stateside + Zara Larsson",
@@ -5785,7 +5765,7 @@
             "lastfm_global"
           ],
           "rankSignals": {
-            "deezer_chart": 77,
+            "deezer_chart": 66,
             "deezer_chart:132": 17,
             "itunes_search": 1843595808,
             "lastfm_geo:Australia": 3,
@@ -5800,7 +5780,49 @@
             "lastfm_geo:United States": 3,
             "lastfm_global": 3
           },
-          "score": 1.232264
+          "score": 1.246775
+        },
+        {
+          "title": "the cure",
+          "artist": "Olivia Rodrigo",
+          "album": "the cure - Single",
+          "durationMs": 297000,
+          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ea/cc/ad/eaccad77-3cb8-ddc2-a2e1-224c409aa26b/26UMGIM64019.rgb.jpg/600x600bb.jpg",
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "deezer",
+            "deezer_chart:132",
+            "itunes_search",
+            "lastfm_geo:Australia",
+            "lastfm_geo:Brazil",
+            "lastfm_geo:Canada",
+            "lastfm_geo:France",
+            "lastfm_geo:Germany",
+            "lastfm_geo:Japan",
+            "lastfm_geo:Mexico",
+            "lastfm_geo:Spain",
+            "lastfm_geo:United Kingdom",
+            "lastfm_geo:United States",
+            "lastfm_global"
+          ],
+          "rankSignals": {
+            "deezer_chart:132": 55,
+            "itunes_search": 6771598356,
+            "lastfm_geo:Australia": 2,
+            "lastfm_geo:Brazil": 2,
+            "lastfm_geo:Canada": 2,
+            "lastfm_geo:France": 5,
+            "lastfm_geo:Germany": 2,
+            "lastfm_geo:Japan": 7,
+            "lastfm_geo:Mexico": 26,
+            "lastfm_geo:Spain": 1,
+            "lastfm_geo:United Kingdom": 1,
+            "lastfm_geo:United States": 2,
+            "lastfm_global": 2
+          },
+          "score": 1.246156
         },
         {
           "title": "I Knew It, I Knew You",
@@ -5871,7 +5893,7 @@
             "lastfm_tag:pop"
           ],
           "rankSignals": {
-            "deezer_chart:132": 95,
+            "deezer_chart:132": 96,
             "itunes_rss": 14,
             "itunes_search": 269573364,
             "lastfm_geo:Australia": 6,
@@ -5887,7 +5909,7 @@
             "lastfm_global": 6,
             "lastfm_tag:pop": 2
           },
-          "score": 1.164604
+          "score": 1.164512
         },
         {
           "title": "Earrings",
@@ -5914,7 +5936,7 @@
             "lastfm_global"
           ],
           "rankSignals": {
-            "deezer_chart:85": 22,
+            "deezer_chart:85": 12,
             "itunes_search": 1738257931,
             "lastfm_geo:Australia": 1,
             "lastfm_geo:Brazil": 10,
@@ -5927,7 +5949,7 @@
             "lastfm_geo:United States": 1,
             "lastfm_global": 4
           },
-          "score": 1.084368
+          "score": 1.086749
         },
         {
           "title": "Babydoll",
@@ -5940,7 +5962,6 @@
           "providerTrackId": null,
           "sourceTags": [
             "deezer",
-            "deezer_chart",
             "deezer_chart:85",
             "itunes_search",
             "lastfm_geo:Australia",
@@ -5955,8 +5976,7 @@
             "lastfm_global"
           ],
           "rankSignals": {
-            "deezer_chart": 100,
-            "deezer_chart:85": 4,
+            "deezer_chart:85": 6,
             "itunes_search": 1704039031,
             "lastfm_geo:Australia": 7,
             "lastfm_geo:Brazil": 14,
@@ -5969,7 +5989,7 @@
             "lastfm_geo:United States": 9,
             "lastfm_global": 7
           },
-          "score": 1.035575
+          "score": 1.034776
         },
         {
           "title": "Beat It",
@@ -5999,7 +6019,7 @@
             "lastfm_tag:pop"
           ],
           "rankSignals": {
-            "deezer_chart:132": 86,
+            "deezer_chart:132": 90,
             "itunes_rss": 28,
             "itunes_search": 269573341,
             "lastfm_geo:Australia": 10,
@@ -6014,7 +6034,7 @@
             "lastfm_global": 10,
             "lastfm_tag:pop": 3
           },
-          "score": 1.006436
+          "score": 1.005941
         },
         {
           "title": "Beauty and a Beat",
@@ -6180,6 +6200,7 @@
           "providerTrackId": null,
           "sourceTags": [
             "deezer",
+            "deezer_chart",
             "deezer_chart:132",
             "itunes_search",
             "lastfm_geo:Australia",
@@ -6193,7 +6214,8 @@
             "lastfm_global"
           ],
           "rankSignals": {
-            "deezer_chart:132": 29,
+            "deezer_chart": 99,
+            "deezer_chart:132": 23,
             "itunes_search": 1809015879,
             "lastfm_geo:Australia": 28,
             "lastfm_geo:Brazil": 15,
@@ -6205,7 +6227,7 @@
             "lastfm_geo:United States": 38,
             "lastfm_global": 13
           },
-          "score": 0.840313
+          "score": 0.842449
         },
         {
           "title": "End of Beginning",
@@ -6218,7 +6240,6 @@
           "providerTrackId": null,
           "sourceTags": [
             "deezer",
-            "deezer_chart",
             "deezer_chart:152",
             "deezer_chart:85",
             "itunes",
@@ -6236,10 +6257,9 @@
             "lastfm_global"
           ],
           "rankSignals": {
-            "deezer_chart": 85,
-            "deezer_chart:152": 12,
-            "deezer_chart:85": 20,
-            "itunes_rss": 61,
+            "deezer_chart:152": 15,
+            "deezer_chart:85": 26,
+            "itunes_rss": 56,
             "itunes_search": 1632448108,
             "lastfm_geo:Australia": 29,
             "lastfm_geo:Brazil": 65,
@@ -6252,7 +6272,7 @@
             "lastfm_geo:United States": 51,
             "lastfm_global": 28
           },
-          "score": 0.811059
+          "score": 0.798703
         },
         {
           "title": "Mr. Brightside",
@@ -6265,6 +6285,7 @@
           "providerTrackId": null,
           "sourceTags": [
             "deezer",
+            "deezer_chart:152",
             "deezer_chart:85",
             "itunes_search",
             "lastfm_geo:Australia",
@@ -6277,7 +6298,8 @@
             "lastfm_tag:rock"
           ],
           "rankSignals": {
-            "deezer_chart:85": 60,
+            "deezer_chart:152": 52,
+            "deezer_chart:85": 70,
             "itunes_search": 1440891171,
             "lastfm_geo:Australia": 14,
             "lastfm_geo:Canada": 10,
@@ -6288,7 +6310,7 @@
             "lastfm_tag:indie": 33,
             "lastfm_tag:rock": 6
           },
-          "score": 0.784468
+          "score": 0.789857
         },
         {
           "title": "Human Nature",
@@ -6315,7 +6337,7 @@
             "lastfm_tag:pop"
           ],
           "rankSignals": {
-            "itunes_rss": 43,
+            "itunes_rss": 38,
             "itunes_search": 273048790,
             "lastfm_geo:Australia": 15,
             "lastfm_geo:Brazil": 60,
@@ -6328,7 +6350,7 @@
             "lastfm_global": 19,
             "lastfm_tag:pop": 5
           },
-          "score": 0.782082
+          "score": 0.784581
         },
         {
           "title": "Midnight Sun",
@@ -6340,6 +6362,8 @@
           "audioProvider": null,
           "providerTrackId": null,
           "sourceTags": [
+            "deezer",
+            "deezer_chart:132",
             "itunes",
             "itunes_rss",
             "itunes_search",
@@ -6354,7 +6378,8 @@
             "lastfm_global"
           ],
           "rankSignals": {
-            "itunes_rss": 58,
+            "deezer_chart:132": 61,
+            "itunes_rss": 55,
             "itunes_search": 1817499251,
             "lastfm_geo:Australia": 63,
             "lastfm_geo:Brazil": 13,
@@ -6366,7 +6391,7 @@
             "lastfm_geo:United States": 63,
             "lastfm_global": 21
           },
-          "score": 0.759355
+          "score": 0.766243
         },
         {
           "title": "NOBLE",
@@ -6421,8 +6446,8 @@
             "lastfm_global"
           ],
           "rankSignals": {
-            "deezer_chart": 7,
-            "deezer_chart:132": 2,
+            "deezer_chart": 6,
+            "deezer_chart:132": 3,
             "itunes_search": 1868482073,
             "lastfm_geo:Brazil": 33,
             "lastfm_geo:France": 50,
@@ -6431,7 +6456,7 @@
             "lastfm_geo:Spain": 37,
             "lastfm_global": 16
           },
-          "score": 0.742258
+          "score": 0.743992
         }
       ]
     },
@@ -6449,7 +6474,7 @@
           "artist": "BONNIE X CLYDE",
           "album": "",
           "durationMs": 155000,
-          "coverUrl": "https://audius-creator-11.theblueprint.xyz/content/baeaaaiqsebwcsz44ogjz5tnx2w4gmblgozmazzrcvhsq5v4a25rekck3p2d2m/1000x1000.jpg",
+          "coverUrl": "https://audius-creator-16.theblueprint.xyz/content/baeaaaiqsebwcsz44ogjz5tnx2w4gmblgozmazzrcvhsq5v4a25rekck3p2d2m/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/E6bM2N/stream",
           "audioProvider": "audius",
           "providerTrackId": "E6bM2N",
@@ -6459,8 +6484,8 @@
             "audius_trending_monthly"
           ],
           "rankSignals": {
-            "audius_genre:Electronic": 1816,
-            "audius_trending_monthly": 1816
+            "audius_genre:Electronic": 1818,
+            "audius_trending_monthly": 1818
           },
           "score": 0.087399
         },
@@ -6469,7 +6494,7 @@
           "artist": "bauti",
           "album": "",
           "durationMs": 129000,
-          "coverUrl": "https://audius-content-4.figment.io/content/baeaaaiqsebb7yuyaw3afozdaaxni5j6pk7p2c7o3vhp2aa526sldgmsxdfkis/1000x1000.jpg",
+          "coverUrl": "https://audius-content-2.figment.io/content/baeaaaiqsebb7yuyaw3afozdaaxni5j6pk7p2c7o3vhp2aa526sldgmsxdfkis/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/93vpz2j/stream",
           "audioProvider": "audius",
           "providerTrackId": "93vpz2j",
@@ -6487,7 +6512,7 @@
           "artist": "Van Snyder",
           "album": "",
           "durationMs": 420000,
-          "coverUrl": "https://audius-figment-1-validator-19.figment.io/content/baeaaaiqseddm7chfbwrbei4bhzewq5vj2nzyestci3haoa2cwsxjrqwi64nc2/1000x1000.jpg",
+          "coverUrl": "https://audius-content-14.figment.io/content/baeaaaiqseddm7chfbwrbei4bhzewq5vj2nzyestci3haoa2cwsxjrqwi64nc2/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/Yaqlvv7/stream",
           "audioProvider": "audius",
           "providerTrackId": "Yaqlvv7",
@@ -6541,7 +6566,7 @@
           "artist": "NEOTEK",
           "album": "",
           "durationMs": 198000,
-          "coverUrl": "https://creatornode2.audius.co/content/baeaaaiqsea5w2riw3k3cynmgbt75xzxgots7jsgegbgw7jkrv4yj77sfdnlsq/1000x1000.jpg",
+          "coverUrl": "https://audius.rickyrombo.com/content/baeaaaiqsea5w2riw3k3cynmgbt75xzxgots7jsgegbgw7jkrv4yj77sfdnlsq/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/v27mjE6/stream",
           "audioProvider": "audius",
           "providerTrackId": "v27mjE6",
@@ -6559,7 +6584,7 @@
           "artist": "zaza",
           "album": "",
           "durationMs": 129000,
-          "coverUrl": "https://creatornode2.audius.co/content/baeaaaiqsea5utxnyiuo5q6dzzrxqxnfbt7dqd3mpx5y7a7buxybf24owqu6cw/1000x1000.jpg",
+          "coverUrl": "https://audius.rickyrombo.com/content/baeaaaiqsea5utxnyiuo5q6dzzrxqxnfbt7dqd3mpx5y7a7buxybf24owqu6cw/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/gYlGO8k/stream",
           "audioProvider": "audius",
           "providerTrackId": "gYlGO8k",
@@ -6577,7 +6602,7 @@
           "artist": "@iLLPeTiLL",
           "album": "",
           "durationMs": 180000,
-          "coverUrl": "https://audius-creator-5.theblueprint.xyz/content/01KR4G767EC8XJTW5E2HY79E4M/1000x1000.jpg",
+          "coverUrl": "https://creatornode2.audius.co/content/01KR4G767EC8XJTW5E2HY79E4M/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/R6zZP0X/stream",
           "audioProvider": "audius",
           "providerTrackId": "R6zZP0X",
@@ -6595,7 +6620,7 @@
           "artist": "Ciara Graves",
           "album": "",
           "durationMs": 178000,
-          "coverUrl": "https://creatornode2.audius.co/content/baeaaaiqsedsizcslowgerwnc7mrwvbzkiog6mckhc77vlk5iplt2tqhddwtoy/1000x1000.jpg",
+          "coverUrl": "https://audius-content-14.figment.io/content/baeaaaiqsedsizcslowgerwnc7mrwvbzkiog6mckhc77vlk5iplt2tqhddwtoy/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/BqpPKMP/stream",
           "audioProvider": "audius",
           "providerTrackId": "BqpPKMP",
@@ -6604,7 +6629,7 @@
             "audius_trending_monthly"
           ],
           "rankSignals": {
-            "audius_trending_monthly": 249
+            "audius_trending_monthly": 269
           },
           "score": 0.071483
         },
@@ -6613,7 +6638,7 @@
           "artist": "med mc",
           "album": "",
           "durationMs": 120000,
-          "coverUrl": "https://val004.open-audio-validator.com/content/baeaaaiqsed5lcwpergliyksi53owvefhimayxz4m43j6ridlqh44fqwl6ex6g/1000x1000.jpg",
+          "coverUrl": "https://creatornode2.audius.co/content/baeaaaiqsed5lcwpergliyksi53owvefhimayxz4m43j6ridlqh44fqwl6ex6g/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/klQ4l3K/stream",
           "audioProvider": "audius",
           "providerTrackId": "klQ4l3K",
@@ -6649,7 +6674,7 @@
           "artist": "Zaiaku",
           "album": "",
           "durationMs": 293000,
-          "coverUrl": "https://creatornode2.audius.co/content/baeaaaiqsedd2bzffrcplhsnxvgdlodkzlefusx54tbnuwi4fv246df6hybzkq/1000x1000.jpg",
+          "coverUrl": "https://audius-creator-12.theblueprint.xyz/content/baeaaaiqsedd2bzffrcplhsnxvgdlodkzlefusx54tbnuwi4fv246df6hybzkq/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/l4843wZ/stream",
           "audioProvider": "audius",
           "providerTrackId": "l4843wZ",
@@ -6667,7 +6692,7 @@
           "artist": "thatskenny",
           "album": "",
           "durationMs": 124000,
-          "coverUrl": "https://creatornode2.audius.co/content/baeaaaiqseclusat6fymkl7snr6ht6dcs47i7t4kpxwrgsbwv3zxhe7kp3is7k/1000x1000.jpg",
+          "coverUrl": "https://val018.open-audio-validator.com/content/baeaaaiqseclusat6fymkl7snr6ht6dcs47i7t4kpxwrgsbwv3zxhe7kp3is7k/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/95qq8W0/stream",
           "audioProvider": "audius",
           "providerTrackId": "95qq8W0",
@@ -6685,7 +6710,7 @@
           "artist": "Rixx",
           "album": "",
           "durationMs": 288000,
-          "coverUrl": "https://val017.open-audio-validator.com/content/baeaaaiqsedxyehqxldgqcf7x2xbboycl6ggspfj6dyctkvtqytpfunb4gej2g/1000x1000.jpg",
+          "coverUrl": "https://audius-04.staked.cloud/content/baeaaaiqsedxyehqxldgqcf7x2xbboycl6ggspfj6dyctkvtqytpfunb4gej2g/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/dpb3Elm/stream",
           "audioProvider": "audius",
           "providerTrackId": "dpb3Elm",
@@ -6705,7 +6730,7 @@
           "artist": "CURE97 X YZENIA",
           "album": "",
           "durationMs": 145000,
-          "coverUrl": "https://creatornode2.audius.co/content/baeaaaiqsecskwe2dodmls26i7y7xnliig63olr7rd4j4blc652bx2wmusfibe/1000x1000.jpg",
+          "coverUrl": "https://cn4.mainnet.audiusindex.org/content/baeaaaiqsecskwe2dodmls26i7y7xnliig63olr7rd4j4blc652bx2wmusfibe/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/50NaZGY/stream",
           "audioProvider": "audius",
           "providerTrackId": "50NaZGY",
@@ -6723,7 +6748,7 @@
           "artist": "Van Snyder LIVE on ViBE 99.7 FM Las Vegas",
           "album": "",
           "durationMs": 420000,
-          "coverUrl": "https://audius-content-5.figment.io/content/baeaaaiqseav4734axaypfar3h7xetjhuf4ilg6u5i7l3ky4kf75s3lhi6m4u4/1000x1000.jpg",
+          "coverUrl": "https://creatornode2.audius.co/content/baeaaaiqseav4734axaypfar3h7xetjhuf4ilg6u5i7l3ky4kf75s3lhi6m4u4/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/9PYK4Mo/stream",
           "audioProvider": "audius",
           "providerTrackId": "9PYK4Mo",
@@ -6752,7 +6777,7 @@
             "audius_trending_monthly"
           ],
           "rankSignals": {
-            "audius_trending_monthly": 1043
+            "audius_trending_monthly": 1059
           },
           "score": 0.065262
         },
@@ -6779,7 +6804,7 @@
           "artist": "KARAKAPLAN",
           "album": "",
           "durationMs": 120000,
-          "coverUrl": "https://val011.open-audio-validator.com/content/baeaaaiqseauh73oukvcc7mvuuah242uibtsp4kk4nwfniwsi5qmvdqxs5g3qq/1000x1000.jpg",
+          "coverUrl": "https://creatornode2.audius.co/content/baeaaaiqseauh73oukvcc7mvuuah242uibtsp4kk4nwfniwsi5qmvdqxs5g3qq/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/YVo9amr/stream",
           "audioProvider": "audius",
           "providerTrackId": "YVo9amr",
@@ -6789,8 +6814,8 @@
             "audius_trending_monthly"
           ],
           "rankSignals": {
-            "audius_genre:Hip-Hop/Rap": 484,
-            "audius_trending_monthly": 484
+            "audius_genre:Hip-Hop/Rap": 488,
+            "audius_trending_monthly": 488
           },
           "score": 0.063279
         },
@@ -6799,7 +6824,7 @@
           "artist": "Kill Your Utopia",
           "album": "",
           "durationMs": 198000,
-          "coverUrl": "https://audius-content-8.figment.io/content/baeaaaiqsechlqna5hc2wc757kd5uaxi2553xz2ojlmvkbqvjjh3ikadeygf44/1000x1000.jpg",
+          "coverUrl": "https://creatornode2.audius.co/content/baeaaaiqsechlqna5hc2wc757kd5uaxi2553xz2ojlmvkbqvjjh3ikadeygf44/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/42xjNQ4/stream",
           "audioProvider": "audius",
           "providerTrackId": "42xjNQ4",
