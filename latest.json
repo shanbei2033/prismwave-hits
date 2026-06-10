@@ -2,23 +2,23 @@
   "schema_version": 1,
   "station_id": "hits-global",
   "timezone": "UTC",
-  "generated_at": "2026-06-09T01:28:15Z",
+  "generated_at": "2026-06-10T01:37:04Z",
   "generator_version": "prismwave-hits/0.2.0",
-  "active_edition_date": "2026-06-10",
-  "schedule_path": "schedules/2026-06-10.json",
-  "schedule_url": "https://raw.githubusercontent.com/shanbei2033/prismwave-hits/main/schedules/2026-06-10.json",
+  "active_edition_date": "2026-06-11",
+  "schedule_path": "schedules/2026-06-11.json",
+  "schedule_url": "https://raw.githubusercontent.com/shanbei2033/prismwave-hits/main/schedules/2026-06-11.json",
   "service_windows": [
     {
       "label": "on_air",
-      "start_at": "2026-06-10T00:00:00Z",
-      "end_at": "2026-06-10T20:00:00Z"
+      "start_at": "2026-06-11T00:00:00Z",
+      "end_at": "2026-06-11T20:00:00Z"
     }
   ],
   "off_air_windows": [
     {
       "label": "overnight_maintenance",
-      "start_at": "2026-06-10T20:00:00Z",
-      "end_at": "2026-06-11T00:00:00Z"
+      "start_at": "2026-06-11T20:00:00Z",
+      "end_at": "2026-06-12T00:00:00Z"
     }
   ],
   "source_snapshot": [
@@ -159,14 +159,14 @@
       "scope": "Hip-Hop/Rap",
       "status": "ok",
       "candidate_count": 60,
-      "playable_count": 60
+      "playable_count": 59
     },
     {
       "source": "audius_genre",
       "scope": "Pop",
       "status": "ok",
       "candidate_count": 60,
-      "playable_count": 60
+      "playable_count": 59
     },
     {
       "source": "audius_genre",
@@ -261,7 +261,7 @@
     {
       "source": "itunes_rss",
       "status": "ok",
-      "candidate_count": 84,
+      "candidate_count": 85,
       "playable_count": 0
     },
     {
@@ -278,7 +278,7 @@
       "playable_count": 469
     }
   ],
-  "track_count": 348,
-  "playable_track_count": 348,
+  "track_count": 335,
+  "playable_track_count": 335,
   "reserve_track_count": 12
 }
