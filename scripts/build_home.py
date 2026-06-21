@@ -12,6 +12,7 @@ Output:
 from __future__ import annotations
 
 import os
+import random
 from datetime import timedelta, timezone
 from http.client import RemoteDisconnected
 from pathlib import Path
@@ -29,12 +30,13 @@ from build_hits import (  # type: ignore
     rank_candidates,
     resolve_playable_sources,
     safe_int,
+    track_identity,
     write_json,
     iso_z,
 )
 
-GENERATOR_VERSION = "prismwave-home/0.2.0"
-SCHEMA_VERSION = 7
+GENERATOR_VERSION = "prismwave-home/0.4.0"
+SCHEMA_VERSION = 8
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG_PATH = ROOT / "config" / "station.json"
 HOME_DIR = ROOT / "home"
@@ -44,6 +46,13 @@ BEIJING = timezone(timedelta(hours=8), name="Asia/Shanghai")
 TOP_PLAYLIST_LIMIT = 100
 SECTION_TRACK_LIMIT = 20
 METADATA_ENRICH_LIMIT = 140
+ARTIST_PER_PLAYLIST_LIMIT = 3
+ARTIST_PER_SECTION_LIMIT = 2
+TOP_PLAYLIST_LOOKAHEAD = 30
+TOP_PLAYLIST_MIN_ARTIST_GAP = 12
+SECTION_LOOKAHEAD = 12
+SECTION_MIN_ARTIST_GAP = 4
+MIN_SECTION_TRACKS = 4
 
 ITUNES_SEARCH_URL = "https://itunes.apple.com/search"
 DEEZER_SEARCH_URL = "https://api.deezer.com/search"
@@ -53,6 +62,96 @@ DEEZER_SEARCH_URL = "https://api.deezer.com/search"
 LASTFM_PLACEHOLDER_HASHES = (
     "2a96cbd8b46e442fc41c2b86b821562f",
 )
+
+SOURCE_SECTION_DEFINITIONS = [
+    (
+        "global-hot",
+        {"zh-Hans": "全球热门", "zh-Hant": "全球熱門", "en-US": "Global Hot"},
+        "Top signals from Last.fm, Deezer, iTunes and Audius",
+        lambda c: True,
+    ),
+    (
+        "streamable-now",
+        {"zh-Hans": "可直接播放", "zh-Hant": "可直接播放", "en-US": "Streamable Now"},
+        "Resolved Audius streams",
+        lambda c: bool(c.audio_url),
+    ),
+    (
+        "world-charts",
+        {"zh-Hans": "环球榜单", "zh-Hant": "環球榜單", "en-US": "World Charts"},
+        "Deezer and iTunes chart signals",
+        lambda c: has_any_source(c, ("deezer", "itunes")),
+    ),
+    (
+        "listener-trends",
+        {"zh-Hans": "听众趋势", "zh-Hant": "聽眾趨勢", "en-US": "Listener Trends"},
+        "Last.fm global and regional charts",
+        lambda c: has_any_source(c, ("lastfm_global", "lastfm_geo")),
+    ),
+    (
+        "audius-trending",
+        {"zh-Hans": "Audius 流行", "zh-Hant": "Audius 流行", "en-US": "Audius Trending"},
+        "Independent streaming trends",
+        lambda c: has_any_source(c, ("audius",)),
+    ),
+]
+
+STYLE_SECTION_DEFINITIONS = [
+    (
+        "style-pop",
+        {"zh-Hans": "流行", "zh-Hant": "流行", "en-US": "Pop"},
+        "Pop signals from Last.fm, Audius and Deezer",
+        ("lastfm_tag:pop", "audius_genre:Pop", "deezer_chart:132"),
+    ),
+    (
+        "style-rock",
+        {"zh-Hans": "摇滚", "zh-Hant": "搖滾", "en-US": "Rock"},
+        "Rock signals from Last.fm, Audius and Deezer",
+        ("lastfm_tag:rock", "audius_genre:Rock", "deezer_chart:152"),
+    ),
+    (
+        "style-electronic",
+        {"zh-Hans": "电子", "zh-Hant": "電子", "en-US": "Electronic"},
+        "Electronic signals from Last.fm, Audius and Deezer",
+        ("lastfm_tag:electronic", "audius_genre:Electronic", "deezer_chart:113"),
+    ),
+    (
+        "style-indie",
+        {"zh-Hans": "独立", "zh-Hant": "獨立", "en-US": "Indie"},
+        "Indie and alternative signals",
+        ("lastfm_tag:indie", "audius_genre:Alternative", "deezer_chart:85"),
+    ),
+    (
+        "style-hiphop",
+        {"zh-Hans": "嘻哈", "zh-Hant": "嘻哈", "en-US": "Hip-Hop"},
+        "Hip-Hop signals from Last.fm, Audius and Deezer",
+        ("lastfm_tag:hip-hop", "audius_genre:Hip-Hop/Rap", "deezer_chart:116"),
+    ),
+    (
+        "style-rnb",
+        {"zh-Hans": "R&B / 灵魂乐", "zh-Hant": "R&B / 靈魂樂", "en-US": "R&B / Soul"},
+        "R&B and soul signals",
+        ("lastfm_tag:rnb", "audius_genre:R&B/Soul", "deezer_chart:165"),
+    ),
+    (
+        "style-folk",
+        {"zh-Hans": "民谣", "zh-Hant": "民謠", "en-US": "Folk"},
+        "Folk signals from Last.fm",
+        ("lastfm_tag:folk",),
+    ),
+    (
+        "style-jazz",
+        {"zh-Hans": "爵士", "zh-Hant": "爵士", "en-US": "Jazz"},
+        "Jazz signals from Last.fm, Audius and Deezer",
+        ("lastfm_tag:jazz", "audius_genre:Jazz", "deezer_chart:129"),
+    ),
+    (
+        "style-ambient",
+        {"zh-Hans": "氛围", "zh-Hant": "氛圍", "en-US": "Ambient"},
+        "Ambient signals from Last.fm and Audius",
+        ("lastfm_tag:ambient", "audius_genre:Ambient"),
+    ),
+]
 
 
 def main() -> None:
@@ -91,11 +190,27 @@ def main() -> None:
     if not ranked_candidates:
         raise SystemExit("Home build produced zero candidates.")
 
+    random.seed(edition_date.isoformat())
+    ranked_candidates = ranked_with_shuffle(ranked_candidates)
+
     enrich_missing_metadata(ranked_candidates[:METADATA_ENRICH_LIMIT])
     ranked_candidates = rank_candidates(ranked_candidates)
-    top_candidates = ranked_candidates[:TOP_PLAYLIST_LIMIT]
-    if len(top_candidates) < 20:
-        raise SystemExit("Home build produced too few Top 100 candidates.")
+    ranked_candidates = ranked_with_shuffle(ranked_candidates)
+
+    top_candidates = build_diverse_playlist(
+        ranked_candidates,
+        limit=TOP_PLAYLIST_LIMIT,
+        artist_limit=ARTIST_PER_PLAYLIST_LIMIT,
+        lookahead=TOP_PLAYLIST_LOOKAHEAD,
+        min_artist_gap=TOP_PLAYLIST_MIN_ARTIST_GAP,
+        rng=random,
+    )
+    if len(top_candidates) < TOP_PLAYLIST_LIMIT:
+        raise SystemExit(
+            "Home build produced "
+            f"{len(top_candidates)} Top 100 candidates with artist_limit="
+            f"{ARTIST_PER_PLAYLIST_LIMIT}; need {TOP_PLAYLIST_LIMIT}."
+        )
 
     top_playlist = build_top_playlist(top_candidates)
     sections = build_sections(ranked_candidates)
@@ -316,6 +431,124 @@ def apply_metadata(candidate: CandidateTrack, metadata: dict[str, Any]) -> None:
             candidate.rank_signals[source_tag] = signal
 
 
+def ranked_with_shuffle(candidates: list[CandidateTrack]) -> list[CandidateTrack]:
+    result: list[CandidateTrack] = []
+    for start in range(0, len(candidates), 20):
+        group = list(candidates[start : start + 20])
+        random.shuffle(group)
+        result.extend(group)
+    return result
+
+
+def build_diverse_playlist(
+    candidates: list[CandidateTrack],
+    *,
+    limit: int,
+    artist_limit: int,
+    lookahead: int,
+    min_artist_gap: int,
+    rng: random.Random | Any = random,
+    excluded_track_keys: set[str] | None = None,
+) -> list[CandidateTrack]:
+    unique_candidates: list[tuple[int, CandidateTrack]] = []
+    seen_track_keys = set(excluded_track_keys or set())
+    for index, candidate in enumerate(candidates):
+        track_key = track_identity(candidate)
+        if track_key in seen_track_keys:
+            continue
+        artist_key = normalize_text(candidate.artist)
+        if not artist_key:
+            continue
+        seen_track_keys.add(track_key)
+        unique_candidates.append((index, candidate))
+
+    if not unique_candidates:
+        return []
+
+    scores = [candidate.score for _, candidate in unique_candidates]
+    min_score = min(scores)
+    max_score = max(scores)
+    score_span = max(max_score - min_score, 0.000001)
+    pool_size = len(unique_candidates)
+
+    selected: list[CandidateTrack] = []
+    artist_counts: dict[str, int] = {}
+    last_artist_position: dict[str, int] = {}
+    remaining = list(unique_candidates)
+
+    while len(selected) < limit:
+        window: list[tuple[int, CandidateTrack]] = []
+        for original_index, candidate in remaining:
+            artist_key = normalize_text(candidate.artist)
+            if artist_counts.get(artist_key, 0) >= artist_limit:
+                continue
+            window.append((original_index, candidate))
+            if len(window) >= lookahead:
+                break
+        if not window:
+            break
+
+        selected_position = len(selected)
+        best_original_index, best_candidate = max(
+            window,
+            key=lambda item: diverse_candidate_score(
+                item[1],
+                original_index=item[0],
+                selected_position=selected_position,
+                artist_counts=artist_counts,
+                last_artist_position=last_artist_position,
+                pool_size=pool_size,
+                min_score=min_score,
+                score_span=score_span,
+                min_artist_gap=min_artist_gap,
+                rng=rng,
+            ),
+        )
+
+        selected.append(best_candidate)
+        best_artist_key = normalize_text(best_candidate.artist)
+        artist_counts[best_artist_key] = artist_counts.get(best_artist_key, 0) + 1
+        last_artist_position[best_artist_key] = selected_position
+        remaining.remove((best_original_index, best_candidate))
+
+    return selected
+
+
+def diverse_candidate_score(
+    candidate: CandidateTrack,
+    *,
+    original_index: int,
+    selected_position: int,
+    artist_counts: dict[str, int],
+    last_artist_position: dict[str, int],
+    pool_size: int,
+    min_score: float,
+    score_span: float,
+    min_artist_gap: int,
+    rng: random.Random | Any = random,
+) -> float:
+    artist_key = normalize_text(candidate.artist)
+    normalized_score = (candidate.score - min_score) / score_span
+    rank_score = 1.0 - (original_index / max(pool_size - 1, 1))
+    repeat_count = artist_counts.get(artist_key, 0)
+    repeat_penalty = repeat_count * 0.18
+    gap_penalty = 0.0
+    last_position = last_artist_position.get(artist_key)
+    if last_position is not None:
+        gap = selected_position - last_position
+        if gap < min_artist_gap:
+            gap_penalty = ((min_artist_gap - gap) / min_artist_gap) * 0.14
+    jitter = rng.random() * 0.000001
+    return (
+        normalized_score * 0.82
+        + rank_score * 0.18
+        - repeat_penalty
+        - gap_penalty
+        - original_index * 0.0000001
+        + jitter
+    )
+
+
 def build_top_playlist(candidates: list[CandidateTrack]) -> dict[str, Any]:
     return {
         "id": "daily-top-100",
@@ -329,45 +562,63 @@ def build_top_playlist(candidates: list[CandidateTrack]) -> dict[str, Any]:
     }
 
 
-def build_sections(ranked_candidates: list[CandidateTrack]) -> list[dict[str, Any]]:
-    definitions = [
-        (
-            "global-hot",
-            {"zh-Hans": "全球热门", "zh-Hant": "全球熱門", "en-US": "Global Hot"},
-            "Top signals from Last.fm, Deezer, iTunes and Audius",
-            lambda c: True,
-        ),
-        (
-            "streamable-now",
-            {"zh-Hans": "可直接播放", "zh-Hant": "可直接播放", "en-US": "Streamable Now"},
-            "Resolved Audius streams",
-            lambda c: bool(c.audio_url),
-        ),
-        (
-            "world-charts",
-            {"zh-Hans": "环球榜单", "zh-Hant": "環球榜單", "en-US": "World Charts"},
-            "Deezer and iTunes chart signals",
-            lambda c: has_any_source(c, ("deezer", "itunes")),
-        ),
-        (
-            "listener-trends",
-            {"zh-Hans": "听众趋势", "zh-Hant": "聽眾趨勢", "en-US": "Listener Trends"},
-            "Last.fm global and regional charts",
-            lambda c: has_any_source(c, ("lastfm_global", "lastfm_geo")),
-        ),
-        (
-            "audius-trending",
-            {"zh-Hans": "Audius 流行", "zh-Hant": "Audius 流行", "en-US": "Audius Trending"},
-            "Independent streaming trends",
-            lambda c: has_any_source(c, ("audius",)),
-        ),
+def build_sections(
+    ranked_candidates: list[CandidateTrack],
+) -> list[dict[str, Any]]:
+    return [
+        *build_source_sections(ranked_candidates),
+        *build_style_sections(ranked_candidates),
     ]
 
+
+def build_source_sections(
+    ranked_candidates: list[CandidateTrack],
+) -> list[dict[str, Any]]:
     sections: list[dict[str, Any]] = []
-    for section_id, title, subtitle, predicate in definitions:
-        tracks = [c for c in ranked_candidates if predicate(c)][:SECTION_TRACK_LIMIT]
-        if len(tracks) < 4:
+    for section_id, title, subtitle, predicate in SOURCE_SECTION_DEFINITIONS:
+        section_candidates = [c for c in ranked_candidates if predicate(c)]
+        tracks = build_diverse_playlist(
+            section_candidates,
+            limit=SECTION_TRACK_LIMIT,
+            artist_limit=ARTIST_PER_SECTION_LIMIT,
+            lookahead=SECTION_LOOKAHEAD,
+            min_artist_gap=SECTION_MIN_ARTIST_GAP,
+            rng=random,
+        )
+        if len(tracks) < MIN_SECTION_TRACKS:
             continue
+        sections.append(
+            {
+                "id": section_id,
+                "title": title,
+                "subtitle": subtitle,
+                "tracks": [serialize_candidate(c) for c in tracks],
+            }
+        )
+    return sections
+
+
+def build_style_sections(
+    ranked_candidates: list[CandidateTrack],
+) -> list[dict[str, Any]]:
+    sections: list[dict[str, Any]] = []
+    used_keys: set[str] = set()
+    for section_id, title, subtitle, source_needles in STYLE_SECTION_DEFINITIONS:
+        section_candidates = [
+            c for c in ranked_candidates if has_any_source(c, source_needles)
+        ]
+        tracks = build_diverse_playlist(
+            section_candidates,
+            limit=SECTION_TRACK_LIMIT,
+            artist_limit=ARTIST_PER_SECTION_LIMIT,
+            lookahead=SECTION_LOOKAHEAD,
+            min_artist_gap=SECTION_MIN_ARTIST_GAP,
+            rng=random,
+            excluded_track_keys=used_keys,
+        )
+        if len(tracks) < MIN_SECTION_TRACKS:
+            continue
+        used_keys.update(track_identity(c) for c in tracks)
         sections.append(
             {
                 "id": section_id,

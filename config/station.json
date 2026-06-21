@@ -20,7 +20,7 @@
     "global_limit": 200,
     "region_limit": 120,
     "tag_limit": 80,
-    "tags": ["electronic", "hip-hop", "pop", "rock", "indie", "ambient", "rnb", "jazz"]
+    "tags": ["electronic", "hip-hop", "pop", "rock", "indie", "ambient", "rnb", "jazz", "folk"]
   },
   "audius": {
     "trending_limit": 180,
