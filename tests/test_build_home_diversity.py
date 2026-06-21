@@ -4,6 +4,7 @@ import random
 import sys
 import unittest
 from collections import Counter
+from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -11,7 +12,7 @@ SCRIPTS_DIR = ROOT / "scripts"
 sys.path.insert(0, str(SCRIPTS_DIR))
 
 from build_hits import CandidateTrack, normalize_text, track_identity  # noqa: E402
-from build_home import build_diverse_playlist  # noqa: E402
+from build_home import build_diverse_playlist, format_beijing_generated_time  # noqa: E402
 
 
 def make_track(title: str, artist: str, score: float) -> CandidateTrack:
@@ -84,6 +85,14 @@ class BuildDiversePlaylistTest(unittest.TestCase):
         self.assertEqual(result[0].title, "BTS Hot 00")
         self.assertIn("hot solo 00::hot solo 00", identities)
         self.assertNotIn("low filler 39::low artist 39", identities)
+
+    def test_top_playlist_subtitle_uses_beijing_generated_time(self) -> None:
+        generated_at = datetime(2026, 6, 21, 16, 32, 27, tzinfo=timezone.utc)
+
+        self.assertEqual(
+            format_beijing_generated_time(generated_at),
+            "生成时间：2026-06-22 00:32（北京时间）",
+        )
 
 
 def make_repetition_heavy_candidates() -> list[CandidateTrack]:

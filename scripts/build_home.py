@@ -13,7 +13,7 @@ from __future__ import annotations
 
 import os
 import random
-from datetime import timedelta, timezone
+from datetime import datetime, timedelta, timezone
 from http.client import RemoteDisconnected
 from pathlib import Path
 from typing import Any
@@ -35,7 +35,7 @@ from build_hits import (  # type: ignore
     iso_z,
 )
 
-GENERATOR_VERSION = "prismwave-home/0.4.0"
+GENERATOR_VERSION = "prismwave-home/0.4.1"
 SCHEMA_VERSION = 8
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG_PATH = ROOT / "config" / "station.json"
@@ -212,7 +212,7 @@ def main() -> None:
             f"{ARTIST_PER_PLAYLIST_LIMIT}; need {TOP_PLAYLIST_LIMIT}."
         )
 
-    top_playlist = build_top_playlist(top_candidates)
+    top_playlist = build_top_playlist(top_candidates, generated_at)
     sections = build_sections(ranked_candidates)
     payload = {
         "schemaVersion": SCHEMA_VERSION,
@@ -549,7 +549,15 @@ def diverse_candidate_score(
     )
 
 
-def build_top_playlist(candidates: list[CandidateTrack]) -> dict[str, Any]:
+def format_beijing_generated_time(generated_at: datetime) -> str:
+    beijing_time = generated_at.astimezone(BEIJING).replace(second=0, microsecond=0)
+    return f"生成时间：{beijing_time:%Y-%m-%d %H:%M}（北京时间）"
+
+
+def build_top_playlist(
+    candidates: list[CandidateTrack],
+    generated_at: datetime,
+) -> dict[str, Any]:
     return {
         "id": "daily-top-100",
         "title": {
@@ -557,7 +565,7 @@ def build_top_playlist(candidates: list[CandidateTrack]) -> dict[str, Any]:
             "zh-Hant": "今日趨勢",
             "en-US": "Today's Trending",
         },
-        "subtitle": "Global multi-platform Top 100",
+        "subtitle": format_beijing_generated_time(generated_at),
         "tracks": [serialize_candidate(c) for c in candidates[:TOP_PLAYLIST_LIMIT]],
     }
 
