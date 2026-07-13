@@ -13,7 +13,8 @@ from __future__ import annotations
 
 import os
 import random
-from datetime import datetime, timedelta, timezone
+from dataclasses import dataclass
+from datetime import date, datetime, timedelta, timezone
 from http.client import RemoteDisconnected
 from pathlib import Path
 from typing import Any
@@ -35,7 +36,7 @@ from build_hits import (  # type: ignore
     iso_z,
 )
 
-GENERATOR_VERSION = "prismwave-home/0.4.1"
+GENERATOR_VERSION = "prismwave-home/0.5.0"
 SCHEMA_VERSION = 8
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG_PATH = ROOT / "config" / "station.json"
@@ -53,6 +54,15 @@ TOP_PLAYLIST_MIN_ARTIST_GAP = 12
 SECTION_LOOKAHEAD = 12
 SECTION_MIN_ARTIST_GAP = 4
 MIN_SECTION_TRACKS = 4
+ROTATION_HISTORY_DAYS = 7
+ROTATION_AGE_PENALTIES = {
+    2: 0.24,
+    3: 0.18,
+    4: 0.13,
+    5: 0.09,
+    6: 0.05,
+    7: 0.02,
+}
 
 ITUNES_SEARCH_URL = "https://itunes.apple.com/search"
 DEEZER_SEARCH_URL = "https://api.deezer.com/search"
@@ -62,6 +72,90 @@ DEEZER_SEARCH_URL = "https://api.deezer.com/search"
 LASTFM_PLACEHOLDER_HASHES = (
     "2a96cbd8b46e442fc41c2b86b821562f",
 )
+
+
+@dataclass(frozen=True)
+class RotationHistory:
+    yesterday_keys: frozenset[str]
+    recent_age_by_key: dict[str, int]
+    history_days_loaded: int
+
+
+def payload_track_identities(payload: Any) -> set[str]:
+    if not isinstance(payload, dict):
+        return set()
+
+    tracks: list[Any] = []
+    top_playlist = payload.get("topPlaylist")
+    if isinstance(top_playlist, dict):
+        top_tracks = top_playlist.get("tracks")
+        if isinstance(top_tracks, list):
+            tracks.extend(top_tracks)
+
+    sections = payload.get("sections")
+    if isinstance(sections, list):
+        for section in sections:
+            if not isinstance(section, dict):
+                continue
+            section_tracks = section.get("tracks")
+            if isinstance(section_tracks, list):
+                tracks.extend(section_tracks)
+
+    identities: set[str] = set()
+    for track in tracks:
+        if not isinstance(track, dict):
+            continue
+        title = str(track.get("title") or "").strip()
+        artist = str(track.get("artist") or "").strip()
+        if not title or not artist:
+            continue
+        identities.add(f"{normalize_text(title)}::{normalize_text(artist)}")
+    return identities
+
+
+def load_rotation_history(
+    home_dir: Path,
+    edition_date: date,
+    history_days: int = ROTATION_HISTORY_DAYS,
+) -> RotationHistory:
+    yesterday_keys: set[str] = set()
+    recent_age_by_key: dict[str, int] = {}
+    history_days_loaded = 0
+
+    for age in range(1, history_days + 1):
+        archive_date = edition_date - timedelta(days=age)
+        path = home_dir / f"home_recommendations-{archive_date.isoformat()}.json"
+        if not path.exists():
+            continue
+        try:
+            payload = load_json(path)
+        except (OSError, TypeError, ValueError):
+            continue
+        if not isinstance(payload, dict):
+            continue
+        if safe_int(payload.get("schemaVersion")) < SCHEMA_VERSION:
+            continue
+        if str(payload.get("editionDate") or "").strip() != archive_date.isoformat():
+            continue
+
+        history_days_loaded += 1
+        identities = payload_track_identities(payload)
+        if age == 1:
+            yesterday_keys.update(identities)
+            continue
+        for identity in identities:
+            previous_age = recent_age_by_key.get(identity)
+            if previous_age is None or age < previous_age:
+                recent_age_by_key[identity] = age
+
+    for identity in yesterday_keys:
+        recent_age_by_key.pop(identity, None)
+
+    return RotationHistory(
+        yesterday_keys=frozenset(yesterday_keys),
+        recent_age_by_key=recent_age_by_key,
+        history_days_loaded=history_days_loaded,
+    )
 
 SOURCE_SECTION_DEFINITIONS = [
     (
@@ -161,6 +255,13 @@ def main() -> None:
 
     HOME_DIR.mkdir(parents=True, exist_ok=True)
     print(f"[home] building Beijing edition {edition_date.isoformat()}")
+    rotation_history = load_rotation_history(HOME_DIR, edition_date)
+    print(
+        "[home] rotation history "
+        f"days={rotation_history.history_days_loaded} "
+        f"yesterday_tracks={len(rotation_history.yesterday_keys)} "
+        f"recent_tracks={len(rotation_history.recent_age_by_key)}"
+    )
 
     merged_candidates, source_snapshot = load_candidate_pool(station)
     if should_resolve_audio():
@@ -204,6 +305,8 @@ def main() -> None:
         lookahead=TOP_PLAYLIST_LOOKAHEAD,
         min_artist_gap=TOP_PLAYLIST_MIN_ARTIST_GAP,
         rng=random,
+        yesterday_track_keys=rotation_history.yesterday_keys,
+        recent_age_by_key=rotation_history.recent_age_by_key,
     )
     if len(top_candidates) < TOP_PLAYLIST_LIMIT:
         raise SystemExit(
@@ -213,7 +316,12 @@ def main() -> None:
         )
 
     top_playlist = build_top_playlist(top_candidates, generated_at)
-    sections = build_sections(ranked_candidates)
+    sections = build_sections(ranked_candidates, rotation_history)
+    rotation_snapshot = build_rotation_snapshot(
+        top_playlist,
+        sections,
+        rotation_history,
+    )
     payload = {
         "schemaVersion": SCHEMA_VERSION,
         "generatorVersion": GENERATOR_VERSION,
@@ -228,6 +336,7 @@ def main() -> None:
         "topPlaylist": top_playlist,
         "sections": sections,
         "albumRecommendations": [],
+        "rotationSnapshot": rotation_snapshot,
     }
 
     archive_path = HOME_DIR / f"home_recommendations-{edition_date.isoformat()}.json"
@@ -242,6 +351,12 @@ def main() -> None:
         f"tracks={len(top_playlist['tracks'])} "
         f"with_cover={count_cover_urls(top_playlist['tracks'])} "
         f"with_audio={count_audio_urls(top_playlist['tracks'])}"
+    )
+    print(
+        "[home] rotation result "
+        f"previous_day_overlap={rotation_snapshot['previousDayOverlapCount']} "
+        f"recent_reuse={rotation_snapshot['recentReuseCount']} "
+        f"fallback_reuse={rotation_snapshot['fallbackReuseCount']}"
     )
 
 
@@ -449,6 +564,9 @@ def build_diverse_playlist(
     min_artist_gap: int,
     rng: random.Random | Any = random,
     excluded_track_keys: set[str] | None = None,
+    yesterday_track_keys: set[str] | frozenset[str] | None = None,
+    recent_age_by_key: dict[str, int] | None = None,
+    allow_yesterday_fallback: bool = True,
 ) -> list[CandidateTrack]:
     unique_candidates: list[tuple[int, CandidateTrack]] = []
     seen_track_keys = set(excluded_track_keys or set())
@@ -474,42 +592,54 @@ def build_diverse_playlist(
     selected: list[CandidateTrack] = []
     artist_counts: dict[str, int] = {}
     last_artist_position: dict[str, int] = {}
-    remaining = list(unique_candidates)
+    yesterday_keys = set(yesterday_track_keys or set())
+    fresh_remaining = [
+        item for item in unique_candidates if track_identity(item[1]) not in yesterday_keys
+    ]
+    fallback_remaining = [
+        item for item in unique_candidates if track_identity(item[1]) in yesterday_keys
+    ]
 
-    while len(selected) < limit:
-        window: list[tuple[int, CandidateTrack]] = []
-        for original_index, candidate in remaining:
-            artist_key = normalize_text(candidate.artist)
-            if artist_counts.get(artist_key, 0) >= artist_limit:
-                continue
-            window.append((original_index, candidate))
-            if len(window) >= lookahead:
+    def select_from(remaining: list[tuple[int, CandidateTrack]]) -> None:
+        while len(selected) < limit:
+            window: list[tuple[int, CandidateTrack]] = []
+            for original_index, candidate in remaining:
+                artist_key = normalize_text(candidate.artist)
+                if artist_counts.get(artist_key, 0) >= artist_limit:
+                    continue
+                window.append((original_index, candidate))
+                if len(window) >= lookahead:
+                    break
+            if not window:
                 break
-        if not window:
-            break
 
-        selected_position = len(selected)
-        best_original_index, best_candidate = max(
-            window,
-            key=lambda item: diverse_candidate_score(
-                item[1],
-                original_index=item[0],
-                selected_position=selected_position,
-                artist_counts=artist_counts,
-                last_artist_position=last_artist_position,
-                pool_size=pool_size,
-                min_score=min_score,
-                score_span=score_span,
-                min_artist_gap=min_artist_gap,
-                rng=rng,
-            ),
-        )
+            selected_position = len(selected)
+            best_original_index, best_candidate = max(
+                window,
+                key=lambda item: diverse_candidate_score(
+                    item[1],
+                    original_index=item[0],
+                    selected_position=selected_position,
+                    artist_counts=artist_counts,
+                    last_artist_position=last_artist_position,
+                    pool_size=pool_size,
+                    min_score=min_score,
+                    score_span=score_span,
+                    min_artist_gap=min_artist_gap,
+                    recent_age_by_key=recent_age_by_key,
+                    rng=rng,
+                ),
+            )
 
-        selected.append(best_candidate)
-        best_artist_key = normalize_text(best_candidate.artist)
-        artist_counts[best_artist_key] = artist_counts.get(best_artist_key, 0) + 1
-        last_artist_position[best_artist_key] = selected_position
-        remaining.remove((best_original_index, best_candidate))
+            selected.append(best_candidate)
+            best_artist_key = normalize_text(best_candidate.artist)
+            artist_counts[best_artist_key] = artist_counts.get(best_artist_key, 0) + 1
+            last_artist_position[best_artist_key] = selected_position
+            remaining.remove((best_original_index, best_candidate))
+
+    select_from(fresh_remaining)
+    if allow_yesterday_fallback and len(selected) < limit:
+        select_from(fallback_remaining)
 
     return selected
 
@@ -525,6 +655,7 @@ def diverse_candidate_score(
     min_score: float,
     score_span: float,
     min_artist_gap: int,
+    recent_age_by_key: dict[str, int] | None = None,
     rng: random.Random | Any = random,
 ) -> float:
     artist_key = normalize_text(candidate.artist)
@@ -538,12 +669,15 @@ def diverse_candidate_score(
         gap = selected_position - last_position
         if gap < min_artist_gap:
             gap_penalty = ((min_artist_gap - gap) / min_artist_gap) * 0.14
+    history_age = (recent_age_by_key or {}).get(track_identity(candidate))
+    history_penalty = ROTATION_AGE_PENALTIES.get(history_age, 0.0)
     jitter = rng.random() * 0.000001
     return (
         normalized_score * 0.82
         + rank_score * 0.18
         - repeat_penalty
         - gap_penalty
+        - history_penalty
         - original_index * 0.0000001
         + jitter
     )
@@ -572,15 +706,17 @@ def build_top_playlist(
 
 def build_sections(
     ranked_candidates: list[CandidateTrack],
+    rotation_history: RotationHistory,
 ) -> list[dict[str, Any]]:
     return [
-        *build_source_sections(ranked_candidates),
-        *build_style_sections(ranked_candidates),
+        *build_source_sections(ranked_candidates, rotation_history),
+        *build_style_sections(ranked_candidates, rotation_history),
     ]
 
 
 def build_source_sections(
     ranked_candidates: list[CandidateTrack],
+    rotation_history: RotationHistory,
 ) -> list[dict[str, Any]]:
     sections: list[dict[str, Any]] = []
     for section_id, title, subtitle, predicate in SOURCE_SECTION_DEFINITIONS:
@@ -592,6 +728,9 @@ def build_source_sections(
             lookahead=SECTION_LOOKAHEAD,
             min_artist_gap=SECTION_MIN_ARTIST_GAP,
             rng=random,
+            yesterday_track_keys=rotation_history.yesterday_keys,
+            recent_age_by_key=rotation_history.recent_age_by_key,
+            allow_yesterday_fallback=False,
         )
         if len(tracks) < MIN_SECTION_TRACKS:
             continue
@@ -608,6 +747,7 @@ def build_source_sections(
 
 def build_style_sections(
     ranked_candidates: list[CandidateTrack],
+    rotation_history: RotationHistory,
 ) -> list[dict[str, Any]]:
     sections: list[dict[str, Any]] = []
     used_keys: set[str] = set()
@@ -623,6 +763,9 @@ def build_style_sections(
             min_artist_gap=SECTION_MIN_ARTIST_GAP,
             rng=random,
             excluded_track_keys=used_keys,
+            yesterday_track_keys=rotation_history.yesterday_keys,
+            recent_age_by_key=rotation_history.recent_age_by_key,
+            allow_yesterday_fallback=False,
         )
         if len(tracks) < MIN_SECTION_TRACKS:
             continue
@@ -636,6 +779,28 @@ def build_style_sections(
             }
         )
     return sections
+
+
+def build_rotation_snapshot(
+    top_playlist: dict[str, Any],
+    sections: list[dict[str, Any]],
+    rotation_history: RotationHistory,
+) -> dict[str, int]:
+    current_keys = payload_track_identities(
+        {
+            "topPlaylist": top_playlist,
+            "sections": sections,
+        }
+    )
+    previous_day_overlap = current_keys & rotation_history.yesterday_keys
+    recent_reuse = current_keys & rotation_history.recent_age_by_key.keys()
+    return {
+        "historyDaysLoaded": rotation_history.history_days_loaded,
+        "yesterdayTrackCount": len(rotation_history.yesterday_keys),
+        "previousDayOverlapCount": len(previous_day_overlap),
+        "recentReuseCount": len(recent_reuse),
+        "fallbackReuseCount": len(previous_day_overlap),
+    }
 
 
 def serialize_candidate(candidate: CandidateTrack) -> dict[str, Any]:
