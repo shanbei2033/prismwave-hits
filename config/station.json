@@ -64,12 +64,12 @@
     "min_playable_pool_size": 96
   },
   "source_weights": {
-    "lastfm_global": 0.20,
+    "lastfm_global": 0.28,
     "lastfm_tag": 0.10,
-    "audius_trending": 0.22,
-    "audius_trending_monthly": 0.10,
+    "audius_trending": 0.15,
+    "audius_trending_monthly": 0.08,
     "audius_genre": 0.08,
-    "deezer_chart": 0.10,
+    "deezer_chart": 0.15,
     "itunes_rss": 0.08,
     "bootstrap_seed": 0.08
   },
