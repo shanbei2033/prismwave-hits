@@ -1,8 +1,8 @@
 {
   "schemaVersion": 8,
   "generatorVersion": "prismwave-home/0.5.0",
-  "generatedAt": "2026-07-24T08:34:15Z",
-  "generatedAtBeijing": "2026-07-24T16:34:15+08:00",
+  "generatedAt": "2026-07-24T08:45:09Z",
+  "generatedAtBeijing": "2026-07-24T16:45:09+08:00",
   "editionDate": "2026-07-24",
   "timezone": "Asia/Shanghai",
   "sourceSnapshot": [
@@ -331,7 +331,7 @@
       "zh-Hant": "今日趨勢",
       "en-US": "Today's Trending"
     },
-    "subtitle": "生成时间：2026-07-24 16:34（北京时间）",
+    "subtitle": "生成时间：2026-07-24 16:45（北京时间）",
     "tracks": [
       {
         "title": "expectations",
@@ -481,21 +481,21 @@
       {
         "title": "Roommates",
         "artist": "Malcolm Todd",
-        "album": "Roommates",
+        "album": "Roommates - Single",
         "durationMs": 214000,
-        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/e2b58403de31092b3c5c2430bfcdac0d/1000x1000-000000-80-0-0.jpg",
+        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/33/b8/5a/33b85ad4-cfd1-bcb8-444b-15329d4965ef/196871375542.jpg/600x600bb.jpg",
         "audioUrl": null,
         "audioProvider": null,
         "providerTrackId": null,
         "sourceTags": [
-          "deezer_search",
+          "itunes_search",
           "lastfm_geo:Australia",
           "lastfm_geo:Canada",
           "lastfm_geo:United States",
           "lastfm_global"
         ],
         "rankSignals": {
-          "deezer_search": 2422253495,
+          "itunes_search": 1703837703,
           "lastfm_geo:Australia": 31,
           "lastfm_geo:Canada": 21,
           "lastfm_geo:United States": 24,
@@ -574,12 +574,12 @@
         "artist": "BTS",
         "album": "ARIRANG",
         "durationMs": 182000,
-        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/83/cb/bc/83cbbc49-cfad-aeaf-3292-0dd428290d81/198704942365_Cover.jpg/600x600bb.jpg",
+        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/a3b8e9462db0c02e082c706c624f9811/1000x1000-000000-80-0-0.jpg",
         "audioUrl": null,
         "audioProvider": null,
         "providerTrackId": null,
         "sourceTags": [
-          "itunes_search",
+          "deezer_search",
           "lastfm_geo:Brazil",
           "lastfm_geo:France",
           "lastfm_geo:Japan",
@@ -588,7 +588,7 @@
           "lastfm_global"
         ],
         "rankSignals": {
-          "itunes_search": 1868862377,
+          "deezer_search": 3907717201,
           "lastfm_geo:Brazil": 74,
           "lastfm_geo:France": 34,
           "lastfm_geo:Japan": 99,
@@ -719,14 +719,14 @@
       {
         "title": "Misery Business",
         "artist": "Paramore",
-        "album": "Riot! (Deluxe Version)",
+        "album": "Riot!",
         "durationMs": 211000,
-        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/bf/fa/66/bffa6672-1e97-fcf7-b301-9766f3563d68/075679954992.jpg/600x600bb.jpg",
+        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/1a48b36fe9dd29b2bef2f5058cbe0c25/1000x1000-000000-80-0-0.jpg",
         "audioUrl": null,
         "audioProvider": null,
         "providerTrackId": null,
         "sourceTags": [
-          "itunes_search",
+          "deezer_search",
           "lastfm_geo:Australia",
           "lastfm_geo:Canada",
           "lastfm_geo:United Kingdom",
@@ -735,7 +735,7 @@
           "lastfm_tag:rock"
         ],
         "rankSignals": {
-          "itunes_search": 604863246,
+          "deezer_search": 3829140,
           "lastfm_geo:Australia": 104,
           "lastfm_geo:Canada": 102,
           "lastfm_geo:United Kingdom": 59,
@@ -1648,7 +1648,7 @@
         "artist": "Kristofson, K!MBO",
         "album": "",
         "durationMs": 208000,
-        "coverUrl": "https://audius-creator-10.theblueprint.xyz/content/baeaaaiqsed4jphw2opjbsmphaa73uypw2rdt2ppssblw7tshe33lq33is5sp6/1000x1000.jpg",
+        "coverUrl": "https://audius.rickyrombo.com/content/baeaaaiqsed4jphw2opjbsmphaa73uypw2rdt2ppssblw7tshe33lq33is5sp6/1000x1000.jpg",
         "audioUrl": "https://api.audius.co/v1/tracks/aWA26jj/stream",
         "audioProvider": "audius",
         "providerTrackId": "aWA26jj",
@@ -1896,7 +1896,7 @@
         "artist": "@iLLPeTiLL",
         "album": "",
         "durationMs": 249000,
-        "coverUrl": "https://v.monophonic.digital/content/01KXTDJPJK06E98FD3E7M45840/1000x1000.jpg",
+        "coverUrl": "https://audius-content-1.figment.io/content/01KXTDJPJK06E98FD3E7M45840/1000x1000.jpg",
         "audioUrl": "https://api.audius.co/v1/tracks/amO84q1/stream",
         "audioProvider": "audius",
         "providerTrackId": "amO84q1",
@@ -1905,7 +1905,7 @@
           "audius_trending_monthly"
         ],
         "rankSignals": {
-          "audius_trending_monthly": 603
+          "audius_trending_monthly": 604
         },
         "score": 0.07776
       },
@@ -2305,7 +2305,7 @@
         "artist": "Zonii",
         "album": "",
         "durationMs": 185000,
-        "coverUrl": "https://validator.stuffisup.com/content/baeaaaiqsecr7yfrml4cuzakodoaltn23kbtljaasf4nmvgu5fpunsus4irnrw/1000x1000.jpg",
+        "coverUrl": "https://audius-standardvc-1-validator-3.figment.io/content/baeaaaiqsecr7yfrml4cuzakodoaltn23kbtljaasf4nmvgu5fpunsus4irnrw/1000x1000.jpg",
         "audioUrl": "https://api.audius.co/v1/tracks/AbdXKoR/stream",
         "audioProvider": "audius",
         "providerTrackId": "AbdXKoR",
@@ -2445,7 +2445,7 @@
         "artist": "Van Snyder",
         "album": "",
         "durationMs": 179000,
-        "coverUrl": "https://audius.bragi.cc/content/baeaaaiqsebdh34psafqvwigwtsa27ozrbop6dgen4rcceg3fsvitrz5mfwqa4/1000x1000.jpg",
+        "coverUrl": "https://val005.open-audio-validator.com/content/baeaaaiqsebdh34psafqvwigwtsa27ozrbop6dgen4rcceg3fsvitrz5mfwqa4/1000x1000.jpg",
         "audioUrl": "https://api.audius.co/v1/tracks/V4BGbl6/stream",
         "audioProvider": "audius",
         "providerTrackId": "V4BGbl6",
@@ -2480,7 +2480,7 @@
         "artist": "Jazcardan",
         "album": "",
         "durationMs": 181000,
-        "coverUrl": "https://audius-content-3.figment.io/content/baeaaaiqsed7vabjswbdvf7aj37vztl73icmft2yljyadu7ex2wkehvu2gtlwq/1000x1000.jpg",
+        "coverUrl": "https://audius-content-5.figment.io/content/baeaaaiqsed7vabjswbdvf7aj37vztl73icmft2yljyadu7ex2wkehvu2gtlwq/1000x1000.jpg",
         "audioUrl": "https://api.audius.co/v1/tracks/X6zzGva/stream",
         "audioProvider": "audius",
         "providerTrackId": "X6zzGva",
@@ -2676,21 +2676,21 @@
         {
           "title": "Roommates",
           "artist": "Malcolm Todd",
-          "album": "Roommates",
+          "album": "Roommates - Single",
           "durationMs": 214000,
-          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/e2b58403de31092b3c5c2430bfcdac0d/1000x1000-000000-80-0-0.jpg",
+          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/33/b8/5a/33b85ad4-cfd1-bcb8-444b-15329d4965ef/196871375542.jpg/600x600bb.jpg",
           "audioUrl": null,
           "audioProvider": null,
           "providerTrackId": null,
           "sourceTags": [
-            "deezer_search",
+            "itunes_search",
             "lastfm_geo:Australia",
             "lastfm_geo:Canada",
             "lastfm_geo:United States",
             "lastfm_global"
           ],
           "rankSignals": {
-            "deezer_search": 2422253495,
+            "itunes_search": 1703837703,
             "lastfm_geo:Australia": 31,
             "lastfm_geo:Canada": 21,
             "lastfm_geo:United States": 24,
@@ -3054,14 +3054,14 @@
         {
           "title": "Misery Business",
           "artist": "Paramore",
-          "album": "Riot! (Deluxe Version)",
+          "album": "Riot!",
           "durationMs": 211000,
-          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/bf/fa/66/bffa6672-1e97-fcf7-b301-9766f3563d68/075679954992.jpg/600x600bb.jpg",
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/1a48b36fe9dd29b2bef2f5058cbe0c25/1000x1000-000000-80-0-0.jpg",
           "audioUrl": null,
           "audioProvider": null,
           "providerTrackId": null,
           "sourceTags": [
-            "itunes_search",
+            "deezer_search",
             "lastfm_geo:Australia",
             "lastfm_geo:Canada",
             "lastfm_geo:United Kingdom",
@@ -3070,7 +3070,7 @@
             "lastfm_tag:rock"
           ],
           "rankSignals": {
-            "itunes_search": 604863246,
+            "deezer_search": 3829140,
             "lastfm_geo:Australia": 104,
             "lastfm_geo:Canada": 102,
             "lastfm_geo:United Kingdom": 59,
@@ -3190,7 +3190,7 @@
           "artist": "Kristofson, K!MBO",
           "album": "",
           "durationMs": 208000,
-          "coverUrl": "https://audius-creator-10.theblueprint.xyz/content/baeaaaiqsed4jphw2opjbsmphaa73uypw2rdt2ppssblw7tshe33lq33is5sp6/1000x1000.jpg",
+          "coverUrl": "https://audius.rickyrombo.com/content/baeaaaiqsed4jphw2opjbsmphaa73uypw2rdt2ppssblw7tshe33lq33is5sp6/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/aWA26jj/stream",
           "audioProvider": "audius",
           "providerTrackId": "aWA26jj",
@@ -3208,7 +3208,7 @@
           "artist": "@iLLPeTiLL",
           "album": "",
           "durationMs": 249000,
-          "coverUrl": "https://v.monophonic.digital/content/01KXTDJPJK06E98FD3E7M45840/1000x1000.jpg",
+          "coverUrl": "https://audius-content-1.figment.io/content/01KXTDJPJK06E98FD3E7M45840/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/amO84q1/stream",
           "audioProvider": "audius",
           "providerTrackId": "amO84q1",
@@ -3217,7 +3217,7 @@
             "audius_trending_monthly"
           ],
           "rankSignals": {
-            "audius_trending_monthly": 603
+            "audius_trending_monthly": 604
           },
           "score": 0.07776
         },
@@ -3226,7 +3226,7 @@
           "artist": "Zonii",
           "album": "",
           "durationMs": 185000,
-          "coverUrl": "https://validator.stuffisup.com/content/baeaaaiqsecr7yfrml4cuzakodoaltn23kbtljaasf4nmvgu5fpunsus4irnrw/1000x1000.jpg",
+          "coverUrl": "https://audius-standardvc-1-validator-3.figment.io/content/baeaaaiqsecr7yfrml4cuzakodoaltn23kbtljaasf4nmvgu5fpunsus4irnrw/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/AbdXKoR/stream",
           "audioProvider": "audius",
           "providerTrackId": "AbdXKoR",
@@ -3244,7 +3244,7 @@
           "artist": "Van Snyder",
           "album": "",
           "durationMs": 179000,
-          "coverUrl": "https://audius.bragi.cc/content/baeaaaiqsebdh34psafqvwigwtsa27ozrbop6dgen4rcceg3fsvitrz5mfwqa4/1000x1000.jpg",
+          "coverUrl": "https://val005.open-audio-validator.com/content/baeaaaiqsebdh34psafqvwigwtsa27ozrbop6dgen4rcceg3fsvitrz5mfwqa4/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/V4BGbl6/stream",
           "audioProvider": "audius",
           "providerTrackId": "V4BGbl6",
@@ -3280,7 +3280,7 @@
           "artist": "Jazcardan",
           "album": "",
           "durationMs": 181000,
-          "coverUrl": "https://audius-content-3.figment.io/content/baeaaaiqsed7vabjswbdvf7aj37vztl73icmft2yljyadu7ex2wkehvu2gtlwq/1000x1000.jpg",
+          "coverUrl": "https://audius-content-5.figment.io/content/baeaaaiqsed7vabjswbdvf7aj37vztl73icmft2yljyadu7ex2wkehvu2gtlwq/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/X6zzGva/stream",
           "audioProvider": "audius",
           "providerTrackId": "X6zzGva",
@@ -3298,7 +3298,7 @@
           "artist": "Beetlejuke",
           "album": "",
           "durationMs": 120000,
-          "coverUrl": "https://audius-creator-12.theblueprint.xyz/content/baeaaaiqsedcvsyge3cq4g6syp2vjftoeqbc67t52wvww3hmvm4dep36zkk56u/1000x1000.jpg",
+          "coverUrl": "https://val002.open-audio-validator.com/content/baeaaaiqsedcvsyge3cq4g6syp2vjftoeqbc67t52wvww3hmvm4dep36zkk56u/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/KV2M7N9/stream",
           "audioProvider": "audius",
           "providerTrackId": "KV2M7N9",
@@ -3316,7 +3316,7 @@
           "artist": "DISKADE",
           "album": "",
           "durationMs": 192000,
-          "coverUrl": "https://v.monophonic.digital/content/baeaaaiqseaipb7mqfrhp73e5htjoyjkvjeguhkjqdvzdxcthiejmci3banwcw/1000x1000.jpg",
+          "coverUrl": "https://audius-04.staked.cloud/content/baeaaaiqseaipb7mqfrhp73e5htjoyjkvjeguhkjqdvzdxcthiejmci3banwcw/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/zyy3mQZ/stream",
           "audioProvider": "audius",
           "providerTrackId": "zyy3mQZ",
@@ -3334,7 +3334,7 @@
           "artist": "Shavezz 🇲🇽",
           "album": "",
           "durationMs": 309000,
-          "coverUrl": "https://v.monophonic.digital/content/baeaaaiqsedi464bwmwnlfnk7ze3i3l4a5fnoe3b4yk6qiel6e2iys7nr6bvgo/1000x1000.jpg",
+          "coverUrl": "https://audius-content-1.figment.io/content/baeaaaiqsedi464bwmwnlfnk7ze3i3l4a5fnoe3b4yk6qiel6e2iys7nr6bvgo/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/44A8b3d/stream",
           "audioProvider": "audius",
           "providerTrackId": "44A8b3d",
@@ -3352,7 +3352,7 @@
           "artist": "Charlie Couvillion",
           "album": "",
           "durationMs": 149000,
-          "coverUrl": "https://audius-creator-13.theblueprint.xyz/content/01KWMS5WT7APK4J7ARDTSYNN6S/1000x1000.jpg",
+          "coverUrl": "https://v.monophonic.digital/content/01KWMS5WT7APK4J7ARDTSYNN6S/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/A70bBkq/stream",
           "audioProvider": "audius",
           "providerTrackId": "A70bBkq",
@@ -3370,7 +3370,7 @@
           "artist": "GENDE",
           "album": "",
           "durationMs": 205000,
-          "coverUrl": "https://audius-discovery-3.altego.net/content/baeaaaiqsea7y4zetk7uiinnlwiex7axs6bgghkywbksmw3rlw3zgpcnquabty/1000x1000.jpg",
+          "coverUrl": "https://audius-creator-6.theblueprint.xyz/content/baeaaaiqsea7y4zetk7uiinnlwiex7axs6bgghkywbksmw3rlw3zgpcnquabty/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/P6XkAGX/stream",
           "audioProvider": "audius",
           "providerTrackId": "P6XkAGX",
@@ -3406,7 +3406,7 @@
           "artist": "Endevie",
           "album": "",
           "durationMs": 288000,
-          "coverUrl": "https://val012.open-audio-validator.com/content/baeaaaiqsedagxfrh5zrxq5nfxmhbwcc3jwy5wpeaydctdcd4dgdrn5vlrtucm/1000x1000.jpg",
+          "coverUrl": "https://audius-content-12.figment.io/content/baeaaaiqsedagxfrh5zrxq5nfxmhbwcc3jwy5wpeaydctdcd4dgdrn5vlrtucm/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/1VQo6YQ/stream",
           "audioProvider": "audius",
           "providerTrackId": "1VQo6YQ",
@@ -3424,7 +3424,7 @@
           "artist": "Aedhus",
           "album": "",
           "durationMs": 120000,
-          "coverUrl": "https://v.monophonic.digital/content/baeaaaiqsebfxae4yz5abbflgstd464ks42yvbunw2oyi7ndfxskvympmpu6rw/1000x1000.jpg",
+          "coverUrl": "https://val012.open-audio-validator.com/content/baeaaaiqsebfxae4yz5abbflgstd464ks42yvbunw2oyi7ndfxskvympmpu6rw/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/8Y9NaAp/stream",
           "audioProvider": "audius",
           "providerTrackId": "8Y9NaAp",
@@ -3478,7 +3478,7 @@
           "artist": "riainoo",
           "album": "",
           "durationMs": 149000,
-          "coverUrl": "https://val012.open-audio-validator.com/content/baeaaaiqsebfxae4yz5abbflgstd464ks42yvbunw2oyi7ndfxskvympmpu6rw/1000x1000.jpg",
+          "coverUrl": "https://cn2.mainnet.audiusindex.org/content/baeaaaiqsebfxae4yz5abbflgstd464ks42yvbunw2oyi7ndfxskvympmpu6rw/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/ORgRAmv/stream",
           "audioProvider": "audius",
           "providerTrackId": "ORgRAmv",
@@ -3514,7 +3514,7 @@
           "artist": "Olazaran",
           "album": "",
           "durationMs": 149000,
-          "coverUrl": "https://val008.open-audio-validator.com/content/baeaaaiqseaqe5nkx62ykgwmp3ftnxmzaz62e4kpzbcejepa32jyrtqh2cm6s4/1000x1000.jpg",
+          "coverUrl": "https://val018.open-audio-validator.com/content/baeaaaiqseaqe5nkx62ykgwmp3ftnxmzaz62e4kpzbcejepa32jyrtqh2cm6s4/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/ozvNmKa/stream",
           "audioProvider": "audius",
           "providerTrackId": "ozvNmKa",
@@ -3704,21 +3704,21 @@
         {
           "title": "Roommates",
           "artist": "Malcolm Todd",
-          "album": "Roommates",
+          "album": "Roommates - Single",
           "durationMs": 214000,
-          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/e2b58403de31092b3c5c2430bfcdac0d/1000x1000-000000-80-0-0.jpg",
+          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/33/b8/5a/33b85ad4-cfd1-bcb8-444b-15329d4965ef/196871375542.jpg/600x600bb.jpg",
           "audioUrl": null,
           "audioProvider": null,
           "providerTrackId": null,
           "sourceTags": [
-            "deezer_search",
+            "itunes_search",
             "lastfm_geo:Australia",
             "lastfm_geo:Canada",
             "lastfm_geo:United States",
             "lastfm_global"
           ],
           "rankSignals": {
-            "deezer_search": 2422253495,
+            "itunes_search": 1703837703,
             "lastfm_geo:Australia": 31,
             "lastfm_geo:Canada": 21,
             "lastfm_geo:United States": 24,
@@ -4046,14 +4046,14 @@
         {
           "title": "Misery Business",
           "artist": "Paramore",
-          "album": "Riot! (Deluxe Version)",
+          "album": "Riot!",
           "durationMs": 211000,
-          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/bf/fa/66/bffa6672-1e97-fcf7-b301-9766f3563d68/075679954992.jpg/600x600bb.jpg",
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/1a48b36fe9dd29b2bef2f5058cbe0c25/1000x1000-000000-80-0-0.jpg",
           "audioUrl": null,
           "audioProvider": null,
           "providerTrackId": null,
           "sourceTags": [
-            "itunes_search",
+            "deezer_search",
             "lastfm_geo:Australia",
             "lastfm_geo:Canada",
             "lastfm_geo:United Kingdom",
@@ -4062,7 +4062,7 @@
             "lastfm_tag:rock"
           ],
           "rankSignals": {
-            "itunes_search": 604863246,
+            "deezer_search": 3829140,
             "lastfm_geo:Australia": 104,
             "lastfm_geo:Canada": 102,
             "lastfm_geo:United Kingdom": 59,
@@ -4325,21 +4325,21 @@
         {
           "title": "Roommates",
           "artist": "Malcolm Todd",
-          "album": "Roommates",
+          "album": "Roommates - Single",
           "durationMs": 214000,
-          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/e2b58403de31092b3c5c2430bfcdac0d/1000x1000-000000-80-0-0.jpg",
+          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/33/b8/5a/33b85ad4-cfd1-bcb8-444b-15329d4965ef/196871375542.jpg/600x600bb.jpg",
           "audioUrl": null,
           "audioProvider": null,
           "providerTrackId": null,
           "sourceTags": [
-            "deezer_search",
+            "itunes_search",
             "lastfm_geo:Australia",
             "lastfm_geo:Canada",
             "lastfm_geo:United States",
             "lastfm_global"
           ],
           "rankSignals": {
-            "deezer_search": 2422253495,
+            "itunes_search": 1703837703,
             "lastfm_geo:Australia": 31,
             "lastfm_geo:Canada": 21,
             "lastfm_geo:United States": 24,
@@ -4667,14 +4667,14 @@
         {
           "title": "Misery Business",
           "artist": "Paramore",
-          "album": "Riot! (Deluxe Version)",
+          "album": "Riot!",
           "durationMs": 211000,
-          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/bf/fa/66/bffa6672-1e97-fcf7-b301-9766f3563d68/075679954992.jpg/600x600bb.jpg",
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/1a48b36fe9dd29b2bef2f5058cbe0c25/1000x1000-000000-80-0-0.jpg",
           "audioUrl": null,
           "audioProvider": null,
           "providerTrackId": null,
           "sourceTags": [
-            "itunes_search",
+            "deezer_search",
             "lastfm_geo:Australia",
             "lastfm_geo:Canada",
             "lastfm_geo:United Kingdom",
@@ -4683,7 +4683,7 @@
             "lastfm_tag:rock"
           ],
           "rankSignals": {
-            "itunes_search": 604863246,
+            "deezer_search": 3829140,
             "lastfm_geo:Australia": 104,
             "lastfm_geo:Canada": 102,
             "lastfm_geo:United Kingdom": 59,
@@ -4807,7 +4807,7 @@
           "artist": "Kristofson, K!MBO",
           "album": "",
           "durationMs": 208000,
-          "coverUrl": "https://audius-creator-10.theblueprint.xyz/content/baeaaaiqsed4jphw2opjbsmphaa73uypw2rdt2ppssblw7tshe33lq33is5sp6/1000x1000.jpg",
+          "coverUrl": "https://audius.rickyrombo.com/content/baeaaaiqsed4jphw2opjbsmphaa73uypw2rdt2ppssblw7tshe33lq33is5sp6/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/aWA26jj/stream",
           "audioProvider": "audius",
           "providerTrackId": "aWA26jj",
@@ -4825,7 +4825,7 @@
           "artist": "@iLLPeTiLL",
           "album": "",
           "durationMs": 249000,
-          "coverUrl": "https://v.monophonic.digital/content/01KXTDJPJK06E98FD3E7M45840/1000x1000.jpg",
+          "coverUrl": "https://audius-content-1.figment.io/content/01KXTDJPJK06E98FD3E7M45840/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/amO84q1/stream",
           "audioProvider": "audius",
           "providerTrackId": "amO84q1",
@@ -4834,7 +4834,7 @@
             "audius_trending_monthly"
           ],
           "rankSignals": {
-            "audius_trending_monthly": 603
+            "audius_trending_monthly": 604
           },
           "score": 0.07776
         },
@@ -4843,7 +4843,7 @@
           "artist": "Zonii",
           "album": "",
           "durationMs": 185000,
-          "coverUrl": "https://validator.stuffisup.com/content/baeaaaiqsecr7yfrml4cuzakodoaltn23kbtljaasf4nmvgu5fpunsus4irnrw/1000x1000.jpg",
+          "coverUrl": "https://audius-standardvc-1-validator-3.figment.io/content/baeaaaiqsecr7yfrml4cuzakodoaltn23kbtljaasf4nmvgu5fpunsus4irnrw/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/AbdXKoR/stream",
           "audioProvider": "audius",
           "providerTrackId": "AbdXKoR",
@@ -4861,7 +4861,7 @@
           "artist": "Van Snyder",
           "album": "",
           "durationMs": 179000,
-          "coverUrl": "https://audius.bragi.cc/content/baeaaaiqsebdh34psafqvwigwtsa27ozrbop6dgen4rcceg3fsvitrz5mfwqa4/1000x1000.jpg",
+          "coverUrl": "https://val005.open-audio-validator.com/content/baeaaaiqsebdh34psafqvwigwtsa27ozrbop6dgen4rcceg3fsvitrz5mfwqa4/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/V4BGbl6/stream",
           "audioProvider": "audius",
           "providerTrackId": "V4BGbl6",
@@ -4879,7 +4879,7 @@
           "artist": "Jazcardan",
           "album": "",
           "durationMs": 181000,
-          "coverUrl": "https://audius-content-3.figment.io/content/baeaaaiqsed7vabjswbdvf7aj37vztl73icmft2yljyadu7ex2wkehvu2gtlwq/1000x1000.jpg",
+          "coverUrl": "https://audius-content-5.figment.io/content/baeaaaiqsed7vabjswbdvf7aj37vztl73icmft2yljyadu7ex2wkehvu2gtlwq/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/X6zzGva/stream",
           "audioProvider": "audius",
           "providerTrackId": "X6zzGva",
@@ -4915,7 +4915,7 @@
           "artist": "Beetlejuke",
           "album": "",
           "durationMs": 120000,
-          "coverUrl": "https://audius-creator-12.theblueprint.xyz/content/baeaaaiqsedcvsyge3cq4g6syp2vjftoeqbc67t52wvww3hmvm4dep36zkk56u/1000x1000.jpg",
+          "coverUrl": "https://val002.open-audio-validator.com/content/baeaaaiqsedcvsyge3cq4g6syp2vjftoeqbc67t52wvww3hmvm4dep36zkk56u/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/KV2M7N9/stream",
           "audioProvider": "audius",
           "providerTrackId": "KV2M7N9",
@@ -4933,7 +4933,7 @@
           "artist": "DISKADE",
           "album": "",
           "durationMs": 192000,
-          "coverUrl": "https://v.monophonic.digital/content/baeaaaiqseaipb7mqfrhp73e5htjoyjkvjeguhkjqdvzdxcthiejmci3banwcw/1000x1000.jpg",
+          "coverUrl": "https://audius-04.staked.cloud/content/baeaaaiqseaipb7mqfrhp73e5htjoyjkvjeguhkjqdvzdxcthiejmci3banwcw/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/zyy3mQZ/stream",
           "audioProvider": "audius",
           "providerTrackId": "zyy3mQZ",
@@ -4951,7 +4951,7 @@
           "artist": "Shavezz 🇲🇽",
           "album": "",
           "durationMs": 309000,
-          "coverUrl": "https://v.monophonic.digital/content/baeaaaiqsedi464bwmwnlfnk7ze3i3l4a5fnoe3b4yk6qiel6e2iys7nr6bvgo/1000x1000.jpg",
+          "coverUrl": "https://audius-content-1.figment.io/content/baeaaaiqsedi464bwmwnlfnk7ze3i3l4a5fnoe3b4yk6qiel6e2iys7nr6bvgo/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/44A8b3d/stream",
           "audioProvider": "audius",
           "providerTrackId": "44A8b3d",
@@ -4969,7 +4969,7 @@
           "artist": "Charlie Couvillion",
           "album": "",
           "durationMs": 149000,
-          "coverUrl": "https://audius-creator-13.theblueprint.xyz/content/01KWMS5WT7APK4J7ARDTSYNN6S/1000x1000.jpg",
+          "coverUrl": "https://v.monophonic.digital/content/01KWMS5WT7APK4J7ARDTSYNN6S/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/A70bBkq/stream",
           "audioProvider": "audius",
           "providerTrackId": "A70bBkq",
@@ -4987,7 +4987,7 @@
           "artist": "GENDE",
           "album": "",
           "durationMs": 205000,
-          "coverUrl": "https://audius-discovery-3.altego.net/content/baeaaaiqsea7y4zetk7uiinnlwiex7axs6bgghkywbksmw3rlw3zgpcnquabty/1000x1000.jpg",
+          "coverUrl": "https://audius-creator-6.theblueprint.xyz/content/baeaaaiqsea7y4zetk7uiinnlwiex7axs6bgghkywbksmw3rlw3zgpcnquabty/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/P6XkAGX/stream",
           "audioProvider": "audius",
           "providerTrackId": "P6XkAGX",
@@ -5041,7 +5041,7 @@
           "artist": "Aedhus",
           "album": "",
           "durationMs": 120000,
-          "coverUrl": "https://v.monophonic.digital/content/baeaaaiqsebfxae4yz5abbflgstd464ks42yvbunw2oyi7ndfxskvympmpu6rw/1000x1000.jpg",
+          "coverUrl": "https://val012.open-audio-validator.com/content/baeaaaiqsebfxae4yz5abbflgstd464ks42yvbunw2oyi7ndfxskvympmpu6rw/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/8Y9NaAp/stream",
           "audioProvider": "audius",
           "providerTrackId": "8Y9NaAp",
@@ -5077,7 +5077,7 @@
           "artist": "Endevie",
           "album": "",
           "durationMs": 288000,
-          "coverUrl": "https://val012.open-audio-validator.com/content/baeaaaiqsedagxfrh5zrxq5nfxmhbwcc3jwy5wpeaydctdcd4dgdrn5vlrtucm/1000x1000.jpg",
+          "coverUrl": "https://audius-content-12.figment.io/content/baeaaaiqsedagxfrh5zrxq5nfxmhbwcc3jwy5wpeaydctdcd4dgdrn5vlrtucm/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/1VQo6YQ/stream",
           "audioProvider": "audius",
           "providerTrackId": "1VQo6YQ",
@@ -5095,7 +5095,7 @@
           "artist": "riainoo",
           "album": "",
           "durationMs": 149000,
-          "coverUrl": "https://val012.open-audio-validator.com/content/baeaaaiqsebfxae4yz5abbflgstd464ks42yvbunw2oyi7ndfxskvympmpu6rw/1000x1000.jpg",
+          "coverUrl": "https://cn2.mainnet.audiusindex.org/content/baeaaaiqsebfxae4yz5abbflgstd464ks42yvbunw2oyi7ndfxskvympmpu6rw/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/ORgRAmv/stream",
           "audioProvider": "audius",
           "providerTrackId": "ORgRAmv",
@@ -5131,7 +5131,7 @@
           "artist": "Olazaran",
           "album": "",
           "durationMs": 149000,
-          "coverUrl": "https://val008.open-audio-validator.com/content/baeaaaiqseaqe5nkx62ykgwmp3ftnxmzaz62e4kpzbcejepa32jyrtqh2cm6s4/1000x1000.jpg",
+          "coverUrl": "https://val018.open-audio-validator.com/content/baeaaaiqseaqe5nkx62ykgwmp3ftnxmzaz62e4kpzbcejepa32jyrtqh2cm6s4/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/ozvNmKa/stream",
           "audioProvider": "audius",
           "providerTrackId": "ozvNmKa",
@@ -5584,24 +5584,23 @@
           "score": 0.027854
         },
         {
-          "title": "Wild Ones",
-          "artist": "Jessie Murph",
+          "title": "All the Things She Said",
+          "artist": "t.A.T.u.",
           "album": "",
-          "durationMs": 142000,
-          "coverUrl": "https://api.deezer.com/album/495215171/image",
+          "durationMs": 214000,
+          "coverUrl": null,
           "audioUrl": null,
           "audioProvider": null,
           "providerTrackId": null,
           "sourceTags": [
-            "deezer",
-            "deezer_chart",
-            "deezer_chart:132"
+            "lastfm_geo:Germany",
+            "lastfm_tag:pop"
           ],
           "rankSignals": {
-            "deezer_chart": 71,
-            "deezer_chart:132": 72
+            "lastfm_geo:Germany": 87,
+            "lastfm_tag:pop": 20
           },
-          "score": 0.022034
+          "score": 0.022283
         },
         {
           "title": "In the Air Tonight (2015 Remaster)",
@@ -5639,14 +5638,14 @@
         {
           "title": "Misery Business",
           "artist": "Paramore",
-          "album": "Riot! (Deluxe Version)",
+          "album": "Riot!",
           "durationMs": 211000,
-          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/bf/fa/66/bffa6672-1e97-fcf7-b301-9766f3563d68/075679954992.jpg/600x600bb.jpg",
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/1a48b36fe9dd29b2bef2f5058cbe0c25/1000x1000-000000-80-0-0.jpg",
           "audioUrl": null,
           "audioProvider": null,
           "providerTrackId": null,
           "sourceTags": [
-            "itunes_search",
+            "deezer_search",
             "lastfm_geo:Australia",
             "lastfm_geo:Canada",
             "lastfm_geo:United Kingdom",
@@ -5655,7 +5654,7 @@
             "lastfm_tag:rock"
           ],
           "rankSignals": {
-            "itunes_search": 604863246,
+            "deezer_search": 3829140,
             "lastfm_geo:Australia": 104,
             "lastfm_geo:Canada": 102,
             "lastfm_geo:United Kingdom": 59,
@@ -6095,7 +6094,7 @@
           "artist": "Digital Deity",
           "album": "",
           "durationMs": 303000,
-          "coverUrl": "https://audius-content-2.figment.io/content/baeaaaiqseasjrxgeyevanf5hdnjnololvqjnnssyfchvnm73uaol3guwn3cbe/1000x1000.jpg",
+          "coverUrl": "https://v.monophonic.digital/content/baeaaaiqseasjrxgeyevanf5hdnjnololvqjnnssyfchvnm73uaol3guwn3cbe/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/bmvYW1J/stream",
           "audioProvider": "audius",
           "providerTrackId": "bmvYW1J",
@@ -6131,24 +6130,24 @@
           "score": 0.024757
         },
         {
-          "title": "Lick",
-          "artist": "Hotel Pools",
+          "title": "Coming Up (Radio Edit)",
+          "artist": "Niza",
           "album": "",
-          "durationMs": 160000,
-          "coverUrl": "https://val020.open-audio-validator.com/content/baeaaaiqsecjvgwwvmfldcsygsdoaz7kf5rwq2jt2cty2toszgdeszdl54mvlo/1000x1000.jpg",
-          "audioUrl": "https://api.audius.co/v1/tracks/RRZk0rX/stream",
+          "durationMs": 140000,
+          "coverUrl": "https://audius.rickyrombo.com/content/baeaaaiqsebry7tvnweawgpwbz4mzms4qfhoy5pwwcn5fmzj46dtgxdpmanp5i/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/EJg525M/stream",
           "audioProvider": "audius",
-          "providerTrackId": "RRZk0rX",
+          "providerTrackId": "EJg525M",
           "sourceTags": [
             "audius",
             "audius_genre:Electronic",
             "audius_trending_monthly"
           ],
           "rankSignals": {
-            "audius_genre:Electronic": 177,
-            "audius_trending_monthly": 177
+            "audius_genre:Electronic": 235,
+            "audius_trending_monthly": 235
           },
-          "score": 0.017554
+          "score": 0.022162
         },
         {
           "title": "House of Balloons / Glass Table Girls",
@@ -6174,7 +6173,7 @@
           "artist": "ALMOSTFAMOUS",
           "album": "",
           "durationMs": 291000,
-          "coverUrl": "https://val008.open-audio-validator.com/content/baeaaaiqsecywvazc7erjupqqs4djtdkxauuiu3qw4fk4nl7eodfjnfaiioy6w/1000x1000.jpg",
+          "coverUrl": "https://val015.open-audio-validator.com/content/baeaaaiqsecywvazc7erjupqqs4djtdkxauuiu3qw4fk4nl7eodfjnfaiioy6w/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/RY0K57g/stream",
           "audioProvider": "audius",
           "providerTrackId": "RY0K57g",
@@ -6190,10 +6189,30 @@
           "score": 0.023901
         },
         {
-          "title": "Time to Pretend",
+          "title": "Lick",
+          "artist": "Hotel Pools",
+          "album": "",
+          "durationMs": 160000,
+          "coverUrl": "https://audius-creator-3.theblueprint.xyz/content/baeaaaiqsecjvgwwvmfldcsygsdoaz7kf5rwq2jt2cty2toszgdeszdl54mvlo/1000x1000.jpg",
+          "audioUrl": "https://api.audius.co/v1/tracks/RRZk0rX/stream",
+          "audioProvider": "audius",
+          "providerTrackId": "RRZk0rX",
+          "sourceTags": [
+            "audius",
+            "audius_genre:Electronic",
+            "audius_trending_monthly"
+          ],
+          "rankSignals": {
+            "audius_genre:Electronic": 177,
+            "audius_trending_monthly": 177
+          },
+          "score": 0.017554
+        },
+        {
+          "title": "Electric Feel",
           "artist": "MGMT",
           "album": "",
-          "durationMs": 261000,
+          "durationMs": 229000,
           "coverUrl": null,
           "audioUrl": null,
           "audioProvider": null,
@@ -6203,37 +6222,17 @@
             "lastfm_tag:indie"
           ],
           "rankSignals": {
-            "lastfm_tag:electronic": 16,
-            "lastfm_tag:indie": 15
+            "lastfm_tag:electronic": 12,
+            "lastfm_tag:indie": 27
           },
-          "score": 0.016965
-        },
-        {
-          "title": "Coming Up (Radio Edit)",
-          "artist": "Niza",
-          "album": "",
-          "durationMs": 140000,
-          "coverUrl": "https://audius.rickyrombo.com/content/baeaaaiqsebry7tvnweawgpwbz4mzms4qfhoy5pwwcn5fmzj46dtgxdpmanp5i/1000x1000.jpg",
-          "audioUrl": "https://api.audius.co/v1/tracks/EJg525M/stream",
-          "audioProvider": "audius",
-          "providerTrackId": "EJg525M",
-          "sourceTags": [
-            "audius",
-            "audius_genre:Electronic",
-            "audius_trending_monthly"
-          ],
-          "rankSignals": {
-            "audius_genre:Electronic": 235,
-            "audius_trending_monthly": 235
-          },
-          "score": 0.021387
+          "score": 0.015636
         },
         {
           "title": "Fantasy - Produced by Mattrick x iLLPeTiL",
           "artist": "MATTRICK",
           "album": "",
           "durationMs": 194000,
-          "coverUrl": "https://audius-content-12.figment.io/content/baeaaaiqseawpwxo43nmyvbrm44tbetupg6fgid2pg3ipvjtlzruhlsjyhoko6/1000x1000.jpg",
+          "coverUrl": "https://cn4.mainnet.audiusindex.org/content/baeaaaiqseawpwxo43nmyvbrm44tbetupg6fgid2pg3ipvjtlzruhlsjyhoko6/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/QZvovYw/stream",
           "audioProvider": "audius",
           "providerTrackId": "QZvovYw",
@@ -6243,8 +6242,8 @@
             "audius_trending_monthly"
           ],
           "rankSignals": {
-            "audius_genre:Electronic": 144,
-            "audius_trending_monthly": 144
+            "audius_genre:Electronic": 145,
+            "audius_trending_monthly": 145
           },
           "score": 0.012712
         },
@@ -6268,24 +6267,22 @@
           "score": 0.01551
         },
         {
-          "title": "Clarity",
-          "artist": "Zedd",
+          "title": "360",
+          "artist": "Charli xcx",
           "album": "",
-          "durationMs": 271000,
-          "coverUrl": null,
+          "durationMs": 133000,
+          "coverUrl": "https://api.deezer.com/album/584082322/image",
           "audioUrl": null,
           "audioProvider": null,
           "providerTrackId": null,
           "sourceTags": [
             "deezer",
-            "deezer_chart:113",
-            "lastfm_tag:electronic"
+            "deezer_chart:113"
           ],
           "rankSignals": {
-            "deezer_chart:113": 80,
-            "lastfm_tag:electronic": 7
+            "deezer_chart:113": 6
           },
-          "score": 0.011521
+          "score": 0.011664
         },
         {
           "title": "Disparate Youth",
@@ -6344,24 +6341,6 @@
           "score": 0.011169
         },
         {
-          "title": "360",
-          "artist": "Charli xcx",
-          "album": "",
-          "durationMs": 133000,
-          "coverUrl": "https://api.deezer.com/album/584082322/image",
-          "audioUrl": null,
-          "audioProvider": null,
-          "providerTrackId": null,
-          "sourceTags": [
-            "deezer",
-            "deezer_chart:113"
-          ],
-          "rankSignals": {
-            "deezer_chart:113": 6
-          },
-          "score": 0.011664
-        },
-        {
           "title": "Borderline",
           "artist": "Tove Lo",
           "album": "",
@@ -6378,6 +6357,26 @@
             "deezer_chart:113": 5
           },
           "score": 0.01183
+        },
+        {
+          "title": "Clarity",
+          "artist": "Zedd",
+          "album": "",
+          "durationMs": 271000,
+          "coverUrl": null,
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "deezer",
+            "deezer_chart:113",
+            "lastfm_tag:electronic"
+          ],
+          "rankSignals": {
+            "deezer_chart:113": 80,
+            "lastfm_tag:electronic": 7
+          },
+          "score": 0.011521
         },
         {
           "title": "Two of Hearts",
@@ -6640,24 +6639,23 @@
           "score": 0.012164
         },
         {
-          "title": "Favourite",
-          "artist": "Fontaines D.C.",
+          "title": "Time to Pretend",
+          "artist": "MGMT",
           "album": "",
-          "durationMs": 256000,
+          "durationMs": 261000,
           "coverUrl": null,
           "audioUrl": null,
           "audioProvider": null,
           "providerTrackId": null,
           "sourceTags": [
-            "deezer",
-            "deezer_chart:85",
-            "lastfm_geo:United Kingdom"
+            "lastfm_tag:electronic",
+            "lastfm_tag:indie"
           ],
           "rankSignals": {
-            "deezer_chart:85": 67,
-            "lastfm_geo:United Kingdom": 106
+            "lastfm_tag:electronic": 16,
+            "lastfm_tag:indie": 15
           },
-          "score": 0.011365
+          "score": 0.016965
         },
         {
           "title": "Stressed Out",
@@ -6677,65 +6675,6 @@
             "lastfm_tag:indie": 26
           },
           "score": 0.01558
-        },
-        {
-          "title": "Californication",
-          "artist": "Red Hot Chili Peppers",
-          "album": "",
-          "durationMs": 329000,
-          "coverUrl": null,
-          "audioUrl": null,
-          "audioProvider": null,
-          "providerTrackId": null,
-          "sourceTags": [
-            "deezer",
-            "deezer_chart:85",
-            "lastfm_tag:rock"
-          ],
-          "rankSignals": {
-            "deezer_chart:85": 41,
-            "lastfm_tag:rock": 20
-          },
-          "score": 0.013977
-        },
-        {
-          "title": "White Keys",
-          "artist": "Dominic Fike",
-          "album": "",
-          "durationMs": 144000,
-          "coverUrl": null,
-          "audioUrl": null,
-          "audioProvider": null,
-          "providerTrackId": null,
-          "sourceTags": [
-            "deezer",
-            "deezer_chart:85",
-            "lastfm_geo:Australia"
-          ],
-          "rankSignals": {
-            "deezer_chart:85": 26,
-            "lastfm_geo:Australia": 113
-          },
-          "score": 0.010544
-        },
-        {
-          "title": "Electric Feel",
-          "artist": "MGMT",
-          "album": "",
-          "durationMs": 229000,
-          "coverUrl": null,
-          "audioUrl": null,
-          "audioProvider": null,
-          "providerTrackId": null,
-          "sourceTags": [
-            "lastfm_tag:electronic",
-            "lastfm_tag:indie"
-          ],
-          "rankSignals": {
-            "lastfm_tag:electronic": 12,
-            "lastfm_tag:indie": 27
-          },
-          "score": 0.015636
         },
         {
           "title": "Don't Look Back In Anger",
@@ -6758,6 +6697,66 @@
             "deezer_chart:85": 39
           },
           "score": 0.01145
+        },
+        {
+          "title": "White Keys",
+          "artist": "Dominic Fike",
+          "album": "",
+          "durationMs": 144000,
+          "coverUrl": null,
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "deezer",
+            "deezer_chart:85",
+            "lastfm_geo:Australia"
+          ],
+          "rankSignals": {
+            "deezer_chart:85": 26,
+            "lastfm_geo:Australia": 113
+          },
+          "score": 0.010544
+        },
+        {
+          "title": "Californication",
+          "artist": "Red Hot Chili Peppers",
+          "album": "",
+          "durationMs": 329000,
+          "coverUrl": null,
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "deezer",
+            "deezer_chart:85",
+            "lastfm_tag:rock"
+          ],
+          "rankSignals": {
+            "deezer_chart:85": 41,
+            "lastfm_tag:rock": 20
+          },
+          "score": 0.013977
+        },
+        {
+          "title": "Favourite",
+          "artist": "Fontaines D.C.",
+          "album": "",
+          "durationMs": 256000,
+          "coverUrl": null,
+          "audioUrl": null,
+          "audioProvider": null,
+          "providerTrackId": null,
+          "sourceTags": [
+            "deezer",
+            "deezer_chart:85",
+            "lastfm_geo:United Kingdom"
+          ],
+          "rankSignals": {
+            "deezer_chart:85": 67,
+            "lastfm_geo:United Kingdom": 106
+          },
+          "score": 0.011365
         },
         {
           "title": "mangetout",
@@ -6799,7 +6798,7 @@
           "artist": "Music <3",
           "album": "",
           "durationMs": 268000,
-          "coverUrl": "https://audius-creator-8.theblueprint.xyz/content/baeaaaiqsebe2vw6t4gjrkpc3z6g5v4znuvxkyppbxfttszimycejkfgwd4a4o/1000x1000.jpg",
+          "coverUrl": "https://val012.open-audio-validator.com/content/baeaaaiqsebe2vw6t4gjrkpc3z6g5v4znuvxkyppbxfttszimycejkfgwd4a4o/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/pPggk8X/stream",
           "audioProvider": "audius",
           "providerTrackId": "pPggk8X",
@@ -6954,7 +6953,7 @@
           "artist": "TH3 DARP",
           "album": "",
           "durationMs": 154000,
-          "coverUrl": "https://audius-content-2.figment.io/content/baeaaaiqsechehluh2s2ny5hoic5iyc3x3koqi6jqthg2sf4yumj4da6xs4etc/1000x1000.jpg",
+          "coverUrl": "https://val012.open-audio-validator.com/content/baeaaaiqsechehluh2s2ny5hoic5iyc3x3koqi6jqthg2sf4yumj4da6xs4etc/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/pkAG24X/stream",
           "audioProvider": "audius",
           "providerTrackId": "pkAG24X",
@@ -7027,7 +7026,7 @@
           "artist": "Phrequency",
           "album": "",
           "durationMs": 153000,
-          "coverUrl": "https://val006.open-audio-validator.com/content/baeaaaiqsecnyuzshgl5ofu4tbt6u4lg5jhynyhhrfhdzglrf6oed7zfuv4us2/1000x1000.jpg",
+          "coverUrl": "https://audius-content-14.figment.io/content/baeaaaiqsecnyuzshgl5ofu4tbt6u4lg5jhynyhhrfhdzglrf6oed7zfuv4us2/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/jmXVl7j/stream",
           "audioProvider": "audius",
           "providerTrackId": "jmXVl7j",
@@ -7102,7 +7101,7 @@
           "artist": "RafaelKaze",
           "album": "",
           "durationMs": 184000,
-          "coverUrl": "https://v.monophonic.digital/content/baeaaaiqsebuwkcmv4ydersikmhogi2kblxphln3qyi4pxzbrghpsqtfvczpvy/1000x1000.jpg",
+          "coverUrl": "https://cn3.mainnet.audiusindex.org/content/baeaaaiqsebuwkcmv4ydersikmhogi2kblxphln3qyi4pxzbrghpsqtfvczpvy/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/rbR3QdV/stream",
           "audioProvider": "audius",
           "providerTrackId": "rbR3QdV",
@@ -7120,7 +7119,7 @@
           "artist": "Maeki Maii",
           "album": "",
           "durationMs": 169000,
-          "coverUrl": "https://audius-creator-2.theblueprint.xyz/content/baeaaaiqsed4u2gnhlasvyhn3t7rfjudnvxredqtttpbcwejs5a4bckjpt5ofq/1000x1000.jpg",
+          "coverUrl": "https://v.monophonic.digital/content/baeaaaiqsed4u2gnhlasvyhn3t7rfjudnvxredqtttpbcwejs5a4bckjpt5ofq/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/b9do7AK/stream",
           "audioProvider": "audius",
           "providerTrackId": "b9do7AK",
@@ -7190,7 +7189,7 @@
           "artist": "Alumni XI",
           "album": "",
           "durationMs": 120000,
-          "coverUrl": "https://v.monophonic.digital/content/baeaaaiqsed33yjbsrd32s7g2n4jppeybztxbbnw5vzyzs7k5m3hrdmm23vv7e/1000x1000.jpg",
+          "coverUrl": "https://val018.open-audio-validator.com/content/baeaaaiqsed33yjbsrd32s7g2n4jppeybztxbbnw5vzyzs7k5m3hrdmm23vv7e/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/3oYWgOZ/stream",
           "audioProvider": "audius",
           "providerTrackId": "3oYWgOZ",
@@ -8184,7 +8183,7 @@
           "artist": "wilhelm",
           "album": "",
           "durationMs": 120000,
-          "coverUrl": "https://audius-creator-11.theblueprint.xyz/content/baeaaaiqsecwe4oodlk47ud4tq5tua2wi5jvo76anb3ib5zyab63jlmv6q3yp4/1000x1000.jpg",
+          "coverUrl": "https://audius-content-10.figment.io/content/baeaaaiqsecwe4oodlk47ud4tq5tua2wi5jvo76anb3ib5zyab63jlmv6q3yp4/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/lxNdal/stream",
           "audioProvider": "audius",
           "providerTrackId": "lxNdal",
@@ -8271,7 +8270,7 @@
           "artist": "james",
           "album": "",
           "durationMs": 212000,
-          "coverUrl": "https://audius-creator-8.theblueprint.xyz/content/baeaaaiqsede5u5jyqt4saloxs7sny4ar2v7ergu5hbv6vbmmk3oodyhmod4jc/1000x1000.jpg",
+          "coverUrl": "https://v.monophonic.digital/content/baeaaaiqsede5u5jyqt4saloxs7sny4ar2v7ergu5hbv6vbmmk3oodyhmod4jc/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/Exl5WzN/stream",
           "audioProvider": "audius",
           "providerTrackId": "Exl5WzN",
@@ -8373,7 +8372,7 @@
           "artist": "Sivupartaat",
           "album": "",
           "durationMs": 420000,
-          "coverUrl": "https://audius-content-4.figment.io/content/baeaaaiqsedqrpklycp2ywcwgsmwzfqr7klfk225hxpn7x4h27vfohsejvwkme/1000x1000.jpg",
+          "coverUrl": "https://cn1.mainnet.audiusindex.org/content/baeaaaiqsedqrpklycp2ywcwgsmwzfqr7klfk225hxpn7x4h27vfohsejvwkme/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/2jGKwB1/stream",
           "audioProvider": "audius",
           "providerTrackId": "2jGKwB1",
@@ -8443,7 +8442,7 @@
           "artist": "Baranico",
           "album": "",
           "durationMs": 196000,
-          "coverUrl": "https://audius-creator-12.theblueprint.xyz/content/baeaaaiqseandyrrrmtdciqtr5wdabinxe4pvd33raivcwxsvn6anwlhe3evjg/1000x1000.jpg",
+          "coverUrl": "https://cn4.mainnet.audiusindex.org/content/baeaaaiqseandyrrrmtdciqtr5wdabinxe4pvd33raivcwxsvn6anwlhe3evjg/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/J86mq86/stream",
           "audioProvider": "audius",
           "providerTrackId": "J86mq86",
@@ -8478,7 +8477,7 @@
           "artist": "Lott",
           "album": "",
           "durationMs": 120000,
-          "coverUrl": "https://audius-content-14.figment.io/content/baeaaaiqsebnyqyrhvzujccgdbe4g5phejwyd5ricp5gwg3efs6pplsluhj62i/1000x1000.jpg",
+          "coverUrl": "https://v.monophonic.digital/content/baeaaaiqsebnyqyrhvzujccgdbe4g5phejwyd5ricp5gwg3efs6pplsluhj62i/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/kvwEZ51/stream",
           "audioProvider": "audius",
           "providerTrackId": "kvwEZ51",
@@ -8599,7 +8598,7 @@
           "artist": "Petunia and I",
           "album": "",
           "durationMs": 247000,
-          "coverUrl": "https://v.monophonic.digital/content/baeaaaiqsedtv3qo6hswnnmvjh5i4dmkm3xe7mypvbub5zgm6z6qf76o3pav5o/1000x1000.jpg",
+          "coverUrl": "https://audius-creator-17.theblueprint.xyz/content/baeaaaiqsedtv3qo6hswnnmvjh5i4dmkm3xe7mypvbub5zgm6z6qf76o3pav5o/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/r4A4zEN/stream",
           "audioProvider": "audius",
           "providerTrackId": "r4A4zEN",
@@ -8634,7 +8633,7 @@
           "artist": "Lott",
           "album": "",
           "durationMs": 120000,
-          "coverUrl": "https://audius-standardvc-1-validator-3.figment.io/content/baeaaaiqsecczfsdvf5d667x2hkmoargcpntjmqgjqxy5acejggxqb5ktqacmg/1000x1000.jpg",
+          "coverUrl": "https://audius-01.staked.cloud/content/baeaaaiqsecczfsdvf5d667x2hkmoargcpntjmqgjqxy5acejggxqb5ktqacmg/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/QVZ7jXR/stream",
           "audioProvider": "audius",
           "providerTrackId": "QVZ7jXR",
