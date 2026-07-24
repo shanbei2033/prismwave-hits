@@ -1,8 +1,8 @@
 {
   "schemaVersion": 8,
   "generatorVersion": "prismwave-home/0.5.0",
-  "generatedAt": "2026-07-24T08:04:17Z",
-  "generatedAtBeijing": "2026-07-24T16:04:17+08:00",
+  "generatedAt": "2026-07-24T08:34:15Z",
+  "generatedAtBeijing": "2026-07-24T16:34:15+08:00",
   "editionDate": "2026-07-24",
   "timezone": "Asia/Shanghai",
   "sourceSnapshot": [
@@ -299,11 +299,6 @@
       "weight": 0.1669
     },
     {
-      "name": "itunes_search",
-      "count": 114,
-      "weight": 0.0952
-    },
-    {
       "name": "audius_trending_monthly",
       "count": 99,
       "weight": 0.0826
@@ -320,8 +315,13 @@
     },
     {
       "name": "deezer_search",
-      "count": 21,
-      "weight": 0.0175
+      "count": 78,
+      "weight": 0.0651
+    },
+    {
+      "name": "itunes_search",
+      "count": 56,
+      "weight": 0.0467
     }
   ],
   "topPlaylist": {
@@ -331,7 +331,7 @@
       "zh-Hant": "今日趨勢",
       "en-US": "Today's Trending"
     },
-    "subtitle": "生成时间：2026-07-24 16:04（北京时间）",
+    "subtitle": "生成时间：2026-07-24 16:34（北京时间）",
     "tracks": [
       {
         "title": "expectations",
@@ -481,21 +481,21 @@
       {
         "title": "Roommates",
         "artist": "Malcolm Todd",
-        "album": "Roommates - Single",
+        "album": "Roommates",
         "durationMs": 214000,
-        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/33/b8/5a/33b85ad4-cfd1-bcb8-444b-15329d4965ef/196871375542.jpg/600x600bb.jpg",
+        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/e2b58403de31092b3c5c2430bfcdac0d/1000x1000-000000-80-0-0.jpg",
         "audioUrl": null,
         "audioProvider": null,
         "providerTrackId": null,
         "sourceTags": [
-          "itunes_search",
+          "deezer_search",
           "lastfm_geo:Australia",
           "lastfm_geo:Canada",
           "lastfm_geo:United States",
           "lastfm_global"
         ],
         "rankSignals": {
-          "itunes_search": 1703837703,
+          "deezer_search": 2422253495,
           "lastfm_geo:Australia": 31,
           "lastfm_geo:Canada": 21,
           "lastfm_geo:United States": 24,
@@ -506,14 +506,14 @@
       {
         "title": "Dracula - JENNIE remix",
         "artist": "Tame Impala",
-        "album": "Dracula - Single",
+        "album": "Dracula (Remix)",
         "durationMs": 209000,
-        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/36/be/b4/36beb41f-c644-55cb-9fbb-bf0622a66653/196873644783.jpg/600x600bb.jpg",
+        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/b868399da682f34dcd7d98af1c0de80b/1000x1000-000000-80-0-0.jpg",
         "audioUrl": null,
         "audioProvider": null,
         "providerTrackId": null,
         "sourceTags": [
-          "itunes_search",
+          "deezer_search",
           "lastfm_geo:Brazil",
           "lastfm_geo:France",
           "lastfm_geo:Germany",
@@ -522,7 +522,7 @@
           "lastfm_global"
         ],
         "rankSignals": {
-          "itunes_search": 1842444457,
+          "deezer_search": 3818963601,
           "lastfm_geo:Brazil": 29,
           "lastfm_geo:France": 11,
           "lastfm_geo:Germany": 54,
@@ -537,16 +537,16 @@
         "artist": "Michael Jackson",
         "album": "Thriller",
         "durationMs": 258000,
-        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/32/4f/fd/324ffda2-9e51-8f6a-0c2d-c6fd2b41ac55/074643811224.jpg/600x600bb.jpg",
+        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/a0ad67d1beb761f2cb9f8b60e5bcf07a/1000x1000-000000-80-0-0.jpg",
         "audioUrl": null,
         "audioProvider": null,
         "providerTrackId": null,
         "sourceTags": [
           "deezer",
           "deezer_chart:132",
+          "deezer_search",
           "itunes",
           "itunes_rss",
-          "itunes_search",
           "lastfm_geo:Australia",
           "lastfm_geo:France",
           "lastfm_geo:Germany",
@@ -557,8 +557,8 @@
         ],
         "rankSignals": {
           "deezer_chart:132": 40,
+          "deezer_search": 4763165,
           "itunes_rss": 45,
-          "itunes_search": 269573341,
           "lastfm_geo:Australia": 78,
           "lastfm_geo:France": 56,
           "lastfm_geo:Germany": 41,
@@ -642,12 +642,12 @@
         "artist": "Radiohead",
         "album": "In Rainbows",
         "durationMs": 278000,
-        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/dd/50/c7/dd50c790-99ac-d3d0-5ab8-e3891fb8fd52/634904032463.png/600x600bb.jpg",
+        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/a175af9b7d329bc678cb4d26fc13d6de/1000x1000-000000-80-0-0.jpg",
         "audioUrl": null,
         "audioProvider": null,
         "providerTrackId": null,
         "sourceTags": [
-          "itunes_search",
+          "deezer_search",
           "lastfm_geo:Australia",
           "lastfm_geo:Canada",
           "lastfm_geo:United Kingdom",
@@ -655,7 +655,7 @@
           "lastfm_global"
         ],
         "rankSignals": {
-          "itunes_search": 1109715293,
+          "deezer_search": 138546811,
           "lastfm_geo:Australia": 79,
           "lastfm_geo:Canada": 94,
           "lastfm_geo:United Kingdom": 73,
@@ -667,21 +667,21 @@
       {
         "title": "BAILE INoLVIDABLE",
         "artist": "Bad Bunny",
-        "album": "BAILE INoLVIDABLE (English Cover) - Single",
+        "album": "DeBÍ TiRAR MáS FOToS",
         "durationMs": 360000,
-        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/4c/07/eb/4c07eb8b-5f17-7460-4840-850065aa7113/artwork.jpg/600x600bb.jpg",
+        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/d98eaccfbb945bdf68241d6de7fe6a49/1000x1000-000000-80-0-0.jpg",
         "audioUrl": null,
         "audioProvider": null,
         "providerTrackId": null,
         "sourceTags": [
-          "itunes_search",
+          "deezer_search",
           "lastfm_geo:France",
           "lastfm_geo:Mexico",
           "lastfm_geo:Spain",
           "lastfm_global"
         ],
         "rankSignals": {
-          "itunes_search": 1818374173,
+          "deezer_search": 3171003001,
           "lastfm_geo:France": 36,
           "lastfm_geo:Mexico": 20,
           "lastfm_geo:Spain": 29,
@@ -694,12 +694,12 @@
         "artist": "Chappell Roan",
         "album": "The Rise and Fall of a Midwest Princess",
         "durationMs": 232000,
-        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/42/a0/c5/42a0c5e6-6b98-f1f9-7d6b-6d6c61aba562/23UMGIM84225.rgb.jpg/600x600bb.jpg",
+        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/71486ce8b24f612c4887efa0f79a9f66/1000x1000-000000-80-0-0.jpg",
         "audioUrl": null,
         "audioProvider": null,
         "providerTrackId": null,
         "sourceTags": [
-          "itunes_search",
+          "deezer_search",
           "lastfm_geo:Australia",
           "lastfm_geo:Brazil",
           "lastfm_geo:United Kingdom",
@@ -707,7 +707,7 @@
           "lastfm_global"
         ],
         "rankSignals": {
-          "itunes_search": 1707413103,
+          "deezer_search": 2454854775,
           "lastfm_geo:Australia": 90,
           "lastfm_geo:Brazil": 119,
           "lastfm_geo:United Kingdom": 55,
@@ -1226,12 +1226,12 @@
         "artist": "Gracie Abrams",
         "album": "Daughter from Hell",
         "durationMs": 215000,
-        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4f/13/47/4f1347cf-9564-e8b6-523a-386202f4d265/26UMGIM54147.rgb.jpg/600x600bb.jpg",
+        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/6919d1848a80de99b2ba4e58d8e2f9d5/1000x1000-000000-80-0-0.jpg",
         "audioUrl": null,
         "audioProvider": null,
         "providerTrackId": null,
         "sourceTags": [
-          "itunes_search",
+          "deezer_search",
           "lastfm_geo:Australia",
           "lastfm_geo:Canada",
           "lastfm_geo:France",
@@ -1242,7 +1242,7 @@
           "lastfm_global"
         ],
         "rankSignals": {
-          "itunes_search": 6766750853,
+          "deezer_search": 4154987112,
           "lastfm_geo:Australia": 38,
           "lastfm_geo:Canada": 53,
           "lastfm_geo:France": 58,
@@ -1298,12 +1298,12 @@
         "artist": "BTS",
         "album": "ARIRANG",
         "durationMs": 169000,
-        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/69/0a/7b/690a7bb3-4483-2418-158c-9276d7d98f81/823375049500_Cover.jpg/600x600bb.jpg",
+        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/a3b8e9462db0c02e082c706c624f9811/1000x1000-000000-80-0-0.jpg",
         "audioUrl": null,
         "audioProvider": null,
         "providerTrackId": null,
         "sourceTags": [
-          "itunes_search",
+          "deezer_search",
           "lastfm_geo:Brazil",
           "lastfm_geo:France",
           "lastfm_geo:Japan",
@@ -1312,7 +1312,7 @@
           "lastfm_global"
         ],
         "rankSignals": {
-          "itunes_search": 1885720394,
+          "deezer_search": 3907717241,
           "lastfm_geo:Brazil": 102,
           "lastfm_geo:France": 45,
           "lastfm_geo:Japan": 65,
@@ -1342,20 +1342,20 @@
       {
         "title": "The Subway",
         "artist": "Chappell Roan",
-        "album": "The Subway - Single",
+        "album": "The Subway",
         "durationMs": 252000,
-        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a3/34/ac/a334acc6-5983-27ac-851d-8f03e148a4ce/25UMGIM99609.rgb.jpg/600x600bb.jpg",
+        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/cf17950fcc770440235484271df2ee59/1000x1000-000000-80-0-0.jpg",
         "audioUrl": null,
         "audioProvider": null,
         "providerTrackId": null,
         "sourceTags": [
-          "itunes_search",
+          "deezer_search",
           "lastfm_geo:Brazil",
           "lastfm_geo:United Kingdom",
           "lastfm_global"
         ],
         "rankSignals": {
-          "itunes_search": 1831372120,
+          "deezer_search": 3476801931,
           "lastfm_geo:Brazil": 61,
           "lastfm_geo:United Kingdom": 90,
           "lastfm_global": 104
@@ -1389,7 +1389,7 @@
         "artist": "Olivia Dean",
         "album": "The Art of Loving",
         "durationMs": 169000,
-        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/08/e2/21/08e22164-7c0b-1522-818f-e0e74f62dc49/25UMGIM69703.rgb.jpg/600x600bb.jpg",
+        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/b7aaad0f696b5dbfe7f1ebf2c72346a5/1000x1000-000000-80-0-0.jpg",
         "audioUrl": null,
         "audioProvider": null,
         "providerTrackId": null,
@@ -1397,17 +1397,17 @@
           "deezer",
           "deezer_chart",
           "deezer_chart:132",
+          "deezer_search",
           "itunes",
           "itunes_rss",
-          "itunes_search",
           "lastfm_geo:Australia",
           "lastfm_global"
         ],
         "rankSignals": {
           "deezer_chart": 23,
           "deezer_chart:132": 10,
+          "deezer_search": 3562948071,
           "itunes_rss": 51,
-          "itunes_search": 1817609507,
           "lastfm_geo:Australia": 103,
           "lastfm_global": 167
         },
@@ -1657,7 +1657,7 @@
           "audius_trending_monthly"
         ],
         "rankSignals": {
-          "audius_trending_monthly": 98
+          "audius_trending_monthly": 100
         },
         "score": 0.082983
       },
@@ -1896,7 +1896,7 @@
         "artist": "@iLLPeTiLL",
         "album": "",
         "durationMs": 249000,
-        "coverUrl": "https://audius-05.staked.cloud/content/01KXTDJPJK06E98FD3E7M45840/1000x1000.jpg",
+        "coverUrl": "https://v.monophonic.digital/content/01KXTDJPJK06E98FD3E7M45840/1000x1000.jpg",
         "audioUrl": "https://api.audius.co/v1/tracks/amO84q1/stream",
         "audioProvider": "audius",
         "providerTrackId": "amO84q1",
@@ -1905,7 +1905,7 @@
           "audius_trending_monthly"
         ],
         "rankSignals": {
-          "audius_trending_monthly": 602
+          "audius_trending_monthly": 603
         },
         "score": 0.07776
       },
@@ -2082,12 +2082,12 @@
         "artist": "Steve Lacy",
         "album": "Oh yeah?",
         "durationMs": 186000,
-        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/1c/b2/46/1cb246db-afae-a599-d377-44a7ea7267fa/196874346976.jpg/600x600bb.jpg",
+        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/c64458bda012cdf305dc92a07626a51d/1000x1000-000000-80-0-0.jpg",
         "audioUrl": null,
         "audioProvider": null,
         "providerTrackId": null,
         "sourceTags": [
-          "itunes_search",
+          "deezer_search",
           "lastfm_geo:Australia",
           "lastfm_geo:Canada",
           "lastfm_geo:Japan",
@@ -2095,7 +2095,7 @@
           "lastfm_global"
         ],
         "rankSignals": {
-          "itunes_search": 6773775298,
+          "deezer_search": 4151325402,
           "lastfm_geo:Australia": 87,
           "lastfm_geo:Canada": 54,
           "lastfm_geo:Japan": 58,
@@ -2256,12 +2256,12 @@
         "artist": "Gracie Abrams",
         "album": "Daughter from Hell",
         "durationMs": 216000,
-        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4f/13/47/4f1347cf-9564-e8b6-523a-386202f4d265/26UMGIM54147.rgb.jpg/600x600bb.jpg",
+        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/6919d1848a80de99b2ba4e58d8e2f9d5/1000x1000-000000-80-0-0.jpg",
         "audioUrl": null,
         "audioProvider": null,
         "providerTrackId": null,
         "sourceTags": [
-          "itunes_search",
+          "deezer_search",
           "lastfm_geo:Australia",
           "lastfm_geo:Canada",
           "lastfm_geo:France",
@@ -2271,7 +2271,7 @@
           "lastfm_global"
         ],
         "rankSignals": {
-          "itunes_search": 6766750855,
+          "deezer_search": 4154987122,
           "lastfm_geo:Australia": 42,
           "lastfm_geo:Canada": 60,
           "lastfm_geo:France": 64,
@@ -2305,7 +2305,7 @@
         "artist": "Zonii",
         "album": "",
         "durationMs": 185000,
-        "coverUrl": "https://v.monophonic.digital/content/baeaaaiqsecr7yfrml4cuzakodoaltn23kbtljaasf4nmvgu5fpunsus4irnrw/1000x1000.jpg",
+        "coverUrl": "https://validator.stuffisup.com/content/baeaaaiqsecr7yfrml4cuzakodoaltn23kbtljaasf4nmvgu5fpunsus4irnrw/1000x1000.jpg",
         "audioUrl": "https://api.audius.co/v1/tracks/AbdXKoR/stream",
         "audioProvider": "audius",
         "providerTrackId": "AbdXKoR",
@@ -2381,12 +2381,12 @@
         "artist": "BTS",
         "album": "ARIRANG",
         "durationMs": 189000,
-        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e0/a2/b4/e0a2b443-7969-b57a-a591-cb6172c10aa7/198704943959_Cover.jpg/600x600bb.jpg",
+        "coverUrl": "https://cdn-images.dzcdn.net/images/cover/a3b8e9462db0c02e082c706c624f9811/1000x1000-000000-80-0-0.jpg",
         "audioUrl": null,
         "audioProvider": null,
         "providerTrackId": null,
         "sourceTags": [
-          "itunes_search",
+          "deezer_search",
           "lastfm_geo:Brazil",
           "lastfm_geo:France",
           "lastfm_geo:Japan",
@@ -2395,7 +2395,7 @@
           "lastfm_global"
         ],
         "rankSignals": {
-          "itunes_search": 1868481905,
+          "deezer_search": 3907717191,
           "lastfm_geo:Brazil": 81,
           "lastfm_geo:France": 26,
           "lastfm_geo:Japan": 90,
@@ -2410,7 +2410,7 @@
         "artist": "INDIGENOUS",
         "album": "",
         "durationMs": 121000,
-        "coverUrl": "https://cn4.mainnet.audiusindex.org/content/baeaaaiqseaiidybampmg4fl2uxd3hzwl2s3xnmz5gze2usnzq7ibqg2w6cydy/1000x1000.jpg",
+        "coverUrl": "https://val011.open-audio-validator.com/content/baeaaaiqseaiidybampmg4fl2uxd3hzwl2s3xnmz5gze2usnzq7ibqg2w6cydy/1000x1000.jpg",
         "audioUrl": "https://api.audius.co/v1/tracks/B3wa9x/stream",
         "audioProvider": "audius",
         "providerTrackId": "B3wa9x",
@@ -2445,7 +2445,7 @@
         "artist": "Van Snyder",
         "album": "",
         "durationMs": 179000,
-        "coverUrl": "https://v.monophonic.digital/content/baeaaaiqsebdh34psafqvwigwtsa27ozrbop6dgen4rcceg3fsvitrz5mfwqa4/1000x1000.jpg",
+        "coverUrl": "https://audius.bragi.cc/content/baeaaaiqsebdh34psafqvwigwtsa27ozrbop6dgen4rcceg3fsvitrz5mfwqa4/1000x1000.jpg",
         "audioUrl": "https://api.audius.co/v1/tracks/V4BGbl6/stream",
         "audioProvider": "audius",
         "providerTrackId": "V4BGbl6",
@@ -2480,7 +2480,7 @@
         "artist": "Jazcardan",
         "album": "",
         "durationMs": 181000,
-        "coverUrl": "https://audius-content-5.figment.io/content/baeaaaiqsed7vabjswbdvf7aj37vztl73icmft2yljyadu7ex2wkehvu2gtlwq/1000x1000.jpg",
+        "coverUrl": "https://audius-content-3.figment.io/content/baeaaaiqsed7vabjswbdvf7aj37vztl73icmft2yljyadu7ex2wkehvu2gtlwq/1000x1000.jpg",
         "audioUrl": "https://api.audius.co/v1/tracks/X6zzGva/stream",
         "audioProvider": "audius",
         "providerTrackId": "X6zzGva",
@@ -2676,21 +2676,21 @@
         {
           "title": "Roommates",
           "artist": "Malcolm Todd",
-          "album": "Roommates - Single",
+          "album": "Roommates",
           "durationMs": 214000,
-          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/33/b8/5a/33b85ad4-cfd1-bcb8-444b-15329d4965ef/196871375542.jpg/600x600bb.jpg",
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/e2b58403de31092b3c5c2430bfcdac0d/1000x1000-000000-80-0-0.jpg",
           "audioUrl": null,
           "audioProvider": null,
           "providerTrackId": null,
           "sourceTags": [
-            "itunes_search",
+            "deezer_search",
             "lastfm_geo:Australia",
             "lastfm_geo:Canada",
             "lastfm_geo:United States",
             "lastfm_global"
           ],
           "rankSignals": {
-            "itunes_search": 1703837703,
+            "deezer_search": 2422253495,
             "lastfm_geo:Australia": 31,
             "lastfm_geo:Canada": 21,
             "lastfm_geo:United States": 24,
@@ -2776,14 +2776,14 @@
         {
           "title": "Dracula - JENNIE remix",
           "artist": "Tame Impala",
-          "album": "Dracula - Single",
+          "album": "Dracula (Remix)",
           "durationMs": 209000,
-          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/36/be/b4/36beb41f-c644-55cb-9fbb-bf0622a66653/196873644783.jpg/600x600bb.jpg",
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/b868399da682f34dcd7d98af1c0de80b/1000x1000-000000-80-0-0.jpg",
           "audioUrl": null,
           "audioProvider": null,
           "providerTrackId": null,
           "sourceTags": [
-            "itunes_search",
+            "deezer_search",
             "lastfm_geo:Brazil",
             "lastfm_geo:France",
             "lastfm_geo:Germany",
@@ -2792,7 +2792,7 @@
             "lastfm_global"
           ],
           "rankSignals": {
-            "itunes_search": 1842444457,
+            "deezer_search": 3818963601,
             "lastfm_geo:Brazil": 29,
             "lastfm_geo:France": 11,
             "lastfm_geo:Germany": 54,
@@ -2807,16 +2807,16 @@
           "artist": "Michael Jackson",
           "album": "Thriller",
           "durationMs": 258000,
-          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/32/4f/fd/324ffda2-9e51-8f6a-0c2d-c6fd2b41ac55/074643811224.jpg/600x600bb.jpg",
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/a0ad67d1beb761f2cb9f8b60e5bcf07a/1000x1000-000000-80-0-0.jpg",
           "audioUrl": null,
           "audioProvider": null,
           "providerTrackId": null,
           "sourceTags": [
             "deezer",
             "deezer_chart:132",
+            "deezer_search",
             "itunes",
             "itunes_rss",
-            "itunes_search",
             "lastfm_geo:Australia",
             "lastfm_geo:France",
             "lastfm_geo:Germany",
@@ -2827,8 +2827,8 @@
           ],
           "rankSignals": {
             "deezer_chart:132": 40,
+            "deezer_search": 4763165,
             "itunes_rss": 45,
-            "itunes_search": 269573341,
             "lastfm_geo:Australia": 78,
             "lastfm_geo:France": 56,
             "lastfm_geo:Germany": 41,
@@ -2844,12 +2844,12 @@
           "artist": "BTS",
           "album": "ARIRANG",
           "durationMs": 189000,
-          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e0/a2/b4/e0a2b443-7969-b57a-a591-cb6172c10aa7/198704943959_Cover.jpg/600x600bb.jpg",
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/a3b8e9462db0c02e082c706c624f9811/1000x1000-000000-80-0-0.jpg",
           "audioUrl": null,
           "audioProvider": null,
           "providerTrackId": null,
           "sourceTags": [
-            "itunes_search",
+            "deezer_search",
             "lastfm_geo:Brazil",
             "lastfm_geo:France",
             "lastfm_geo:Japan",
@@ -2858,7 +2858,7 @@
             "lastfm_global"
           ],
           "rankSignals": {
-            "itunes_search": 1868481905,
+            "deezer_search": 3907717191,
             "lastfm_geo:Brazil": 81,
             "lastfm_geo:France": 26,
             "lastfm_geo:Japan": 90,
@@ -2905,12 +2905,12 @@
           "artist": "Gracie Abrams",
           "album": "Daughter from Hell",
           "durationMs": 215000,
-          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4f/13/47/4f1347cf-9564-e8b6-523a-386202f4d265/26UMGIM54147.rgb.jpg/600x600bb.jpg",
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/6919d1848a80de99b2ba4e58d8e2f9d5/1000x1000-000000-80-0-0.jpg",
           "audioUrl": null,
           "audioProvider": null,
           "providerTrackId": null,
           "sourceTags": [
-            "itunes_search",
+            "deezer_search",
             "lastfm_geo:Australia",
             "lastfm_geo:Canada",
             "lastfm_geo:France",
@@ -2921,7 +2921,7 @@
             "lastfm_global"
           ],
           "rankSignals": {
-            "itunes_search": 6766750853,
+            "deezer_search": 4154987112,
             "lastfm_geo:Australia": 38,
             "lastfm_geo:Canada": 53,
             "lastfm_geo:France": 58,
@@ -2977,12 +2977,12 @@
           "artist": "Radiohead",
           "album": "In Rainbows",
           "durationMs": 278000,
-          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/dd/50/c7/dd50c790-99ac-d3d0-5ab8-e3891fb8fd52/634904032463.png/600x600bb.jpg",
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/a175af9b7d329bc678cb4d26fc13d6de/1000x1000-000000-80-0-0.jpg",
           "audioUrl": null,
           "audioProvider": null,
           "providerTrackId": null,
           "sourceTags": [
-            "itunes_search",
+            "deezer_search",
             "lastfm_geo:Australia",
             "lastfm_geo:Canada",
             "lastfm_geo:United Kingdom",
@@ -2990,7 +2990,7 @@
             "lastfm_global"
           ],
           "rankSignals": {
-            "itunes_search": 1109715293,
+            "deezer_search": 138546811,
             "lastfm_geo:Australia": 79,
             "lastfm_geo:Canada": 94,
             "lastfm_geo:United Kingdom": 73,
@@ -3004,12 +3004,12 @@
           "artist": "Chappell Roan",
           "album": "The Rise and Fall of a Midwest Princess",
           "durationMs": 232000,
-          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/42/a0/c5/42a0c5e6-6b98-f1f9-7d6b-6d6c61aba562/23UMGIM84225.rgb.jpg/600x600bb.jpg",
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/71486ce8b24f612c4887efa0f79a9f66/1000x1000-000000-80-0-0.jpg",
           "audioUrl": null,
           "audioProvider": null,
           "providerTrackId": null,
           "sourceTags": [
-            "itunes_search",
+            "deezer_search",
             "lastfm_geo:Australia",
             "lastfm_geo:Brazil",
             "lastfm_geo:United Kingdom",
@@ -3017,7 +3017,7 @@
             "lastfm_global"
           ],
           "rankSignals": {
-            "itunes_search": 1707413103,
+            "deezer_search": 2454854775,
             "lastfm_geo:Australia": 90,
             "lastfm_geo:Brazil": 119,
             "lastfm_geo:United Kingdom": 55,
@@ -3029,21 +3029,21 @@
         {
           "title": "BAILE INoLVIDABLE",
           "artist": "Bad Bunny",
-          "album": "BAILE INoLVIDABLE (English Cover) - Single",
+          "album": "DeBÍ TiRAR MáS FOToS",
           "durationMs": 360000,
-          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/4c/07/eb/4c07eb8b-5f17-7460-4840-850065aa7113/artwork.jpg/600x600bb.jpg",
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/d98eaccfbb945bdf68241d6de7fe6a49/1000x1000-000000-80-0-0.jpg",
           "audioUrl": null,
           "audioProvider": null,
           "providerTrackId": null,
           "sourceTags": [
-            "itunes_search",
+            "deezer_search",
             "lastfm_geo:France",
             "lastfm_geo:Mexico",
             "lastfm_geo:Spain",
             "lastfm_global"
           ],
           "rankSignals": {
-            "itunes_search": 1818374173,
+            "deezer_search": 3171003001,
             "lastfm_geo:France": 36,
             "lastfm_geo:Mexico": 20,
             "lastfm_geo:Spain": 29,
@@ -3199,7 +3199,7 @@
             "audius_trending_monthly"
           ],
           "rankSignals": {
-            "audius_trending_monthly": 98
+            "audius_trending_monthly": 100
           },
           "score": 0.082983
         },
@@ -3208,7 +3208,7 @@
           "artist": "@iLLPeTiLL",
           "album": "",
           "durationMs": 249000,
-          "coverUrl": "https://audius-05.staked.cloud/content/01KXTDJPJK06E98FD3E7M45840/1000x1000.jpg",
+          "coverUrl": "https://v.monophonic.digital/content/01KXTDJPJK06E98FD3E7M45840/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/amO84q1/stream",
           "audioProvider": "audius",
           "providerTrackId": "amO84q1",
@@ -3217,7 +3217,7 @@
             "audius_trending_monthly"
           ],
           "rankSignals": {
-            "audius_trending_monthly": 602
+            "audius_trending_monthly": 603
           },
           "score": 0.07776
         },
@@ -3226,7 +3226,7 @@
           "artist": "Zonii",
           "album": "",
           "durationMs": 185000,
-          "coverUrl": "https://v.monophonic.digital/content/baeaaaiqsecr7yfrml4cuzakodoaltn23kbtljaasf4nmvgu5fpunsus4irnrw/1000x1000.jpg",
+          "coverUrl": "https://validator.stuffisup.com/content/baeaaaiqsecr7yfrml4cuzakodoaltn23kbtljaasf4nmvgu5fpunsus4irnrw/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/AbdXKoR/stream",
           "audioProvider": "audius",
           "providerTrackId": "AbdXKoR",
@@ -3244,7 +3244,7 @@
           "artist": "Van Snyder",
           "album": "",
           "durationMs": 179000,
-          "coverUrl": "https://v.monophonic.digital/content/baeaaaiqsebdh34psafqvwigwtsa27ozrbop6dgen4rcceg3fsvitrz5mfwqa4/1000x1000.jpg",
+          "coverUrl": "https://audius.bragi.cc/content/baeaaaiqsebdh34psafqvwigwtsa27ozrbop6dgen4rcceg3fsvitrz5mfwqa4/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/V4BGbl6/stream",
           "audioProvider": "audius",
           "providerTrackId": "V4BGbl6",
@@ -3262,7 +3262,7 @@
           "artist": "INDIGENOUS",
           "album": "",
           "durationMs": 121000,
-          "coverUrl": "https://cn4.mainnet.audiusindex.org/content/baeaaaiqseaiidybampmg4fl2uxd3hzwl2s3xnmz5gze2usnzq7ibqg2w6cydy/1000x1000.jpg",
+          "coverUrl": "https://val011.open-audio-validator.com/content/baeaaaiqseaiidybampmg4fl2uxd3hzwl2s3xnmz5gze2usnzq7ibqg2w6cydy/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/B3wa9x/stream",
           "audioProvider": "audius",
           "providerTrackId": "B3wa9x",
@@ -3280,7 +3280,7 @@
           "artist": "Jazcardan",
           "album": "",
           "durationMs": 181000,
-          "coverUrl": "https://audius-content-5.figment.io/content/baeaaaiqsed7vabjswbdvf7aj37vztl73icmft2yljyadu7ex2wkehvu2gtlwq/1000x1000.jpg",
+          "coverUrl": "https://audius-content-3.figment.io/content/baeaaaiqsed7vabjswbdvf7aj37vztl73icmft2yljyadu7ex2wkehvu2gtlwq/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/X6zzGva/stream",
           "audioProvider": "audius",
           "providerTrackId": "X6zzGva",
@@ -3343,7 +3343,7 @@
             "audius_trending_monthly"
           ],
           "rankSignals": {
-            "audius_trending_monthly": 380
+            "audius_trending_monthly": 381
           },
           "score": 0.065386
         },
@@ -3352,7 +3352,7 @@
           "artist": "Charlie Couvillion",
           "album": "",
           "durationMs": 149000,
-          "coverUrl": "https://val013.open-audio-validator.com/content/01KWMS5WT7APK4J7ARDTSYNN6S/1000x1000.jpg",
+          "coverUrl": "https://audius-creator-13.theblueprint.xyz/content/01KWMS5WT7APK4J7ARDTSYNN6S/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/A70bBkq/stream",
           "audioProvider": "audius",
           "providerTrackId": "A70bBkq",
@@ -3370,7 +3370,7 @@
           "artist": "GENDE",
           "album": "",
           "durationMs": 205000,
-          "coverUrl": "https://v.monophonic.digital/content/baeaaaiqsea7y4zetk7uiinnlwiex7axs6bgghkywbksmw3rlw3zgpcnquabty/1000x1000.jpg",
+          "coverUrl": "https://audius-discovery-3.altego.net/content/baeaaaiqsea7y4zetk7uiinnlwiex7axs6bgghkywbksmw3rlw3zgpcnquabty/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/P6XkAGX/stream",
           "audioProvider": "audius",
           "providerTrackId": "P6XkAGX",
@@ -3388,7 +3388,7 @@
           "artist": "R.sinik",
           "album": "",
           "durationMs": 174000,
-          "coverUrl": "https://val012.open-audio-validator.com/content/baeaaaiqsecro2apfbtnzr64moqddijscc3syy2wkhmh5kmvyov4w3hje2xc6y/1000x1000.jpg",
+          "coverUrl": "https://val013.open-audio-validator.com/content/baeaaaiqsecro2apfbtnzr64moqddijscc3syy2wkhmh5kmvyov4w3hje2xc6y/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/64qjyX3/stream",
           "audioProvider": "audius",
           "providerTrackId": "64qjyX3",
@@ -3406,7 +3406,7 @@
           "artist": "Endevie",
           "album": "",
           "durationMs": 288000,
-          "coverUrl": "https://audius-content-12.figment.io/content/baeaaaiqsedagxfrh5zrxq5nfxmhbwcc3jwy5wpeaydctdcd4dgdrn5vlrtucm/1000x1000.jpg",
+          "coverUrl": "https://val012.open-audio-validator.com/content/baeaaaiqsedagxfrh5zrxq5nfxmhbwcc3jwy5wpeaydctdcd4dgdrn5vlrtucm/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/1VQo6YQ/stream",
           "audioProvider": "audius",
           "providerTrackId": "1VQo6YQ",
@@ -3424,7 +3424,7 @@
           "artist": "Aedhus",
           "album": "",
           "durationMs": 120000,
-          "coverUrl": "https://val012.open-audio-validator.com/content/baeaaaiqsebfxae4yz5abbflgstd464ks42yvbunw2oyi7ndfxskvympmpu6rw/1000x1000.jpg",
+          "coverUrl": "https://v.monophonic.digital/content/baeaaaiqsebfxae4yz5abbflgstd464ks42yvbunw2oyi7ndfxskvympmpu6rw/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/8Y9NaAp/stream",
           "audioProvider": "audius",
           "providerTrackId": "8Y9NaAp",
@@ -3442,7 +3442,7 @@
           "artist": "IRXN",
           "album": "",
           "durationMs": 420000,
-          "coverUrl": "https://v.monophonic.digital/content/baeaaaiqsearmfvc6n2ap5mcbvgvbvql5iwe3wyjxsxa2qh65aptligka3566q/1000x1000.jpg",
+          "coverUrl": "https://audius.bragi.cc/content/baeaaaiqsearmfvc6n2ap5mcbvgvbvql5iwe3wyjxsxa2qh65aptligka3566q/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/WxRYzXj/stream",
           "audioProvider": "audius",
           "providerTrackId": "WxRYzXj",
@@ -3460,7 +3460,7 @@
           "artist": "Andrew Lux",
           "album": "",
           "durationMs": 179000,
-          "coverUrl": "https://val011.open-audio-validator.com/content/baeaaaiqseab6pozqsjqv2xgj3e3oco43zihdi36tpt3lqldf4xxsxfyqkxbqa/1000x1000.jpg",
+          "coverUrl": "https://v.monophonic.digital/content/baeaaaiqseab6pozqsjqv2xgj3e3oco43zihdi36tpt3lqldf4xxsxfyqkxbqa/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/JBKl7R6/stream",
           "audioProvider": "audius",
           "providerTrackId": "JBKl7R6",
@@ -3478,7 +3478,7 @@
           "artist": "riainoo",
           "album": "",
           "durationMs": 149000,
-          "coverUrl": "https://v.monophonic.digital/content/baeaaaiqsebfxae4yz5abbflgstd464ks42yvbunw2oyi7ndfxskvympmpu6rw/1000x1000.jpg",
+          "coverUrl": "https://val012.open-audio-validator.com/content/baeaaaiqsebfxae4yz5abbflgstd464ks42yvbunw2oyi7ndfxskvympmpu6rw/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/ORgRAmv/stream",
           "audioProvider": "audius",
           "providerTrackId": "ORgRAmv",
@@ -3496,7 +3496,7 @@
           "artist": "ECHOES LAB, parasox",
           "album": "",
           "durationMs": 219000,
-          "coverUrl": "https://val019.open-audio-validator.com/content/baeaaaiqsea4adczdgd7w6pla7nzaumrtoy4giz2ksnz6um332aokd274qs63y/1000x1000.jpg",
+          "coverUrl": "https://v.monophonic.digital/content/baeaaaiqsea4adczdgd7w6pla7nzaumrtoy4giz2ksnz6um332aokd274qs63y/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/4644m9/stream",
           "audioProvider": "audius",
           "providerTrackId": "4644m9",
@@ -3514,7 +3514,7 @@
           "artist": "Olazaran",
           "album": "",
           "durationMs": 149000,
-          "coverUrl": "https://v.monophonic.digital/content/baeaaaiqseaqe5nkx62ykgwmp3ftnxmzaz62e4kpzbcejepa32jyrtqh2cm6s4/1000x1000.jpg",
+          "coverUrl": "https://val008.open-audio-validator.com/content/baeaaaiqseaqe5nkx62ykgwmp3ftnxmzaz62e4kpzbcejepa32jyrtqh2cm6s4/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/ozvNmKa/stream",
           "audioProvider": "audius",
           "providerTrackId": "ozvNmKa",
@@ -3704,21 +3704,21 @@
         {
           "title": "Roommates",
           "artist": "Malcolm Todd",
-          "album": "Roommates - Single",
+          "album": "Roommates",
           "durationMs": 214000,
-          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/33/b8/5a/33b85ad4-cfd1-bcb8-444b-15329d4965ef/196871375542.jpg/600x600bb.jpg",
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/e2b58403de31092b3c5c2430bfcdac0d/1000x1000-000000-80-0-0.jpg",
           "audioUrl": null,
           "audioProvider": null,
           "providerTrackId": null,
           "sourceTags": [
-            "itunes_search",
+            "deezer_search",
             "lastfm_geo:Australia",
             "lastfm_geo:Canada",
             "lastfm_geo:United States",
             "lastfm_global"
           ],
           "rankSignals": {
-            "itunes_search": 1703837703,
+            "deezer_search": 2422253495,
             "lastfm_geo:Australia": 31,
             "lastfm_geo:Canada": 21,
             "lastfm_geo:United States": 24,
@@ -3729,14 +3729,14 @@
         {
           "title": "Dracula - JENNIE remix",
           "artist": "Tame Impala",
-          "album": "Dracula - Single",
+          "album": "Dracula (Remix)",
           "durationMs": 209000,
-          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/36/be/b4/36beb41f-c644-55cb-9fbb-bf0622a66653/196873644783.jpg/600x600bb.jpg",
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/b868399da682f34dcd7d98af1c0de80b/1000x1000-000000-80-0-0.jpg",
           "audioUrl": null,
           "audioProvider": null,
           "providerTrackId": null,
           "sourceTags": [
-            "itunes_search",
+            "deezer_search",
             "lastfm_geo:Brazil",
             "lastfm_geo:France",
             "lastfm_geo:Germany",
@@ -3745,7 +3745,7 @@
             "lastfm_global"
           ],
           "rankSignals": {
-            "itunes_search": 1842444457,
+            "deezer_search": 3818963601,
             "lastfm_geo:Brazil": 29,
             "lastfm_geo:France": 11,
             "lastfm_geo:Germany": 54,
@@ -3799,16 +3799,16 @@
           "artist": "Michael Jackson",
           "album": "Thriller",
           "durationMs": 258000,
-          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/32/4f/fd/324ffda2-9e51-8f6a-0c2d-c6fd2b41ac55/074643811224.jpg/600x600bb.jpg",
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/a0ad67d1beb761f2cb9f8b60e5bcf07a/1000x1000-000000-80-0-0.jpg",
           "audioUrl": null,
           "audioProvider": null,
           "providerTrackId": null,
           "sourceTags": [
             "deezer",
             "deezer_chart:132",
+            "deezer_search",
             "itunes",
             "itunes_rss",
-            "itunes_search",
             "lastfm_geo:Australia",
             "lastfm_geo:France",
             "lastfm_geo:Germany",
@@ -3819,8 +3819,8 @@
           ],
           "rankSignals": {
             "deezer_chart:132": 40,
+            "deezer_search": 4763165,
             "itunes_rss": 45,
-            "itunes_search": 269573341,
             "lastfm_geo:Australia": 78,
             "lastfm_geo:France": 56,
             "lastfm_geo:Germany": 41,
@@ -3836,12 +3836,12 @@
           "artist": "BTS",
           "album": "ARIRANG",
           "durationMs": 189000,
-          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e0/a2/b4/e0a2b443-7969-b57a-a591-cb6172c10aa7/198704943959_Cover.jpg/600x600bb.jpg",
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/a3b8e9462db0c02e082c706c624f9811/1000x1000-000000-80-0-0.jpg",
           "audioUrl": null,
           "audioProvider": null,
           "providerTrackId": null,
           "sourceTags": [
-            "itunes_search",
+            "deezer_search",
             "lastfm_geo:Brazil",
             "lastfm_geo:France",
             "lastfm_geo:Japan",
@@ -3850,7 +3850,7 @@
             "lastfm_global"
           ],
           "rankSignals": {
-            "itunes_search": 1868481905,
+            "deezer_search": 3907717191,
             "lastfm_geo:Brazil": 81,
             "lastfm_geo:France": 26,
             "lastfm_geo:Japan": 90,
@@ -3897,12 +3897,12 @@
           "artist": "Gracie Abrams",
           "album": "Daughter from Hell",
           "durationMs": 215000,
-          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4f/13/47/4f1347cf-9564-e8b6-523a-386202f4d265/26UMGIM54147.rgb.jpg/600x600bb.jpg",
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/6919d1848a80de99b2ba4e58d8e2f9d5/1000x1000-000000-80-0-0.jpg",
           "audioUrl": null,
           "audioProvider": null,
           "providerTrackId": null,
           "sourceTags": [
-            "itunes_search",
+            "deezer_search",
             "lastfm_geo:Australia",
             "lastfm_geo:Canada",
             "lastfm_geo:France",
@@ -3913,7 +3913,7 @@
             "lastfm_global"
           ],
           "rankSignals": {
-            "itunes_search": 6766750853,
+            "deezer_search": 4154987112,
             "lastfm_geo:Australia": 38,
             "lastfm_geo:Canada": 53,
             "lastfm_geo:France": 58,
@@ -3969,12 +3969,12 @@
           "artist": "Radiohead",
           "album": "In Rainbows",
           "durationMs": 278000,
-          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/dd/50/c7/dd50c790-99ac-d3d0-5ab8-e3891fb8fd52/634904032463.png/600x600bb.jpg",
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/a175af9b7d329bc678cb4d26fc13d6de/1000x1000-000000-80-0-0.jpg",
           "audioUrl": null,
           "audioProvider": null,
           "providerTrackId": null,
           "sourceTags": [
-            "itunes_search",
+            "deezer_search",
             "lastfm_geo:Australia",
             "lastfm_geo:Canada",
             "lastfm_geo:United Kingdom",
@@ -3982,7 +3982,7 @@
             "lastfm_global"
           ],
           "rankSignals": {
-            "itunes_search": 1109715293,
+            "deezer_search": 138546811,
             "lastfm_geo:Australia": 79,
             "lastfm_geo:Canada": 94,
             "lastfm_geo:United Kingdom": 73,
@@ -3996,12 +3996,12 @@
           "artist": "Chappell Roan",
           "album": "The Rise and Fall of a Midwest Princess",
           "durationMs": 232000,
-          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/42/a0/c5/42a0c5e6-6b98-f1f9-7d6b-6d6c61aba562/23UMGIM84225.rgb.jpg/600x600bb.jpg",
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/71486ce8b24f612c4887efa0f79a9f66/1000x1000-000000-80-0-0.jpg",
           "audioUrl": null,
           "audioProvider": null,
           "providerTrackId": null,
           "sourceTags": [
-            "itunes_search",
+            "deezer_search",
             "lastfm_geo:Australia",
             "lastfm_geo:Brazil",
             "lastfm_geo:United Kingdom",
@@ -4009,7 +4009,7 @@
             "lastfm_global"
           ],
           "rankSignals": {
-            "itunes_search": 1707413103,
+            "deezer_search": 2454854775,
             "lastfm_geo:Australia": 90,
             "lastfm_geo:Brazil": 119,
             "lastfm_geo:United Kingdom": 55,
@@ -4021,21 +4021,21 @@
         {
           "title": "BAILE INoLVIDABLE",
           "artist": "Bad Bunny",
-          "album": "BAILE INoLVIDABLE (English Cover) - Single",
+          "album": "DeBÍ TiRAR MáS FOToS",
           "durationMs": 360000,
-          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/4c/07/eb/4c07eb8b-5f17-7460-4840-850065aa7113/artwork.jpg/600x600bb.jpg",
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/d98eaccfbb945bdf68241d6de7fe6a49/1000x1000-000000-80-0-0.jpg",
           "audioUrl": null,
           "audioProvider": null,
           "providerTrackId": null,
           "sourceTags": [
-            "itunes_search",
+            "deezer_search",
             "lastfm_geo:France",
             "lastfm_geo:Mexico",
             "lastfm_geo:Spain",
             "lastfm_global"
           ],
           "rankSignals": {
-            "itunes_search": 1818374173,
+            "deezer_search": 3171003001,
             "lastfm_geo:France": 36,
             "lastfm_geo:Mexico": 20,
             "lastfm_geo:Spain": 29,
@@ -4325,21 +4325,21 @@
         {
           "title": "Roommates",
           "artist": "Malcolm Todd",
-          "album": "Roommates - Single",
+          "album": "Roommates",
           "durationMs": 214000,
-          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/33/b8/5a/33b85ad4-cfd1-bcb8-444b-15329d4965ef/196871375542.jpg/600x600bb.jpg",
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/e2b58403de31092b3c5c2430bfcdac0d/1000x1000-000000-80-0-0.jpg",
           "audioUrl": null,
           "audioProvider": null,
           "providerTrackId": null,
           "sourceTags": [
-            "itunes_search",
+            "deezer_search",
             "lastfm_geo:Australia",
             "lastfm_geo:Canada",
             "lastfm_geo:United States",
             "lastfm_global"
           ],
           "rankSignals": {
-            "itunes_search": 1703837703,
+            "deezer_search": 2422253495,
             "lastfm_geo:Australia": 31,
             "lastfm_geo:Canada": 21,
             "lastfm_geo:United States": 24,
@@ -4389,14 +4389,14 @@
         {
           "title": "Dracula - JENNIE remix",
           "artist": "Tame Impala",
-          "album": "Dracula - Single",
+          "album": "Dracula (Remix)",
           "durationMs": 209000,
-          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/36/be/b4/36beb41f-c644-55cb-9fbb-bf0622a66653/196873644783.jpg/600x600bb.jpg",
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/b868399da682f34dcd7d98af1c0de80b/1000x1000-000000-80-0-0.jpg",
           "audioUrl": null,
           "audioProvider": null,
           "providerTrackId": null,
           "sourceTags": [
-            "itunes_search",
+            "deezer_search",
             "lastfm_geo:Brazil",
             "lastfm_geo:France",
             "lastfm_geo:Germany",
@@ -4405,7 +4405,7 @@
             "lastfm_global"
           ],
           "rankSignals": {
-            "itunes_search": 1842444457,
+            "deezer_search": 3818963601,
             "lastfm_geo:Brazil": 29,
             "lastfm_geo:France": 11,
             "lastfm_geo:Germany": 54,
@@ -4420,16 +4420,16 @@
           "artist": "Michael Jackson",
           "album": "Thriller",
           "durationMs": 258000,
-          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/32/4f/fd/324ffda2-9e51-8f6a-0c2d-c6fd2b41ac55/074643811224.jpg/600x600bb.jpg",
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/a0ad67d1beb761f2cb9f8b60e5bcf07a/1000x1000-000000-80-0-0.jpg",
           "audioUrl": null,
           "audioProvider": null,
           "providerTrackId": null,
           "sourceTags": [
             "deezer",
             "deezer_chart:132",
+            "deezer_search",
             "itunes",
             "itunes_rss",
-            "itunes_search",
             "lastfm_geo:Australia",
             "lastfm_geo:France",
             "lastfm_geo:Germany",
@@ -4440,8 +4440,8 @@
           ],
           "rankSignals": {
             "deezer_chart:132": 40,
+            "deezer_search": 4763165,
             "itunes_rss": 45,
-            "itunes_search": 269573341,
             "lastfm_geo:Australia": 78,
             "lastfm_geo:France": 56,
             "lastfm_geo:Germany": 41,
@@ -4457,12 +4457,12 @@
           "artist": "BTS",
           "album": "ARIRANG",
           "durationMs": 189000,
-          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e0/a2/b4/e0a2b443-7969-b57a-a591-cb6172c10aa7/198704943959_Cover.jpg/600x600bb.jpg",
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/a3b8e9462db0c02e082c706c624f9811/1000x1000-000000-80-0-0.jpg",
           "audioUrl": null,
           "audioProvider": null,
           "providerTrackId": null,
           "sourceTags": [
-            "itunes_search",
+            "deezer_search",
             "lastfm_geo:Brazil",
             "lastfm_geo:France",
             "lastfm_geo:Japan",
@@ -4471,7 +4471,7 @@
             "lastfm_global"
           ],
           "rankSignals": {
-            "itunes_search": 1868481905,
+            "deezer_search": 3907717191,
             "lastfm_geo:Brazil": 81,
             "lastfm_geo:France": 26,
             "lastfm_geo:Japan": 90,
@@ -4518,12 +4518,12 @@
           "artist": "Gracie Abrams",
           "album": "Daughter from Hell",
           "durationMs": 215000,
-          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4f/13/47/4f1347cf-9564-e8b6-523a-386202f4d265/26UMGIM54147.rgb.jpg/600x600bb.jpg",
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/6919d1848a80de99b2ba4e58d8e2f9d5/1000x1000-000000-80-0-0.jpg",
           "audioUrl": null,
           "audioProvider": null,
           "providerTrackId": null,
           "sourceTags": [
-            "itunes_search",
+            "deezer_search",
             "lastfm_geo:Australia",
             "lastfm_geo:Canada",
             "lastfm_geo:France",
@@ -4534,7 +4534,7 @@
             "lastfm_global"
           ],
           "rankSignals": {
-            "itunes_search": 6766750853,
+            "deezer_search": 4154987112,
             "lastfm_geo:Australia": 38,
             "lastfm_geo:Canada": 53,
             "lastfm_geo:France": 58,
@@ -4590,12 +4590,12 @@
           "artist": "Radiohead",
           "album": "In Rainbows",
           "durationMs": 278000,
-          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/dd/50/c7/dd50c790-99ac-d3d0-5ab8-e3891fb8fd52/634904032463.png/600x600bb.jpg",
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/a175af9b7d329bc678cb4d26fc13d6de/1000x1000-000000-80-0-0.jpg",
           "audioUrl": null,
           "audioProvider": null,
           "providerTrackId": null,
           "sourceTags": [
-            "itunes_search",
+            "deezer_search",
             "lastfm_geo:Australia",
             "lastfm_geo:Canada",
             "lastfm_geo:United Kingdom",
@@ -4603,7 +4603,7 @@
             "lastfm_global"
           ],
           "rankSignals": {
-            "itunes_search": 1109715293,
+            "deezer_search": 138546811,
             "lastfm_geo:Australia": 79,
             "lastfm_geo:Canada": 94,
             "lastfm_geo:United Kingdom": 73,
@@ -4617,12 +4617,12 @@
           "artist": "Chappell Roan",
           "album": "The Rise and Fall of a Midwest Princess",
           "durationMs": 232000,
-          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/42/a0/c5/42a0c5e6-6b98-f1f9-7d6b-6d6c61aba562/23UMGIM84225.rgb.jpg/600x600bb.jpg",
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/71486ce8b24f612c4887efa0f79a9f66/1000x1000-000000-80-0-0.jpg",
           "audioUrl": null,
           "audioProvider": null,
           "providerTrackId": null,
           "sourceTags": [
-            "itunes_search",
+            "deezer_search",
             "lastfm_geo:Australia",
             "lastfm_geo:Brazil",
             "lastfm_geo:United Kingdom",
@@ -4630,7 +4630,7 @@
             "lastfm_global"
           ],
           "rankSignals": {
-            "itunes_search": 1707413103,
+            "deezer_search": 2454854775,
             "lastfm_geo:Australia": 90,
             "lastfm_geo:Brazil": 119,
             "lastfm_geo:United Kingdom": 55,
@@ -4642,21 +4642,21 @@
         {
           "title": "BAILE INoLVIDABLE",
           "artist": "Bad Bunny",
-          "album": "BAILE INoLVIDABLE (English Cover) - Single",
+          "album": "DeBÍ TiRAR MáS FOToS",
           "durationMs": 360000,
-          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/4c/07/eb/4c07eb8b-5f17-7460-4840-850065aa7113/artwork.jpg/600x600bb.jpg",
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/d98eaccfbb945bdf68241d6de7fe6a49/1000x1000-000000-80-0-0.jpg",
           "audioUrl": null,
           "audioProvider": null,
           "providerTrackId": null,
           "sourceTags": [
-            "itunes_search",
+            "deezer_search",
             "lastfm_geo:France",
             "lastfm_geo:Mexico",
             "lastfm_geo:Spain",
             "lastfm_global"
           ],
           "rankSignals": {
-            "itunes_search": 1818374173,
+            "deezer_search": 3171003001,
             "lastfm_geo:France": 36,
             "lastfm_geo:Mexico": 20,
             "lastfm_geo:Spain": 29,
@@ -4816,7 +4816,7 @@
             "audius_trending_monthly"
           ],
           "rankSignals": {
-            "audius_trending_monthly": 98
+            "audius_trending_monthly": 100
           },
           "score": 0.082983
         },
@@ -4825,7 +4825,7 @@
           "artist": "@iLLPeTiLL",
           "album": "",
           "durationMs": 249000,
-          "coverUrl": "https://audius-05.staked.cloud/content/01KXTDJPJK06E98FD3E7M45840/1000x1000.jpg",
+          "coverUrl": "https://v.monophonic.digital/content/01KXTDJPJK06E98FD3E7M45840/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/amO84q1/stream",
           "audioProvider": "audius",
           "providerTrackId": "amO84q1",
@@ -4834,7 +4834,7 @@
             "audius_trending_monthly"
           ],
           "rankSignals": {
-            "audius_trending_monthly": 602
+            "audius_trending_monthly": 603
           },
           "score": 0.07776
         },
@@ -4843,7 +4843,7 @@
           "artist": "Zonii",
           "album": "",
           "durationMs": 185000,
-          "coverUrl": "https://v.monophonic.digital/content/baeaaaiqsecr7yfrml4cuzakodoaltn23kbtljaasf4nmvgu5fpunsus4irnrw/1000x1000.jpg",
+          "coverUrl": "https://validator.stuffisup.com/content/baeaaaiqsecr7yfrml4cuzakodoaltn23kbtljaasf4nmvgu5fpunsus4irnrw/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/AbdXKoR/stream",
           "audioProvider": "audius",
           "providerTrackId": "AbdXKoR",
@@ -4861,7 +4861,7 @@
           "artist": "Van Snyder",
           "album": "",
           "durationMs": 179000,
-          "coverUrl": "https://v.monophonic.digital/content/baeaaaiqsebdh34psafqvwigwtsa27ozrbop6dgen4rcceg3fsvitrz5mfwqa4/1000x1000.jpg",
+          "coverUrl": "https://audius.bragi.cc/content/baeaaaiqsebdh34psafqvwigwtsa27ozrbop6dgen4rcceg3fsvitrz5mfwqa4/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/V4BGbl6/stream",
           "audioProvider": "audius",
           "providerTrackId": "V4BGbl6",
@@ -4879,7 +4879,7 @@
           "artist": "Jazcardan",
           "album": "",
           "durationMs": 181000,
-          "coverUrl": "https://audius-content-5.figment.io/content/baeaaaiqsed7vabjswbdvf7aj37vztl73icmft2yljyadu7ex2wkehvu2gtlwq/1000x1000.jpg",
+          "coverUrl": "https://audius-content-3.figment.io/content/baeaaaiqsed7vabjswbdvf7aj37vztl73icmft2yljyadu7ex2wkehvu2gtlwq/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/X6zzGva/stream",
           "audioProvider": "audius",
           "providerTrackId": "X6zzGva",
@@ -4897,7 +4897,7 @@
           "artist": "INDIGENOUS",
           "album": "",
           "durationMs": 121000,
-          "coverUrl": "https://cn4.mainnet.audiusindex.org/content/baeaaaiqseaiidybampmg4fl2uxd3hzwl2s3xnmz5gze2usnzq7ibqg2w6cydy/1000x1000.jpg",
+          "coverUrl": "https://val011.open-audio-validator.com/content/baeaaaiqseaiidybampmg4fl2uxd3hzwl2s3xnmz5gze2usnzq7ibqg2w6cydy/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/B3wa9x/stream",
           "audioProvider": "audius",
           "providerTrackId": "B3wa9x",
@@ -4960,7 +4960,7 @@
             "audius_trending_monthly"
           ],
           "rankSignals": {
-            "audius_trending_monthly": 380
+            "audius_trending_monthly": 381
           },
           "score": 0.065386
         },
@@ -4969,7 +4969,7 @@
           "artist": "Charlie Couvillion",
           "album": "",
           "durationMs": 149000,
-          "coverUrl": "https://val013.open-audio-validator.com/content/01KWMS5WT7APK4J7ARDTSYNN6S/1000x1000.jpg",
+          "coverUrl": "https://audius-creator-13.theblueprint.xyz/content/01KWMS5WT7APK4J7ARDTSYNN6S/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/A70bBkq/stream",
           "audioProvider": "audius",
           "providerTrackId": "A70bBkq",
@@ -4987,7 +4987,7 @@
           "artist": "GENDE",
           "album": "",
           "durationMs": 205000,
-          "coverUrl": "https://v.monophonic.digital/content/baeaaaiqsea7y4zetk7uiinnlwiex7axs6bgghkywbksmw3rlw3zgpcnquabty/1000x1000.jpg",
+          "coverUrl": "https://audius-discovery-3.altego.net/content/baeaaaiqsea7y4zetk7uiinnlwiex7axs6bgghkywbksmw3rlw3zgpcnquabty/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/P6XkAGX/stream",
           "audioProvider": "audius",
           "providerTrackId": "P6XkAGX",
@@ -5005,7 +5005,7 @@
           "artist": "R.sinik",
           "album": "",
           "durationMs": 174000,
-          "coverUrl": "https://val012.open-audio-validator.com/content/baeaaaiqsecro2apfbtnzr64moqddijscc3syy2wkhmh5kmvyov4w3hje2xc6y/1000x1000.jpg",
+          "coverUrl": "https://val013.open-audio-validator.com/content/baeaaaiqsecro2apfbtnzr64moqddijscc3syy2wkhmh5kmvyov4w3hje2xc6y/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/64qjyX3/stream",
           "audioProvider": "audius",
           "providerTrackId": "64qjyX3",
@@ -5023,7 +5023,7 @@
           "artist": "IRXN",
           "album": "",
           "durationMs": 420000,
-          "coverUrl": "https://v.monophonic.digital/content/baeaaaiqsearmfvc6n2ap5mcbvgvbvql5iwe3wyjxsxa2qh65aptligka3566q/1000x1000.jpg",
+          "coverUrl": "https://audius.bragi.cc/content/baeaaaiqsearmfvc6n2ap5mcbvgvbvql5iwe3wyjxsxa2qh65aptligka3566q/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/WxRYzXj/stream",
           "audioProvider": "audius",
           "providerTrackId": "WxRYzXj",
@@ -5041,7 +5041,7 @@
           "artist": "Aedhus",
           "album": "",
           "durationMs": 120000,
-          "coverUrl": "https://val012.open-audio-validator.com/content/baeaaaiqsebfxae4yz5abbflgstd464ks42yvbunw2oyi7ndfxskvympmpu6rw/1000x1000.jpg",
+          "coverUrl": "https://v.monophonic.digital/content/baeaaaiqsebfxae4yz5abbflgstd464ks42yvbunw2oyi7ndfxskvympmpu6rw/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/8Y9NaAp/stream",
           "audioProvider": "audius",
           "providerTrackId": "8Y9NaAp",
@@ -5059,7 +5059,7 @@
           "artist": "Andrew Lux",
           "album": "",
           "durationMs": 179000,
-          "coverUrl": "https://val011.open-audio-validator.com/content/baeaaaiqseab6pozqsjqv2xgj3e3oco43zihdi36tpt3lqldf4xxsxfyqkxbqa/1000x1000.jpg",
+          "coverUrl": "https://v.monophonic.digital/content/baeaaaiqseab6pozqsjqv2xgj3e3oco43zihdi36tpt3lqldf4xxsxfyqkxbqa/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/JBKl7R6/stream",
           "audioProvider": "audius",
           "providerTrackId": "JBKl7R6",
@@ -5077,7 +5077,7 @@
           "artist": "Endevie",
           "album": "",
           "durationMs": 288000,
-          "coverUrl": "https://audius-content-12.figment.io/content/baeaaaiqsedagxfrh5zrxq5nfxmhbwcc3jwy5wpeaydctdcd4dgdrn5vlrtucm/1000x1000.jpg",
+          "coverUrl": "https://val012.open-audio-validator.com/content/baeaaaiqsedagxfrh5zrxq5nfxmhbwcc3jwy5wpeaydctdcd4dgdrn5vlrtucm/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/1VQo6YQ/stream",
           "audioProvider": "audius",
           "providerTrackId": "1VQo6YQ",
@@ -5095,7 +5095,7 @@
           "artist": "riainoo",
           "album": "",
           "durationMs": 149000,
-          "coverUrl": "https://v.monophonic.digital/content/baeaaaiqsebfxae4yz5abbflgstd464ks42yvbunw2oyi7ndfxskvympmpu6rw/1000x1000.jpg",
+          "coverUrl": "https://val012.open-audio-validator.com/content/baeaaaiqsebfxae4yz5abbflgstd464ks42yvbunw2oyi7ndfxskvympmpu6rw/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/ORgRAmv/stream",
           "audioProvider": "audius",
           "providerTrackId": "ORgRAmv",
@@ -5113,7 +5113,7 @@
           "artist": "ECHOES LAB, parasox",
           "album": "",
           "durationMs": 219000,
-          "coverUrl": "https://val019.open-audio-validator.com/content/baeaaaiqsea4adczdgd7w6pla7nzaumrtoy4giz2ksnz6um332aokd274qs63y/1000x1000.jpg",
+          "coverUrl": "https://v.monophonic.digital/content/baeaaaiqsea4adczdgd7w6pla7nzaumrtoy4giz2ksnz6um332aokd274qs63y/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/4644m9/stream",
           "audioProvider": "audius",
           "providerTrackId": "4644m9",
@@ -5131,7 +5131,7 @@
           "artist": "Olazaran",
           "album": "",
           "durationMs": 149000,
-          "coverUrl": "https://v.monophonic.digital/content/baeaaaiqseaqe5nkx62ykgwmp3ftnxmzaz62e4kpzbcejepa32jyrtqh2cm6s4/1000x1000.jpg",
+          "coverUrl": "https://val008.open-audio-validator.com/content/baeaaaiqseaqe5nkx62ykgwmp3ftnxmzaz62e4kpzbcejepa32jyrtqh2cm6s4/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/ozvNmKa/stream",
           "audioProvider": "audius",
           "providerTrackId": "ozvNmKa",
@@ -5214,16 +5214,16 @@
           "artist": "Michael Jackson",
           "album": "Thriller",
           "durationMs": 258000,
-          "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/32/4f/fd/324ffda2-9e51-8f6a-0c2d-c6fd2b41ac55/074643811224.jpg/600x600bb.jpg",
+          "coverUrl": "https://cdn-images.dzcdn.net/images/cover/a0ad67d1beb761f2cb9f8b60e5bcf07a/1000x1000-000000-80-0-0.jpg",
           "audioUrl": null,
           "audioProvider": null,
           "providerTrackId": null,
           "sourceTags": [
             "deezer",
             "deezer_chart:132",
+            "deezer_search",
             "itunes",
             "itunes_rss",
-            "itunes_search",
             "lastfm_geo:Australia",
             "lastfm_geo:France",
             "lastfm_geo:Germany",
@@ -5234,8 +5234,8 @@
           ],
           "rankSignals": {
             "deezer_chart:132": 40,
+            "deezer_search": 4763165,
             "itunes_rss": 45,
-            "itunes_search": 269573341,
             "lastfm_geo:Australia": 78,
             "lastfm_geo:France": 56,
             "lastfm_geo:Germany": 41,
@@ -6095,7 +6095,7 @@
           "artist": "Digital Deity",
           "album": "",
           "durationMs": 303000,
-          "coverUrl": "https://v.monophonic.digital/content/baeaaaiqseasjrxgeyevanf5hdnjnololvqjnnssyfchvnm73uaol3guwn3cbe/1000x1000.jpg",
+          "coverUrl": "https://audius-content-2.figment.io/content/baeaaaiqseasjrxgeyevanf5hdnjnololvqjnnssyfchvnm73uaol3guwn3cbe/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/bmvYW1J/stream",
           "audioProvider": "audius",
           "providerTrackId": "bmvYW1J",
@@ -6105,8 +6105,8 @@
             "audius_trending_monthly"
           ],
           "rankSignals": {
-            "audius_genre:Electronic": 335,
-            "audius_trending_monthly": 335
+            "audius_genre:Electronic": 336,
+            "audius_trending_monthly": 336
           },
           "score": 0.038191
         },
@@ -6174,7 +6174,7 @@
           "artist": "ALMOSTFAMOUS",
           "album": "",
           "durationMs": 291000,
-          "coverUrl": "https://v.monophonic.digital/content/baeaaaiqsecywvazc7erjupqqs4djtdkxauuiu3qw4fk4nl7eodfjnfaiioy6w/1000x1000.jpg",
+          "coverUrl": "https://val008.open-audio-validator.com/content/baeaaaiqsecywvazc7erjupqqs4djtdkxauuiu3qw4fk4nl7eodfjnfaiioy6w/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/RY0K57g/stream",
           "audioProvider": "audius",
           "providerTrackId": "RY0K57g",
@@ -6184,8 +6184,8 @@
             "audius_trending_monthly"
           ],
           "rankSignals": {
-            "audius_genre:Electronic": 270,
-            "audius_trending_monthly": 270
+            "audius_genre:Electronic": 271,
+            "audius_trending_monthly": 271
           },
           "score": 0.023901
         },
@@ -6213,7 +6213,7 @@
           "artist": "Niza",
           "album": "",
           "durationMs": 140000,
-          "coverUrl": "https://cn0.mainnet.audiusindex.org/content/baeaaaiqsebry7tvnweawgpwbz4mzms4qfhoy5pwwcn5fmzj46dtgxdpmanp5i/1000x1000.jpg",
+          "coverUrl": "https://audius.rickyrombo.com/content/baeaaaiqsebry7tvnweawgpwbz4mzms4qfhoy5pwwcn5fmzj46dtgxdpmanp5i/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/EJg525M/stream",
           "audioProvider": "audius",
           "providerTrackId": "EJg525M",
@@ -6223,8 +6223,8 @@
             "audius_trending_monthly"
           ],
           "rankSignals": {
-            "audius_genre:Electronic": 234,
-            "audius_trending_monthly": 234
+            "audius_genre:Electronic": 235,
+            "audius_trending_monthly": 235
           },
           "score": 0.021387
         },
@@ -6233,7 +6233,7 @@
           "artist": "MATTRICK",
           "album": "",
           "durationMs": 194000,
-          "coverUrl": "https://cn4.mainnet.audiusindex.org/content/baeaaaiqseawpwxo43nmyvbrm44tbetupg6fgid2pg3ipvjtlzruhlsjyhoko6/1000x1000.jpg",
+          "coverUrl": "https://audius-content-12.figment.io/content/baeaaaiqseawpwxo43nmyvbrm44tbetupg6fgid2pg3ipvjtlzruhlsjyhoko6/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/QZvovYw/stream",
           "audioProvider": "audius",
           "providerTrackId": "QZvovYw",
@@ -6799,7 +6799,7 @@
           "artist": "Music <3",
           "album": "",
           "durationMs": 268000,
-          "coverUrl": "https://v.monophonic.digital/content/baeaaaiqsebe2vw6t4gjrkpc3z6g5v4znuvxkyppbxfttszimycejkfgwd4a4o/1000x1000.jpg",
+          "coverUrl": "https://audius-creator-8.theblueprint.xyz/content/baeaaaiqsebe2vw6t4gjrkpc3z6g5v4znuvxkyppbxfttszimycejkfgwd4a4o/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/pPggk8X/stream",
           "audioProvider": "audius",
           "providerTrackId": "pPggk8X",
@@ -6954,7 +6954,7 @@
           "artist": "TH3 DARP",
           "album": "",
           "durationMs": 154000,
-          "coverUrl": "https://val008.open-audio-validator.com/content/baeaaaiqsechehluh2s2ny5hoic5iyc3x3koqi6jqthg2sf4yumj4da6xs4etc/1000x1000.jpg",
+          "coverUrl": "https://audius-content-2.figment.io/content/baeaaaiqsechehluh2s2ny5hoic5iyc3x3koqi6jqthg2sf4yumj4da6xs4etc/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/pkAG24X/stream",
           "audioProvider": "audius",
           "providerTrackId": "pkAG24X",
@@ -6964,8 +6964,8 @@
             "audius_trending_monthly"
           ],
           "rankSignals": {
-            "audius_genre:Hip-Hop/Rap": 237,
-            "audius_trending_monthly": 237
+            "audius_genre:Hip-Hop/Rap": 238,
+            "audius_trending_monthly": 238
           },
           "score": 0.012858
         },
@@ -7027,7 +7027,7 @@
           "artist": "Phrequency",
           "album": "",
           "durationMs": 153000,
-          "coverUrl": "https://v.monophonic.digital/content/baeaaaiqsecnyuzshgl5ofu4tbt6u4lg5jhynyhhrfhdzglrf6oed7zfuv4us2/1000x1000.jpg",
+          "coverUrl": "https://val006.open-audio-validator.com/content/baeaaaiqsecnyuzshgl5ofu4tbt6u4lg5jhynyhhrfhdzglrf6oed7zfuv4us2/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/jmXVl7j/stream",
           "audioProvider": "audius",
           "providerTrackId": "jmXVl7j",
@@ -7102,7 +7102,7 @@
           "artist": "RafaelKaze",
           "album": "",
           "durationMs": 184000,
-          "coverUrl": "https://audius-creator-5.theblueprint.xyz/content/baeaaaiqsebuwkcmv4ydersikmhogi2kblxphln3qyi4pxzbrghpsqtfvczpvy/1000x1000.jpg",
+          "coverUrl": "https://v.monophonic.digital/content/baeaaaiqsebuwkcmv4ydersikmhogi2kblxphln3qyi4pxzbrghpsqtfvczpvy/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/rbR3QdV/stream",
           "audioProvider": "audius",
           "providerTrackId": "rbR3QdV",
@@ -7120,7 +7120,7 @@
           "artist": "Maeki Maii",
           "album": "",
           "durationMs": 169000,
-          "coverUrl": "https://cn1.shakespearetech.com/content/baeaaaiqsed4u2gnhlasvyhn3t7rfjudnvxredqtttpbcwejs5a4bckjpt5ofq/1000x1000.jpg",
+          "coverUrl": "https://audius-creator-2.theblueprint.xyz/content/baeaaaiqsed4u2gnhlasvyhn3t7rfjudnvxredqtttpbcwejs5a4bckjpt5ofq/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/b9do7AK/stream",
           "audioProvider": "audius",
           "providerTrackId": "b9do7AK",
@@ -7190,7 +7190,7 @@
           "artist": "Alumni XI",
           "album": "",
           "durationMs": 120000,
-          "coverUrl": "https://audius-figment-1-validator-18.figment.io/content/baeaaaiqsed33yjbsrd32s7g2n4jppeybztxbbnw5vzyzs7k5m3hrdmm23vv7e/1000x1000.jpg",
+          "coverUrl": "https://v.monophonic.digital/content/baeaaaiqsed33yjbsrd32s7g2n4jppeybztxbbnw5vzyzs7k5m3hrdmm23vv7e/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/3oYWgOZ/stream",
           "audioProvider": "audius",
           "providerTrackId": "3oYWgOZ",
@@ -8184,7 +8184,7 @@
           "artist": "wilhelm",
           "album": "",
           "durationMs": 120000,
-          "coverUrl": "https://audius-creator-2.theblueprint.xyz/content/baeaaaiqsecwe4oodlk47ud4tq5tua2wi5jvo76anb3ib5zyab63jlmv6q3yp4/1000x1000.jpg",
+          "coverUrl": "https://audius-creator-11.theblueprint.xyz/content/baeaaaiqsecwe4oodlk47ud4tq5tua2wi5jvo76anb3ib5zyab63jlmv6q3yp4/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/lxNdal/stream",
           "audioProvider": "audius",
           "providerTrackId": "lxNdal",
@@ -8271,7 +8271,7 @@
           "artist": "james",
           "album": "",
           "durationMs": 212000,
-          "coverUrl": "https://audius-content-12.figment.io/content/baeaaaiqsede5u5jyqt4saloxs7sny4ar2v7ergu5hbv6vbmmk3oodyhmod4jc/1000x1000.jpg",
+          "coverUrl": "https://audius-creator-8.theblueprint.xyz/content/baeaaaiqsede5u5jyqt4saloxs7sny4ar2v7ergu5hbv6vbmmk3oodyhmod4jc/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/Exl5WzN/stream",
           "audioProvider": "audius",
           "providerTrackId": "Exl5WzN",
@@ -8408,7 +8408,7 @@
           "artist": "Lott",
           "album": "",
           "durationMs": 120000,
-          "coverUrl": "https://audius-content-12.figment.io/content/baeaaaiqsecvprig4sk4t5gttwoblp7sccphatb2b6s7badjtvs5vfyhxaggam/1000x1000.jpg",
+          "coverUrl": "https://audius-content-3.figment.io/content/baeaaaiqsecvprig4sk4t5gttwoblp7sccphatb2b6s7badjtvs5vfyhxaggam/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/k426YMK/stream",
           "audioProvider": "audius",
           "providerTrackId": "k426YMK",
@@ -8443,7 +8443,7 @@
           "artist": "Baranico",
           "album": "",
           "durationMs": 196000,
-          "coverUrl": "https://audius-standardvc-1-validator-3.figment.io/content/baeaaaiqseandyrrrmtdciqtr5wdabinxe4pvd33raivcwxsvn6anwlhe3evjg/1000x1000.jpg",
+          "coverUrl": "https://audius-creator-12.theblueprint.xyz/content/baeaaaiqseandyrrrmtdciqtr5wdabinxe4pvd33raivcwxsvn6anwlhe3evjg/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/J86mq86/stream",
           "audioProvider": "audius",
           "providerTrackId": "J86mq86",
@@ -8513,7 +8513,7 @@
           "artist": "Sivupartaat",
           "album": "",
           "durationMs": 420000,
-          "coverUrl": "https://audius-content-7.figment.io/content/baeaaaiqsecu7ob6h2gfwudsvwrgg6fpemttxpm2s5uyahpncyrk43qg2o3uyg/1000x1000.jpg",
+          "coverUrl": "https://v.monophonic.digital/content/baeaaaiqsecu7ob6h2gfwudsvwrgg6fpemttxpm2s5uyahpncyrk43qg2o3uyg/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/oGyOKx5/stream",
           "audioProvider": "audius",
           "providerTrackId": "oGyOKx5",
@@ -8599,7 +8599,7 @@
           "artist": "Petunia and I",
           "album": "",
           "durationMs": 247000,
-          "coverUrl": "https://audius-creator-17.theblueprint.xyz/content/baeaaaiqsedtv3qo6hswnnmvjh5i4dmkm3xe7mypvbub5zgm6z6qf76o3pav5o/1000x1000.jpg",
+          "coverUrl": "https://v.monophonic.digital/content/baeaaaiqsedtv3qo6hswnnmvjh5i4dmkm3xe7mypvbub5zgm6z6qf76o3pav5o/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/r4A4zEN/stream",
           "audioProvider": "audius",
           "providerTrackId": "r4A4zEN",
@@ -8634,7 +8634,7 @@
           "artist": "Lott",
           "album": "",
           "durationMs": 120000,
-          "coverUrl": "https://v.monophonic.digital/content/baeaaaiqsecczfsdvf5d667x2hkmoargcpntjmqgjqxy5acejggxqb5ktqacmg/1000x1000.jpg",
+          "coverUrl": "https://audius-standardvc-1-validator-3.figment.io/content/baeaaaiqsecczfsdvf5d667x2hkmoargcpntjmqgjqxy5acejggxqb5ktqacmg/1000x1000.jpg",
           "audioUrl": "https://api.audius.co/v1/tracks/QVZ7jXR/stream",
           "audioProvider": "audius",
           "providerTrackId": "QVZ7jXR",
