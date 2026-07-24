@@ -770,8 +770,16 @@ def build_sections(
     sections: list[dict[str, Any]] = []
     
     # NEW: Trending Hot section for breakout independent tracks
-    hot_upcoming = [c for c in ranked_candidates[:40] if has_any_source(c, ("audius",))]
+    # Filter ALL ranked candidates for Audius sources (not just first 40)
+    hot_upcoming = [c for c in ranked_candidates if has_any_source(c, ("audius",))]
+    
+    # Log how many Audius tracks we found
+    print(f"[home] Found {len(hot_upcoming)} Audius tracks for Hot Rising section")
+    
     if len(hot_upcoming) >= 4:
+        # Limit to top-scoring Audius tracks
+        hot_upcoming = hot_upcoming[:min(50, len(hot_upcoming))]  # Take top 50 Audius tracks
+        
         # Use dynamic artist limits
         dynamic_artist_limit = min(
             ARTIST_PER_SECTION_MAX,
