@@ -54,6 +54,22 @@
   "itunes": {
     "rss_limit": 200
   },
+  "spotify": {
+    "trending_limit": 200,
+    "region": "global"
+  },
+  "youtube": {
+    "trending_limit": 150,
+    "category": "music"
+  },
+  "soundcloud": {
+    "rising_limit": 100,
+    "genre": "all"
+  },
+  "itunes_multi_country": {
+    "country_limit": 100,
+    "countries": ["gb", "jp", "kr", "de", "br"]
+  },
   "schedule": {
     "default_track_duration_ms": 210000,
     "repeat_track_gap_slots": 42,
@@ -64,14 +80,18 @@
     "min_playable_pool_size": 96
   },
   "source_weights": {
-    "lastfm_global": 0.20,
+    "lastfm_global": 0.18,
     "lastfm_tag": 0.10,
-    "audius_trending": 0.22,
+    "audius_trending": 0.20,
     "audius_trending_monthly": 0.10,
     "audius_genre": 0.08,
     "deezer_chart": 0.10,
     "itunes_rss": 0.08,
-    "bootstrap_seed": 0.08
+    "bootstrap_seed": 0.08,
+    "spotify_trending": 0.12,
+    "youtube_trending": 0.08,
+    "soundcloud_rising": 0.06,
+    "itunes_multi_country": 0.10
   },
   "lyrics": {
     "preferred_order": [

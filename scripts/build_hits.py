@@ -400,6 +400,153 @@ def load_candidate_pool(
                 }
             )
 
+    # === NEW: Spotify Trending (optional, requires API key) ===
+    spotify_cfg = station.get("spotify", {})
+    spotify_weight = float(station["source_weights"].get("spotify_trending", 0.0))
+    spotify_api_key = os.environ.get("SPOTIFY_API_KEY", "").strip()
+    if spotify_weight > 0 and spotify_api_key:
+        try:
+            spotify_tracks = fetch_spotify_trending(
+                limit=int(spotify_cfg.get("trending_limit", 200)),
+                weight=spotify_weight,
+                api_key=spotify_api_key,
+            )
+            merge_candidates(merged, spotify_tracks)
+            source_snapshot.append(
+                {
+                    "source": "spotify_trending",
+                    "status": "ok",
+                    "candidate_count": len(spotify_tracks),
+                    "playable_count": count_candidate_audio(spotify_tracks),
+                }
+            )
+        except (HTTPError, URLError, TimeoutError, ValueError, RemoteDisconnected) as error:
+            source_snapshot.append(
+                {
+                    "source": "spotify_trending",
+                    "status": f"error:{type(error).__name__}",
+                    "candidate_count": 0,
+                    "playable_count": 0,
+                }
+            )
+    else:
+        source_snapshot.append(
+            {
+                "source": "spotify_trending",
+                "status": "skipped:missing_api_key" if not spotify_api_key else "skipped:zero_weight",
+                "candidate_count": 0,
+                "playable_count": 0,
+            }
+        )
+
+    # === NEW: YouTube Trending Music (optional, uses public RSS) ===
+    youtube_cfg = station.get("youtube", {})
+    youtube_weight = float(station["source_weights"].get("youtube_trending", 0.0))
+    if youtube_weight > 0:
+        try:
+            youtube_tracks = fetch_youtube_trending_music(
+                limit=int(youtube_cfg.get("trending_limit", 150)),
+                weight=youtube_weight,
+            )
+            merge_candidates(merged, youtube_tracks)
+            source_snapshot.append(
+                {
+                    "source": "youtube_trending_music",
+                    "status": "ok",
+                    "candidate_count": len(youtube_tracks),
+                    "playable_count": count_candidate_audio(youtube_tracks),
+                }
+            )
+        except (HTTPError, URLError, TimeoutError, ValueError, RemoteDisconnected) as error:
+            source_snapshot.append(
+                {
+                    "source": "youtube_trending_music",
+                    "status": f"error:{type(error).__name__}",
+                    "candidate_count": 0,
+                    "playable_count": 0,
+                }
+            )
+    else:
+        source_snapshot.append(
+            {
+                "source": "youtube_trending_music",
+                "status": "skipped:zero_weight",
+                "candidate_count": 0,
+                "playable_count": 0,
+            }
+        )
+
+    # === NEW: SoundCloud Rising (optional) ===
+    soundcloud_cfg = station.get("soundcloud", {})
+    soundcloud_weight = float(station["source_weights"].get("soundcloud_rising", 0.0))
+    if soundcloud_weight > 0:
+        try:
+            soundcloud_tracks = fetch_soundcloud_rising(
+                limit=int(soundcloud_cfg.get("rising_limit", 100)),
+                weight=soundcloud_weight,
+            )
+            merge_candidates(merged, soundcloud_tracks)
+            source_snapshot.append(
+                {
+                    "source": "soundcloud_rising",
+                    "status": "ok",
+                    "candidate_count": len(soundcloud_tracks),
+                    "playable_count": count_candidate_audio(soundcloud_tracks),
+                }
+            )
+        except (HTTPError, URLError, TimeoutError, ValueError, RemoteDisconnected) as error:
+            source_snapshot.append(
+                {
+                    "source": "soundcloud_rising",
+                    "status": f"error:{type(error).__name__}",
+                    "candidate_count": 0,
+                    "playable_count": 0,
+                }
+            )
+    else:
+        source_snapshot.append(
+            {
+                "source": "soundcloud_rising",
+                "status": "skipped:zero_weight",
+                "candidate_count": 0,
+                "playable_count": 0,
+            }
+        )
+
+    # === NEW: iTunes RSS multi-country for broader diversity ===
+    itunes_multi_country_cfg = station.get("itunes_multi_country", {})
+    itunes_multi_weight = float(station["source_weights"].get("itunes_multi_country", 0.0))
+    if itunes_multi_weight > 0:
+        countries = itunes_multi_country_cfg.get("countries", [])
+        per_country_weight = itunes_multi_weight / max(len(countries), 1)
+        for country in countries:
+            try:
+                country_tracks = fetch_itunes_rss_country(
+                    limit=int(itunes_multi_country_cfg.get("country_limit", 100)),
+                    weight=per_country_weight,
+                    country=country,
+                )
+                merge_candidates(merged, country_tracks)
+                source_snapshot.append(
+                    {
+                        "source": "itunes_multi_country",
+                        "scope": country,
+                        "status": "ok",
+                        "candidate_count": len(country_tracks),
+                        "playable_count": count_candidate_audio(country_tracks),
+                    }
+                )
+            except (HTTPError, URLError, TimeoutError, ValueError, RemoteDisconnected) as error:
+                source_snapshot.append(
+                    {
+                        "source": "itunes_multi_country",
+                        "scope": country,
+                        "status": f"error:{type(error).__name__}",
+                        "candidate_count": 0,
+                        "playable_count": 0,
+                    }
+                )
+
     if not merged:
         bootstrap_tracks = load_bootstrap_tracks(
             weight=float(station["source_weights"]["bootstrap_seed"])
@@ -720,6 +867,263 @@ def extract_itunes_label(value: Any) -> str:
     if isinstance(value, dict):
         return str(value.get("label", "")).strip()
     return str(value).strip() if value else ""
+
+
+# === NEW: Additional data source fetch functions for candidate pool diversity ===
+
+
+def fetch_spotify_trending(limit: int, weight: float, api_key: str) -> list[CandidateTrack]:
+    """
+    Fetch Spotify Today's Top Hits playlist via Spotify Web API.
+    Requires an OAuth access token (api_key) with scope: playlist-read-public.
+    Falls back gracefully if the API is unavailable.
+    """
+    # Use the well-known Spotify 'Today's Top Hits' playlist
+    playlist_id = "37i9dQZF1DXcBWIGoYBM5M"
+    url = f"https://api.spotify.com/v1/playlists/{playlist_id}/tracks"
+    req = Request(
+        url,
+        headers={
+            "Authorization": f"Bearer {api_key}",
+            "User-Agent": GENERATOR_VERSION,
+        },
+    )
+    response = urlopen(req, timeout=15)
+    payload = json.loads(response.read().decode("utf-8"))
+
+    rows = payload.get("items", [])
+    if not isinstance(rows, list):
+        raise ValueError("Unexpected Spotify playlist payload.")
+
+    parsed: list[CandidateTrack] = []
+    total = max(len(rows), 1)
+    for index, item in enumerate(rows, start=1):
+        track = item.get("track", {}) if isinstance(item, dict) else {}
+        if not isinstance(track, dict):
+            continue
+        title = str(track.get("name", "")).strip()
+        artists_data = track.get("artists", [])
+        if isinstance(artists_data, list) and artists_data:
+            artist = str(artists_data[0].get("name", "")).strip()
+        else:
+            artist = ""
+        if not title or not artist:
+            continue
+
+        album_data = track.get("album", {})
+        album = ""
+        cover_url = None
+        if isinstance(album_data, dict):
+            album = str(album_data.get("name", "")).strip()
+            images = album_data.get("images", [])
+            if isinstance(images, list) and images:
+                cover_url = str(images[0].get("url", "")).strip() or None
+
+        duration_ms = safe_int(track.get("duration_ms")) or 210000
+        spotify_id = str(track.get("id", "")).strip()
+
+        parsed.append(
+            CandidateTrack(
+                title=title,
+                artist=artist,
+                album=album,
+                duration_ms=duration_ms,
+                score=rank_score(index, total) * weight,
+                cover_url=cover_url,
+                provider_track_id=spotify_id,
+                rank_signals={"spotify_trending": index},
+                source_tags={"spotify_trending", "spotify"},
+                title_variants={title},
+                artist_variants={artist},
+            )
+        )
+    return parsed[:limit]
+
+
+def fetch_youtube_trending_music(limit: int, weight: float) -> list[CandidateTrack]:
+    """
+    Fetch trending music from YouTube via the YouTube Data API v3.
+    Uses the public search endpoint for music category.
+    Requires YOUTUBE_API_KEY environment variable.
+    Falls back gracefully if the API is unavailable.
+    """
+    youtube_api_key = os.environ.get("YOUTUBE_API_KEY", "").strip()
+    if not youtube_api_key:
+        raise ValueError("YOUTUBE_API_KEY not configured")
+
+    # Search for trending music videos
+    search_url = "https://www.googleapis.com/youtube/v3/search"
+    params = {
+        "part": "snippet",
+        "type": "video",
+        "videoCategoryId": "10",  # Music category
+        "order": "viewCount",
+        "maxResults": str(min(limit, 50)),
+        "key": youtube_api_key,
+        "q": "official music video 2026",
+    }
+    query_string = urlencode(params)
+    req = Request(
+        f"{search_url}?{query_string}",
+        headers={"User-Agent": GENERATOR_VERSION},
+    )
+    response = urlopen(req, timeout=15)
+    payload = json.loads(response.read().decode("utf-8"))
+
+    rows = payload.get("items", [])
+    if not isinstance(rows, list):
+        raise ValueError("Unexpected YouTube search payload.")
+
+    parsed: list[CandidateTrack] = []
+    total = max(len(rows), 1)
+    for index, item in enumerate(rows, start=1):
+        if not isinstance(item, dict):
+            continue
+        snippet = item.get("snippet", {})
+        if not isinstance(snippet, dict):
+            continue
+        title = str(snippet.get("title", "")).strip()
+        channel = str(snippet.get("channelTitle", "")).strip()
+        if not title or not channel:
+            continue
+
+        # Clean up title - remove common suffixes like "(Official Video)"
+        clean_title = re.sub(
+            r"\s*\(official\s*(music\s*)?video\s*(hd|4k)?\)",
+            "",
+            title,
+            flags=re.IGNORECASE,
+        ).strip()
+        clean_title = re.sub(
+            r"\s*\[official\s*(music\s*)?video\s*\]",
+            "",
+            clean_title,
+            flags=re.IGNORECASE,
+        ).strip()
+
+        video_id = ""
+        id_data = item.get("id", {})
+        if isinstance(id_data, dict):
+            video_id = str(id_data.get("videoId", "")).strip()
+
+        thumbnails = snippet.get("thumbnails", {})
+        cover_url = None
+        if isinstance(thumbnails, dict):
+            high_thumb = thumbnails.get("high", {})
+            if isinstance(high_thumb, dict):
+                cover_url = str(high_thumb.get("url", "")).strip() or None
+
+        parsed.append(
+            CandidateTrack(
+                title=clean_title or title,
+                artist=channel,
+                duration_ms=210000,
+                score=rank_score(index, total) * weight,
+                cover_url=cover_url,
+                provider_track_id=video_id,
+                rank_signals={"youtube_trending": index},
+                source_tags={"youtube_trending_music", "youtube"},
+                title_variants={title, clean_title} if clean_title != title else {title},
+                artist_variants={channel},
+            )
+        )
+    return parsed[:limit]
+
+
+def fetch_soundcloud_rising(limit: int, weight: float) -> list[CandidateTrack]:
+    """
+    Fetch rising tracks from SoundCloud via the SoundCloud API.
+    Requires SOUNDCLOUD_CLIENT_ID environment variable.
+    Falls back gracefully if the API is unavailable.
+    """
+    client_id = os.environ.get("SOUNDCLOUD_CLIENT_ID", "").strip()
+    if not client_id:
+        raise ValueError("SOUNDCLOUD_CLIENT_ID not configured")
+
+    # Use SoundCloud's track search endpoint, sorted by hotness
+    api_url = "https://api.soundcloud.com/tracks"
+    params = {
+        "client_id": client_id,
+        "limit": str(min(limit, 200)),
+        "order": "hotness",
+        "filter": "public",
+    }
+    query_string = urlencode(params)
+    req = Request(
+        f"{api_url}?{query_string}",
+        headers={"User-Agent": GENERATOR_VERSION},
+    )
+    response = urlopen(req, timeout=15)
+    payload = json.loads(response.read().decode("utf-8"))
+
+    if not isinstance(payload, list):
+        raise ValueError("Unexpected SoundCloud API payload.")
+
+    parsed: list[CandidateTrack] = []
+    total = max(len(payload), 1)
+    for index, track in enumerate(payload, start=1):
+        if not isinstance(track, dict):
+            continue
+        title = str(track.get("title", "")).strip()
+        user_data = track.get("user", {})
+        artist = ""
+        if isinstance(user_data, dict):
+            artist = str(user_data.get("username", "")).strip()
+        if not title or not artist:
+            continue
+
+        duration_ms = safe_int(track.get("duration")) or 210000
+        cover_url = str(track.get("artwork_url", "")).strip() or None
+        if cover_url:
+            # Upgrade to larger artwork
+            cover_url = cover_url.replace("-large", "-t500x500")
+        sc_id = str(track.get("id", "")).strip()
+        permalink = str(track.get("permalink_url", "")).strip()
+
+        parsed.append(
+            CandidateTrack(
+                title=title,
+                artist=artist,
+                duration_ms=duration_ms,
+                score=rank_score(index, total) * weight,
+                cover_url=cover_url,
+                audio_url=permalink or None,
+                audio_provider="soundcloud" if permalink else None,
+                provider_track_id=sc_id,
+                rank_signals={"soundcloud_rising": index},
+                source_tags={"soundcloud_rising", "soundcloud"},
+                title_variants={title},
+                artist_variants={artist},
+            )
+        )
+    return parsed[:limit]
+
+
+def fetch_itunes_rss_country(
+    limit: int,
+    weight: float,
+    country: str,
+) -> list[CandidateTrack]:
+    """
+    Fetch iTunes RSS top songs for a specific country store.
+    Uses the public iTunes RSS feed (no API key required).
+    Country codes follow ISO 3166-1 alpha-2 (e.g., 'us', 'gb', 'jp', 'kr').
+    """
+    rss_url = (
+        f"https://itunes.apple.com/{country}/rss/topsongs/"
+        f"limit={min(limit, 200)}/json"
+    )
+    payload = fetch_json(rss_url, {})
+    feed = payload.get("feed", {})
+    rows = feed.get("entry", [])
+    if not isinstance(rows, list):
+        raise ValueError(f"Unexpected iTunes RSS payload for country={country}.")
+    return parse_itunes_rss_tracks(
+        rows=rows,
+        source_label=f"itunes_rss_{country}",
+        weight=weight,
+        limit=limit,
+    )
 
 
 def parse_lastfm_tracks(
