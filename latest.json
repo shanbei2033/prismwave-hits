@@ -2,23 +2,23 @@
   "schema_version": 1,
   "station_id": "hits-global",
   "timezone": "UTC",
-  "generated_at": "2026-07-30T00:55:24Z",
+  "generated_at": "2026-07-31T01:06:48Z",
   "generator_version": "prismwave-hits/0.2.0",
-  "active_edition_date": "2026-07-31",
-  "schedule_path": "schedules/2026-07-31.json",
-  "schedule_url": "https://raw.githubusercontent.com/shanbei2033/prismwave-hits/main/schedules/2026-07-31.json",
+  "active_edition_date": "2026-08-01",
+  "schedule_path": "schedules/2026-08-01.json",
+  "schedule_url": "https://raw.githubusercontent.com/shanbei2033/prismwave-hits/main/schedules/2026-08-01.json",
   "service_windows": [
     {
       "label": "on_air",
-      "start_at": "2026-07-31T00:00:00Z",
-      "end_at": "2026-07-31T20:00:00Z"
+      "start_at": "2026-08-01T00:00:00Z",
+      "end_at": "2026-08-01T20:00:00Z"
     }
   ],
   "off_air_windows": [
     {
       "label": "overnight_maintenance",
-      "start_at": "2026-07-31T20:00:00Z",
-      "end_at": "2026-08-01T00:00:00Z"
+      "start_at": "2026-08-01T20:00:00Z",
+      "end_at": "2026-08-02T00:00:00Z"
     }
   ],
   "source_snapshot": [
@@ -219,7 +219,7 @@
       "source": "deezer_chart",
       "scope": "Pop",
       "status": "ok",
-      "candidate_count": 99,
+      "candidate_count": 100,
       "playable_count": 0
     },
     {
@@ -267,7 +267,7 @@
     {
       "source": "itunes_rss",
       "status": "ok",
-      "candidate_count": 87,
+      "candidate_count": 86,
       "playable_count": 0
     },
     {
@@ -292,14 +292,14 @@
       "source": "itunes_multi_country",
       "scope": "gb",
       "status": "ok",
-      "candidate_count": 92,
+      "candidate_count": 90,
       "playable_count": 0
     },
     {
       "source": "itunes_multi_country",
       "scope": "jp",
       "status": "ok",
-      "candidate_count": 98,
+      "candidate_count": 97,
       "playable_count": 0
     },
     {
@@ -313,14 +313,14 @@
       "source": "itunes_multi_country",
       "scope": "de",
       "status": "ok",
-      "candidate_count": 95,
+      "candidate_count": 94,
       "playable_count": 0
     },
     {
       "source": "itunes_multi_country",
       "scope": "br",
       "status": "ok",
-      "candidate_count": 92,
+      "candidate_count": 90,
       "playable_count": 0
     },
     {
@@ -328,16 +328,16 @@
       "status": "ok",
       "scanned_count": 400,
       "resolved_count": 2,
-      "playable_count": 470
+      "playable_count": 469
     },
     {
       "source": "schedule_pool",
       "status": "playable_only",
-      "candidate_count": 470,
-      "playable_count": 470
+      "candidate_count": 469,
+      "playable_count": 469
     }
   ],
-  "track_count": 343,
-  "playable_track_count": 343,
+  "track_count": 347,
+  "playable_track_count": 347,
   "reserve_track_count": 12
 }
