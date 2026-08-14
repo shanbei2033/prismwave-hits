@@ -2,7 +2,7 @@
   "schema_version": 1,
   "station_id": "hits-global",
   "timezone": "UTC",
-  "generated_at": "2026-08-14T00:09:22Z",
+  "generated_at": "2026-08-14T23:50:04Z",
   "generator_version": "prismwave-hits/0.2.0",
   "active_edition_date": "2026-08-15",
   "schedule_path": "schedules/2026-08-15.json",
@@ -267,7 +267,7 @@
     {
       "source": "itunes_rss",
       "status": "ok",
-      "candidate_count": 88,
+      "candidate_count": 81,
       "playable_count": 0
     },
     {
@@ -292,7 +292,7 @@
       "source": "itunes_multi_country",
       "scope": "gb",
       "status": "ok",
-      "candidate_count": 91,
+      "candidate_count": 95,
       "playable_count": 0
     },
     {
@@ -313,31 +313,31 @@
       "source": "itunes_multi_country",
       "scope": "de",
       "status": "ok",
-      "candidate_count": 100,
+      "candidate_count": 92,
       "playable_count": 0
     },
     {
       "source": "itunes_multi_country",
       "scope": "br",
       "status": "ok",
-      "candidate_count": 89,
+      "candidate_count": 93,
       "playable_count": 0
     },
     {
       "source": "audius_match",
       "status": "ok",
       "scanned_count": 400,
-      "resolved_count": 3,
-      "playable_count": 467
+      "resolved_count": 2,
+      "playable_count": 469
     },
     {
       "source": "schedule_pool",
       "status": "playable_only",
-      "candidate_count": 467,
-      "playable_count": 467
+      "candidate_count": 469,
+      "playable_count": 469
     }
   ],
-  "track_count": 341,
-  "playable_track_count": 341,
+  "track_count": 342,
+  "playable_track_count": 342,
   "reserve_track_count": 12
 }
