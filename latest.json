@@ -2,23 +2,23 @@
   "schema_version": 1,
   "station_id": "hits-global",
   "timezone": "UTC",
-  "generated_at": "2026-09-29T02:41:02Z",
+  "generated_at": "2026-09-30T02:18:24Z",
   "generator_version": "prismwave-hits/0.2.0",
-  "active_edition_date": "2026-09-30",
-  "schedule_path": "schedules/2026-09-30.json",
-  "schedule_url": "https://raw.githubusercontent.com/shanbei2033/prismwave-hits/main/schedules/2026-09-30.json",
+  "active_edition_date": "2026-10-01",
+  "schedule_path": "schedules/2026-10-01.json",
+  "schedule_url": "https://raw.githubusercontent.com/shanbei2033/prismwave-hits/main/schedules/2026-10-01.json",
   "service_windows": [
     {
       "label": "on_air",
-      "start_at": "2026-09-30T00:00:00Z",
-      "end_at": "2026-09-30T20:00:00Z"
+      "start_at": "2026-10-01T00:00:00Z",
+      "end_at": "2026-10-01T20:00:00Z"
     }
   ],
   "off_air_windows": [
     {
       "label": "overnight_maintenance",
-      "start_at": "2026-09-30T20:00:00Z",
-      "end_at": "2026-10-01T00:00:00Z"
+      "start_at": "2026-10-01T20:00:00Z",
+      "end_at": "2026-10-02T00:00:00Z"
     }
   ],
   "source_snapshot": [
@@ -200,7 +200,7 @@
       "scope": "Ambient",
       "status": "ok",
       "candidate_count": 30,
-      "playable_count": 28
+      "playable_count": 29
     },
     {
       "source": "audius_genre",
@@ -247,7 +247,7 @@
       "source": "deezer_chart",
       "scope": "R&B",
       "status": "ok",
-      "candidate_count": 99,
+      "candidate_count": 100,
       "playable_count": 0
     },
     {
@@ -267,7 +267,7 @@
     {
       "source": "itunes_rss",
       "status": "ok",
-      "candidate_count": 87,
+      "candidate_count": 86,
       "playable_count": 0
     },
     {
@@ -313,31 +313,31 @@
       "source": "itunes_multi_country",
       "scope": "de",
       "status": "ok",
-      "candidate_count": 91,
+      "candidate_count": 94,
       "playable_count": 0
     },
     {
       "source": "itunes_multi_country",
       "scope": "br",
       "status": "ok",
-      "candidate_count": 91,
+      "candidate_count": 92,
       "playable_count": 0
     },
     {
       "source": "audius_match",
-      "status": "partial:3_errors",
+      "status": "ok",
       "scanned_count": 400,
       "resolved_count": 4,
-      "playable_count": 454
+      "playable_count": 456
     },
     {
       "source": "schedule_pool",
       "status": "playable_only",
-      "candidate_count": 454,
-      "playable_count": 454
+      "candidate_count": 456,
+      "playable_count": 456
     }
   ],
-  "track_count": 310,
-  "playable_track_count": 310,
+  "track_count": 314,
+  "playable_track_count": 314,
   "reserve_track_count": 12
 }
