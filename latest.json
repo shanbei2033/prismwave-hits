@@ -2,23 +2,23 @@
   "schema_version": 1,
   "station_id": "hits-global",
   "timezone": "UTC",
-  "generated_at": "2026-10-23T01:48:51Z",
+  "generated_at": "2026-10-24T01:53:22Z",
   "generator_version": "prismwave-hits/0.2.0",
-  "active_edition_date": "2026-10-24",
-  "schedule_path": "schedules/2026-10-24.json",
-  "schedule_url": "https://raw.githubusercontent.com/shanbei2033/prismwave-hits/main/schedules/2026-10-24.json",
+  "active_edition_date": "2026-10-25",
+  "schedule_path": "schedules/2026-10-25.json",
+  "schedule_url": "https://raw.githubusercontent.com/shanbei2033/prismwave-hits/main/schedules/2026-10-25.json",
   "service_windows": [
     {
       "label": "on_air",
-      "start_at": "2026-10-24T00:00:00Z",
-      "end_at": "2026-10-24T20:00:00Z"
+      "start_at": "2026-10-25T00:00:00Z",
+      "end_at": "2026-10-25T20:00:00Z"
     }
   ],
   "off_air_windows": [
     {
       "label": "overnight_maintenance",
-      "start_at": "2026-10-24T20:00:00Z",
-      "end_at": "2026-10-25T00:00:00Z"
+      "start_at": "2026-10-25T20:00:00Z",
+      "end_at": "2026-10-26T00:00:00Z"
     }
   ],
   "source_snapshot": [
@@ -186,7 +186,7 @@
       "scope": "Alternative",
       "status": "ok",
       "candidate_count": 40,
-      "playable_count": 40
+      "playable_count": 39
     },
     {
       "source": "audius_genre",
@@ -267,7 +267,7 @@
     {
       "source": "itunes_rss",
       "status": "ok",
-      "candidate_count": 95,
+      "candidate_count": 92,
       "playable_count": 0
     },
     {
@@ -299,7 +299,7 @@
       "source": "itunes_multi_country",
       "scope": "jp",
       "status": "ok",
-      "candidate_count": 100,
+      "candidate_count": 99,
       "playable_count": 0
     },
     {
@@ -313,14 +313,14 @@
       "source": "itunes_multi_country",
       "scope": "de",
       "status": "ok",
-      "candidate_count": 94,
+      "candidate_count": 90,
       "playable_count": 0
     },
     {
       "source": "itunes_multi_country",
       "scope": "br",
       "status": "ok",
-      "candidate_count": 94,
+      "candidate_count": 88,
       "playable_count": 0
     },
     {
@@ -337,7 +337,7 @@
       "playable_count": 465
     }
   ],
-  "track_count": 316,
-  "playable_track_count": 316,
+  "track_count": 320,
+  "playable_track_count": 320,
   "reserve_track_count": 12
 }
